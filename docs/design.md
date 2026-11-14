@@ -856,7 +856,7 @@ This creates two complementary narrative layers:
 
 ### Owner-initiated management conversations
 
-The studio owner may directly call a professional into a management conversation.
+The studio owner may directly call a **permanent employee** into a management conversation.
 
 These are **structured management actions**, not free-form roleplay and not direct control of the professional.
 
@@ -875,7 +875,7 @@ The player chooses the **intent**, not the exact wording.
 
 Runtime AI may dramatize the conversation within that intent, but the allowed outcomes and state changes remain game-owned.
 
-**Free-text player dialogue is not part of the intended interaction model.** T.O.O.N. should keep these conversations permanently structured rather than making unrestricted text input a required or alternate core mechanic.
+**Free-text player dialogue is not part of the intended interaction model.** The player selects structured management intents rather than writing the conversation line by line.
 
 ## Relationships
 
