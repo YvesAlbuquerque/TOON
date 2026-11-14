@@ -161,8 +161,20 @@ Requirements:
 - AI output selects from that allow-list rather than inventing unrestricted gameplay verbs;
 - optional speech/thought can accompany the action without directly changing simulation state;
 - malformed, stale or disallowed tags are rejected;
-- a deterministic/weighted fallback can choose an action without the AI provider;
+- a deterministic/weighted fallback can choose an action without the generative model;
 - only game-owned execution mutates authoritative state.
+
+The first runtime character-AI proof should also validate **local embedded background inference**:
+
+- routine character cognition uses a locally packaged model/runtime and does not require a network service;
+- inference is asynchronous and does not block the game thread;
+- event-triggered decisions can be requested immediately;
+- a background scheduler can request periodic bounded cognition during active live simulation;
+- use roughly **two real-time minutes** as the initial maximum quiet interval for the system when at least one eligible character exists;
+- the interval applies to the whole character-AI scheduler, not separately to every employee;
+- paused/build/menu/closed-game time does not require periodic calls;
+- stale results are rejected if state or targets changed while inference was running;
+- profile latency, memory, CPU/GPU/NPU usage and frame-time impact before treating the cadence or model choice as validated.
 
 ### 2.3 Decision Event escalation proof
 
