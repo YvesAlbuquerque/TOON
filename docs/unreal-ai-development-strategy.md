@@ -109,7 +109,16 @@ AI used inside T.O.O.N. for creative proposals, generated text/art, simulation a
 
 Runtime AI must remain behind game-owned contracts and data models. Provider-specific APIs must not own the game domain.
 
-For **routine character cognition and bounded social/action selection**, the accepted direction is a **local embedded generative model** packaged with the game or otherwise available locally without a network dependency. It should run behind a T.O.O.N.-owned inference adapter and consume only bounded game-owned context/action schemas.
+The accepted direction is that **all runtime generative inference executes locally**. T.O.O.N. must not depend on paid remote model APIs for ordinary gameplay, character cognition, dialogue, or generated production artifacts.
+
+This includes two broad local runtime classes:
+
+1. **Character cognition models** — smaller/faster models for bounded social/action selection, short dialogue and thoughts.
+2. **Production-generation models** — heavier local models for text, image, audio, animation or other produced-work artifacts where the game uses generative output.
+
+Both remain behind T.O.O.N.-owned adapters and data contracts. They may use different local runtimes, model sizes, queues and hardware paths, but neither class should require a network inference service.
+
+For **routine character cognition and bounded social/action selection**, the model should be packaged with the game or otherwise installed locally and consume only bounded game-owned context/action schemas.
 
 Character inference should be asynchronous and primarily scheduled through two paths:
 
@@ -118,9 +127,11 @@ Character inference should be asynchronous and primarily scheduled through two p
 
 Use roughly **two real-time minutes of active simulation** as an initial maximum quiet interval for the overall character-AI scheduler when eligible characters exist. This is a tuning target, not a validated performance claim and not a per-character polling interval.
 
-The local character model should not be assumed to generate heavyweight production artifacts. Image, audio, animation or other large media generation can use separate adapters/architectures where the game requires them.
+The local character model should not be assumed to generate heavyweight production artifacts. Image, audio, animation or other large media generation should use **separate local adapters/architectures** where the game requires them.
 
-The exact model, size, quantization, inference backend and hardware requirements remain undecided until the Unreal target is bootstrapped and profiled. Local inference must not be described as validated until memory use, latency, frame-time impact, thermals and packaged-build behaviour are actually exercised.
+Heavy production generation may be queued and allowed to take materially longer than character cognition. It should not stall the game thread, and the game should expose progress/failure cleanly when a local generation job is running.
+
+The exact models, sizes, quantization, inference backends and hardware requirements remain undecided until the Unreal target is bootstrapped and profiled. Local inference must not be described as validated until memory use, latency, frame-time impact, thermals, storage footprint and packaged-build behaviour are actually exercised.
 
 Deterministic/weighted non-generative fallbacks should remain possible for proof-critical simulation and for malformed, stale or unavailable local-model results.
 
