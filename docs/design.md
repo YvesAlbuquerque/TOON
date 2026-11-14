@@ -714,6 +714,19 @@ These are examples of behavioural families, not a fixed list that every characte
 
 The same idle duration should therefore have different consequences for different professionals. A disciplined, ambitious employee might study; a social character might strengthen relationships; an insecure employee may interpret prolonged idleness as evidence that the studio no longer needs them.
 
+There is **no universal idle-time threshold** after which a professional becomes unhappy or insecure. Idle tolerance and interpretation should depend on context such as:
+
+- personality and ambition;
+- confidence and perceived job security;
+- salary and expectations;
+- recent workload and burnout/recovery needs;
+- recent production involvement and recognition;
+- relationships and social belonging;
+- whether the employee is using the time in a personally meaningful way;
+- how long the pattern has persisted relative to that character's expectations.
+
+A period that feels like welcome recovery to one professional may feel like neglect or impending redundancy to another.
+
 The player **does not directly order idle behaviours** such as `Study`, `Socialize` or `Prank X` as the normal management model. The player influences them indirectly through hiring, assignments, environment, amenities, policies, relationships, management conversations and the amount/type of unassigned time.
 
 Idle activity may create bounded social, recovery, personal-development or outside-life consequences, but should not become a reliable source of major production progress for free.
