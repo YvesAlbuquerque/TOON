@@ -109,7 +109,20 @@ AI used inside T.O.O.N. for creative proposals, generated text/art, simulation a
 
 Runtime AI must remain behind game-owned contracts and data models. Provider-specific APIs must not own the game domain.
 
-Manual/non-AI paths should remain possible for proof-critical gameplay unless a future explicit design decision changes that boundary.
+For **routine character cognition and bounded social/action selection**, the accepted direction is a **local embedded generative model** packaged with the game or otherwise available locally without a network dependency. It should run behind a T.O.O.N.-owned inference adapter and consume only bounded game-owned context/action schemas.
+
+Character inference should be asynchronous and primarily scheduled through two paths:
+
+1. **event-triggered cognition** when simulation state creates a meaningful decision; and
+2. **periodic background cognition** to keep character behaviour generatively alive even when no major event occurs.
+
+Use roughly **two real-time minutes of active simulation** as an initial maximum quiet interval for the overall character-AI scheduler when eligible characters exist. This is a tuning target, not a validated performance claim and not a per-character polling interval.
+
+The local character model should not be assumed to generate heavyweight production artifacts. Image, audio, animation or other large media generation can use separate adapters/architectures where the game requires them.
+
+The exact model, size, quantization, inference backend and hardware requirements remain undecided until the Unreal target is bootstrapped and profiled. Local inference must not be described as validated until memory use, latency, frame-time impact, thermals and packaged-build behaviour are actually exercised.
+
+Deterministic/weighted non-generative fallbacks should remain possible for proof-critical simulation and for malformed, stale or unavailable local-model results.
 
 ## AI provenance and reproducibility
 
