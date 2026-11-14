@@ -1017,7 +1017,32 @@ Candidate social outcomes include:
 
 The simulation owns the permitted magnitude and final change to relationships, fatigue, stress, morale, creative energy or other state.
 
-A deterministic/weighted fallback must remain possible when the runtime AI provider is unavailable, too slow, too expensive or returns unusable output.
+A deterministic/weighted fallback must remain possible when the runtime character model is unavailable, overloaded or returns unusable output.
+
+### Local background character AI and cadence
+
+The generative model used for **routine character cognition, bounded action choice, short dialogue and thoughts** should be **local and embedded with the game**, rather than requiring a remote service for ordinary studio behaviour.
+
+This local character-AI layer is distinct from heavier generation used to create production artifacts such as images, audio or animation. Those larger media-generation paths may have different implementation requirements.
+
+The intended runtime pattern is **event-driven plus periodic background cognition**:
+
+- fuzzy/game-owned simulation handles trivial continuous behaviour without model calls;
+- meaningful state changes can request a generative decision immediately;
+- a background scheduler periodically selects an eligible character/context for a bounded generative decision even when no major event has fired;
+- the initial tuning target is that, during active live simulation with eligible characters, the character-AI system should not go much longer than roughly **two real-time minutes** without a generative consideration;
+- this is a **system-level cadence**, not a requirement to call the model once per employee every two minutes;
+- the cadence may be tuned after profiling and playtesting.
+
+A scheduled consideration does not need to create a visible event. The valid result may be to continue working, take a break, think something privately, initiate a conversation, study, socialize, leave the studio, or perform another currently allowed action.
+
+The scheduler should avoid synchronized bursts. Character eligibility, urgency, time since last meaningful generative decision, relationships, current workload and recent repetition can influence who receives the next cognition slot.
+
+Local inference must run asynchronously so model execution does not block the game thread. If the world changes before a result returns, the same validation rules apply: stale or invalid actions are discarded or resolved through fallback behaviour.
+
+No periodic generation is required while the game is closed, loading, or paused for menus/build mode. The cadence applies to active simulation, not wall-clock background progression.
+
+The exact embedded model, quantization, inference backend, hardware floor and final cadence remain **Planned** until Unreal profiling proves acceptable memory, latency, thermals and frame-time impact.
 
 ### Preventive management
 
