@@ -234,6 +234,7 @@ The first professional-state proof should also demonstrate that **Available/Idle
 - prolonged idle time may be interpreted negatively by some personalities;
 - there is no universal timer for negative idle consequences; tolerance should vary with personality, ambition, perceived job security, recent workload, recognition, relationships and whether the employee finds the time meaningful;
 - at least one idle behaviour may take the professional physically off-site, making them temporarily unavailable and able to return with a bounded consequence;
+- no separate recall/call-back mechanic is required; the professional returns naturally;
 - off-site idle activity is autonomously chosen rather than directly ordered by the player;
 - the UI should distinguish “away” from ordinary in-studio Idle without automatically exposing unknown secret motives;
 - Blocked behaviour should remain distinguishable from ordinary Idle behaviour.
