@@ -288,7 +288,22 @@ The same proof should exercise **workload and autonomous recovery**:
 - a professional can autonomously take a break or stop working;
 - recovery reduces fatigue without unrealistically erasing longer-term burnout pressure.
 
-### 3.3 Minimal Relationship model
+### 3.3 Character memory proof
+
+Prove the smallest persistent memory model needed to support local character cognition without preserving full conversation transcripts.
+
+Minimum proof:
+
+- one canonical game-owned event is recorded;
+- two professionals form different subjective memories/interpretations of that same event;
+- at least one memory is incomplete, biased or otherwise not identical to canonical fact;
+- memory entries can retain salience, sentiment, confidence and privacy/knowledge scope where needed;
+- a later character-AI decision retrieves only relevant memories rather than the full historical record;
+- the retrieved memory materially influences an allowed action, dialogue line, thought or relationship outcome;
+- canonical event history remains unchanged by subjective recollection;
+- memory survives save/reload.
+
+### 3.4 Minimal Relationship model
 
 Prove a directional relationship representation with only the dimensions needed for the first slice.
 
@@ -311,13 +326,13 @@ The first player-facing proof should use a **hybrid visibility model**:
 
 The proof must show one relationship affecting a production decision or outcome and let the player understand the causal path.
 
-### 3.4 Outside-life hooks
+### 3.5 Outside-life hooks
 
 Implement a bounded event source for off-screen life without simulating a full city.
 
 First proof should support one outside-life condition affecting attendance, energy, relationship or production state.
 
-### 3.5 Versioned persistence
+### 3.6 Versioned persistence
 
 Define Unreal-owned versioned persistence for current T.O.O.N. domain state.
 

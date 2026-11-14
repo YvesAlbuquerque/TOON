@@ -1019,6 +1019,50 @@ The simulation owns the permitted magnitude and final change to relationships, f
 
 A deterministic/weighted fallback must remain possible when the runtime character model is unavailable, overloaded or returns unusable output.
 
+### Character memory and subjective interpretation
+
+Long-term character memory belongs to the **game simulation**, not to hidden conversational state inside the generative model.
+
+T.O.O.N. should distinguish between:
+
+1. **Canonical event history** — game-owned facts about what actually happened.
+2. **Character memory/belief** — what a particular professional remembers, believes or feels about those events.
+
+A character memory may reference a canonical event while storing a subjective interpretation. Two professionals can therefore remember the same incident differently, and either interpretation may be incomplete, biased or factually wrong without rewriting the underlying studio history.
+
+A compact memory entry may contain:
+
+- source event/reference where applicable;
+- remembered summary;
+- involved people, production, IP or place;
+- subjective interpretation;
+- emotional valence/sentiment;
+- importance/salience;
+- confidence or certainty;
+- whether the memory/knowledge is private, shared or secret;
+- timestamps/reinforcement metadata where useful.
+
+Do not preserve every spoken line as permanent memory. Routine dialogue can remain ephemeral. Promote only meaningful events, discoveries, conflicts, achievements, promises, betrayals, relationships, production experiences and other context that can materially affect later behaviour.
+
+Recent short-term context and durable long-term memory should be separate. A character can remember a significant event from decades ago without requiring the model to receive decades of transcript history.
+
+Before a local generative cognition call, the game retrieves only memories relevant to the current situation:
+
+`authoritative state + personality + relationships + relevant memories/beliefs + recent context + allowed actions -> local model`
+
+Relevance can consider participants, production/IP, topic, recency, salience, emotional strength and current goals.
+
+The generative model may use those memories to choose or dramatize behaviour, but it does not own the memory database and cannot silently rewrite canonical history. Any newly formed or changed memory must pass through game-owned rules.
+
+This enables:
+
+- grudges and loyalties that survive years;
+- conflicting recollections of one event;
+- pride or resentment around old productions;
+- secrets known only to some characters;
+- mistaken beliefs with real social consequences;
+- later reconciliation or reinterpretation without changing what objectively happened.
+
 ### Local background character AI and cadence
 
 The generative model used for **routine character cognition, bounded action choice, short dialogue and thoughts** should be **local and embedded with the game**, rather than requiring a remote service for ordinary studio behaviour.
