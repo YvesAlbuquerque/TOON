@@ -62,6 +62,84 @@ The player should become attached to:
 - memorable productions;
 - the visible history accumulated across decades.
 
+## Creative and systemic references
+
+T.O.O.N. draws from several references, but they are **directional influences rather than feature-parity targets**. The project should borrow useful principles, simplify aggressively where production reality requires it, and preserve its own identity.
+
+### The Movies
+
+**The Movies** is the strongest overall reference for the fantasy of running a creative entertainment studio whose people, facilities, productions and history remain visible in the world.
+
+It is also an intentionally **utopian reference** for T.O.O.N.: reproducing its breadth with a much smaller team and development budget would be an unrealistic scope target.
+
+Use it primarily to inform:
+
+- the studio as a physical, evolving place;
+- attachment to recurring staff;
+- visible production activity;
+- the relationship between facilities, people and output;
+- the pleasure of seeing the studio's history accumulate;
+- completed productions as something the player can actually watch or revisit.
+
+Do not use it as a requirement to match every simulation layer, production system or content volume.
+
+### TOON tabletop RPG
+
+The **TOON** role-playing game is a thematic and systemic reference because its cartoon logic, terminology, abilities and treatment of absurd characters overlap with the space T.O.O.N. wants to explore.
+
+Useful inspiration includes:
+
+- cartoon-world logic taken seriously by the rules;
+- unusual abilities and character traits;
+- absurd consequences that remain mechanically meaningful;
+- a vocabulary that can help identify useful design concepts.
+
+This is inspiration, not a licence to copy distinctive protected text, rules expression, characters or presentation. T.O.O.N. should adapt useful ideas into its own terminology and systems where appropriate.
+
+### Dispatch
+
+**Dispatch** is a reference for character relationships and for presenting a cast whose personalities, conflicts and interpersonal history matter to management decisions.
+
+It is also useful as a reference for a **very lightweight representation of a city and activities outside the primary workplace**. T.O.O.N. can learn from that abstraction while developing a richer model where outside-life events, geography and employee autonomy justify it.
+
+### Management games
+
+Management games broadly are reference material for:
+
+- readable cause and effect;
+- resource and staffing tradeoffs;
+- growth through capacity rather than arbitrary progression;
+- legible worker state;
+- long-term planning;
+- allowing simulation stories to emerge from management decisions.
+
+T.O.O.N. should take patterns selectively rather than inheriting genre conventions automatically.
+
+### Evil Genius
+
+**Evil Genius** is a recurring reference for this style of game, particularly for:
+
+- a physical base whose layout is part of management;
+- workers visibly inhabiting and using the space;
+- facilities creating operational capacity;
+- readable autonomous behaviour;
+- systemic comedy emerging from serious simulation rules;
+- the pleasure of watching an organization function, malfunction and develop character.
+
+The relevant lesson is the coupling of **space + people + systems + personality**, not copying its specific base-building structure or theme.
+
+### Reference discipline
+
+When a reference conflicts with T.O.O.N.'s production constraints or core identity, prefer the smallest system that preserves the intended player experience.
+
+The question should be:
+
+> **What useful experience are we borrowing?**
+
+rather than:
+
+> **How do we reproduce the referenced game?**
+
 ## Soul rule
 
 > **Every production and every person can change the office that made them.**
