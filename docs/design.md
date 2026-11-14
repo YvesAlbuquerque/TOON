@@ -731,6 +731,16 @@ The player **does not directly order idle behaviours** such as `Study`, `Sociali
 
 Idle activity may create bounded social, recovery, personal-development or outside-life consequences, but should not become a reliable source of major production progress for free.
 
+An Available/Idle professional may also **leave the studio during working hours on their own initiative** when their personality, interests or outside-life hooks make that plausible. This can represent ordinary personal errands, hobbies, relationships, vigilante activity, criminal activity, or other authored character-specific behaviour.
+
+Leaving the studio is a real simulation consequence, not cosmetic flavour:
+
+- the professional becomes temporarily unavailable for newly assigned work or spontaneous collaboration;
+- the player does not directly order the off-site activity as part of normal idle control;
+- the character may later return with altered energy, morale, injury, relationship state, knowledge or another relevant consequence;
+- repeated or risky off-site behaviour can create future management pressure or Decision Events;
+- legibility matters: the player should be able to tell that the employee is away and, where appropriate, understand the known reason without automatically revealing secret information the studio has not learned.
+
 Blocked behaviour should be biased differently from ordinary idleness. A professional who has assigned work but cannot proceed is more likely to wait, seek another route, complain, help elsewhere where appropriate, or accumulate frustration around the cause of the block.
 
 The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
