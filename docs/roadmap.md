@@ -232,6 +232,7 @@ The first professional-state proof should also demonstrate that **Available/Idle
 - the player influences idle behaviour through conditions rather than issuing direct `Study` / `Socialize` / similar orders;
 - at least one idle behaviour should create a small persistent consequence such as skill growth, relationship change, morale change or an outside-life hook;
 - prolonged idle time may be interpreted negatively by some personalities;
+- there is no universal timer for negative idle consequences; tolerance should vary with personality, ambition, perceived job security, recent workload, recognition, relationships and whether the employee finds the time meaningful;
 - Blocked behaviour should remain distinguishable from ordinary Idle behaviour.
 
 ### 3.3 Minimal Relationship model
