@@ -1023,7 +1023,14 @@ A deterministic/weighted fallback must remain possible when the runtime characte
 
 The generative model used for **routine character cognition, bounded action choice, short dialogue and thoughts** should be **local and embedded with the game**, rather than requiring a remote service for ordinary studio behaviour.
 
-This local character-AI layer is distinct from heavier generation used to create production artifacts such as images, audio or animation. Those larger media-generation paths may have different implementation requirements.
+This local character-AI layer is distinct from heavier generation used to create production artifacts such as images, audio or animation. **Those heavier runtime generators must also execute locally.** T.O.O.N. should not require paid remote inference APIs for normal gameplay or for creating player-facing production artifacts.
+
+The distinction is therefore about workload and orchestration, not network location:
+
+- character cognition uses smaller, frequent, latency-sensitive local inference;
+- production generation may use larger local models, longer-running jobs and explicit queues;
+- heavy generation may pause, throttle or schedule work according to available hardware without blocking the main simulation;
+- exact quality tiers, model packs and hardware requirements remain subject to profiling.
 
 The intended runtime pattern is **event-driven plus periodic background cognition**:
 
