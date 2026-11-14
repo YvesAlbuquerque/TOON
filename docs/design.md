@@ -737,6 +737,7 @@ Leaving the studio is a real simulation consequence, not cosmetic flavour:
 
 - the professional becomes temporarily unavailable for newly assigned work or spontaneous collaboration;
 - the player does not directly order the off-site activity as part of normal idle control;
+- there is no separate recall/call-back mechanic; the professional remains unavailable until they return naturally;
 - the character may later return with altered energy, morale, injury, relationship state, knowledge or another relevant consequence;
 - repeated or risky off-site behaviour can create future management pressure or Decision Events;
 - legibility matters: the player should be able to tell that the employee is away and, where appropriate, understand the known reason without automatically revealing secret information the studio has not learned.
