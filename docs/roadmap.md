@@ -176,6 +176,14 @@ The first runtime character-AI proof should also validate **local embedded backg
 - stale results are rejected if state or targets changed while inference was running;
 - profile latency, memory, CPU/GPU/NPU usage and frame-time impact before treating the cadence or model choice as validated.
 
+Runtime AI validation must also preserve the broader rule that **all player-facing generative inference is local**. Before generated production artifacts are considered validated:
+
+- prove at least one representative heavy generation path without a remote inference API;
+- run it asynchronously or through a local job queue so it does not block the game thread;
+- record generation latency, memory/VRAM use, storage/model footprint and failure behaviour;
+- keep character-cognition inference and heavyweight production generation as separate workload classes even though both are local;
+- do not claim a minimum hardware specification until representative models have been profiled.
+
 ### 2.3 Decision Event escalation proof
 
 Prove one parameterized Decision Event archetype driven by emergent simulation state.
