@@ -899,6 +899,27 @@ The management layer should primarily let the player set context and constraints
 
 Professionals then execute and socialize with meaningful autonomy.
 
+### Multiple productions, priorities and workload
+
+A professional may contribute to **more than one production at the same time**, but this does not multiply their available time.
+
+The player should manage responsibilities and priorities rather than manually allocating percentages such as `35% Project A / 65% Project B`.
+
+The intended model is:
+
+`assigned responsibilities + production priorities + deadlines/context -> autonomous work selection -> finite time actually spent`
+
+When the same professional is important to several productions:
+
+- they switch between compatible responsibilities according to current priority and context;
+- simultaneous demand can delay one or more productions;
+- excessive context switching can reduce effective productivity;
+- long uninterrupted or repeated high-pressure work can accumulate fatigue and longer-term stress;
+- the professional may autonomously pause, rest or stop working when their state makes continuing unreasonable;
+- sustained overload may eventually create complaints, mistakes, absence, management pressure or Decision Events.
+
+This makes staffing pressure a consequence of finite people rather than an abstract allocation spreadsheet.
+
 ### Autonomous social behaviour
 
 Professionals should initiate ordinary social interactions without explicit player commands.
@@ -928,24 +949,60 @@ The studio is allowed to have more social life than the player can observe. A pl
 
 Important state changes must remain legible through behaviour, relationship UI, warnings and later consequences even when the player did not read every line.
 
-### AI-generated conversation
+### AI-generated conversation and autonomous action selection
 
-Runtime AI can generate dialogue for ordinary social interactions so conversations reflect:
+Runtime AI can generate dialogue and help choose bounded autonomous actions so behaviour reflects:
 
-- character identity;
-- current relationship;
+- character identity and personality;
+- current relationships;
 - recent events;
-- production context;
+- production responsibilities and priorities;
 - historical/cultural context where relevant;
-- mood and current state.
+- current internal state;
+- fuzzy interpretations of that state;
+- the concrete actions that are currently valid.
 
-The language model must **not directly mutate authoritative gameplay attributes**.
+The authoritative state remains game-owned. Internal values may be continuous, while a fuzzy layer derives overlapping qualitative memberships such as `low`, `medium`, `high`, `exhausted`, `restless`, `confident` or `socially needy` where useful.
 
-An interaction resolves through a bounded game-owned result such as:
+The game should assemble a bounded decision context containing:
 
-`conversation context -> generated dialogue -> structured interaction outcome -> deterministic simulation update`
+- relevant state values and fuzzy interpretations;
+- only the history/context needed for the current decision;
+- valid targets;
+- an allow-list of possible action tags with stable game-owned identifiers;
+- any constraints needed to keep the choice legal.
 
-Candidate outcomes include:
+Conceptually:
+
+`authoritative state -> fuzzy interpretation -> bounded context + allowed action tags -> AI choice + dialogue/thought -> validation -> game executes action -> authoritative state update`
+
+The model may return:
+
+- one allowed **action tag**;
+- optional speech;
+- optional thought/internal reaction;
+- bounded presentation metadata where useful.
+
+The exact serialization format can be XML-like tags, JSON or another structured schema, but the contract must remain game-owned and machine-validated. Do not rely on parsing unrestricted prose to decide gameplay.
+
+For example, the context might allow actions equivalent to `ContinueWork`, `TakeBreak`, `ChatWith(EmployeeId)`, `Study(SkillId)` or `LeaveStudioForPersonalActivity`. The model can choose among the valid tags and dramatize the choice; it cannot invent an unrestricted gameplay verb.
+
+Before execution, the game validates:
+
+- the action identifier is on the allow-list;
+- referenced targets still exist and remain valid;
+- current preconditions still permit the action;
+- requested parameters remain within authored bounds.
+
+Invalid, malformed or stale output is rejected and falls back to a deterministic or weighted game-owned choice.
+
+The language model must **not directly mutate authoritative gameplay attributes**. Speech and thoughts are presentation unless accompanied by a separately valid structured action/outcome tag.
+
+An interaction can therefore resolve through a bounded path such as:
+
+`context + allowed actions -> generated tag/dialogue -> validation -> structured interaction outcome -> deterministic simulation update`
+
+Candidate social outcomes include:
 
 - bonding;
 - disagreement;
@@ -958,7 +1015,9 @@ Candidate outcomes include:
 - creative inspiration;
 - tension increase.
 
-The simulation owns the permitted magnitude and final change to relationships, morale, creative energy or other state.
+The simulation owns the permitted magnitude and final change to relationships, fatigue, stress, morale, creative energy or other state.
+
+A deterministic/weighted fallback must remain possible when the runtime AI provider is unavailable, too slow, too expensive or returns unusable output.
 
 ### Preventive management
 
@@ -1138,6 +1197,48 @@ Useful conceptual axes include:
 - **Creative Energy** — exhausted to inspired;
 - **Wildness** — conservative to experimental;
 - **Discipline** — chaotic to reliable.
+
+Operational state can also include more transient or pressure-oriented values such as:
+
+- **Fatigue** — short-term physical/mental tiredness accumulated through sustained activity and insufficient recovery;
+- **Stress / Burnout pressure** — longer-term strain created by repeated overload, conflict, deadlines, insecurity or other persistent pressure.
+
+Do not automatically expose every internal value as a precise player-facing meter. The simulation may retain continuous values while presentation uses behaviour, qualitative labels, bars or other readable signals appropriate to the context.
+
+### Fuzzy state interpretation
+
+Character decisions should not depend on brittle thresholds such as `Fatigue > 70 => TakeBreak`.
+
+Use fuzzy-style interpretation so overlapping states can coexist. A professional may be somewhat tired, highly motivated and moderately stressed at the same time.
+
+Personality and context modify how these states influence behaviour. For example:
+
+- a highly disciplined employee may continue working at a fatigue level where another person takes a break;
+- an anxious employee may react strongly to moderate workload uncertainty;
+- a social employee may respond to low morale by seeking company;
+- an ambitious employee may temporarily tolerate stress when a personally important production approaches release;
+- a severely exhausted character can still decide that continuing is unreasonable and stop on their own.
+
+These fuzzy interpretations are useful inputs to both deterministic behaviour and the bounded AI action-selection contract.
+
+### Fatigue, recovery and burnout
+
+Time spent working continuously should matter.
+
+Fatigue can accumulate from factors such as:
+
+- long uninterrupted work;
+- overtime;
+- repeated high-pressure production demand;
+- insufficient rest;
+- illness/injury;
+- demanding outside-life activity.
+
+Ordinary rest, breaks, meals, going home and suitable amenities can reduce short-term fatigue.
+
+Repeated excessive load can create a slower-moving stress/burnout condition that should not disappear because the employee drank coffee or took one short break. Recovery may require sustained lower pressure, meaningful rest, leave, changed responsibilities or resolution of underlying problems.
+
+Professionals can **take breaks or stop working autonomously**. The player manages workload, priorities, deadlines, facilities and conditions; the player does not normally issue minute-by-minute rest commands.
 
 Examples:
 
