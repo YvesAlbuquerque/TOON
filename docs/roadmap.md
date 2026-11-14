@@ -150,6 +150,20 @@ Requirements:
 - the underlying simulation can retain precise directional values without displaying raw numbers by default;
 - deterministic fixtures remain available for tests/provider-unavailable cases.
 
+The autonomous-interaction proof should also exercise the bounded AI action contract:
+
+`authoritative state -> fuzzy interpretation -> allowed action tags -> AI choice/dialogue/thought -> validation -> game-owned execution`
+
+Requirements:
+
+- current state values and fuzzy interpretations can be supplied as bounded context;
+- the game supplies an explicit allow-list of valid action identifiers/tags and valid targets;
+- AI output selects from that allow-list rather than inventing unrestricted gameplay verbs;
+- optional speech/thought can accompany the action without directly changing simulation state;
+- malformed, stale or disallowed tags are rejected;
+- a deterministic/weighted fallback can choose an action without the AI provider;
+- only game-owned execution mutates authoritative state.
+
 ### 2.3 Decision Event escalation proof
 
 Prove one parameterized Decision Event archetype driven by emergent simulation state.
@@ -219,7 +233,10 @@ Implement the smallest serializable professional model needed for the proof:
 - career/history hooks;
 - permanent-employment state;
 - compatible workstation/capacity assignment;
-- legible activity state: Working, Available/Idle or Blocked.
+- legible activity state: Working, Available/Idle or Blocked;
+- short-term fatigue;
+- longer-term stress/burnout pressure where needed for the proof;
+- multiple production responsibilities/priorities without manual percentage allocation.
 
 The workforce model for this proof assumes **permanent employees only**.
 
@@ -238,6 +255,15 @@ The first professional-state proof should also demonstrate that **Available/Idle
 - off-site idle activity is autonomously chosen rather than directly ordered by the player;
 - the UI should distinguish “away” from ordinary in-studio Idle without automatically exposing unknown secret motives;
 - Blocked behaviour should remain distinguishable from ordinary Idle behaviour.
+
+The same proof should exercise **workload and autonomous recovery**:
+
+- one professional can hold responsibilities in more than one production;
+- priorities rather than manual time percentages guide which responsibility receives attention;
+- sustained work increases short-term fatigue;
+- repeated excessive pressure can contribute to longer-term stress/burnout;
+- a professional can autonomously take a break or stop working;
+- recovery reduces fatigue without unrealistically erasing longer-term burnout pressure.
 
 ### 3.3 Minimal Relationship model
 
