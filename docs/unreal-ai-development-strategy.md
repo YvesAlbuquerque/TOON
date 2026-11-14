@@ -118,6 +118,39 @@ This includes two broad local runtime classes:
 
 Both remain behind T.O.O.N.-owned adapters and data contracts. They may use different local runtimes, model sizes, queues and hardware paths, but neither class should require a network inference service.
 
+### Capability-oriented model routing
+
+Do not couple gameplay systems directly to one concrete model family.
+
+Define game-owned inference capabilities first, then route each capability to a local model/runtime implementation.
+
+Candidate capability classes include:
+
+- character cognition/action selection;
+- short dialogue and internal thoughts;
+- long-form text generation;
+- image generation/editing;
+- speech/voice generation;
+- music/SFX generation where required;
+- animation/video generation where required;
+- embeddings/retrieval/ranking where useful.
+
+The preferred starting direction is **small specialized models where practical**, especially for frequent gameplay tasks. Models intended or tuned for embedded/game use are attractive when they provide sufficient quality with lower latency, memory use and installation size.
+
+However, the architecture must also support a **larger unified local model** when one model can cover several capabilities with better consistency or simpler orchestration at an acceptable hardware cost.
+
+Therefore model choice remains a routing/configuration concern rather than a gameplay-domain dependency:
+
+`game capability request -> local model router -> selected model/runtime -> validated result -> game-owned state/artifact`
+
+Possible runtime profiles may later include:
+
+- lightweight/specialist profile for lower hardware;
+- balanced mixed-model profile;
+- larger unified-model profile for higher-end hardware.
+
+Do not promise these profiles until representative models are actually profiled and packaged.
+
 For **routine character cognition and bounded social/action selection**, the model should be packaged with the game or otherwise installed locally and consume only bounded game-owned context/action schemas.
 
 Character inference should be asynchronous and primarily scheduled through two paths:
