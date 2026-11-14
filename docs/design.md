@@ -175,7 +175,7 @@ Accepted direction:
 - time advances on its own during normal studio play;
 - the player can manually accelerate simulation speed;
 - when nobody is actively working, the game automatically fast-forwards through low-value downtime until the next meaningful work period/event;
-- automatic fast-forward must stop before a relevant event, new work shift or player-required intervention, rather than skipping it;
+- automatic fast-forward must stop before a relevant event, the next meaningful work period or player-required intervention, rather than skipping it;
 - opening the main `Esc` menu pauses simulation;
 - entering construction/build mode pauses simulation;
 - pop-ups that require reading or a player choice, including Decision Events, pause simulation while presented;
@@ -198,7 +198,7 @@ Professionals can:
 
 T.O.O.N. should **not** become a full domestic-life simulation. Off-site life is represented primarily through state and events rather than a fully simulated city/home.
 
-Nights, weekends and other low-interaction periods may be compressed, accelerated or skipped where that improves campaign pacing. The exact time scale and work calendar remain tuning parameters.
+Nights, weekends and other low-interaction periods may be compressed, accelerated or skipped where that improves campaign pacing. The exact time scale and work calendar remain tuning parameters. T.O.O.N. does not need a separate multi-shift/shift-roster management system; normal working hours, overtime, lateness and absence are sufficient unless later validation proves otherwise.
 
 This creates a useful distinction:
 
@@ -652,6 +652,52 @@ A professional may include:
 
 Depth should come from readable behaviour and history, not hundreds of opaque attributes.
 
+### Employment, workstations and studio capacity
+
+T.O.O.N. should use **permanent employees only** as the player-managed workforce. Do not add a parallel temporary-worker, contractor or freelancer staffing layer to the core management model.
+
+Hiring capacity comes from the physical studio rather than an abstract global employee cap.
+
+A new employee can be hired only when the studio has an available **compatible workstation/capacity slot** for that role. Examples include:
+
+- an illustrator/drawing desk supporting one artist;
+- a specialist workstation supporting a compatible production role;
+- a mocap room providing several distinct compatible positions;
+- another room or production facility exposing one or more role-specific capacity slots.
+
+The principle is:
+
+`built productive capacity -> available compatible position -> employee can be hired`
+
+The game should not impose an unrelated rule such as “maximum 25 employees” when the studio itself can express the constraint.
+
+Workstations represent productive capacity, not permanent ownership by one employee. The player may reassign compatible employees as production priorities change.
+
+Removing a workstation **does not automatically fire an employee**. Employment and productive capacity are separate states. If the studio temporarily has more employees than compatible positions:
+
+- affected employees remain employed and continue receiving salary;
+- the game clearly identifies the capacity shortfall;
+- employees may still socialize, rest and perform appropriate non-station activities;
+- their normal role productivity is reduced or blocked;
+- prolonged inability to work can affect morale, relationships or generate management pressure;
+- the player can solve the problem by rebuilding/reassigning capacity or explicitly dismissing an employee.
+
+Because construction/build mode pauses simulation, the player may reorganize workstations freely while building. Capacity and assignments are reconciled when returning to live simulation.
+
+### Working, idle and blocked states
+
+A professional who is not currently producing should not simply freeze.
+
+At minimum, distinguish:
+
+- **Working** — actively performing meaningful productive work;
+- **Available / Idle** — able to work but currently has no relevant assigned task; may socialize, rest, organize, practice, observe colleagues or perform other low-priority studio activity;
+- **Blocked** — has work to do but cannot proceed because of a missing workstation, unavailable equipment, dependency, required collaborator, material or similar constraint.
+
+Idle activity can create small social, recovery or development effects, but should not generate major production progress for free.
+
+The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
+
 ## Character ontology and lifespan
 
 T.O.O.N. intentionally allows different kinds of beings to coexist in one workplace.
@@ -856,7 +902,7 @@ This creates two complementary narrative layers:
 
 ### Owner-initiated management conversations
 
-The studio owner may directly call a **permanent employee** into a management conversation.
+The studio owner may directly call an employee into a management conversation.
 
 These are **structured management actions**, not free-form roleplay and not direct control of the professional.
 
