@@ -120,13 +120,14 @@ Minimum behaviour:
 - simulation time advances continuously at normal speed;
 - at least one player-selected accelerated speed exists;
 - when nobody is actively working, low-value downtime automatically fast-forwards toward the next meaningful work period/event;
-- fast-forward returns to normal speed before a relevant event, the next work shift or a required player decision;
+- fast-forward returns to normal speed before a relevant event, the next meaningful work period or a required player decision;
 - opening the main `Esc` menu pauses simulation;
 - construction/build mode pauses simulation;
 - a Decision Event or other choice/read pop-up pauses simulation while presented;
 - a professional visibly arrives, works/socializes/rests and leaves;
 - off-site time is compressed/abstracted rather than fully simulated;
-- no real-world/background progression occurs while the game is closed.
+- no real-world/background progression occurs while the game is closed;
+- no separate multi-shift/shift-roster management system is required for the initial model; working hours, overtime, lateness and absence are sufficient.
 
 Validate pacing before selecting final day length, fast-forward threshold or speed multipliers.
 
@@ -170,7 +171,7 @@ Requirements:
 
 ### 2.4 Owner-initiated management conversation proof
 
-Prove one direct conversation initiated by the studio owner with a **permanent employee**.
+Prove one direct conversation initiated by the studio owner with an employee.
 
 The player selects a structured intent such as:
 
@@ -183,7 +184,6 @@ The player selects a structured intent such as:
 
 Requirements:
 
-- the target is a permanent employee;
 - no unrestricted free-text dialogue input;
 - AI may dramatize the selected intent;
 - outcomes remain bounded and game-owned;
@@ -216,7 +216,14 @@ Implement the smallest serializable professional model needed for the proof:
 - current assignment/state;
 - salary/credit expectations where gameplay requires them;
 - longevity/existence model;
-- career/history hooks.
+- career/history hooks;
+- permanent-employment state;
+- compatible workstation/capacity assignment;
+- legible activity state: Working, Available/Idle or Blocked.
+
+The workforce model for this proof assumes **permanent employees only**.
+
+Hiring must require compatible physical capacity rather than an unrelated global headcount cap. Removing capacity must not automatically dismiss an already-hired employee; instead, the affected professional remains employed and can become Blocked until the player restores/reassigns capacity or explicitly changes employment.
 
 ### 3.3 Minimal Relationship model
 
@@ -507,6 +514,8 @@ Candidate pressures:
 Grow from one-room office toward specialized rooms, departments and larger premises only after the first production proof works.
 
 Facilities should change what the studio can do, not exist as decorative unlocks.
+
+Productive facilities/workstations also define **workforce capacity**. A room may expose one or more role-compatible positions. Hiring requires an available compatible position, while removing a position creates a capacity shortfall rather than an automatic firing.
 
 The studio-growth proof should eventually distinguish:
 
