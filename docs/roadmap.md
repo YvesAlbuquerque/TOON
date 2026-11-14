@@ -170,7 +170,7 @@ Requirements:
 
 ### 2.4 Owner-initiated management conversation proof
 
-Prove one direct conversation initiated by the studio owner.
+Prove one direct conversation initiated by the studio owner with a **permanent employee**.
 
 The player selects a structured intent such as:
 
@@ -183,13 +183,14 @@ The player selects a structured intent such as:
 
 Requirements:
 
+- the target is a permanent employee;
 - no unrestricted free-text dialogue input;
 - AI may dramatize the selected intent;
 - outcomes remain bounded and game-owned;
 - the result can affect a relevant professional/relationship state;
 - the interaction reads as management rather than direct Sim-style puppeteering.
 
-## Phase 3 — Persistent studio and people foundation## Phase 3 — Persistent studio and people foundation
+## Phase 3 — Persistent studio and people foundation
 
 ### 3.1 Revalidate persistent IP foundation
 
