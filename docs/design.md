@@ -1032,6 +1032,16 @@ The distinction is therefore about workload and orchestration, not network locat
 - heavy generation may pause, throttle or schedule work according to available hardware without blocking the main simulation;
 - exact quality tiers, model packs and hardware requirements remain subject to profiling.
 
+Model selection should be **capability-oriented rather than hard-coded around one architecture**. T.O.O.N. may use:
+
+- several small, specialized local models tuned for narrow game tasks;
+- a small number of broader multimodal models;
+- or one larger local model capable of serving several capabilities.
+
+Prefer the smallest model architecture that meets quality, latency and consistency requirements on the target hardware. A larger unified model is acceptable when it materially simplifies orchestration or improves cross-task coherence without making the hardware/runtime budget unacceptable.
+
+The game owns capability contracts such as character cognition, dialogue, image generation, voice/audio generation or animation generation. Concrete models are replaceable implementations behind those contracts.
+
 The intended runtime pattern is **event-driven plus periodic background cognition**:
 
 - fuzzy/game-owned simulation handles trivial continuous behaviour without model calls;
