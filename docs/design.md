@@ -691,10 +691,34 @@ A professional who is not currently producing should not simply freeze.
 At minimum, distinguish:
 
 - **Working** — actively performing meaningful productive work;
-- **Available / Idle** — able to work but currently has no relevant assigned task; may socialize, rest, organize, practice, observe colleagues or perform other low-priority studio activity;
+- **Available / Idle** — able to work but currently has no relevant assigned task;
 - **Blocked** — has work to do but cannot proceed because of a missing workstation, unavailable equipment, dependency, required collaborator, material or similar constraint.
 
-Idle activity can create small social, recovery or development effects, but should not generate major production progress for free.
+Idle time is an **autonomous character-expression state**, not a command queue controlled by the player.
+
+When Available/Idle, a professional chooses what to do according to personality, current emotional state, ambitions, discipline, relationships, interests, outside-life hooks and the opportunities available in the studio.
+
+Possible idle behaviours include:
+
+- study, practise or experiment and slowly develop a skill;
+- socialize, gossip, flirt, mentor or seek company;
+- encourage or entertain colleagues;
+- rest or simply enjoy studio amenities;
+- become bored, insecure, lonely, frustrated or depressed by prolonged lack of meaningful work;
+- pursue hobbies or personal projects;
+- play jokes or pranks on colleagues;
+- engage with off-site responsibilities or secret activities, including vigilante behaviour where appropriate;
+- observe colleagues or productions and form new opinions, interests or ambitions.
+
+These are examples of behavioural families, not a fixed list that every character can choose from.
+
+The same idle duration should therefore have different consequences for different professionals. A disciplined, ambitious employee might study; a social character might strengthen relationships; an insecure employee may interpret prolonged idleness as evidence that the studio no longer needs them.
+
+The player **does not directly order idle behaviours** such as `Study`, `Socialize` or `Prank X` as the normal management model. The player influences them indirectly through hiring, assignments, environment, amenities, policies, relationships, management conversations and the amount/type of unassigned time.
+
+Idle activity may create bounded social, recovery, personal-development or outside-life consequences, but should not become a reliable source of major production progress for free.
+
+Blocked behaviour should be biased differently from ordinary idleness. A professional who has assigned work but cannot proceed is more likely to wait, seek another route, complain, help elsewhere where appropriate, or accumulate frustration around the cause of the block.
 
 The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
 
