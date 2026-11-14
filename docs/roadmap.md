@@ -225,6 +225,15 @@ The workforce model for this proof assumes **permanent employees only**.
 
 Hiring must require compatible physical capacity rather than an unrelated global headcount cap. Removing capacity must not automatically dismiss an already-hired employee; instead, the affected professional remains employed and can become Blocked until the player restores/reassigns capacity or explicitly changes employment.
 
+The first professional-state proof should also demonstrate that **Available/Idle is personality-driven rather than player-commanded**:
+
+- at least two professionals should choose different idle behaviours under comparable free time;
+- idle choice should consider personality/state/context rather than pure random selection;
+- the player influences idle behaviour through conditions rather than issuing direct `Study` / `Socialize` / similar orders;
+- at least one idle behaviour should create a small persistent consequence such as skill growth, relationship change, morale change or an outside-life hook;
+- prolonged idle time may be interpreted negatively by some personalities;
+- Blocked behaviour should remain distinguishable from ordinary Idle behaviour.
+
 ### 3.3 Minimal Relationship model
 
 Prove a directional relationship representation with only the dimensions needed for the first slice.
