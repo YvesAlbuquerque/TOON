@@ -153,6 +153,20 @@ Do not promise these profiles until representative models are actually profiled 
 
 For **routine character cognition and bounded social/action selection**, the model should be packaged with the game or otherwise installed locally and consume only bounded game-owned context/action schemas.
 
+Character memory must remain game-owned and retrieval-based. Do not rely on a persistent hidden chat/session inside the local model as the source of character continuity.
+
+The runtime cognition adapter should receive a bounded context assembled from:
+
+- current authoritative state;
+- personality/identity;
+- relevant relationship state;
+- recent short-term context;
+- retrieved long-term character memories/beliefs;
+- current goals/production context;
+- allowed actions and valid targets.
+
+Canonical event history and subjective character memory should remain distinct data layers. Retrieval may use deterministic filters, embeddings/ranking, or a hybrid approach, but any retrieval model remains an implementation detail behind T.O.O.N.-owned memory/query contracts.
+
 Character inference should be asynchronous and primarily scheduled through two paths:
 
 1. **event-triggered cognition** when simulation state creates a meaningful decision; and
