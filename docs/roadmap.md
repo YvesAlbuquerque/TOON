@@ -182,6 +182,9 @@ Runtime AI validation must also preserve the broader rule that **all player-faci
 - run it asynchronously or through a local job queue so it does not block the game thread;
 - record generation latency, memory/VRAM use, storage/model footprint and failure behaviour;
 - keep character-cognition inference and heavyweight production generation as separate workload classes even though both are local;
+- compare at least one small-specialist route against a broader/larger-model route for a representative capability before freezing the runtime architecture;
+- measure not only output quality but latency, RAM/VRAM, install size, throughput, cross-task consistency and orchestration complexity;
+- keep model identity/configuration behind game-owned capability routing so later model replacement does not require rewriting gameplay rules;
 - do not claim a minimum hardware specification until representative models have been profiled.
 
 ### 2.3 Decision Event escalation proof
