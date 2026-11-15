@@ -97,7 +97,7 @@ They must be treated as compatibility identifiers, not as the current game name.
 
 - [Design direction](docs/design.md)
 - [Development roadmap](docs/roadmap.md)
-- [Pre-production design coherence and readiness review — Proposed](docs/preproduction-design-review.md)
+- [Pre-production design coherence audit](docs/preproduction-design-review.md)
 - [Unreal + AI development strategy](docs/unreal-ai-development-strategy.md)
 - [Agent instructions](AGENTS.md)
 - [GitHub Issues](https://github.com/YvesAlbuquerque/TOON/issues)
