@@ -383,7 +383,9 @@ Human-in-the-loop proof requirements:
 - player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
 - the physical production representation changes according to era, medium and pipeline stage;
-- provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives.
+- provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
+- **player may cancel any active production at any point**, including during queued/in-flight local generation, review and awaiting release; cancellation must prevent late results from progressing or releasing it;
+- cancelling an active production preserves coherent studio/IP/crew state, applicable spent costs/contract consequences and an appropriate cancellation record; it does not undo an already released publication.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
 
