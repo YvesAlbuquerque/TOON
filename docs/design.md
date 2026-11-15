@@ -1619,6 +1619,44 @@ Employees can:
 
 The player's job is not to own people. It is to keep a functioning studio despite their agency.
 
+## Competitor studios
+
+Competition should use a **small set of persistent, legible rival studios** rather than fully simulating many equivalent companies.
+
+A competitor can retain abstract state such as:
+
+- identity and creative focus;
+- reputation;
+- financial strength;
+- notable professionals;
+- known IPs;
+- preferred production types;
+- relationships with T.O.O.N.;
+- important historical events.
+
+Competitors may arise from the wider world or emerge from the campaign, including former T.O.O.N. professionals who leave and later found their own studio.
+
+Competition should be expressed through concrete consequences such as:
+
+- competing for talent;
+- making offers to T.O.O.N. employees;
+- competing for contracts/opportunities;
+- releasing work into the same audience window;
+- gaining or losing reputation;
+- collaboration, rivalry, merger, decline or closure.
+
+Competitor productions are **not simulated through T.O.O.N.'s production pipeline** and do not require generated production artifacts.
+
+Only their relevant outcomes are simulated and persisted, for example:
+
+`competitor production result -> reception/commercial outcome -> reputation/market/talent/opportunity effects`
+
+The game may surface metadata or descriptive summaries of a rival release when needed for context, but should not generate full scripts, storyboards, comics, animations or other production artifacts for competitors.
+
+This keeps AI/runtime cost focused on the player's studio while preserving a believable competitive world.
+
+Competition should not be strictly zero-sum. Two studios can both succeed; rivalry primarily changes attention, opportunities, talent access, distribution pressure and reputation context.
+
 ### Personal finances and creative upside
 
 Professionals can have an abstracted personal financial state that affects behaviour without requiring household-accounting simulation.
