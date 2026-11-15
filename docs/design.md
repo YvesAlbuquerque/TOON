@@ -812,6 +812,14 @@ The goal is for hiring to contain informed uncertainty:
 
 `available evidence + recruitment channel + studio knowledge -> hiring judgment -> later discovery through employment`
 
+There is **no separate interview mechanic** in the core hiring flow. The player does not question candidates, run a dialogue scene, perform a recruitment minigame, or spend another interaction step to reveal hidden attributes.
+
+Once a candidate is available, the core decision is simply:
+
+`Hire / Do not hire`
+
+Any uncertainty that remains after reviewing the available evidence is resolved only through later employment, observable work, behaviour, relationships and history.
+
 Do not turn uncertainty into arbitrary hidden punishment. Important discoveries should emerge through observable work, behaviour, relationships and history.
 
 The modern professional-network presentation should use an original in-world identity rather than requiring the real LinkedIn brand.
