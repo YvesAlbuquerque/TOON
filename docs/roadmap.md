@@ -342,9 +342,11 @@ Legacy `InkTime` data is migration source evidence, not an automatic compatibili
 
 ## Phase 4 — First production-management proof
 
-### 4.1 Medium-neutral Production model
+### 4.1 Shared production model
 
-Avoid hard-coding the first proof exclusively around animation.
+The production system should support the four accepted production types: **comic strip, comic, 2D animation and 3D animation**.
+
+Avoid hard-coding the first proof exclusively around one of them.
 
 The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
 
@@ -382,6 +384,12 @@ Human-in-the-loop proof requirements:
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
+
+Pipeline-direction proof should preserve a shared conceptual backbone:
+
+`concept -> script/structure -> design/art direction -> storyboard/layout -> production -> finishing -> review -> release`
+
+Not every production type requires every stage. Medium-specific technical substeps should drive staffing, facilities, equipment, time, cost and production risk without automatically becoming player-facing minigames. Human-in-the-loop should focus primarily on authorship/pre-production stages.
 
 ### 4.2 One people/production conflict
 
@@ -521,15 +529,15 @@ Do not treat a single AI aesthetic score as objective artistic truth.
 
 ### 6.1 First media transition
 
-Do not attempt the whole history.
+Do not attempt all four production families at once.
 
-Prototype one transition, for example:
+Prototype one transition within the accepted scope, for example:
 
-`text/illustration -> strip`
+`comic strip -> comic`
 
 or:
 
-`comic -> early animation`
+`comic -> 2D animation`
 
 The transition should require at least one meaningful change in:
 

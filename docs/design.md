@@ -10,7 +10,7 @@
 
 **T.O.O.N. — The Office Of Nonsense** is a historical creative-studio management game about building one eccentric company across more than a century of changing media.
 
-The player begins with a tiny office around 1900, hires generations of creative professionals, develops persistent fictional properties, manages money and production, and adapts as the studio expands from text and illustration into strips, comics, 2D animation, television/digital production, and eventually 3D/realtime-era work.
+The player begins with a tiny office around 1900, hires generations of creative professionals, develops persistent fictional properties, manages money and production, and adapts as the studio expands across four supported production types: **comic strips, comics, 2D animation, and 3D animation**.
 
 The studio is the long-lived protagonist. Productions, employees, relationships, technologies, facilities, and IPs change around it.
 
@@ -1662,6 +1662,25 @@ Immortal/static cartoons may instead accumulate:
 
 A studio can therefore contain both generations of mortal workers and century-long cartoon veterans.
 
+## Supported production types
+
+The current game-design scope is intentionally limited to **four production types**:
+
+1. **Comic strip**;
+2. **Comic**;
+3. **2D animation**;
+4. **3D animation**.
+
+These are the production families T.O.O.N. should support across the campaign. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
+
+The four types should share a common conceptual backbone while allowing medium-specific stages:
+
+`concept -> script/structure -> design/art direction -> storyboard/layout -> production -> finishing -> review -> release`
+
+Not every medium requires every stage, and some stages can split into medium-specific technical substeps. Those technical substeps exist primarily to drive people, facilities, equipment, time, cost and production problems; they should not automatically become separate player-facing minigames.
+
+Human-in-the-loop should concentrate mainly on authorship/pre-production stages such as concept, script, character/art-direction reference and storyboard/layout, while technical execution remains primarily the responsibility of the studio simulation and local AI/procedural pipeline.
+
 ## Production as a physical workflow object
 
 A production should exist as a persistent **physical/workflow object** inside the studio rather than only as an abstract row in a management screen.
@@ -1781,13 +1800,10 @@ Target output scales are intentionally compact and remain subject to prototype v
 
 | Medium | Initial target scale |
 | --- | --- |
-| Text / humour piece | roughly one screen / a few hundred words at most |
-| Illustration / editorial piece | one finished image or compact set |
-| Strip | **3–4 panels** |
-| Short comic | **1–4 pages** |
-| Storyboard / animatic | roughly 20–90 seconds |
-| 2D animated short | roughly 30–120 seconds |
-| 3D / realtime short | roughly 30–120 seconds |
+| Comic strip | **3–4 panels** |
+| Comic | **1–4 pages** |
+| 2D animation | roughly 30–120 seconds |
+| 3D animation | roughly 30–120 seconds |
 
 These are **content-length targets**, not fixed in-game production-time rules.
 
@@ -1868,7 +1884,7 @@ One persistent property may evolve through multiple media.
 
 Example pattern:
 
-`text character -> strip -> comic -> animated short -> television series -> digital revival -> 3D adaptation`
+`comic strip -> comic -> 2D animation -> 3D animation`
 
 The adaptation history should remain visible. The studio archive should show how a property changed across decades and which professionals shaped each version.
 
