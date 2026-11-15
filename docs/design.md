@@ -440,9 +440,44 @@ A global event may be background noise to one employee and life-changing to anot
 
 Historical context should participate in reception without becoming a deterministic lookup table.
 
-A production's result may conceptually depend on a combination such as:
+A production's result should use a **hybrid evaluation model**. The simulation process matters, but the finished generated work also matters.
 
-`craft/quality + audience fit + historical context + market conditions + medium/technology + studio reputation + distribution + novelty/timing + uncertainty`
+Conceptually:
+
+`production process/state -> generated artifact`
+
+`generated artifact -> local artifact evaluation`
+
+`process evidence + artifact evidence + audience/market context + distribution + uncertainty -> reception/commercial result`
+
+The production process contributes evidence such as:
+
+- crew skill and suitability;
+- time and schedule pressure;
+- fatigue/conflict/production disruption;
+- technology and facilities;
+- creative direction;
+- budget and scope;
+- iteration/rework opportunities.
+
+The **artifact itself** must also be evaluated. Where technically feasible, local specialist or multimodal models should inspect the actual finished text, strip, comic, image, audio, animation or other produced work and return bounded, game-owned evaluation dimensions.
+
+Candidate artifact dimensions include:
+
+- coherence/readability;
+- technical defects;
+- visual/audio/narrative consistency;
+- fidelity to the production brief and IP anchors;
+- recognizability/continuity of persistent characters;
+- pacing/composition/craft signals appropriate to the medium;
+- distinctiveness/novelty where it can be assessed meaningfully;
+- likely appeal to the target audience/context.
+
+Do not collapse artistic value into one supposedly objective AI taste score. Artifact evaluation should provide structured evidence with uncertainty, not an unquestionable verdict.
+
+A production's result may therefore conceptually depend on a combination such as:
+
+`process quality + artifact evaluation + audience fit + historical context + market conditions + medium/technology + studio reputation + distribution + novelty/timing + uncertainty`
 
 Examples of context-sensitive reception:
 
@@ -454,6 +489,14 @@ Examples of context-sensitive reception:
 - a production created before a major event is received very differently if released afterward.
 
 Do not reduce this to hidden arbitrary bonuses. The player should receive legible signals about why the market reacted as it did.
+
+The artifact evaluation should also be legible enough to explain why the finished work mattered. For example, a production can be well managed but produce an inconsistent final short, or survive a chaotic production and still result in an unusually strong work.
+
+Management decisions should influence the generated artifact itself where possible, not merely add or subtract score afterward. Production state can affect available iterations, generation constraints, references, quality settings, continuity context or other bounded inputs to the local generation pipeline.
+
+The local evaluator must not directly set revenue or mutate authoritative state. It returns structured evidence; game-owned reception rules combine that evidence with simulation and market context.
+
+Because local model judgments can vary, important artifact evaluation should use stable prompts/schemas, bounded dimensions and validation. Where practical, calibration, multiple evaluators or repeated/ensemble scoring may be tested for higher-impact decisions. Exact evaluator architecture remains **Planned** until validated.
 
 ### History is backdrop, not predestination
 
