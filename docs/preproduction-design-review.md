@@ -40,6 +40,9 @@ The first gate is not permission to claim the third. Do not label T.O.O.N. `Vali
 | C-07 | Medium — start-world promise | Globe/location/language scope, historic cost data and global+local events could require an unbounded authored/researched world. | Begin with a **small sourced location set** and one bounded historical period. Keep UI language independent from studio/production languages. Defer unsupported local modifiers rather than inventing facts. |
 | C-08 | High — representative target | Physical production objects, characters, office art language and UI attention cues have no owner-reviewed representative visual proof. | Exit via one early-era office mock/prototype showing four distinct staff, active strip workflow, warning, decision surface and one persistent historical trace. |
 | C-09 | High — release/export | Uploaded/generated assets, credits, continuity, disk storage, rights and sharing require operational policies and tests. | Prove artifact ownership/provenance and private-by-default **local export** for one work. Clear licensing, safety, retention and platform requirements before broader release. |
+| C-10 | High — workflow authority | "Automatic production completion" could be misread as automatic **public release**, even though the player retains release authority. | Explicitly separate **automatic stage completion** from player-authorized **release**; a production can wait in a review-ready state without losing artifacts or advancing its canon. |
+| C-11 | Medium — candidate exhaustion | "At most three candidate versions" and regeneration at the limit leave no specified path if all three outputs are rejected. | **Proposed:** cap **active candidates** at three; permit a bounded, paid replacement of an unselected candidate, or explicitly allow stage rework/cancellation. Decide whether the cap is concurrent or lifetime before implementation. |
+| C-12 | High — simulation/inference timing | Continuous time, accelerated time and asynchronous local generation can produce stale briefs, overshot deadlines or a simulation that waits indefinitely on inference. | Define snapshot/versioned job inputs, valid waiting/timeout/cancel paths, stale-result rejection and an auto-fast-forward stop when a production becomes reviewable or requires authority. Record game-time cost separately from wall-clock model delay. |
 
 ## Proposed first playable proof: one office, one consequential strip
 
@@ -79,12 +82,15 @@ This **is a recommendation for owner review**, not canon or an implemented plan.
 | D-06: Minimum visual identity | One small office and 3–4 recurring cast silhouettes, with production stations/era-specific props and readable event signals | Owner-reviewed representative target with corrective feedback recorded |
 | D-07: Economy + reception | A bounded contract-vs-original choice later; first slice only needs one explicit cost/benefit tradeoff and a readable reception consequence | No inscrutable bankruptcy or arbitrary reception spike; deterministic replay and player explanation |
 | D-08: Tempo of 130-year campaign | Keep the ~40h target provisional and compress uninteresting time | Timed multi-era prototype measuring decade progression, production count, decision density and work consumption |
+| D-09: Candidate-cap meaning | Three **concurrent** alternatives; replacing an unselected candidate incurs bounded rework cost | Test rejection of all three, replacement, cancel, provenance and cost; never allow unbounded free retries |
+| D-10: Automatic completion vs release | Stages may run automatically; final release always requires explicit player authority | Auto-run reaches review-ready, waits safely, and remains persistent after save/reopen |
+| D-11: Clock vs asynchronous model work | Treat local inference as a versioned pending job; clock and work cost are game-owned, not wall-clock model latency | Accelerate/pause/save/load/timeout/cancel and stale-return tests; no soft lock or unexpected skipped choice |
 
 ## Exit checklist and evidence requirements
 
 **Before starting the bounded vertical-slice implementation:**
 
-- [ ] Owner resolves D-01, D-02 and D-06; confirms representative creative direction and does not mistake doc acceptance for visual validation.
+- [ ] Owner resolves D-01, D-02, D-06, D-09 and D-10; confirms representative creative direction and does not mistake doc acceptance for visual validation.
 - [ ] The initial production state machine, two real decision options and their player-visible consequences are specified.
 - [ ] Fixed-fixture artifact and evaluator-absent paths are defined so game logic is testable without waiting for an external model.
 - [ ] The first proof's out-of-scope list is enforced (no full globe/world simulation, four complete media authoring pipelines, feature-length output, large NPC population, automatic social posting).
@@ -101,6 +107,6 @@ This **is a recommendation for owner review**, not canon or an implemented plan.
 
 ## Explicit unresolved risks
 
-Hardware profiles, local generation quality/latency, 2D/3D sequence coherence, model licensing, content rights, uploaded-input handling, historical research cost, export privacy, economy balance, simulation pacing, UI usability and market-name clearance are **Unknown / Planned**, not solved by this review.
+Hardware profiles, local generation quality/latency, 2D/3D sequence coherence, model licensing, content rights, uploaded-input handling, historical research cost, export privacy, economy balance, simulation pacing, candidate-version exhaustion, asynchronous-work timing, UI usability and market-name clearance are **Unknown / Planned**, not solved by this review.
 
-**Recommendation:** use this as an evidence-driven gate and merge only the factual terminology fixes without silently treating D-01–D-08 as accepted design. Owner review of those choices should precede implementation scope expansion.
+**Recommendation:** use this as an evidence-driven gate and merge only the factual terminology fixes without silently treating D-01–D-11 as accepted design. Owner review of those choices should precede implementation scope expansion.
