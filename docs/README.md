@@ -29,8 +29,8 @@ The **single owning design document** is [`docs/design.md`](design.md). Use thes
 
 | Area | Start with | Status boundary |
 | --- | --- | --- |
-| Unreal bootstrap / first playable loop | [Roadmap — Phase 0.4](roadmap.md#04-unreal-bootstrap-planned), [integrated proof #16](https://github.com/YvesAlbuquerque/TOON/issues/16) | **Planned** until an Unreal project is opened, built and exercised |
-| Professional and relationship domain | [Roadmap — Phase 3](roadmap.md#phase-3-persistent-studio-and-people-foundation), [#6](https://github.com/YvesAlbuquerque/TOON/issues/6) | Documented / Planned; not validated Unreal behaviour |
+| Unreal bootstrap / first playable loop | [Roadmap — Phase 0.4](roadmap.md#04-unreal-bootstrap--planned), [integrated proof #16](https://github.com/YvesAlbuquerque/TOON/issues/16) | **Planned** until an Unreal project is opened, built and exercised |
+| Professional and relationship domain | [Roadmap — Phase 3](roadmap.md#phase-3--persistent-studio-and-people-foundation), [#6](https://github.com/YvesAlbuquerque/TOON/issues/6) | Documented / Planned; not validated Unreal behaviour |
 | IP, production and outputs | [#5](https://github.com/YvesAlbuquerque/TOON/issues/5), [#8](https://github.com/YvesAlbuquerque/TOON/issues/8), [#12](https://github.com/YvesAlbuquerque/TOON/issues/12) | Preserve medium-neutral core and stage-specific output |
 | AI and reception | [Unreal + AI strategy](unreal-ai-development-strategy.md), [#10](https://github.com/YvesAlbuquerque/TOON/issues/10), [#13](https://github.com/YvesAlbuquerque/TOON/issues/13) | Runtime generation/evaluation requires real on-device measurement |
 | Historical Unity scaffold | [Static baseline audit](baseline-static-audit.md), [Unity validation](baseline-unity-validation.md), [Flux migration audit](flux-migration-audit.md), [Flux upgrade validation](flux-upgrade-validation.md) | **Historical evidence**, not present Unreal gameplay |
