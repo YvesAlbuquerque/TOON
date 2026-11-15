@@ -1805,6 +1805,14 @@ The production object owns or references:
 
 This creates a visible relationship between **place + people + production state**.
 
+### Cancellation of an active production
+
+**Accepted owner rule (2026-11-15): the player may cancel any active production at any time**, from initial briefing through any creative or technical stage, queued/in-progress generation, review, or the period awaiting final release approval. Cancellation is a normal player management action, **not** a special action unlocked only after rejecting three candidates, exhausting a budget, receiving permission from staff, or recovering a model/provider.
+
+A cancel request must prevent the production from advancing or being released. Any in-flight/asynchronous work must be cancelled where practical or its late result ignored; it cannot resurrect the cancelled production or mutate its approved history. The game must preserve coherent studio/IP/crew state and any cancellation history or consequences required by the save/archive system. Cancelling does not automatically reverse already incurred production time or expense, nor does it erase applicable previously agreed external-contract terms; exact financial, employment, reception and contract consequences remain subject to the established simulation/contract rules and their later tuning.
+
+**Release is a separate irreversible historical boundary:** an already published work is part of the archive and is not retroactively made unpublished by the *cancel active production* command. A post-release withdrawal/recall would be a different feature and is not established here.
+
 ### Optional human-in-the-loop creation
 
 Creative intervention by the player is optional. The game must remain capable of completing productions automatically.
