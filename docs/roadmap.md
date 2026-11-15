@@ -629,6 +629,8 @@ Requirements:
 - at least one important professional attribute should remain uncertain until after hiring;
 - the UI should express uncertainty/confidence qualitatively rather than showing false exact values;
 - later discovery of a hidden/uncertain trait should be causally observable through work or behaviour rather than feeling like an arbitrary penalty;
+- no interview screen, candidate dialogue, recruitment minigame or extra pre-hire probing step is required;
+- after reviewing available evidence, the player decision is simply Hire / Do not hire;
 - historical unlock timing should be treated as game progression and researched context, not as a claim that the underlying real-world medium did not previously exist.
 
 ### 7.4 Workplace environment and preferences
