@@ -651,7 +651,7 @@ The first proof should test a small set such as:
 
 Validate whether environmental choices produce readable effects on morale, recovery, creativity, concentration, or relationships without forcing excessive furniture micromanagement.
 
-### 7.5 Employee bargaining and agency
+### 7.5 Employee bargaining, dismissal and agency
 
 Introduce:
 
@@ -661,9 +661,27 @@ Introduce:
 - role requests;
 - refusals;
 - resignations;
+- player-initiated dismissal;
 - return/re-hire opportunities.
 
 The studio should have to retain talent rather than simply own it.
+
+Dismissal proof requirements:
+
+- dismissal is a simple player action with confirmation rather than a negotiation/minigame;
+- once confirmed, the professional leaves the active workforce immediately;
+- notice/severance/legal obligations, where modeled, are abstracted as era/location-appropriate economic or rule consequences rather than a playable notice period;
+- exact legal/historical obligations are not invented without sourced data;
+- dismissal can affect colleagues, relationships, memories, production continuity and future opportunities;
+- the former employee remains part of persistent studio history.
+
+Voluntary-departure proof requirements:
+
+- at least one professional can decide to resign from simulation state rather than only through scripted story;
+- causes are legible enough for the player to understand why the departure pressure exists;
+- an impending resignation may become a Decision Event when there is a meaningful management choice;
+- departure can also proceed directly when intervention would add no meaningful decision;
+- re-hire or later re-encounter remains possible where appropriate.
 
 ## Phase 8 — Presentation and historical continuity
 
