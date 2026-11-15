@@ -650,7 +650,13 @@ Requirements:
 - historical media/business changes may alter presentation and parameters without requiring a wholly separate economy each era;
 - running out of cash should first create recoverable pressure/consequences rather than an immediate unexplained game over;
 - any claimed credit, bankruptcy, employment or legal rule must be sourced for the relevant era/location before becoming canonical;
-- catalogue/IP value should persist across time and later connect to the release/reception/distribution model.
+- catalogue/IP value should persist across time and later connect to the release/reception/distribution model;
+- support the three production origins: player initiative, external contract and single-originator internal proposal;
+- an accepted internal proposal gives its one originator persistent credit and a fixed **5%** of studio revenue from that production;
+- internal-proposal participation continues after the employee leaves but does not automatically propagate to future productions in the same IP;
+- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation, bonuses and penalties;
+- contract outcomes are determined by game-owned rules rather than free-form AI judgment;
+- model an abstract personal-finance state sufficient for revenue participation, financial pressure, wealth and resulting employee-agency consequences.
 
 
 ### 7.2 Departments, facilities and physical growth
