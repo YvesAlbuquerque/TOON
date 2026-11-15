@@ -883,7 +883,11 @@ Immortality must not imply immunity from all consequences. An immortal character
 
 ## Management model and autonomous social simulation
 
-The player is the **studio owner/manager**, not a puppeteer controlling individual workers like playable Sims.
+The player represents the **management authority of the studio**, not a diegetic character and not a puppeteer controlling individual workers like playable Sims.
+
+There is no player avatar, player-character aging, founder succession, heir system, management-character replacement or death mechanic required to explain the 1900–2030 campaign. The player's management authority persists across the full campaign without needing an in-world biological explanation.
+
+Professionals may still refer to management, ownership or "the boss" where useful for dialogue and event framing, but those references do not imply a separately simulated player character.
 
 The management layer should primarily let the player set context and constraints such as:
 
@@ -1124,7 +1128,7 @@ There is no abstract `Prevent Decision Event` button. Prevention emerges because
 
 ### Decision Events
 
-Routine interactions remain autonomous until a situation requires the **authority of the studio owner**.
+Routine interactions remain autonomous until a situation requires **player-level studio management authority**.
 
 A Decision Event is a game-authored or game-authored-template situation that:
 
@@ -1173,7 +1177,7 @@ This creates two complementary narrative layers:
 
 ### Owner-initiated management conversations
 
-The studio owner may directly call an employee into a management conversation.
+The player may directly initiate a management conversation with an employee.
 
 These are **structured management actions**, not free-form roleplay and not direct control of the professional.
 
