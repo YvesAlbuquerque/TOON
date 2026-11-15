@@ -1,336 +1,2165 @@
 # T.O.O.N. — The Office Of Nonsense — Design Direction
 
 **Decision date:** 2026-11-09  
+**Expanded:** 2026-11-13  
 **Status:** Accepted direction; Documented  
 **Former project names:** InkTime / Ink Through Time  
 **Implementation status:** Do not infer implementation from this document. See code, tests, Issues, branch state, builds, and playable evidence.
 
 ## Product statement
 
-**T.O.O.N. — The Office Of Nonsense** is a game about running a characterful cartoon-animation studio.
+**T.O.O.N. — The Office Of Nonsense** is a historical creative-studio management game about building one eccentric company across more than a century of changing media.
 
-The player develops original animated IPs, works with a recurring cast of studio professionals, makes creative and production decisions, and turns ideas into shorts, episodes, and evolving animated worlds.
+The player begins with a tiny office around 1900, hires generations of creative professionals, develops persistent fictional properties, manages money and production, and adapts as the studio expands across four supported production types: **comic strips, comics, 2D animation, and 3D animation**.
 
-The game is not an animation-authoring application and is not defined by AI generation. It is a studio-management and creative-production game in which authorship, people, production pressure, persistent creative properties, and consequences reinforce one another.
+The studio is the long-lived protagonist. Productions, employees, relationships, technologies, facilities, and IPs change around it.
+
+T.O.O.N. is not a professional animation-authoring application and is not defined by AI generation. It is a management simulation about keeping creative nonsense alive long enough to ship it.
 
 ## Naming decision
 
-The owner selected **T.O.O.N. — The Office Of Nonsense** as the new game name on 2026-11-09.
+The owner selected **T.O.O.N. — The Office Of Nonsense** as the current game name.
 
 The acronym and expansion are intentional:
 
-- **T.O.O.N.** immediately evokes cartoon animation;
-- **The Office** reinforces an organization/company with departments and professionals;
-- **Of Nonsense** gives the institution a comic contradiction and authorial tone.
+- **T.O.O.N.** evokes cartoon media;
+- **The Office** represents organization, departments, deadlines, budgets, contracts, and responsibility;
+- **Of Nonsense** represents creative risk, exaggeration, humour, invention, and the unreliable personalities that make the work.
 
-The name is **Accepted direction, not commercially cleared**. Preliminary research identified another released Steam game using the exact title `TOON`. That risk is recorded rather than averaged away or silently ignored.
+The central creative tension is:
 
-## Creative pivot
+> **Office gives nonsense structure. Nonsense keeps the office worth running.**
 
-The project retains the studio/company-management foundation but changes its dominant creative medium and identity.
-
-### Preserve
-
-- persistent creative IP identity;
-- stable identifiers and versionable save data;
-- recurring characters and relationships;
-- continuity/canon where it supports long-term creative work;
-- studio professionals and production responsibilities;
-- production history and progression;
-- Manual / AI-assisted / Hybrid authorship behind game-owned contracts;
-- provider independence;
-- player authority over final creative commitments;
-- Loomlight Flux as reusable framework rather than project identity.
-
-### Supersede or reinterpret
-
-The following are no longer the target design merely because historical code/docs contain them:
-
-- comic publication as the dominant medium;
-- `Publication -> Script -> Pages -> Panels` as the permanent production hierarchy;
-- Strip/Comic as the defining content formats;
-- PDF export as a defining product promise;
-- the fixed-three-panel jam scaffold;
-- the historical 1980–2030 framing as the core fantasy;
-- old InkTime / Ink Through Time public identity.
-
-Historical code may be reused only where it supports the accepted T.O.O.N. direction.
+The name remains **Accepted direction, not commercially cleared**. Existing collision risk must remain explicit until proper clearance.
 
 ## Player dream
 
-> Run an eccentric cartoon-animation studio, develop original animated properties, direct a memorable crew of artists, and turn ideas into shorts, episodes, and evolving animated worlds.
+> Start with a room, a few strange people and a handful of ideas. Build T.O.O.N. across generations of media, survive the people and technologies that transform it, and leave behind a studio history that belongs to your campaign.
 
 The player should want to say:
 
 - “this is **my studio**”;
 - “these are **my people**”;
-- “we made **that show/short**”;
-- “this property has a history because of the choices we made.”
+- “we made **that**”;
+- “that character has existed here for eighty years”;
+- “this employee changed the company”;
+- “this disaster became part of our history.”
 
 ## Principal pillar
 
-### Feeling — creative attachment
+### Doing — managing creative chaos
 
-The main emotional target is attachment to the studio, its recurring professionals, and the properties they create.
+The primary play is choosing how to allocate people, money, time, creative freedom, technology, and organizational attention under uncertainty.
 
-**Seeing** is an important secondary pillar because the project should use a highly legible, authored cartoon visual language.
+### Emotional payoff — attachment and legacy
+
+The player should become attached to:
+
+- the studio as an institution;
+- recurring professionals;
+- their relationships and careers;
+- persistent IPs and characters;
+- memorable productions;
+- the visible history accumulated across decades.
+
+## Creative and systemic references
+
+T.O.O.N. draws from several references, but they are **directional influences rather than feature-parity targets**. The project should borrow useful principles, simplify aggressively where production reality requires it, and preserve its own identity.
+
+### The Movies
+
+**The Movies** is the strongest overall reference for the fantasy of running a creative entertainment studio whose people, facilities, productions and history remain visible in the world.
+
+It is also an intentionally **utopian reference** for T.O.O.N.: reproducing its breadth with a much smaller team and development budget would be an unrealistic scope target.
+
+Use it primarily to inform:
+
+- the studio as a physical, evolving place;
+- attachment to recurring staff;
+- visible production activity;
+- the relationship between facilities, people and output;
+- the pleasure of seeing the studio's history accumulate;
+- completed productions as something the player can actually watch or revisit.
+
+Do not use it as a requirement to match every simulation layer, production system or content volume.
+
+### TOON tabletop RPG
+
+The **TOON** role-playing game is a thematic and systemic reference because its cartoon logic, terminology, abilities and treatment of absurd characters overlap with the space T.O.O.N. wants to explore.
+
+Useful inspiration includes:
+
+- cartoon-world logic taken seriously by the rules;
+- unusual abilities and character traits;
+- absurd consequences that remain mechanically meaningful;
+- a vocabulary that can help identify useful design concepts.
+
+This is inspiration, not a licence to copy distinctive protected text, rules expression, characters or presentation. T.O.O.N. should adapt useful ideas into its own terminology and systems where appropriate.
+
+### Dispatch
+
+**Dispatch** is a reference for character relationships and for presenting a cast whose personalities, conflicts and interpersonal history matter to management decisions.
+
+It is also useful as a reference for a **very lightweight representation of a city and activities outside the primary workplace**. T.O.O.N. can learn from that abstraction while developing a richer model where outside-life events, geography and employee autonomy justify it.
+
+### Management games
+
+Management games broadly are reference material for:
+
+- readable cause and effect;
+- resource and staffing tradeoffs;
+- growth through capacity rather than arbitrary progression;
+- legible worker state;
+- long-term planning;
+- allowing simulation stories to emerge from management decisions.
+
+T.O.O.N. should take patterns selectively rather than inheriting genre conventions automatically.
+
+### Evil Genius
+
+**Evil Genius** is a recurring reference for this style of game, particularly for:
+
+- a physical base whose layout is part of management;
+- workers visibly inhabiting and using the space;
+- facilities creating operational capacity;
+- readable autonomous behaviour;
+- systemic comedy emerging from serious simulation rules;
+- the pleasure of watching an organization function, malfunction and develop character.
+
+The relevant lesson is the coupling of **space + people + systems + personality**, not copying its specific base-building structure or theme.
+
+### Reference discipline
+
+When a reference conflicts with T.O.O.N.'s production constraints or core identity, prefer the smallest system that preserves the intended player experience.
+
+The question should be:
+
+> **What useful experience are we borrowing?**
+
+rather than:
+
+> **How do we reproduce the referenced game?**
 
 ## Soul rule
 
-> **The work and the people remember what the studio has made.**
+> **Every production and every person can change the office that made them.**
 
-Released productions should leave visible traces in the studio, IP history, relationships, reputation, opportunities, or later creative constraints. Staff and properties should not reset to anonymous state after each project.
+Consequences should persist in some combination of:
+
+- studio finances and facilities;
+- professional happiness, careers, relationships, absences, departures, or legacy;
+- IP history, canon, audience recognition, and adaptation opportunities;
+- technology and workflow choices;
+- reputation and future opportunities;
+- the studio archive.
+
+## World opening, starting location and language
+
+A new campaign should begin by presenting the world before presenting the studio.
+
+The preferred opening direction is an interactive **globe/world view** around the campaign start date, from which the player chooses where T.O.O.N. begins.
+
+The initial choice may be:
+
+`World -> country/region -> city -> first studio`
+
+The exact geographic granularity remains a design/production decision. The first implementation does not need every city on Earth.
+
+### Starting location
+
+Starting location should be a meaningful campaign input rather than cosmetic flavour.
+
+It can influence, where supported by data and content:
+
+- initial spoken/studio language;
+- default language of produced works;
+- available local talent;
+- salary/rent and operating-cost pressures;
+- initial audience/market;
+- cultural opportunities and constraints;
+- access to technologies/media;
+- local professional networks;
+- later expansion opportunities.
+
+Real-world historical differences must not be invented casually. Any factual country/city/era modifiers require researched, reviewable data before becoming canonical gameplay rules.
+
+### Language layers
+
+Separate language into at least three concepts:
+
+1. **Interface language** — menus, settings, tutorials and accessibility text.
+2. **Studio/world language** — what professionals normally speak in the chosen location.
+3. **Production language** — the language in which a particular work is created/released.
+
+Starting location should set sensible defaults for studio/world and production language.
+
+It may also suggest the interface language at first launch, but **the player must be able to change UI language independently**.
+
+This allows examples such as:
+
+- UI in Portuguese, studio in Tokyo, characters primarily speaking Japanese;
+- UI in English, studio in Rio de Janeiro, productions primarily in Portuguese;
+- a multilingual studio later creating a production in a language different from its home market.
+
+### Dialogue and accessibility
+
+Character dialogue can be voiced/spoken in the studio/world language while subtitles remain in the selected interface/subtitle language.
+
+Where runtime voice generation is used, voice language/accent is part of the character/presentation layer and must remain separable from UI localization.
+
+Do not make understanding the game's management systems depend on the player personally speaking the studio language.
+
+### Productions and localization
+
+A production should record its original language.
+
+Later systems may support:
+
+- subtitles;
+- translation;
+- dubbing;
+- localized editions;
+- multilingual staff;
+- foreign distribution;
+- remakes/adaptations for other markets.
+
+These are expansion candidates, not first-slice requirements.
+
+### Geographic growth
+
+Starting location should not permanently trap the studio.
+
+Later campaign possibilities may include:
+
+- moving headquarters;
+- opening branches;
+- hiring internationally;
+- co-productions;
+- distributing work abroad;
+- becoming a multinational creative studio.
+
+These systems should be added only after the single-location studio loop is validated.
+
+## Campaign and time
+
+The target campaign spans approximately **1900–2030**. This is about 130 years of studio history, not 120; exact start/end dates and technology availability remain tunable design data rather than historical-simulation claims.
+
+### Simulation clock and working day
+
+T.O.O.N. should use a **continuous management-simulation clock** rather than advancing only when the player submits an action or ends a turn.
+
+Accepted direction:
+
+- time advances on its own during normal studio play;
+- the player can manually accelerate simulation speed;
+- when nobody is actively working, the game automatically fast-forwards through low-value downtime until the next meaningful work period/event;
+- automatic fast-forward must stop before a relevant event, the next meaningful work period or player-required intervention, rather than skipping it;
+- opening the main `Esc` menu pauses simulation;
+- entering construction/build mode pauses simulation;
+- pop-ups that require reading or a player choice, including Decision Events, pause simulation while presented;
+- leaving/closing the game never advances campaign time in the background.
+
+The goal is to preserve a living continuous studio without making the player wait through empty nights/weekends or lose time while making deliberate management/build decisions.
+
+The visible studio day should matter.
+
+Professionals can:
+
+- arrive for work;
+- perform assigned work;
+- move through the studio;
+- talk and socialize;
+- eat/rest/use amenities;
+- react to colleagues and the environment;
+- leave at the end of their working day;
+- arrive late, leave early or be absent when simulation state causes it.
+
+T.O.O.N. should **not** become a full domestic-life simulation. Off-site life is represented primarily through state and events rather than a fully simulated city/home.
+
+Nights, weekends and other low-interaction periods may be compressed, accelerated or skipped where that improves campaign pacing. The exact time scale and work calendar remain tuning parameters. T.O.O.N. does not need a separate multi-shift/shift-roster management system; normal working hours, overtime, lateness and absence are sufficient unless later validation proves otherwise.
+
+This creates a useful distinction:
+
+`visible workplace simulation -> compressed off-site life -> persistent consequences back at work`
+
+### Campaign-length target
+
+The target for a first complete campaign is approximately **40 hours to the 2030 retrospective/end-state**.
+
+This is a design target, not a guaranteed runtime claim. Validation must measure actual player pace once representative systems and generated productions exist.
+
+At 1900–2030, a 40-hour campaign implies an average of roughly **3.25 in-game years per real-time hour**, but pacing should not be uniform. Early text/illustration/strip eras may move through time faster, while later productions can consume more real-time attention as teams, media and outputs become more complex.
+
+The 40-hour budget includes more than management UI. It includes the player's time spent:
+
+- running the studio;
+- hiring, negotiating with and responding to professionals;
+- making production and technology decisions;
+- shaping/reviewing creative work;
+- reading, viewing or watching completed T.O.O.N. productions;
+- inspecting archive/history consequences;
+- dealing with systemic events and relationships.
+
+The campaign should feel like an evolving history of creative production, not a fixed linear tech tree.
+
+### Media evolution
+
+T.O.O.N.'s four accepted production types are **comic strip, comic, 2D animation and 3D animation**. Their historical workflows can incorporate text/humour writing, illustration, storyboards, silent/sound/colour techniques, television-era distribution, digital tools and realtime technology without making those separate top-level production types.
+
+New technologies do not automatically invalidate older production types. New capabilities expand the studio's options.
+
+A 1970s T.O.O.N. may still publish comics. A 2020s T.O.O.N. may deliberately retain hand-drawn 2D while another department produces 3D work.
+
+### Technology choice
+
+Technology should create strategic choices, not passive unlock bonuses.
+
+Early adoption may bring:
+
+- high cost;
+- training burden;
+- workflow instability;
+- competitive advantage;
+- new creative possibilities.
+
+Late adoption may bring:
+
+- lower risk;
+- lower cost;
+- lost opportunities;
+- staff frustration;
+- audience or market lag.
+
+## Historical context: global and local timelines
+
+T.O.O.N. should treat real history as an active **context layer** around the player's fictional studio.
+
+The campaign should maintain two coupled historical timelines:
+
+1. **Global timeline** — major international events, technology shifts, economic cycles, media/market changes, wars, crises, cultural movements, communication/distribution changes, and other broadly relevant context.
+2. **Local timeline** — country/region-specific events, market conditions, cultural movements, regulation, local technology/media adoption, labour conditions, economic shocks, and other context relevant to the chosen studio location.
+
+The studio's own fictional history forms a third layer:
+
+3. **Studio timeline** — hires, departures, relationships, productions, failures, successes, IP history, expansions, scandals, awards, technical transitions and other campaign-specific events.
+
+The player should be able to understand these layers together:
+
+`global history + local history + studio history -> creative context and market context`
+
+### Historical events as structured context
+
+Historical data should be represented as structured, sourced entries rather than free-form flavour text.
+
+A historical-context entry may include:
+
+- stable identifier;
+- date or date range;
+- geographic scope;
+- event/category tags;
+- factual summary;
+- affected market/media domains;
+- possible social/economic/technology pressures;
+- source/provenance;
+- confidence/review state;
+- whether the effect is factual, inferred, or game-design interpretation.
+
+Do not encode controversial interpretation as objective historical fact.
+
+Where an event's gameplay effect is a design inference, keep the distinction explicit.
+
+### Creative context
+
+When a production is conceived or developed, the current historical slice can be exposed to the creative process.
+
+Relevant inputs may include:
+
+- current year/era;
+- global events;
+- local events;
+- market conditions;
+- available media/technology;
+- cultural movements;
+- studio location/language;
+- existing studio/IP history;
+- professionals assigned to the production;
+- their relationships, beliefs, experiences and current states;
+- prior audience response.
+
+For runtime AI-assisted production, provide a **bounded, relevant context package**, not an unfiltered dump of the entire historical database.
+
+Historical context can influence:
+
+- themes;
+- tone;
+- subject matter;
+- humour;
+- character concerns;
+- visual language;
+- medium choice;
+- production constraints;
+- what employees propose or reject.
+
+The player should retain creative agency. Historical context informs possibilities; it does not force one "correct" work.
+
+### Effects on professionals
+
+Real events may affect professionals through their personal context.
+
+Possible consequences include:
+
+- morale/stress;
+- creative energy;
+- attendance;
+- finances;
+- safety;
+- political/social pressure;
+- family obligations;
+- migration;
+- military/civic obligations where historically appropriate;
+- access to materials/equipment;
+- changes in audience or professional opportunity.
+
+Effects should depend on the character and location rather than applying identical global penalties to everyone.
+
+A global event may be background noise to one employee and life-changing to another.
+
+### Market and audience reception
+
+Historical context should participate in reception without becoming a deterministic lookup table.
+
+A production's result should use a **hybrid evaluation model**. The simulation process matters, but the finished generated work also matters.
+
+Conceptually:
+
+`production process/state -> generated artifact`
+
+`generated artifact -> local artifact evaluation`
+
+`process evidence + artifact evidence + audience/market context + distribution + uncertainty -> reception/commercial result`
+
+The production process contributes evidence such as:
+
+- crew skill and suitability;
+- time and schedule pressure;
+- fatigue/conflict/production disruption;
+- technology and facilities;
+- creative direction;
+- budget and scope;
+- iteration/rework opportunities.
+
+The **artifact itself** must also be evaluated. Where technically feasible, local specialist or multimodal models should inspect the actual finished text, strip, comic, image, audio, animation or other produced work and return bounded, game-owned evaluation dimensions.
+
+Candidate artifact dimensions include:
+
+- coherence/readability;
+- technical defects;
+- visual/audio/narrative consistency;
+- fidelity to the production brief and IP anchors;
+- recognizability/continuity of persistent characters;
+- pacing/composition/craft signals appropriate to the medium;
+- distinctiveness/novelty where it can be assessed meaningfully;
+- likely appeal to the target audience/context.
+
+Do not collapse artistic value into one supposedly objective AI taste score. Artifact evaluation should provide structured evidence with uncertainty, not an unquestionable verdict.
+
+A production's result may therefore conceptually depend on a combination such as:
+
+`process quality + artifact evaluation + audience fit + historical context + market conditions + medium/technology + studio reputation + distribution + novelty/timing + uncertainty`
+
+Examples of context-sensitive reception:
+
+- a theme becomes unusually resonant because of current events;
+- a comedy arrives at the wrong cultural moment;
+- a new medium benefits from novelty but reaches a smaller audience;
+- economic hardship reduces spending while increasing demand for inexpensive entertainment;
+- a local cultural movement creates an audience for work previously considered niche;
+- a production created before a major event is received very differently if released afterward.
+
+Do not reduce this to hidden arbitrary bonuses. The player should receive legible signals about why the market reacted as it did.
+
+The artifact evaluation should also be legible enough to explain why the finished work mattered. For example, a production can be well managed but produce an inconsistent final short, or survive a chaotic production and still result in an unusually strong work.
+
+Management decisions should influence the generated artifact itself where possible, not merely add or subtract score afterward. Production state can affect available iterations, generation constraints, references, quality settings, continuity context or other bounded inputs to the local generation pipeline.
+
+The local evaluator must not directly set revenue or mutate authoritative state. It returns structured evidence; game-owned reception rules combine that evidence with simulation and market context.
+
+Because local model judgments can vary, important artifact evaluation should use stable prompts/schemas, bounded dimensions and validation. Where practical, calibration, multiple evaluators or repeated/ensemble scoring may be tested for higher-impact decisions. Exact evaluator architecture remains **Planned** until validated.
+
+### History is backdrop, not predestination
+
+The canonical historical timeline should remain stable unless the game explicitly adopts an alternate-history system in the future.
+
+T.O.O.N. should generally answer:
+
+> "What did your fictional studio do while real history was happening?"
+
+rather than:
+
+> "Can your cartoon studio rewrite world history?"
+
+The studio can become culturally important inside the fictional campaign without casually replacing real historical causality.
+
+### Historical tone and sensitivity
+
+Real history can include war, persecution, disaster, political repression, economic collapse, discrimination and other serious events.
+
+T.O.O.N. should not convert human suffering into a simplistic opportunity modifier such as `+20% comedy demand`.
+
+For sensitive events:
+
+- distinguish factual context from game-design interpretation;
+- model concrete pressures before abstract market bonuses;
+- consider asymmetric effects on professionals, audiences, materials, distribution and safety;
+- avoid jokes whose only premise is the suffering of real victims;
+- keep systemic comedy focused primarily on the fictional studio/cast rather than trivializing real tragedy;
+- provide content/tone controls where historical material materially benefits from them;
+- use reviewable sourced summaries rather than sensationalized AI-generated history.
+
+Historical context can still create meaningful creative tension, irony and market change, but the simulation should remain legible about what is factual and what is an authored model.
+
+### Historical research boundary
+
+Because the campaign uses real countries, dates, markets and events, historical content requires a sourced data pipeline.
+
+Do not let AI invent historical facts at runtime.
+
+AI may synthesize from approved historical context, but factual entries should come from curated/reviewed data with provenance.
+
+## Core systemic model
+
+T.O.O.N. is built around five coupled systems:
+
+### Studio
+
+- cash and recurring costs;
+- facilities;
+- departments;
+- equipment;
+- reputation;
+- archive;
+- opportunities;
+- long-term identity.
+
+### People
+
+- skills and roles;
+- career progression;
+- happiness/morale;
+- creative energy;
+- discipline;
+- wildness/experimentation;
+- relationships;
+- demands and bargaining power;
+- absences and outside-life consequences;
+- aging/longevity rules;
+- legacy.
+
+### Productions
+
+- medium;
+- scope;
+- schedule;
+- budget;
+- crew;
+- creative direction;
+- production pressures;
+- quality;
+- release result;
+- persistent consequences.
+
+### IPs
+
+- identity;
+- characters;
+- premise/tone;
+- canon where useful;
+- adaptation history;
+- audience recognition;
+- ownership/credit history;
+- media transformations over time.
+
+### Time
+
+- eras;
+- changing production methods;
+- new professional disciplines;
+- cultural/market pressures;
+- staff aging or non-aging;
+- retirements and generations;
+- long-term studio memory.
+
+These systems must interact. A production decision should be able to affect people, money, future IP options, and studio history.
 
 ## Core loop
 
 Long-term target:
 
-`Build studio -> develop IP -> form/assign crew -> shape story -> plan production -> storyboard/animate -> solve production problems -> release -> consequences -> studio/IP/cast evolves -> next production`
+`Choose opportunities -> develop/continue an IP -> assemble a crew -> manage people, money and technology -> solve creative/production conflicts -> release -> absorb consequences -> evolve studio/cast/IP -> advance into new opportunities and media`
 
-First proof:
+The game should produce stories through simulation rather than requiring scripted narrative for every campaign event.
 
-`Open studio -> one IP -> small recurring crew -> one short -> script/storyboard/production decisions -> release -> visible consequence/history -> save/reopen`
+## Studio economy
 
-## Domain model
+The economy should create clear management tradeoffs without turning T.O.O.N. into a detailed accounting simulator.
 
-### Studio
+The core player-facing financial model should emphasize:
 
-The persistent company-level entity.
+- **cash on hand**;
+- **recurring studio burn**;
+- **money/time committed to active productions**;
+- a readable estimate of **runway** at the current burn rate.
 
-Potential responsibilities include:
+Do not require the player to manage accounting minutiae such as individual consumables, invoice ledgers or tax-line bookkeeping unless a later proof demonstrates clear gameplay value.
 
-- studio identity;
-- reputation;
-- cash/resources where economy supports play;
-- facilities/departments;
-- recurring professionals;
-- active productions;
-- production archive;
-- opportunities and consequences.
+### Main revenue paths
 
-Historical economy fields may be reused only after they are tested against the new fantasy.
+Use three broad revenue families:
 
-### Professional
+1. **Contract work** — an outside client pays the studio to make something. This should generally provide more predictable income and lower financial risk, but less creative freedom and/or less long-term IP value.
+2. **Original productions** — the studio funds its own work. This creates greater financial risk but can produce valuable persistent IP, stronger upside and long-term studio identity.
+3. **Catalogue/IP revenue** — previously released work can continue generating value through mechanisms appropriate to the era, such as republication, syndication, distribution, licensing, adaptation or later equivalents.
 
-A recurring studio worker and character, not a disposable stat card.
+The systemic distinction should remain stable even as the historical presentation changes. A commissioned strip, television job or later digital contract can all belong to the same broad contract-work model without requiring a completely different economy for every decade.
+
+A central economic tension should be:
+
+`predictable contract work <-> risky original production <-> long-tail catalogue value`
+
+### How productions originate
+
+A production can begin from three sources that converge into the same production pipeline:
+
+1. **Player initiative** — the player starts an original production, choosing the production type and using an existing IP or creating a new one.
+2. **External contract** — an outside client offers a bounded job that the player can accept or reject.
+3. **Internal proposal** — one employee proposes a specific creative project based on their interests, experiences, relationships, IP context or current historical/cultural context.
+
+Internal proposals have **exactly one originator**. Do not model co-originated internal pitches in the base system.
+
+If an internal proposal is accepted and becomes a production:
+
+- the originator receives persistent creator/proposer credit;
+- the originator receives a fixed **5% of the revenue received by the studio from that production**;
+- the percentage is a tunable design value, not a historical/legal claim;
+- the participation continues even if that employee later leaves the studio;
+- the participation applies to that specific production and its direct catalogue revenue, not automatically to every future production using the same IP;
+- studio ownership of the IP remains separate from the employee's credit and revenue participation.
+
+This rule is intentionally fixed rather than negotiated per employee so internal proposals remain easy to understand.
+
+### External contract terms
+
+External contracts should remain compact and legible. A contract can define:
+
+- client;
+- production type;
+- brief;
+- mandatory requirements;
+- deadline;
+- guaranteed payment;
+- ownership/rights;
+- studio revenue participation where applicable;
+- optional bonuses;
+- penalties for lateness, cancellation or failure to satisfy explicit mandatory requirements.
+
+The base interaction is an offer that can be **accepted or rejected**. Advanced clause-by-clause negotiation is not required for the core system.
+
+Client satisfaction should derive from game-owned checks such as:
+
+`brief compliance + mandatory requirements + deadline + artifact/process quality -> contract result`
+
+AI can dramatize client reaction, but does not decide authoritative payment or penalties.
+
+### Main cost families
+
+Keep costs concentrated in categories the player can understand and act on:
+
+- salaries and employment-related costs;
+- studio space and recurring operating costs;
+- production-specific expenses;
+- facilities/equipment;
+- technology adoption/upgrades;
+- selected discretionary spending such as recruitment, expansion, training or promotion where those systems exist.
+
+Production budgets should remain compact. Prefer:
+
+`crew time + specific production expenses + required facilities/technology`
+
+over a large accounting breakdown with many low-value line items.
+
+### Financial pressure and failure
+
+The player should be able to understand financial danger before it becomes terminal. The UI should expose a clear burn-rate/runway signal such as an estimate of how long the current cash position can sustain current recurring costs.
+
+Running out of cash should not normally produce an immediate unexplained game over. Financial distress can first create escalating consequences such as:
+
+- emergency financing or costly rescue options where historically appropriate;
+- delayed obligations or salary pressure;
+- morale and retention problems;
+- blocked purchases/services;
+- pressure to dismiss staff, cancel work or accept unattractive contracts.
+
+Only after a meaningful recovery window should insolvency become terminal or otherwise force a major campaign consequence.
+
+Exact credit, bankruptcy, employment and legal rules must be sourced for the relevant era/location before being represented as historical fact.
+
+## Studio space, facilities and workplace culture
+
+The studio is a physical system that grows with the company.
+
+The player should be able to expand the workplace over time by acquiring space, building rooms/departments, and buying objects that affect both production capability and the people who work there.
+
+Studio purchases fall into several broad categories.
+
+### Production infrastructure
+
+These directly enable or improve work:
+
+- writing desks and editorial equipment;
+- drawing/inking stations;
+- cameras and animation equipment;
+- sound/recording spaces;
+- projection/review rooms;
+- computers/workstations;
+- render infrastructure;
+- storage/archive capacity;
+- specialist department rooms.
+
+Production infrastructure should primarily affect what the studio can make, how efficiently it can make it, and what workflows become possible.
+
+### Shared workplace amenities
+
+These improve the lived experience of the office:
+
+- break rooms;
+- kitchen/coffee;
+- lounge/rest spaces;
+- better lighting;
+- climate control;
+- quiet rooms;
+- music/radio;
+- recreational objects;
+- comfortable furniture.
+
+These should influence morale, recovery, social interaction, concentration, or conflict rather than acting as universal flat bonuses.
+
+### Professional-facing props and personalisation
+
+Professionals may react differently to objects and spaces.
+
+Examples:
+
+- an artist may value reference shelves, plants, natural light, or a large drawing table;
+- a writer may prefer privacy, books, a typewriter, cigarettes in an era where appropriate, or a chaotic shared room;
+- an anxious prey character may dislike being seated beside a hunter;
+- an immortal veteran may insist on keeping an obsolete desk or tool for decades;
+- a technically minded employee may become happier when new equipment arrives;
+- a nostalgic character may prefer older tools even after better technology exists.
+
+A prop should ideally answer at least one of:
+
+- does this help someone work;
+- does this help someone recover;
+- does this change social behaviour;
+- does this express studio identity/history;
+- does this satisfy or annoy a specific professional.
+
+Avoid reducing every prop to generic `+X Creativity` or `+Y Happiness`.
+
+### Culture and identity
+
+Decoration can make the studio feel like **this campaign's T.O.O.N.** rather than a generic office.
+
+Potential sources include:
+
+- posters from old productions;
+- framed strips/comic covers;
+- awards;
+- employee portraits;
+- props from films;
+- old equipment retained after replacement;
+- memorials;
+- joke signs and bureaucratic notices;
+- department-specific decoration;
+- souvenirs from failed/successful productions.
+
+Historical objects can carry both emotional and mechanical value.
+
+For example, preserving the original 1900 writing desk in a 2030 headquarters may:
+
+- improve morale for nostalgic veterans;
+- reinforce studio identity;
+- irritate a modern producer who wants the space;
+- become part of the archive/museum;
+- trigger stories or memories tied to old productions.
+
+### Space and adjacency
+
+Room layout may influence the simulation where it creates meaningful decisions.
+
+Possible effects include:
+
+- shorter collaboration distance;
+- concentration/noise;
+- cross-department contact;
+- social friction;
+- exposure to predators/hunters;
+- access to equipment;
+- crowding;
+- privacy;
+- visibility/status of offices.
+
+Do not make the player micromanage furniture placement purely for optimization unless the placement creates readable, interesting tradeoffs.
+
+### Professional preferences
+
+Professionals may have lightweight environmental preferences such as:
+
+- likes quiet;
+- likes crowds;
+- wants natural light;
+- hates clutter;
+- loves clutter;
+- prefers old technology;
+- wants cutting-edge equipment;
+- needs privacy;
+- enjoys social spaces;
+- wants prestige/status;
+- strongly values a specific personal object.
+
+These preferences should combine with personality, role, relationships, era and current state.
+
+The same object may make one employee happier and another less productive.
+
+### Growth over time
+
+Studio expansion should be visible across the campaign.
+
+A possible progression:
+
+`one room -> shared office -> specialist rooms -> multi-department studio -> expanded lot/building -> modern production campus`
+
+Growth should follow needs created by people, media and production scale rather than existing only as a linear upgrade tree.
+
+## Studio professionals
+
+Studio professionals are recurring characters, not interchangeable worker resources.
 
 A professional may include:
 
 - stable identity;
-- species/visual identity;
-- discipline/role;
-- skills or strengths;
-- temperament;
+- visual/species/archetype identity;
+- role/discipline;
+- skills and strengths;
+- happiness/morale;
+- creative energy;
+- discipline;
+- wildness/experimentation;
+- ambitions;
+- salary/credit expectations;
+- work history;
 - relationships;
-- preferences and creative tendencies;
-- history with productions/IPs;
-- current assignment/state;
-- ambitions, frustrations, or development where useful.
+- life outside the studio;
+- longevity/aging model;
+- current assignment/state.
 
-The first slice should keep simulation bounded. Character depth should come from specific readable behaviour and history, not hundreds of attributes.
+Depth should come from readable behaviour and history, not hundreds of opaque attributes.
 
-### IP
+### Employment, workstations and studio capacity
 
-A persistent fictional property owned/developed by the studio.
+T.O.O.N. should use **permanent employees only** as the player-managed workforce. Do not add a parallel temporary-worker, contractor or freelancer staffing layer to the core management model.
 
-Useful fields include:
+Hiring capacity comes from the physical studio rather than an abstract global employee cap.
 
-- identifier;
-- title;
-- premise;
-- tone;
-- visual direction;
-- recurring fictional characters;
-- relevant relationships/canon;
-- series/projects;
-- released-production history.
+A new employee can be hired only when the studio has an available **compatible workstation/capacity slot** for that role. Examples include:
 
-The already merged minimum persistent IP work remains directionally compatible.
+- an illustrator/drawing desk supporting one artist;
+- a specialist workstation supporting a compatible production role;
+- a mocap room providing several distinct compatible positions;
+- another room or production facility exposing one or more role-specific capacity slots.
 
-### Production
+The principle is:
 
-A concrete animated work being made by the studio.
+`built productive capacity -> available compatible position -> employee can be hired`
 
-Initial forms should be deliberately small, for example:
+The game should not impose an unrelated rule such as “maximum 25 employees” when the studio itself can express the constraint.
 
-- short;
-- pilot/episode;
-- compact promotional or experimental piece if later useful.
+Workstations represent productive capacity, not permanent ownership by one employee. The player may reassign compatible employees as production priorities change.
 
-Do not build a giant film/TV production simulator before one short production loop works.
+Removing a workstation **does not automatically fire an employee**. Employment and productive capacity are separate states. If the studio temporarily has more employees than compatible positions:
 
-### Production hierarchy
+- affected employees remain employed and continue receiving salary;
+- the game clearly identifies the capacity shortfall;
+- employees may still socialize, rest and perform appropriate non-station activities;
+- their normal role productivity is reduced or blocked;
+- prolonged inability to work can affect morale, relationships or generate management pressure;
+- the player can solve the problem by rebuilding/reassigning capacity or explicitly dismissing an employee.
 
-Conceptual target:
+Because construction/build mode pauses simulation, the player may reorganize workstations freely while building. Capacity and assignments are reconciled when returning to live simulation.
 
-`IP -> Series/Project -> Production -> Script -> Storyboard -> Sequence -> Shot -> Animatic/Final Work`
+### Dismissal and voluntary departure
 
-Not every layer needs its own full editor or persistent entity in the first slice. The hierarchy exists to prevent comic page/panel assumptions from hardening into the new architecture.
+Ending employment should remain mechanically simple even when its consequences are meaningful.
 
-### Script and storyboard
+For a player-initiated dismissal, the core interaction is:
 
-Manual, AI-assisted, and Hybrid work should converge on the same game-owned structured production representation.
+`select employee -> Dismiss -> confirm`
 
-The storyboard is an animation-production bridge: it can connect narrative beats to shots, staging, characters, timing notes, and later animatic/final output.
+There is no mandatory negotiation minigame, notice-period simulation or playable handover phase. Once confirmed, the professional leaves the active workforce immediately.
 
-### Production history
+Any legally or historically appropriate notice, severance, contractual obligation or equivalent cost should be represented through **abstracted economic/rule consequences appropriate to the era and location**, rather than requiring the employee to remain physically simulated for a notice period. Exact legal/historical rules require sourced data before becoming canonical mechanics.
 
-Released work should become durable studio/IP history. The first implementation can be simple, but later productions must be able to refer to prior work without reconstructing history from prompts.
+Dismissal can still create persistent consequences such as:
 
-## Studio cast direction
+- salary/severance or other economic cost where applicable;
+- morale changes among colleagues;
+- relationship changes toward management or the dismissed professional;
+- subjective memories and grudges;
+- reputation effects where later systems support them;
+- disruption to productions/responsibilities;
+- later return, re-hire or rival-studio opportunities.
 
-The studio staff should feel like a cast of cartoon professionals.
+The severity should depend on context. Dismissing a respected veteran with strong relationships should not feel equivalent to dismissing a recently hired, socially isolated professional.
 
-Starting species territory includes:
+Professionals may also **resign autonomously**. Plausible causes include compensation, lack of recognition, conflict, burnout, blocked career goals, outside-life changes or an external opportunity.
 
-- dog;
-- cat;
-- duck;
-- rabbit;
-- additional animals where silhouette, personality, role, and world fit justify them.
+Some impending resignations may escalate into a Decision Event when player authority could plausibly change the outcome. Others may occur directly when the underlying situation is sufficiently established and no meaningful management decision remains.
 
-Species is not personality. Avoid “the dog is loyal”, “the cat is aloof”, and similar one-note mappings as the primary characterization.
+Departure does not erase the person from history. Former employees can remain in character memory, production credits, relationships, archive/history and future recruitment/re-encounter systems.
 
-Each important professional should communicate:
+### Recruitment channels across eras
 
-1. role/profession;
-2. strong readable silhouette;
-3. personality;
-4. evidence of prior life/work;
-5. relationship promise;
-6. one or two memorable animation-friendly hooks.
+Hiring should not come from one timeless global candidate list. **How the studio discovers candidates evolves across the campaign**, and early recruitment should feel much more constrained than modern recruitment.
+
+Accepted directional channels include:
+
+- **Walk-in applications** — especially early in the campaign, a potential employee may physically arrive at the studio to leave a résumé/application. This is a relatively rare event, so the player may have very few candidates to choose from.
+- **Employee referrals** — an existing professional may occasionally recommend someone from their network. Referrals are also relatively rare and can carry useful social context because the recommendation comes through a known employee.
+- **Newspaper job advertisements** — as the studio grows, the player can actively place a job advertisement. The advertisement increases the flow of applicants who then appear/contact the studio. This can become especially relevant during the animation-industry growth periods, but its availability should not imply that newspaper employment ads historically began only then.
+- **Modern digital professional network** — in later eras, the studio gains access to a computer-based recruitment interface analogous to a professional network such as LinkedIn. This allows active searching/browsing of a larger candidate pool rather than waiting for applicants to arrive physically.
+
+The progression should broadly move from:
+
+`scarce inbound opportunities -> referrals -> active mass recruitment -> searchable digital talent market`
+
+These channels change **discovery and access**, not the permanent-employment rule. A discovered candidate can still only be hired when the studio has compatible productive capacity.
+
+Candidate information should remain **evidence-based and incomplete**, not a perfect readout of hidden simulation values.
+
+Before hiring, the player may see information such as:
+
+- role/discipline and claimed experience;
+- work history;
+- portfolio or representative prior work where appropriate;
+- salary/credit expectations;
+- education/training where relevant;
+- who referred them, if anyone;
+- references or endorsements where the channel supports them;
+- broad qualitative impressions rather than exact hidden numbers.
+
+Different recruitment channels provide different evidence and should also have distinct **presentation hints**:
+
+- **Employee referral** — the recommending professional may offer a short subjective comment about the candidate. The comment may mix useful information with bias, friendship, humour or concern. For example, a referrer might effectively say that a friend has a serious personal vice but is an exceptional artist.
+- **Walk-in applicant** — the candidate can physically wait at the studio entrance. While waiting, comic-style thoughts can provide flavour or ambiguous foreshadowing, and clicking the candidate can trigger a short spoken line. These are not interviews and do not unlock additional probing.
+- **Newspaper applicant** — the application can remain comparatively document-driven, with résumé/portfolio evidence and limited personal context.
+- **Modern professional network** — the profile exposes a broader work history, skills, credits and connections, but testimonials/endorsements are intentionally **over-positive and exaggerated**. A mediocre candidate may still have praise equivalent to “the greatest artist alive; only a fool would pass.” This makes endorsements entertaining but lowers their evidentiary confidence.
+
+Thoughts, comments and testimonials are **signals, not omniscient truth**. They may be sincere, evasive, biased, self-promotional, mistaken or deliberately comic. If a hint relates to an actual hidden trait, the game controls what can be surfaced; the generative model must not invent a new canonical secret merely to make a funny line.
+
+Some attributes should remain uncertain until the person actually works in the studio. Examples include:
+
+- real reliability under pressure;
+- interpersonal compatibility;
+- hidden ambitions or insecurities;
+- true tolerance for overtime or chaos;
+- unusual habits and outside-life complications;
+- whether apparent skill translates into the studio's actual workflows;
+- private or secret traits the studio has no reason to know.
+
+Where useful, the UI can communicate **confidence** rather than false precision: `Unknown`, `Limited evidence`, `Promising`, `Well established`, or similar qualitative signals.
+
+A referral or strong portfolio can improve confidence in a claim without making that claim infallible. Characters and documents can themselves be biased, outdated, incomplete or self-promotional.
+
+The goal is for hiring to contain informed uncertainty:
+
+`available evidence + recruitment channel + studio knowledge -> hiring judgment -> later discovery through employment`
+
+There is **no separate interview mechanic** in the core hiring flow. The player does not question candidates, run a branching dialogue scene, perform a recruitment minigame, or spend another interaction step to reveal hidden attributes.
+
+A candidate may still speak a short ambient/click line, think visibly where the presentation supports it, or be described by a referrer. Those are flavourful hiring cues, not an interview system and not a way to exhaustively inspect the candidate.
+
+Once a candidate is available, the core decision is simply:
+
+`Hire / Do not hire`
+
+Any uncertainty that remains after reviewing the available evidence is resolved only through later employment, observable work, behaviour, relationships and history.
+
+Do not turn uncertainty into arbitrary hidden punishment. Important discoveries should emerge through observable work, behaviour, relationships and history.
+
+The modern professional-network presentation should use an original in-world identity rather than requiring the real LinkedIn brand.
+
+### Working, idle and blocked states
+
+A professional who is not currently producing should not simply freeze.
+
+At minimum, distinguish:
+
+- **Working** — actively performing meaningful productive work;
+- **Available / Idle** — able to work but currently has no relevant assigned task;
+- **Blocked** — has work to do but cannot proceed because of a missing workstation, unavailable equipment, dependency, required collaborator, material or similar constraint.
+
+Idle time is an **autonomous character-expression state**, not a command queue controlled by the player.
+
+When Available/Idle, a professional chooses what to do according to personality, current emotional state, ambitions, discipline, relationships, interests, outside-life hooks and the opportunities available in the studio.
+
+Possible idle behaviours include:
+
+- study, practise or experiment and slowly develop a skill;
+- socialize, gossip, flirt, mentor or seek company;
+- encourage or entertain colleagues;
+- rest or simply enjoy studio amenities;
+- become bored, insecure, lonely, frustrated or depressed by prolonged lack of meaningful work;
+- pursue hobbies or personal projects;
+- play jokes or pranks on colleagues;
+- engage with off-site responsibilities or secret activities, including vigilante behaviour where appropriate;
+- observe colleagues or productions and form new opinions, interests or ambitions.
+
+These are examples of behavioural families, not a fixed list that every character can choose from.
+
+The same idle duration should therefore have different consequences for different professionals. A disciplined, ambitious employee might study; a social character might strengthen relationships; an insecure employee may interpret prolonged idleness as evidence that the studio no longer needs them.
+
+There is **no universal idle-time threshold** after which a professional becomes unhappy or insecure. Idle tolerance and interpretation should depend on context such as:
+
+- personality and ambition;
+- confidence and perceived job security;
+- salary and expectations;
+- recent workload and burnout/recovery needs;
+- recent production involvement and recognition;
+- relationships and social belonging;
+- whether the employee is using the time in a personally meaningful way;
+- how long the pattern has persisted relative to that character's expectations.
+
+A period that feels like welcome recovery to one professional may feel like neglect or impending redundancy to another.
+
+The player **does not directly order idle behaviours** such as `Study`, `Socialize` or `Prank X` as the normal management model. The player influences them indirectly through hiring, assignments, environment, amenities, policies, relationships, management conversations and the amount/type of unassigned time.
+
+Idle activity may create bounded social, recovery, personal-development or outside-life consequences, but should not become a reliable source of major production progress for free.
+
+An Available/Idle professional may also **leave the studio during working hours on their own initiative** when their personality, interests or outside-life hooks make that plausible. This can represent ordinary personal errands, hobbies, relationships, vigilante activity, criminal activity, or other authored character-specific behaviour.
+
+Leaving the studio is a real simulation consequence, not cosmetic flavour:
+
+- the professional becomes temporarily unavailable for newly assigned work or spontaneous collaboration;
+- the player does not directly order the off-site activity as part of normal idle control;
+- there is no separate recall/call-back mechanic; the professional remains unavailable until they return naturally;
+- the character may later return with altered energy, morale, injury, relationship state, knowledge or another relevant consequence;
+- repeated or risky off-site behaviour can create future management pressure or Decision Events;
+- legibility matters: the player should be able to tell that the employee is away and, where appropriate, understand the known reason without automatically revealing secret information the studio has not learned.
+
+Blocked behaviour should be biased differently from ordinary idleness. A professional who has assigned work but cannot proceed is more likely to wait, seek another route, complain, help elsewhere where appropriate, or accumulate frustration around the cause of the block.
+
+The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
+
+## Character ontology and lifespan
+
+T.O.O.N. intentionally allows different kinds of beings to coexist in one workplace.
+
+Appearance/species and lifespan are separate concepts.
+
+A character may visually be a:
+
+- human;
+- anthropomorphic animal;
+- creature/monster;
+- living object;
+- other authored cartoon archetype.
+
+Separately, the character has an **existence/longevity model**.
+
+Candidate longevity models include:
+
+### Mortal
+
+Ages broadly like a human. Can grow older, retire, and die.
+
+### Long-lived
+
+Ages, but on a slower or non-human timescale.
+
+### Cartoon-static
+
+Can remain visually and biologically at roughly the same apparent age for decades or centuries unless a specific event changes them.
+
+A grumpy elderly cartoon hired in 1930 may still be the same grumpy elderly cartoon in 2030.
+
+### Conditional / rule-bound
+
+Longevity follows a character-specific rule rather than ordinary biology. Examples might include magical, mechanical, cursed, resurrecting, or other cartoon-logical conditions.
+
+The game should not require every employee to share one biological model.
+
+This creates meaningful long-term cast structures:
+
+- mortal employees create generations, succession, retirement, mentorship, and loss;
+- immortal/static cartoons create institutional memory, ancient grudges, recurring mentorship, and comic continuity;
+- mixed teams create relationships that can span radically different lifetimes.
+
+Immortality must not imply immunity from all consequences. An immortal character may still:
+
+- quit;
+- be fired;
+- be imprisoned;
+- disappear;
+- be injured;
+- become unavailable;
+- change profession;
+- fall out with the studio;
+- leave for a rival;
+- return decades later.
+
+## Management model and autonomous social simulation
+
+The player represents the **management authority of the studio**, not a diegetic character and not a puppeteer controlling individual workers like playable Sims.
+
+There is no player avatar, player-character aging, founder succession, heir system, management-character replacement or death mechanic required to explain the 1900–2030 campaign. The player's management authority persists across the full campaign without needing an in-world biological explanation.
+
+Professionals may still refer to management, ownership or "the boss" where useful for dialogue and event framing, but those references do not imply a separately simulated player character.
+
+The management layer should primarily let the player set context and constraints such as:
+
+- role/discipline;
+- production assignment and crew;
+- priorities;
+- schedule/budget pressure;
+- compensation, credit and promotion;
+- workspace/facility conditions;
+- policies;
+- direct management conversations;
+- responses to important situations.
+
+Professionals then execute and socialize with meaningful autonomy.
+
+### Multiple productions, priorities and workload
+
+A professional may contribute to **more than one production at the same time**, but this does not multiply their available time.
+
+The player should manage responsibilities and priorities rather than manually allocating percentages such as `35% Project A / 65% Project B`.
+
+The intended model is:
+
+`assigned responsibilities + production priorities + deadlines/context -> autonomous work selection -> finite time actually spent`
+
+When the same professional is important to several productions:
+
+- they switch between compatible responsibilities according to current priority and context;
+- simultaneous demand can delay one or more productions;
+- excessive context switching can reduce effective productivity;
+- long uninterrupted or repeated high-pressure work can accumulate fatigue and longer-term stress;
+- the professional may autonomously pause, rest or stop working when their state makes continuing unreasonable;
+- sustained overload may eventually create complaints, mistakes, absence, management pressure or Decision Events.
+
+This makes staffing pressure a consequence of finite people rather than an abstract allocation spreadsheet.
+
+### Autonomous social behaviour
+
+Professionals should initiate ordinary social interactions without explicit player commands.
+
+They may:
+
+- chat;
+- joke;
+- argue;
+- flirt where appropriate;
+- mentor;
+- complain;
+- reconcile;
+- gossip;
+- react to recent work/events;
+- build or damage relationships over time.
+
+The player influences the conditions under which relationships develop, but does not normally issue commands such as `Talk to X` or `Befriend Y`.
+
+### Conversation presentation
+
+Ordinary workplace conversation should primarily appear as **short comic-style speech bubbles**, not fully voiced dialogue.
+
+Sound can support reactions, emotion and readability without requiring every generated line to be voiced.
+
+The studio is allowed to have more social life than the player can observe. A player who is looking elsewhere may miss ordinary conversations. This is intentional: routine social simulation is ambient life, not mandatory information.
+
+Important state changes must remain legible through behaviour, relationship UI, warnings and later consequences even when the player did not read every line.
+
+### AI-generated conversation and autonomous action selection
+
+Runtime AI can generate dialogue and help choose bounded autonomous actions so behaviour reflects:
+
+- character identity and personality;
+- current relationships;
+- recent events;
+- production responsibilities and priorities;
+- historical/cultural context where relevant;
+- current internal state;
+- fuzzy interpretations of that state;
+- the concrete actions that are currently valid.
+
+The authoritative state remains game-owned. Internal values may be continuous, while a fuzzy layer derives overlapping qualitative memberships such as `low`, `medium`, `high`, `exhausted`, `restless`, `confident` or `socially needy` where useful.
+
+The game should assemble a bounded decision context containing:
+
+- relevant state values and fuzzy interpretations;
+- only the history/context needed for the current decision;
+- valid targets;
+- an allow-list of possible action tags with stable game-owned identifiers;
+- any constraints needed to keep the choice legal.
+
+Conceptually:
+
+`authoritative state -> fuzzy interpretation -> bounded context + allowed action tags -> AI choice + dialogue/thought -> validation -> game executes action -> authoritative state update`
+
+The model may return:
+
+- one allowed **action tag**;
+- optional speech;
+- optional thought/internal reaction;
+- bounded presentation metadata where useful.
+
+The exact serialization format can be XML-like tags, JSON or another structured schema, but the contract must remain game-owned and machine-validated. Do not rely on parsing unrestricted prose to decide gameplay.
+
+For example, the context might allow actions equivalent to `ContinueWork`, `TakeBreak`, `ChatWith(EmployeeId)`, `Study(SkillId)` or `LeaveStudioForPersonalActivity`. The model can choose among the valid tags and dramatize the choice; it cannot invent an unrestricted gameplay verb.
+
+Before execution, the game validates:
+
+- the action identifier is on the allow-list;
+- referenced targets still exist and remain valid;
+- current preconditions still permit the action;
+- requested parameters remain within authored bounds.
+
+Invalid, malformed or stale output is rejected and falls back to a deterministic or weighted game-owned choice.
+
+The language model must **not directly mutate authoritative gameplay attributes**. Speech and thoughts are presentation unless accompanied by a separately valid structured action/outcome tag.
+
+An interaction can therefore resolve through a bounded path such as:
+
+`context + allowed actions -> generated tag/dialogue -> validation -> structured interaction outcome -> deterministic simulation update`
+
+Candidate social outcomes include:
+
+- bonding;
+- disagreement;
+- insult;
+- support;
+- mentorship;
+- flirtation;
+- intimidation;
+- reconciliation;
+- creative inspiration;
+- tension increase.
+
+The simulation owns the permitted magnitude and final change to relationships, fatigue, stress, morale, creative energy or other state.
+
+A deterministic/weighted fallback must remain possible when the runtime character model is unavailable, overloaded or returns unusable output.
+
+### Character memory and subjective interpretation
+
+Long-term character memory belongs to the **game simulation**, not to hidden conversational state inside the generative model.
+
+T.O.O.N. should distinguish between:
+
+1. **Canonical event history** — game-owned facts about what actually happened.
+2. **Character memory/belief** — what a particular professional remembers, believes or feels about those events.
+
+A character memory may reference a canonical event while storing a subjective interpretation. Two professionals can therefore remember the same incident differently, and either interpretation may be incomplete, biased or factually wrong without rewriting the underlying studio history.
+
+A compact memory entry may contain:
+
+- source event/reference where applicable;
+- remembered summary;
+- involved people, production, IP or place;
+- subjective interpretation;
+- emotional valence/sentiment;
+- importance/salience;
+- confidence or certainty;
+- whether the memory/knowledge is private, shared or secret;
+- timestamps/reinforcement metadata where useful.
+
+Do not preserve every spoken line as permanent memory. Routine dialogue can remain ephemeral. Promote only meaningful events, discoveries, conflicts, achievements, promises, betrayals, relationships, production experiences and other context that can materially affect later behaviour.
+
+Recent short-term context and durable long-term memory should be separate. A character can remember a significant event from decades ago without requiring the model to receive decades of transcript history.
+
+Before a local generative cognition call, the game retrieves only memories relevant to the current situation:
+
+`authoritative state + personality + relationships + relevant memories/beliefs + recent context + allowed actions -> local model`
+
+Relevance can consider participants, production/IP, topic, recency, salience, emotional strength and current goals.
+
+The generative model may use those memories to choose or dramatize behaviour, but it does not own the memory database and cannot silently rewrite canonical history. Any newly formed or changed memory must pass through game-owned rules.
+
+This enables:
+
+- grudges and loyalties that survive years;
+- conflicting recollections of one event;
+- pride or resentment around old productions;
+- secrets known only to some characters;
+- mistaken beliefs with real social consequences;
+- later reconciliation or reinterpretation without changing what objectively happened.
+
+### Local background character AI and cadence
+
+The generative model used for **routine character cognition, bounded action choice, short dialogue and thoughts** should be **local and embedded with the game**, rather than requiring a remote service for ordinary studio behaviour.
+
+This local character-AI layer is distinct from heavier generation used to create production artifacts such as images, audio or animation. **Those heavier runtime generators must also execute locally.** T.O.O.N. should not require paid remote inference APIs for normal gameplay or for creating player-facing production artifacts.
+
+The distinction is therefore about workload and orchestration, not network location:
+
+- character cognition uses smaller, frequent, latency-sensitive local inference;
+- production generation may use larger local models, longer-running jobs and explicit queues;
+- heavy generation may pause, throttle or schedule work according to available hardware without blocking the main simulation;
+- exact quality tiers, model packs and hardware requirements remain subject to profiling.
+
+Model selection should be **capability-oriented rather than hard-coded around one architecture**. T.O.O.N. may use:
+
+- several small, specialized local models tuned for narrow game tasks;
+- a small number of broader multimodal models;
+- or one larger local model capable of serving several capabilities.
+
+Prefer the smallest model architecture that meets quality, latency and consistency requirements on the target hardware. A larger unified model is acceptable when it materially simplifies orchestration or improves cross-task coherence without making the hardware/runtime budget unacceptable.
+
+The game owns capability contracts such as character cognition, dialogue, image generation, voice/audio generation or animation generation. Concrete models are replaceable implementations behind those contracts.
+
+The intended runtime pattern is **event-driven plus periodic background cognition**:
+
+- fuzzy/game-owned simulation handles trivial continuous behaviour without model calls;
+- meaningful state changes can request a generative decision immediately;
+- a background scheduler periodically selects an eligible character/context for a bounded generative decision even when no major event has fired;
+- the initial tuning target is that, during active live simulation with eligible characters, the character-AI system should not go much longer than roughly **two real-time minutes** without a generative consideration;
+- this is a **system-level cadence**, not a requirement to call the model once per employee every two minutes;
+- the cadence may be tuned after profiling and playtesting.
+
+A scheduled consideration does not need to create a visible event. The valid result may be to continue working, take a break, think something privately, initiate a conversation, study, socialize, leave the studio, or perform another currently allowed action.
+
+The scheduler should avoid synchronized bursts. Character eligibility, urgency, time since last meaningful generative decision, relationships, current workload and recent repetition can influence who receives the next cognition slot.
+
+Local inference must run asynchronously so model execution does not block the game thread. If the world changes before a result returns, the same validation rules apply: stale or invalid actions are discarded or resolved through fallback behaviour.
+
+No periodic generation is required while the game is closed, loading, or paused for menus/build mode. The cadence applies to active simulation, not wall-clock background progression.
+
+The exact embedded model, quantization, inference backend, hardware floor and final cadence remain **Planned** until Unreal profiling proves acceptable memory, latency, thermals and frame-time impact.
+
+### Preventive management
+
+The player may prevent a later crisis by noticing context early and using normal management tools.
+
+Examples:
+
+- extend a deadline;
+- reduce workload;
+- change crew composition;
+- grant leave;
+- improve working conditions;
+- adjust compensation or credit;
+- change responsibilities;
+- initiate a management conversation.
+
+There is no abstract `Prevent Decision Event` button. Prevention emerges because the underlying causes changed.
+
+### Decision Events
+
+Routine interactions remain autonomous until a situation requires **player-level studio management authority**.
+
+A Decision Event is a game-authored or game-authored-template situation that:
+
+- is triggered by legible simulation state;
+- represents a crisis, conflict or consequential production/people decision requiring owner intervention;
+- auto-pauses the simulation when formally presented;
+- presents meaningful structured choices;
+- has authored consequence boundaries;
+- may use AI for contextual dialogue/flavour without giving AI authority over the rule outcome.
+
+The preferred technical/content model is a **small library of parameterized event archetypes** rather than hundreds of bespoke events.
+
+Examples include:
+
+- serious creative disagreement;
+- demand for credit or promotion;
+- threat to resign;
+- relationship conflict disrupting production;
+- dangerous predator/prey escalation;
+- request for creative control;
+- production crisis caused by an outside-life event;
+- ethical or commercial dispute;
+- external offer affecting a key professional.
+
+The simulation detects eligibility; the authored event definition owns roles, allowed choices and consequence bounds; AI contextualizes/dramatizes the event; the player chooses; deterministic game rules apply the result.
+
+### Escalation and warning
+
+Many Decision Events should emerge through an observable escalation:
+
+`ordinary interaction -> developing problem -> attention warning -> Decision Event`
+
+A discreet **attention marker** such as `!` can appear over the relevant professional or area when something potentially important is developing.
+
+The marker means “something worth watching may be happening,” not “click now or lose the event.”
+
+The player may investigate and use normal management actions before the crisis escalates.
+
+If the situation ultimately requires owner authority, the game pauses and presents the Decision Event even if the player was looking elsewhere.
+
+Some events are naturally sudden and may skip the warning stage.
+
+This creates two complementary narrative layers:
+
+`emergent autonomous social life + authored consequential decision points`
+
+### Owner-initiated management conversations
+
+The player may directly initiate a management conversation with an employee.
+
+These are **structured management actions**, not free-form roleplay and not direct control of the professional.
+
+Candidate intents include:
+
+- listen to concerns;
+- praise;
+- give feedback;
+- warn/reprimand;
+- discuss workload;
+- negotiate expectations;
+- discuss career development;
+- address a relationship or production problem.
+
+The player chooses the **intent**, not the exact wording.
+
+Runtime AI may dramatize the conversation within that intent, but the allowed outcomes and state changes remain game-owned.
+
+**Free-text player dialogue is not part of the intended interaction model.** The player selects structured management intents rather than writing the conversation line by line.
+
+## Relationships
+
+Relationships are directional and should affect production.
+
+### Relationship visibility
+
+Use a **hybrid visibility model**:
+
+- precise multi-dimensional values may exist internally for simulation;
+- the player sees a small number of legible high-level relationship bars rather than raw numerical spreadsheets;
+- qualitative sentiments/tags communicate important nuance;
+- a relationship history explains the main causes of the current state.
+
+Initial high-level visible bars should prioritize concepts such as:
+
+- **Bond/Affection**;
+- **Trust**.
+
+Do not require displaying exact `72/100` values by default.
+
+Overlay qualitative sentiments such as:
+
+- friendship;
+- rivalry;
+- resentment;
+- attraction;
+- fear;
+- mentorship;
+- admiration;
+- envy;
+- professional respect;
+- distrust.
+
+This allows relationships that are intentionally contradictory, for example:
+
+`high bond + low trust + rivalry + admiration`
+
+The UI should expose causal history so the player can understand changes, for example:
+
+- Trust decreased — took credit for their work;
+- Bond increased — completed a difficult production together;
+- Rivalry emerged — both want creative control over the same IP;
+- Admiration increased — witnessed exceptional work.
+
+Because relationships are directional, what A feels about B may differ substantially from what B feels about A.
+
+The player should be able to infer relationship state from behaviour/conversation, while the relationship UI provides enough explicit information to make consequential events feel earned rather than arbitrary.
+
+Potential relationship dimensions include:
+
+- affection;
+- trust;
+- tension;
+- rivalry;
+- attraction where appropriate;
+- fear.
+
+A->B need not equal B->A.
+
+Relationships can influence:
+
+- collaboration quality;
+- creative risk;
+- rework;
+- morale;
+- willingness to accept assignments;
+- demands for separation or partnership;
+- resignations;
+- conflicts;
+- mentorship;
+- romance;
+- long-term loyalty.
+
+Species/archetype may create **initial tendencies or pressures**, but it does not determine personality.
+
+A cat and mouse may begin with a predatory/prey tension. They may later become the studio's greatest creative partnership.
+
+A hunter may be extraordinarily talented while making multiple anthropomorphic employees uncomfortable or afraid.
+
+## Office vs Nonsense in people
+
+Creative value should not collapse into one stat.
+
+Useful conceptual axes include:
+
+- **Morale** — miserable to happy;
+- **Creative Energy** — exhausted to inspired;
+- **Wildness** — conservative to experimental;
+- **Discipline** — chaotic to reliable.
+
+Operational state can also include more transient or pressure-oriented values such as:
+
+- **Fatigue** — short-term physical/mental tiredness accumulated through sustained activity and insufficient recovery;
+- **Stress / Burnout pressure** — longer-term strain created by repeated overload, conflict, deadlines, insecurity or other persistent pressure.
+
+Do not automatically expose every internal value as a precise player-facing meter. The simulation may retain continuous values while presentation uses behaviour, qualitative labels, bars or other readable signals appropriate to the context.
+
+### Fuzzy state interpretation
+
+Character decisions should not depend on brittle thresholds such as `Fatigue > 70 => TakeBreak`.
+
+Use fuzzy-style interpretation so overlapping states can coexist. A professional may be somewhat tired, highly motivated and moderately stressed at the same time.
+
+Personality and context modify how these states influence behaviour. For example:
+
+- a highly disciplined employee may continue working at a fatigue level where another person takes a break;
+- an anxious employee may react strongly to moderate workload uncertainty;
+- a social employee may respond to low morale by seeking company;
+- an ambitious employee may temporarily tolerate stress when a personally important production approaches release;
+- a severely exhausted character can still decide that continuing is unreasonable and stop on their own.
+
+These fuzzy interpretations are useful inputs to both deterministic behaviour and the bounded AI action-selection contract.
+
+### Fatigue, recovery and burnout
+
+Time spent working continuously should matter.
+
+Fatigue can accumulate from factors such as:
+
+- long uninterrupted work;
+- overtime;
+- repeated high-pressure production demand;
+- insufficient rest;
+- illness/injury;
+- demanding outside-life activity.
+
+Ordinary rest, breaks, meals, going home and suitable amenities can reduce short-term fatigue.
+
+Repeated excessive load can create a slower-moving stress/burnout condition that should not disappear because the employee drank coffee or took one short break. Recovery may require sustained lower pressure, meaningful rest, leave, changed responsibilities or resolution of underlying problems.
+
+Professionals can **take breaks or stop working autonomously**. The player manages workload, priorities, deadlines, facilities and conditions; the player does not normally issue minute-by-minute rest commands.
+
+Examples:
+
+- high Wildness + high Discipline = rare creative powerhouse;
+- high Wildness + low Discipline = brilliant but dangerous to schedule;
+- low Wildness + high Discipline = dependable production specialist;
+- low Wildness + low Discipline = organizational problem.
+
+Player choices can shift these states over time.
+
+Repeatedly rejecting a creator's ideas may make them less experimental, more resentful, or more likely to leave. Giving creative freedom may produce exceptional work or uncontrolled scope.
+
+## Employee agency
+
+Employees can make demands and choices.
+
+Potential demands include:
+
+- raises;
+- promotions;
+- credit;
+- different roles;
+- time off;
+- more creative control;
+- less overtime;
+- refusal to work with someone;
+- access to a desired IP or production;
+- recognition for creating a character/property.
+
+Talented employees should gain bargaining power.
+
+Employees can:
+
+- refuse;
+- resign;
+- leave for competitors;
+- return later;
+- retire;
+- become unavailable mid-production.
+
+The player's job is not to own people. It is to keep a functioning studio despite their agency.
+
+## Competitor studios
+
+Competition should use a **small set of persistent, legible rival studios** rather than fully simulating many equivalent companies.
+
+At the **start of the campaign around 1900**, T.O.O.N. should begin with **one active rival studio**. This is a world-state/campaign-start decision, not a restriction on the first implementation proof.
+
+As the market matures, the number of relevant rivals can grow organically. A useful long-term target is a small handful of active competitors — typically around **3–5 relevant rivals**, with **4** as a reasonable default target when the market is mature enough. The system should remain bounded enough that individual competitors stay memorable.
+
+A competitor can retain abstract state such as:
+
+- identity and creative focus;
+- reputation;
+- financial strength;
+- notable professionals;
+- known IPs;
+- preferred production types;
+- relationships with T.O.O.N.;
+- important historical events.
+
+Competitors may arise from the wider world or emerge from the campaign, including former T.O.O.N. professionals who leave and later found their own studio.
+
+Competitors can also **fail and leave the active market**. Bankruptcy is one important path, alongside acquisition/merger, prolonged loss of relevance, or a strategic shift outside the game's supported production space.
+
+A competitor leaving the market should not erase its history. Its former employees, IPs, relationships and notable events can remain in the campaign record and may create future opportunities.
+
+Competitor exits should also create room for new rivals to emerge later, keeping the market dynamic without continuously increasing the active-rival count.
+
+Competition should be expressed through concrete consequences such as:
+
+- competing for talent;
+- making offers to T.O.O.N. employees;
+- competing for contracts/opportunities;
+- releasing work into the same audience window;
+- gaining or losing reputation;
+- collaboration, rivalry, merger, decline or closure.
+
+Competitor productions are **not simulated through T.O.O.N.'s production pipeline** and do not require generated production artifacts.
+
+Only their relevant outcomes are simulated and persisted, for example:
+
+`competitor production result -> reception/commercial outcome -> reputation/market/talent/opportunity effects`
+
+The game may surface metadata or descriptive summaries of a rival release when needed for context, but should not generate full scripts, storyboards, comics, animations or other production artifacts for competitors.
+
+This keeps AI/runtime cost focused on the player's studio while preserving a believable competitive world.
+
+Competition should not be strictly zero-sum. Two studios can both succeed; rivalry primarily changes attention, opportunities, talent access, distribution pressure and reputation context.
+
+### Personal finances and creative upside
+
+Professionals can have an abstracted personal financial state that affects behaviour without requiring household-accounting simulation.
+
+Relevant influences may include:
+
+- salary and bonuses;
+- revenue participation from accepted internal proposals;
+- debt or high recurring obligations;
+- outside income;
+- accumulated savings/wealth.
+
+Personal finances can influence thoughts, demands and outside-work choices. Financial pressure may increase the importance of salary, stability or extra work. Financial success can increase independence, reduce tolerance for poor treatment, enable retirement, fund personal projects or make it plausible for a talented professional to leave and found a competing studio.
+
+These effects should be character- and context-dependent rather than deterministic thresholds.
+
+## Life outside the studio
+
+Characters have an off-screen life that can affect work without requiring a fully simulated city.
+
+Examples include:
+
+- family obligations;
+- hobbies;
+- second jobs;
+- gambling/debt;
+- political or union activity;
+- criminal activity;
+- secret heroism;
+- secret villainy;
+- relationships outside work;
+- illness or injury;
+- fame outside the studio.
+
+These can produce readable events and absences.
+
+A worker may arrive exhausted because they act as a hero at night. Their best friend at work may secretly be a villain whom they later arrest, creating an absence in the middle of production.
+
+The simulation should preserve causal signals before severe consequences rather than using arbitrary destructive random events.
+
+## Cartoon logic, predation and violence
+
+Cartoon-world archetypes may create unusual workplace problems:
+
+- predator/prey instincts;
+- hunters working beside anthropomorphic animals;
+- slapstick violence;
+- absurd injuries;
+- rivalry escalating into physical conflict;
+- imprisonment or disappearance;
+- relationships that become dangerous.
+
+The tone should support cartoon exaggeration without making every conflict consequence-free.
+
+Permanent death is not a universal rule because different character ontologies exist. Severe outcomes must follow the character's own existence model and should be causally legible where gameplay investment is at stake.
+
+## Systemic comedy
+
+Humour should emerge from simulation rules, character ontology, workplace pressures, and long-term consequences rather than relying mainly on disconnected scripted jokes.
+
+Examples:
+
+- a brilliant talking cricket may be fully mortal and have a naturally short lifespan, creating an absurd but strategically serious hiring decision;
+- an apparently elderly cartoon may remain the same age for a century and become the office's permanent grumpy veteran;
+- a mortal prodigy may have only a brief career while an immortal mediocre employee survives multiple generations;
+- a predator/prey relationship can begin as a familiar cartoon gag and develop into friendship, fear, rivalry, mentorship, or catastrophe;
+- a night-time hero may repeatedly arrive exhausted, while their best friend at work is secretly the villain responsible;
+- a character may survive slapstick disasters that would kill a mortal colleague because their existence model follows different rules.
+
+The joke should usually have a **gameplay consequence**.
+
+A short-lived genius, for example, can force the player to decide whether to:
+
+- hire them despite limited long-term availability;
+- rush a production around their remaining career;
+- pair them with an apprentice to preserve knowledge;
+- pay a premium because their talent is rare;
+- accept the risk that an unfinished production loses a critical contributor.
+
+This principle keeps T.O.O.N.'s nonsense legible and consequential:
+
+> **The world can be absurd, but the simulation should take its absurdity seriously.**
+
+Avoid direct copies of protected cartoon characters. Familiar archetypes may be referenced structurally, but characters, names, designs, biographies, and specific jokes should be original.
+
+## Careers and generations
+
+Mortal and aging professionals can move through career stages such as:
+
+`Recruit -> Junior -> Experienced -> Veteran -> Legend -> Retired`
+
+Immortal/static cartoons may instead accumulate:
+
+- expertise;
+- influence;
+- grudges;
+- mentorship lineages;
+- institutional status;
+- outdated habits;
+- resistance or enthusiasm toward new media.
+
+A studio can therefore contain both generations of mortal workers and century-long cartoon veterans.
+
+## Supported production types
+
+The current game-design scope is intentionally limited to **four production types**:
+
+1. **Comic strip**;
+2. **Comic**;
+3. **2D animation**;
+4. **3D animation**.
+
+These are the production families T.O.O.N. should support across the campaign. **The accepted first playable production is one 3–4-panel comic strip (owner-confirmed 2026-11-15).** That is a vertical-slice scope choice, not a separate comic-only architecture or a reduction of the four-type game design. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
+
+The four types should share a common conceptual backbone while allowing medium-specific stages:
+
+`concept -> script/structure -> design/art direction -> storyboard/layout -> production -> finishing -> review -> release`
+
+Not every medium requires every stage, and some stages can split into medium-specific technical substeps. Those technical substeps exist primarily to drive people, facilities, equipment, time, cost and production problems; they should not automatically become separate player-facing minigames.
+
+Human-in-the-loop should concentrate mainly on authorship/pre-production stages such as concept, script, character/art-direction reference and storyboard/layout, while technical execution remains primarily the responsibility of the studio simulation and local AI/procedural pipeline.
+
+## Production as a physical workflow object
+
+A production should exist as a persistent **physical/workflow object** inside the studio rather than only as an abstract row in a management screen.
+
+The production should have a **strong physical representation** whose appearance changes with:
+
+- historical period;
+- production medium/type;
+- current pipeline stage.
+
+A comic production, a cel-animation production and a later 3D production should not share one timeless generic prop. Their physical representation should communicate what kind of work they are and where they currently are in the process.
+
+The player should be able to perceive the production moving through departments/stations as it advances through its pipeline. The representation can evolve from paper folders, boards, reels, cels, tapes, drives, digital work packages or other era/medium-appropriate forms without requiring literal handling simulation for every technology.
+
+The production object owns or references:
+
+- current pipeline stage;
+- responsible professionals;
+- IP/brief;
+- current approved creative inputs;
+- generated/intermediate artifacts;
+- version/provenance history;
+- costs/time spent;
+- blockers and pending approvals;
+- final released artifact.
+
+This creates a visible relationship between **place + people + production state**.
+
+### Optional human-in-the-loop creation
+
+Creative intervention by the player is optional. The game must remain capable of completing productions automatically.
+
+The interaction model has only two top-level states:
+
+- **Automatic** — the studio/game resolves the stage using simulation and local AI/procedural systems.
+- **Player-intervened** — the player contributes to that stage through whatever inputs the stage supports, such as writing a short script, selecting a direction, uploading a reference image, choosing among generated alternatives, or requesting regeneration.
+
+There is no separate universal “assisted” versus “manual” mode. Those are simply different forms of player intervention.
+
+Candidate intervention points include:
+
+- concept/brief;
+- short script;
+- character reference;
+- art direction/reference image;
+- storyboard;
+- selected later review/approval stages where useful.
+
+The exact allowed intervention points remain a scope decision per medium/pipeline.
+
+### Version limit and selection
+
+For stages that support alternatives or regeneration, keep at most **three candidate versions** at once.
+
+The player views **one version at a time**. A small visual indicator should communicate that additional versions exist and allow navigation/selection between them. Exact presentation, controls and visual language are intentionally deferred to a later UX/UI design pass.
+
+**Automatic creative stages** must be able to advance a valid chosen result under game-owned selection rules without requiring the player to inspect alternatives. **When the player intervenes**, choosing which candidate advances is their decision. Neither path overrides the player's final release authority.
+
+The player may:
+
+- accept the current version;
+- generate/regenerate alternatives until the three-version limit is reached;
+- inspect the available versions one at a time;
+- choose one version as the approved input for the next stage.
+
+Only the selected version advances. Unselected alternatives are discarded from the active production and do not remain as a permanent archive requirement.
+
+A regeneration/rework request can consume simulation resources such as:
+
+- time;
+- budget;
+- professional effort;
+- fatigue/creative energy;
+- schedule slack;
+- production risk.
+
+The exact cost depends on stage, era, medium and production state.
+
+Player-authored or uploaded material becomes part of the production's real creative input and therefore can affect downstream generation and final artifact evaluation. It is not merely cosmetic metadata.
+
+Player intervention is treated as an **external creative contribution**, not as work performed by a particular in-studio professional.
+
+For example, if the player supplies a script at a stage that supports script intervention:
+
+- that script advances as the approved external input for the next stage;
+- the studio's scriptwriter does not retroactively receive authorship or work credit for producing it;
+- the scriptwriter does not need to “improve” it merely because they exist on staff;
+- later pipeline stages can still transform, adapt, reinterpret or degrade/improve the result through their own professionals, simulation state and local AI generation.
+
+The same rule applies to uploaded character references, art-direction images or other player-provided creative inputs.
+
+This preserves a clean distinction:
+
+`player/external creative input -> accepted production material -> later studio pipeline transforms it`
+
+Human-in-the-loop should therefore bypass or replace only the specific creative contribution supplied at that stage, not the downstream production process as a whole.
+
+### Provenance
+
+The production should retain enough provenance to distinguish, where relevant:
+
+- automatically generated content;
+- player-authored text;
+- player-uploaded reference/input;
+- selected generated version;
+- regeneration/rework history;
+- professionals and tools/models involved;
+- final approved artifact lineage.
+
+Provenance supports continuity, debugging, archive/history and export/share metadata. It should not require preserving every discarded intermediate artifact forever.
+
+## Production scale and output length
+
+T.O.O.N. should favor **small complete works** rather than attempting real-world production lengths.
+
+The goal is that a player can finish many works across one campaign, actually consume them, remember them, compare adaptations, and optionally share favorites.
+
+Target output scales are intentionally compact and remain subject to prototype validation:
+
+| Medium | Initial target scale |
+| --- | --- |
+| Comic strip | **3–4 panels** |
+| Comic | **1–4 pages** |
+| 2D animation | roughly 30–120 seconds |
+| 3D animation | roughly 30–120 seconds |
+
+These are **content-length targets**, not fixed in-game production-time rules.
+
+A two-minute 3D short can require far more staff, equipment, cost and in-game calendar time than a two-minute 2D short. Production complexity should scale through:
+
+- number and specialization of professionals;
+- technology/equipment;
+- pipeline stages;
+- iteration/rework;
+- relationships/conflicts;
+- budget;
+- schedule;
+- creative ambition.
+
+The player should not need to produce a feature-length film to feel that T.O.O.N. has entered a film/3D era. A compact, polished production can represent a much larger industrial capability while remaining practical to generate, watch and archive.
+
+Production forms may later have rare exceptions beyond these normal targets, but long runtime should not become the default progression reward.
+
+## Sharing productions
+
+Completed productions should be designed as **shareable artifacts**.
+
+The preferred first architecture is export-first rather than hard-wiring the game to individual social-network APIs.
+
+A released work may produce a share package containing, where relevant:
+
+- the final image/comic/video/text artifact;
+- title and IP;
+- studio year/era;
+- selected credits;
+- optional T.O.O.N. branding;
+- a compact generated caption/description;
+- a thumbnail/poster/card;
+- provenance needed by the game to reconnect the shared artifact to the campaign.
+
+The player should explicitly choose what is shared. Do not automatically upload productions or expose private save data.
+
+Possible later platform-specific sharing integrations should remain adapters around a game-owned export/share contract so changing third-party APIs do not own the production system.
+
+Social sharing can reinforce the fantasy: a player is not merely posting a procedural asset; they are showing **what their studio made**.
+
+A useful share might communicate:
+
+> title + year + medium + key credits + one memorable production fact
+
+For example, the game could surface that a short was directed by a century-old immortal veteran, written by a short-lived cricket genius, or completed after the lead animator was arrested.
+
+## Produced works as playable rewards
+
+T.O.O.N. productions are not only abstract score cards.
+
+Where technically and economically feasible, the player should be able to **consume the work the studio produced**:
+
+- read dialogue, captions and other text within comic strips and comics;
+- read finished strips and comics;
+- review storyboards or animatics as **intermediate workflow artifacts**, not independent release types;
+- watch compact finished 2D animation shorts;
+- watch compact finished 3D animation shorts.
+
+These outputs may be created through combinations of player direction, simulation, authored templates, procedural systems and runtime AI behind T.O.O.N.-owned contracts.
+
+Watching/reading the work counts as part of the intended campaign experience and therefore part of the approximate 40-hour target.
+
+The production itself is a reward, evidence of the studio's history, and feedback on prior player choices. It should preserve enough provenance to answer questions such as:
+
+- which IP was used;
+- which professionals contributed;
+- what major creative/production choices shaped it;
+- what media/technology was available;
+- how the audience/reputation/economy responded;
+- how later adaptations descend from it.
+
+Consumption should be skippable/revisitable where practical. A player who wants to watch everything should be rewarded with context and attachment rather than punished with mandatory unskippable runtime.
+
+## IP continuity across media
+
+One persistent property may evolve through multiple media.
+
+Example pattern:
+
+`comic strip -> comic -> 2D animation -> 3D animation`
+
+The adaptation history should remain visible. The studio archive should show how a property changed across decades and which professionals shaped each version.
+
+A later adaptation should ideally make the lineage perceptible: the player should be able to compare a 1910s comic strip version of an IP with its later comic, 2D animation and eventual 3D animation incarnations.
+
+## Cross-media identity consistency
+
+Persistent IP only works if the player can recognize the same property and characters across decades and media.
+
+Each important IP/character should therefore have a game-owned continuity package that can be consumed by manual tools, procedural systems and runtime AI adapters.
+
+Useful identity evidence may include:
+
+- stable character/IP identifiers;
+- canonical names and relationships;
+- premise/tone;
+- visual anchors and silhouette traits;
+- approved reference images where available;
+- voice/language traits where relevant;
+- recurring props/symbols;
+- canon facts and adaptation constraints;
+- deliberate changes introduced by a specific adaptation.
+
+The goal is **continuity with evolution**, not pixel-identical reproduction.
+
+A 1910 illustration and a 2025 3D adaptation should be allowed to look different while remaining recognizably descended from the same property.
+
+When runtime AI generates media, provider-specific prompt tricks, seeds or model settings may assist consistency, but they must not become the canonical identity source. The canonical identity belongs to T.O.O.N.-owned data and approved artifacts.
+
+## Historical archive and endgame
+
+The archive is a major campaign payoff.
+
+By 2030, the player should be able to inspect the history they created:
+
+- first published work;
+- first successful character;
+- major failures;
+- hits;
+- cancelled projects;
+- important employees;
+- founders and retirees;
+- century-old immortal staff;
+- famous partnerships and feuds;
+- technology transitions;
+- different versions of the same IP;
+- awards/reputation milestones where implemented;
+- disastrous reboots;
+- legendary productions.
+
+The archive should make the campaign feel authored by the player's decisions.
 
 ## Art direction
 
-### Target
-
-A contemporary authored cartoon studio world informed by classic animation principles without copying one studio or protected character family.
+The studio world should visually evolve with time while preserving T.O.O.N.'s authored identity.
 
 Useful principles:
 
-- bold primary shapes;
-- readable silhouettes;
+- strong silhouettes;
 - expressive posing;
-- squash and stretch;
-- strong line of action;
-- controlled exaggeration;
-- clear focal hierarchy;
-- animation-aware props and costume shapes;
-- movement implied even in still poses;
-- spaces that visibly support animation work and studio life.
+- macro-shape clarity;
+- animation-aware movement;
+- era-sensitive clothes, props, equipment and spaces;
+- visible studio growth;
+- old objects and rooms retained as historical traces;
+- a mixture of institutional office language and cartoon absurdity.
 
-The studio can use departments, signage, memos, stamps, boards, production walls, desks, review rooms, recording/animation paraphernalia, and other workplace language to reinforce **The Office Of Nonsense** identity.
-
-### Anti-patterns
-
-Avoid:
-
-- direct Disney / Warner / Fleischer imitation;
-- generic rubber-hose nostalgia as the entire style;
-- generic cozy-office presentation with animal skins;
-- animal stereotypes replacing characterization;
-- “creator software disguised as a game”;
-- AI-generator fantasy replacing studio management;
-- sterile project-management UI as the dominant world;
-- visual noise that damages silhouette/readability;
-- nostalgia used instead of authorship.
-
-## Relationship promise
-
-The player should gradually know the studio staff as recurring creative collaborators.
-
-A good professional can become:
-
-- trusted specialist;
-- difficult genius;
-- reliable veteran;
-- ambitious newcomer;
-- rival within the team;
-- mentor;
-- comic foil;
-- creative partner.
-
-Relationships should create production texture and future decisions, not exist only as decorative lore.
+Classic-cartoon structure can inform posing and graphic design without copying protected studio/character identities.
 
 ## Authorship and AI
 
-T.O.O.N. supports the direction of Manual, AI-assisted, and Hybrid creative work through shared game-owned structures.
+Production intent, accepted generated artifacts and persistent consequences should converge on game-owned production data.
 
-AI outputs are proposals until accepted by the player.
-
-Provider/runtime choices remain implementation adapters. They must not own:
+Runtime AI may be used heavily for text, image, audio, animation or other media generation. Provider/runtime choices remain implementation adapters and must not own:
 
 - the game-domain model;
 - studio progression;
-- final authorship;
-- release decisions;
+- employee agency;
+- historical truth;
+- final release authority;
 - irreversible canon/production decisions.
+
+The player should retain meaningful creative direction and release authority. Where the workflow exposes intermediate proposals, they should be inspectable/accept-reject-editable.
+
+Provider independence does **not** require a feature-complete manual authoring tool for every medium. Core simulation and persistence should be testable through deterministic fixtures/fallbacks even when representative final media normally uses AI generation.
 
 ## Persistence
 
-Persistent state should support stable identifiers and schema/version migration.
+Persistent state should support stable identifiers and version migration.
 
-The first renewed slice should preserve at least:
+Long-term persistence must be able to represent at least:
 
-- studio identity/state needed for the proof;
-- recurring professionals;
-- one IP;
-- one production and its relevant authored state;
-- release/history record;
-- one visible consequence that survives reload.
+- studio history;
+- employees and their existence models;
+- relationships;
+- IPs and adaptation history;
+- productions/releases;
+- technology/media state;
+- durable consequences.
 
-Existing legacy `InkTime` save locations must not be abandoned without an explicit migration/fallback path.
+Legacy `InkTime` saves/artifacts are migration evidence rather than a shipped compatibility promise. Preserve representative fixtures or extract useful data where valuable, but do not make full Unity-save compatibility a blocker for the Unreal game without explicit need.
 
-## First vertical slice
+## First validation slice
 
-The minimum coherent target is:
+The first slice should not attempt 130 years.
 
-1. open/create the studio;
-2. have a small recurring cartoon crew;
-3. create/open one animated IP;
-4. start one short production;
-5. author or select enough script/story material for the proof;
-6. express that material through a minimal storyboard/shot flow;
-7. assign/involve professionals in production;
-8. surface at least one production decision/problem;
-9. complete/release the work through a representative output;
-10. record the release in studio/IP history;
-11. show at least one visible persistent consequence;
-12. save/reopen and preserve that consequence.
+It should prove the characteristic interaction among studio, people, production, and persistent consequence. **The first playable production is a complete 3–4-panel comic strip**, using a medium-neutral Production core and a narrow strip-specific output path. Completion, reception and save/reopen remain unvalidated until exercised.
 
-A vertical slice is not **Validated** until the complete exercised workflow and evidence are recorded.
+Minimum target:
+
+1. one small studio;
+2. 3–4 recurring professionals with distinct traits;
+3. at least two meaningful relationships;
+4. one IP;
+5. one complete **3–4-panel comic strip production**;
+6. one assignment decision;
+7. one people/production conflict;
+8. one player response with tradeoffs;
+9. release;
+10. one persistent studio/professional/IP consequence;
+11. save/reopen;
+12. one visual signal of historical continuity.
+
+A second bounded prototype should later test one media/era transition.
 
 ## Explicit non-goals for the first slice
 
 Do not require:
 
-- feature-film-scale production simulation;
-- a complete professional animation DCC;
-- a large economy;
-- deep fandom/community simulation;
-- a giant lore database;
-- autonomous creative authority;
-- every historical InkTime class migrated before the proof;
-- a particular external AI provider;
-- proof that Loomlight Game Studio or Loomlight Collective integration exists;
-- release/production readiness.
+- a full 1900–2030 campaign;
+- every historical medium;
+- a complete animation DCC;
+- deep city simulation;
+- complete family simulation;
+- hundreds of relationship variables;
+- feature-film production depth;
+- large autonomous AI pipelines;
+- unproven Loomlight Game Studio / Loomlight Collective integrations;
+- production readiness.
+
+## Engine and production strategy
+
+T.O.O.N. is now intended to be built in **Unreal Engine**.
+
+This is an accepted project direction, not an implementation claim. The current repository still contains a Unity-based scaffold until an Unreal project is bootstrapped and validated.
+
+The Unreal project is also an explicit professional-development artifact: it should demonstrate practical engine competence through real game requirements rather than résumé-driven feature accumulation.
+
+Development is intentionally **AI-heavy**. AI may be used extensively for code, content, research, tests, debugging, tooling, documentation, balancing and visual exploration.
+
+Keep two boundaries explicit:
+
+- **development-time AI** accelerates making the game;
+- **runtime/player-facing AI** is a game feature and remains behind game-owned contracts.
+
+AI acceleration must not erase technical ownership. Important systems should remain understandable, debuggable, maintainable and supported by actual compile/run/test/profile evidence.
+
+See [Unreal + AI development strategy](unreal-ai-development-strategy.md).
 
 ## Relationship to Polite Goblin and Loomlight
 
 T.O.O.N. is an independent game.
 
 - **YFramework** owns shared terminology, naming/routing, doctrine, The Y Framework methodology, and status vocabulary.
-- **Loomlight Flux** owns reusable Unity framework implementation.
-- **Loomlight Game Studio** may orchestrate production work around T.O.O.N.; it does not own the game's design or runtime.
-- **Loomlight Collective** participation is optional and cannot be inferred from AI features.
+- **Loomlight Flux** owns reusable Unity framework implementation but is legacy migration context for T.O.O.N.; the target game implementation is Unreal-owned.
+- **Loomlight Game Studio** may orchestrate production work around T.O.O.N.; it does not own this game's design/runtime.
+- **Loomlight Collective** is the selected internal display-name direction for the existing Loomlight Nexus product; participation is optional and cannot be inferred from T.O.O.N.'s AI features. This reference does **not** establish integration, trademark clearance, or permission for a public product launch.
 
 ## Validation questions
 
-- Does the game read quickly as “run a cartoon-animation studio”?
-- Do professionals feel like recurring characters rather than worker stats?
-- Does one production feel like something the studio made rather than a generated artifact?
-- Does the player care about both the IP and the people making it?
-- Does a release leave a visible persistent trace?
-- Can the loop work without AI?
-- Can AI assistance remain editable and subordinate to player authority?
-- Does the visual identity feel authored rather than a copy of a classic cartoon studio?
+- Does the player feel they are running a living studio rather than filling production forms?
+- Do people create meaningful production opportunities and problems?
+- Can employees feel memorable without becoming unpredictable noise?
+- Are serious outcomes causally readable?
+- Does mixed mortality/immortality create interesting long-term stories?
+- Does a new medium change staffing, equipment and production decisions rather than only adding a bonus?
+- Can old media remain strategically relevant?
+- Does one IP feel meaningfully transformed when adapted across eras?
+- Does the studio visibly accumulate history?
+- Does core simulation, persistence and reception remain coherent if a runtime AI provider is unavailable, replaced or degraded, even if generated-media fidelity temporarily falls back?

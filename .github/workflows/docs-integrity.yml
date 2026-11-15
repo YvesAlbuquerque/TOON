@@ -1,0 +1,42 @@
+name: Documentation integrity
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - AGENTS.md
+      - "docs/**"
+      - "Docs/**"
+      - ".agents/**"
+      - "tools/check_docs.py"
+      - "tools/tests/**"
+      - ".github/workflows/docs-integrity.yml"
+  push:
+    branches: [develop]
+    paths:
+      - README.md
+      - AGENTS.md
+      - "docs/**"
+      - "Docs/**"
+      - ".agents/**"
+      - "tools/check_docs.py"
+      - "tools/tests/**"
+      - ".github/workflows/docs-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false # Do not fetch legacy Unity/Flux just to inspect Markdown.
+          persist-credentials: false
+      - name: Exercise checker unit tests
+        run: python3 -m unittest discover -s tools/tests -p "test_*.py" -v
+      - name: Check repository-owned Markdown links and headings
+        run: python3 tools/check_docs.py
