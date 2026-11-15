@@ -568,6 +568,66 @@ Long-term target:
 
 The game should produce stories through simulation rather than requiring scripted narrative for every campaign event.
 
+## Studio economy
+
+The economy should create clear management tradeoffs without turning T.O.O.N. into a detailed accounting simulator.
+
+The core player-facing financial model should emphasize:
+
+- **cash on hand**;
+- **recurring studio burn**;
+- **money/time committed to active productions**;
+- a readable estimate of **runway** at the current burn rate.
+
+Do not require the player to manage accounting minutiae such as individual consumables, invoice ledgers or tax-line bookkeeping unless a later proof demonstrates clear gameplay value.
+
+### Main revenue paths
+
+Use three broad revenue families:
+
+1. **Contract work** — an outside client pays the studio to make something. This should generally provide more predictable income and lower financial risk, but less creative freedom and/or less long-term IP value.
+2. **Original productions** — the studio funds its own work. This creates greater financial risk but can produce valuable persistent IP, stronger upside and long-term studio identity.
+3. **Catalogue/IP revenue** — previously released work can continue generating value through mechanisms appropriate to the era, such as republication, syndication, distribution, licensing, adaptation or later equivalents.
+
+The systemic distinction should remain stable even as the historical presentation changes. A commissioned strip, television job or later digital contract can all belong to the same broad contract-work model without requiring a completely different economy for every decade.
+
+A central economic tension should be:
+
+`predictable contract work <-> risky original production <-> long-tail catalogue value`
+
+### Main cost families
+
+Keep costs concentrated in categories the player can understand and act on:
+
+- salaries and employment-related costs;
+- studio space and recurring operating costs;
+- production-specific expenses;
+- facilities/equipment;
+- technology adoption/upgrades;
+- selected discretionary spending such as recruitment, expansion, training or promotion where those systems exist.
+
+Production budgets should remain compact. Prefer:
+
+`crew time + specific production expenses + required facilities/technology`
+
+over a large accounting breakdown with many low-value line items.
+
+### Financial pressure and failure
+
+The player should be able to understand financial danger before it becomes terminal. The UI should expose a clear burn-rate/runway signal such as an estimate of how long the current cash position can sustain current recurring costs.
+
+Running out of cash should not normally produce an immediate unexplained game over. Financial distress can first create escalating consequences such as:
+
+- emergency financing or costly rescue options where historically appropriate;
+- delayed obligations or salary pressure;
+- morale and retention problems;
+- blocked purchases/services;
+- pressure to dismiss staff, cancel work or accept unattractive contracts.
+
+Only after a meaningful recovery window should insolvency become terminal or otherwise force a major campaign consequence.
+
+Exact credit, bankruptcy, employment and legal rules must be sourced for the relevant era/location before being represented as historical fact.
+
 ## Studio space, facilities and workplace culture
 
 The studio is a physical system that grows with the company.

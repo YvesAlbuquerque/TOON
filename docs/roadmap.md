@@ -573,19 +573,40 @@ Direct posting to specific social networks is optional and should come later beh
 
 ### 7.1 Economy
 
-Re-evaluate legacy cash/salary/bankruptcy ideas.
+Prototype a compact studio economy that supports production and people choices without becoming a spreadsheet-only game.
 
-The first renewed economy should support production and people choices without becoming a spreadsheet-only game.
+The core proof should expose:
 
-Candidate pressures:
+- cash on hand;
+- recurring studio burn;
+- committed production spending/time;
+- a readable runway estimate.
 
-- salaries;
-- equipment investment;
-- facility expansion;
-- production budget;
-- training;
+Revenue should initially distinguish three families:
+
+- predictable **contract work**;
+- riskier **original productions** with greater IP/upside potential;
+- **catalogue/IP revenue** from previously released work.
+
+Costs should remain concentrated in:
+
+- salaries/employment costs;
+- studio/operating costs;
+- production-specific expenses;
+- facilities/equipment;
 - technology adoption;
-- failed releases.
+- selected discretionary spending such as recruitment, expansion, training or promotion.
+
+Requirements:
+
+- at least one choice should force a tradeoff between a safer contract and spending capacity on an original production;
+- production budgeting should remain compact rather than decomposing into low-value accounting line items;
+- the UI should make burn rate/runway legible without requiring the player to calculate it manually;
+- historical media/business changes may alter presentation and parameters without requiring a wholly separate economy each era;
+- running out of cash should first create recoverable pressure/consequences rather than an immediate unexplained game over;
+- any claimed credit, bankruptcy, employment or legal rule must be sourced for the relevant era/location before becoming canonical;
+- catalogue/IP value should persist across time and later connect to the release/reception/distribution model.
+
 
 ### 7.2 Departments, facilities and physical growth
 
