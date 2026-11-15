@@ -779,7 +779,40 @@ The progression should broadly move from:
 
 These channels change **discovery and access**, not the permanent-employment rule. A discovered candidate can still only be hired when the studio has compatible productive capacity.
 
-The exact amount of information shown about a candidate before hiring remains a separate design decision. A recruitment channel should not automatically reveal perfect hidden simulation values.
+Candidate information should remain **evidence-based and incomplete**, not a perfect readout of hidden simulation values.
+
+Before hiring, the player may see information such as:
+
+- role/discipline and claimed experience;
+- work history;
+- portfolio or representative prior work where appropriate;
+- salary/credit expectations;
+- education/training where relevant;
+- who referred them, if anyone;
+- references or endorsements where the channel supports them;
+- broad qualitative impressions rather than exact hidden numbers.
+
+Different recruitment channels provide different evidence. A walk-in application may reveal relatively little. An employee referral adds social provenance and the referrer's opinion. A newspaper applicant may provide a conventional résumé/portfolio. A modern professional-network profile can expose a broader work history, skills, credits and connections.
+
+Some attributes should remain uncertain until the person actually works in the studio. Examples include:
+
+- real reliability under pressure;
+- interpersonal compatibility;
+- hidden ambitions or insecurities;
+- true tolerance for overtime or chaos;
+- unusual habits and outside-life complications;
+- whether apparent skill translates into the studio's actual workflows;
+- private or secret traits the studio has no reason to know.
+
+Where useful, the UI can communicate **confidence** rather than false precision: `Unknown`, `Limited evidence`, `Promising`, `Well established`, or similar qualitative signals.
+
+A referral or strong portfolio can improve confidence in a claim without making that claim infallible. Characters and documents can themselves be biased, outdated, incomplete or self-promotional.
+
+The goal is for hiring to contain informed uncertainty:
+
+`available evidence + recruitment channel + studio knowledge -> hiring judgment -> later discovery through employment`
+
+Do not turn uncertainty into arbitrary hidden punishment. Important discoveries should emerge through observable work, behaviour, relationships and history.
 
 The modern professional-network presentation should use an original in-world identity rather than requiring the real LinkedIn brand.
 
