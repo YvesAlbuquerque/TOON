@@ -465,11 +465,12 @@ Runtime AI must consume only approved structured context for historical facts. D
 
 ### 5.6 Reception model proof
 
-Prototype a legible reception model combining several factors rather than direct historical modifiers.
+Prototype a legible **hybrid reception model** in which both the production process and the finished artifact matter.
 
 Candidate inputs:
 
-- production quality/craft;
+- production-process evidence such as crew, time pressure, technology, facilities, conflict and direction;
+- structured evaluation of the actual generated artifact;
 - audience/market fit;
 - historical context;
 - medium and available technology;
@@ -478,7 +479,19 @@ Candidate inputs:
 - novelty/timing;
 - uncertainty.
 
-The result should expose a human-readable explanation of the strongest contributing factors.
+Artifact-evaluation proof requirements:
+
+- evaluate at least one representative generated work using a local model;
+- return bounded structured dimensions rather than unrestricted prose as authoritative gameplay data;
+- assess the actual artifact, not only the parameters used to generate it;
+- include at least one medium-appropriate craft/coherence signal and one brief/IP-consistency signal;
+- keep evaluator output as evidence; only game-owned reception rules determine final state/revenue;
+- demonstrate that two artifacts produced under similar simulation parameters can receive meaningfully different artifact evidence;
+- demonstrate that strong process parameters do not guarantee a strong artifact score, and vice versa;
+- expose a human-readable explanation of how process evidence, artifact evidence and market context contributed;
+- test evaluator repeatability/variance before treating any scoring method as validated.
+
+Do not treat a single AI aesthetic score as objective artistic truth.
 
 ## Phase 6 — Media evolution
 
