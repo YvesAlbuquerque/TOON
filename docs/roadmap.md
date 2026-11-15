@@ -624,6 +624,11 @@ Requirements:
 - recruitment availability remains separate from workstation/capacity requirements;
 - the digital-era network uses a fictional in-world identity rather than requiring a real LinkedIn integration;
 - candidate channels must not expose perfect hidden character stats by default;
+- pre-hire information should come from evidence such as résumé, portfolio, work history, referral provenance, references/endorsements and compensation expectations;
+- different channels should expose different amounts/types of evidence;
+- at least one important professional attribute should remain uncertain until after hiring;
+- the UI should express uncertainty/confidence qualitatively rather than showing false exact values;
+- later discovery of a hidden/uncertain trait should be causally observable through work or behaviour rather than feeling like an arbitrary penalty;
 - historical unlock timing should be treated as game progression and researched context, not as a claim that the underlying real-world medium did not previously exist.
 
 ### 7.4 Workplace environment and preferences
