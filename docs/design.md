@@ -1662,6 +1662,88 @@ Immortal/static cartoons may instead accumulate:
 
 A studio can therefore contain both generations of mortal workers and century-long cartoon veterans.
 
+## Production as a physical workflow object
+
+A production should exist as a persistent **physical/workflow object** inside the studio rather than only as an abstract row in a management screen.
+
+The exact visual metaphor can evolve by era and medium, but the player should be able to perceive a production moving through departments/stations as it advances through its pipeline. This borrows the legibility of physically moving a production between facilities without requiring literal paper handling for every later-era workflow.
+
+The production object owns or references:
+
+- current pipeline stage;
+- responsible professionals;
+- IP/brief;
+- current approved creative inputs;
+- generated/intermediate artifacts;
+- version/provenance history;
+- costs/time spent;
+- blockers and pending approvals;
+- final released artifact.
+
+This creates a visible relationship between **place + people + production state**.
+
+### Optional human-in-the-loop creation
+
+Creative intervention by the player is optional. The game must remain capable of completing productions automatically.
+
+The interaction model has only two top-level states:
+
+- **Automatic** — the studio/game resolves the stage using simulation and local AI/procedural systems.
+- **Player-intervened** — the player contributes to that stage through whatever inputs the stage supports, such as writing a short script, selecting a direction, uploading a reference image, choosing among generated alternatives, or requesting regeneration.
+
+There is no separate universal “assisted” versus “manual” mode. Those are simply different forms of player intervention.
+
+Candidate intervention points include:
+
+- concept/brief;
+- short script;
+- character reference;
+- art direction/reference image;
+- storyboard;
+- selected later review/approval stages where useful.
+
+The exact allowed intervention points remain a scope decision per medium/pipeline.
+
+### Version limit and selection
+
+For stages that support alternatives or regeneration, keep at most **three candidate versions** at once.
+
+The player may:
+
+- accept the current version;
+- generate/regenerate alternatives until the three-version limit is reached;
+- inspect the available versions;
+- choose one version as the approved input for the next stage.
+
+Only the selected version advances. Unselected alternatives are discarded from the active production and do not remain as a permanent archive requirement.
+
+A regeneration/rework request can consume simulation resources such as:
+
+- time;
+- budget;
+- professional effort;
+- fatigue/creative energy;
+- schedule slack;
+- production risk.
+
+The exact cost depends on stage, era, medium and production state.
+
+Player-authored or uploaded material becomes part of the production's real creative input and therefore can affect downstream generation and final artifact evaluation. It is not merely cosmetic metadata.
+
+### Provenance
+
+The production should retain enough provenance to distinguish, where relevant:
+
+- automatically generated content;
+- player-authored text;
+- player-uploaded reference/input;
+- selected generated version;
+- regeneration/rework history;
+- professionals and tools/models involved;
+- final approved artifact lineage.
+
+Provenance supports continuity, debugging, archive/history and export/share metadata. It should not require preserving every discarded intermediate artifact forever.
+
 ## Production scale and output length
 
 T.O.O.N. should favor **small complete works** rather than attempting real-world production lengths.
