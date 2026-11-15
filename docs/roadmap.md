@@ -346,6 +346,8 @@ Legacy `InkTime` data is migration source evidence, not an automatic compatibili
 
 Avoid hard-coding the first proof exclusively around animation.
 
+The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
+
 The minimum production representation should support:
 
 - medium/type;
@@ -355,7 +357,25 @@ The minimum production representation should support:
 - budget;
 - creative/quality state;
 - release/result;
-- persistent consequences.
+- persistent consequences;
+- current pipeline stage;
+- approved creative inputs;
+- intermediate artifact references;
+- provenance/version metadata.
+
+Human-in-the-loop proof requirements:
+
+- the game can complete the representative production without player-authored creative input;
+- at least one stage also permits optional player intervention;
+- intervention may be authored text, uploaded/reference media, selection between generated alternatives, or regeneration where supported;
+- there is no mandatory universal three-mode Auto/Assisted/Manual system;
+- stages are either resolved automatically or contain optional player intervention;
+- a stage that supports alternatives retains at most **three candidate versions**;
+- the player chooses which of the available versions advances to the next stage;
+- discarded alternatives are not required to remain in the permanent archive;
+- regeneration/rework has a bounded simulation cost such as time, budget or professional effort;
+- player-provided input becomes part of downstream production context and can affect the actual generated artifact;
+- provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
 
