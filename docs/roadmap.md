@@ -348,7 +348,7 @@ Legacy `InkTime` data is migration source evidence, not an automatic compatibili
 
 The production system should support the four accepted production types: **comic strip, comic, 2D animation and 3D animation**.
 
-Avoid hard-coding the first proof exclusively around one of them.
+**Accepted first playable format (owner-confirmed 2026-11-15): one complete 3–4-panel comic strip.** Build the smallest strip-specific output path on a medium-neutral Production domain; do not hard-code the shared domain exclusively around strips. Other production types remain in design scope but are not required as validated output paths in the first vertical slice.
 
 The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
 
@@ -818,7 +818,7 @@ Required workflow:
 
 `Open studio -> recurring crew -> one relationship pressure -> one IP -> one production -> assignment/tradeoff -> release -> durable consequence -> save/reopen`
 
-The first integrated slice does **not** need to span the full campaign.
+The first integrated slice does **not** need to span the full campaign. It must complete one **3–4-panel comic strip** as a player-consumable finished work; proving this does **not** validate comics, 2D animation or 3D animation.
 
 Record:
 
