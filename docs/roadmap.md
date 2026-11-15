@@ -371,10 +371,14 @@ Human-in-the-loop proof requirements:
 - there is no mandatory universal three-mode Auto/Assisted/Manual system;
 - stages are either resolved automatically or contain optional player intervention;
 - a stage that supports alternatives retains at most **three candidate versions**;
+- versions are reviewed one at a time, with only a lightweight indication that other versions exist; exact UX/UI is deferred;
 - the player chooses which of the available versions advances to the next stage;
 - discarded alternatives are not required to remain in the permanent archive;
 - regeneration/rework has a bounded simulation cost such as time, budget or professional effort;
 - player-provided input becomes part of downstream production context and can affect the actual generated artifact;
+- player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
+- intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
+- the physical production representation changes according to era, medium and pipeline stage;
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.

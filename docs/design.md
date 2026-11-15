@@ -1666,7 +1666,15 @@ A studio can therefore contain both generations of mortal workers and century-lo
 
 A production should exist as a persistent **physical/workflow object** inside the studio rather than only as an abstract row in a management screen.
 
-The exact visual metaphor can evolve by era and medium, but the player should be able to perceive a production moving through departments/stations as it advances through its pipeline. This borrows the legibility of physically moving a production between facilities without requiring literal paper handling for every later-era workflow.
+The production should have a **strong physical representation** whose appearance changes with:
+
+- historical period;
+- production medium/type;
+- current pipeline stage.
+
+A comic production, a cel-animation production and a later 3D production should not share one timeless generic prop. Their physical representation should communicate what kind of work they are and where they currently are in the process.
+
+The player should be able to perceive the production moving through departments/stations as it advances through its pipeline. The representation can evolve from paper folders, boards, reels, cels, tapes, drives, digital work packages or other era/medium-appropriate forms without requiring literal handling simulation for every technology.
 
 The production object owns or references:
 
@@ -1708,11 +1716,13 @@ The exact allowed intervention points remain a scope decision per medium/pipelin
 
 For stages that support alternatives or regeneration, keep at most **three candidate versions** at once.
 
+The player views **one version at a time**. A small visual indicator should communicate that additional versions exist and allow navigation/selection between them. Exact presentation, controls and visual language are intentionally deferred to a later UX/UI design pass.
+
 The player may:
 
 - accept the current version;
 - generate/regenerate alternatives until the three-version limit is reached;
-- inspect the available versions;
+- inspect the available versions one at a time;
 - choose one version as the approved input for the next stage.
 
 Only the selected version advances. Unselected alternatives are discarded from the active production and do not remain as a permanent archive requirement.
@@ -1729,6 +1739,23 @@ A regeneration/rework request can consume simulation resources such as:
 The exact cost depends on stage, era, medium and production state.
 
 Player-authored or uploaded material becomes part of the production's real creative input and therefore can affect downstream generation and final artifact evaluation. It is not merely cosmetic metadata.
+
+Player intervention is treated as an **external creative contribution**, not as work performed by a particular in-studio professional.
+
+For example, if the player supplies a script at a stage that supports script intervention:
+
+- that script advances as the approved external input for the next stage;
+- the studio's scriptwriter does not retroactively receive authorship or work credit for producing it;
+- the scriptwriter does not need to “improve” it merely because they exist on staff;
+- later pipeline stages can still transform, adapt, reinterpret or degrade/improve the result through their own professionals, simulation state and local AI generation.
+
+The same rule applies to uploaded character references, art-direction images or other player-provided creative inputs.
+
+This preserves a clean distinction:
+
+`player/external creative input -> accepted production material -> later studio pipeline transforms it`
+
+Human-in-the-loop should therefore bypass or replace only the specific creative contribution supplied at that stage, not the downstream production process as a whole.
 
 ### Provenance
 
