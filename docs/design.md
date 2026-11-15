@@ -1833,6 +1833,8 @@ For stages that support alternatives or regeneration, keep at most **three candi
 
 The player views **one version at a time**. A small visual indicator should communicate that additional versions exist and allow navigation/selection between them. Exact presentation, controls and visual language are intentionally deferred to a later UX/UI design pass.
 
+**Automatic creative stages** must be able to advance a valid chosen result under game-owned selection rules without requiring the player to inspect alternatives. **When the player intervenes**, choosing which candidate advances is their decision. Neither path overrides the player's final release authority.
+
 The player may:
 
 - accept the current version;
