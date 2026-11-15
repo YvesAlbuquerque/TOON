@@ -729,9 +729,10 @@ Prototype a lightweight persistent competitor model.
 
 Requirements:
 
-- begin the first proof with **one active competitor**;
-- validate the gameplay value of that rival before scaling the count upward;
-- keep any later active-competitor count small enough to remain memorable;
+- begin a campaign around 1900 with **one active competitor**;
+- allow the relevant competitor count to grow organically as the market matures;
+- target roughly **3–5 active relevant competitors** in a mature market, with around **4** as a normal design target;
+- keep the active-competitor count small enough that rivals remain memorable;
 - competitors retain abstract identity, reputation, financial strength, notable talent, IP/focus and relationship state;
 - former employees can plausibly found new competitor studios;
 - competitors can affect talent, contracts, audience attention, reputation and opportunities;
