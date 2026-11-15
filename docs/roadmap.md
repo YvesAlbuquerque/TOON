@@ -729,7 +729,9 @@ Prototype a lightweight persistent competitor model.
 
 Requirements:
 
-- keep the number of active competitors small enough to remain memorable;
+- begin the first proof with **one active competitor**;
+- validate the gameplay value of that rival before scaling the count upward;
+- keep any later active-competitor count small enough to remain memorable;
 - competitors retain abstract identity, reputation, financial strength, notable talent, IP/focus and relationship state;
 - former employees can plausibly found new competitor studios;
 - competitors can affect talent, contracts, audience attention, reputation and opportunities;
@@ -737,7 +739,10 @@ Requirements:
 - rival productions do **not** require generated artifacts;
 - only outcomes relevant to the world are simulated/persisted, such as release result, reception, commercial success/failure and resulting market/reputation effects;
 - descriptive metadata may be generated for presentation, but not full production content;
-- competition is not assumed to be strictly zero-sum.
+- competition is not assumed to be strictly zero-sum;
+- competitors can fail, including through bankruptcy;
+- competitor exits preserve historical consequences rather than deleting the studio from campaign history;
+- a failed/merged/irrelevant competitor can free an active-rival slot for a new studio to emerge later.
 
 ### 7.6 Employee bargaining, dismissal and agency
 
