@@ -21,6 +21,8 @@ This roadmap preserves validated/recovered technical work while rebasing future 
 - Treat Unreal bootstrap as a separate proof before porting broad gameplay.
 - Never claim implementation or validation from documentation alone.
 
+For unresolved design coherence, owner decisions and evidence requirements before broad production, see the [pre-production design review](preproduction-design-review.md). Its proposed defaults are **not** accepted directions until reviewed.
+
 ## Phase 0 — Recovered technical baseline
 
 ### 0.1 Reproducible Unity baseline — completed evidence
@@ -62,7 +64,7 @@ Accepted direction now includes:
 - **T.O.O.N. — The Office Of Nonsense** as current project/public name;
 - studio/company fantasy as the primary frame;
 - campaign target approximately 1900–2030;
-- media evolution from text/illustration through strips/comics, animation, digital and 3D/realtime-era production;
+- media evolution through **comic strips, comics, 2D animation and 3D animation**, while text, illustration and digital/realtime techniques remain internal production methods rather than additional top-level types;
 - persistent IPs that can cross media;
 - recurring professionals with agency, relationships and outside lives;
 - mixed character longevity, including mortal, long-lived, cartoon-static and rule-bound existence models;
@@ -579,14 +581,14 @@ Do not treat provider-specific seeds/prompts as the canonical identity source.
 
 Before scaling content generation, validate representative output sizes.
 
-Initial targets:
+Initial released-work targets for the **four accepted production types**:
 
-- text: one-screen / a few hundred words at most;
-- strip: **3–4 panels**;
-- short comic: **1–4 pages**;
-- animatic: roughly 20–90 seconds;
+- comic strip: **3–4 panels**;
+- comic: **1–4 pages**;
 - 2D animation: roughly 30–120 seconds;
-- 3D/realtime short: roughly 30–120 seconds.
+- 3D animation: roughly 30–120 seconds.
+
+Text, illustration and animatics can still be production-stage materials or intermediate reviews. They are not independent released production types in the current scope.
 
 Measure separately:
 
