@@ -638,6 +638,50 @@ A central economic tension should be:
 
 `predictable contract work <-> risky original production <-> long-tail catalogue value`
 
+### How productions originate
+
+A production can begin from three sources that converge into the same production pipeline:
+
+1. **Player initiative** — the player starts an original production, choosing the production type and using an existing IP or creating a new one.
+2. **External contract** — an outside client offers a bounded job that the player can accept or reject.
+3. **Internal proposal** — one employee proposes a specific creative project based on their interests, experiences, relationships, IP context or current historical/cultural context.
+
+Internal proposals have **exactly one originator**. Do not model co-originated internal pitches in the base system.
+
+If an internal proposal is accepted and becomes a production:
+
+- the originator receives persistent creator/proposer credit;
+- the originator receives a fixed **5% of the revenue received by the studio from that production**;
+- the percentage is a tunable design value, not a historical/legal claim;
+- the participation continues even if that employee later leaves the studio;
+- the participation applies to that specific production and its direct catalogue revenue, not automatically to every future production using the same IP;
+- studio ownership of the IP remains separate from the employee's credit and revenue participation.
+
+This rule is intentionally fixed rather than negotiated per employee so internal proposals remain easy to understand.
+
+### External contract terms
+
+External contracts should remain compact and legible. A contract can define:
+
+- client;
+- production type;
+- brief;
+- mandatory requirements;
+- deadline;
+- guaranteed payment;
+- ownership/rights;
+- studio revenue participation where applicable;
+- optional bonuses;
+- penalties for lateness, cancellation or failure to satisfy explicit mandatory requirements.
+
+The base interaction is an offer that can be **accepted or rejected**. Advanced clause-by-clause negotiation is not required for the core system.
+
+Client satisfaction should derive from game-owned checks such as:
+
+`brief compliance + mandatory requirements + deadline + artifact/process quality -> contract result`
+
+AI can dramatize client reaction, but does not decide authoritative payment or penalties.
+
 ### Main cost families
 
 Keep costs concentrated in categories the player can understand and act on:
@@ -1574,6 +1618,22 @@ Employees can:
 - become unavailable mid-production.
 
 The player's job is not to own people. It is to keep a functioning studio despite their agency.
+
+### Personal finances and creative upside
+
+Professionals can have an abstracted personal financial state that affects behaviour without requiring household-accounting simulation.
+
+Relevant influences may include:
+
+- salary and bonuses;
+- revenue participation from accepted internal proposals;
+- debt or high recurring obligations;
+- outside income;
+- accumulated savings/wealth.
+
+Personal finances can influence thoughts, demands and outside-work choices. Financial pressure may increase the importance of salary, stability or extra work. Financial success can increase independence, reduce tolerance for poor treatment, enable retirement, fund personal projects or make it plausible for a talented professional to leave and found a competing studio.
+
+These effects should be character- and context-dependent rather than deterministic thresholds.
 
 ## Life outside the studio
 
