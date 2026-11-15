@@ -762,6 +762,36 @@ Removing a workstation **does not automatically fire an employee**. Employment a
 
 Because construction/build mode pauses simulation, the player may reorganize workstations freely while building. Capacity and assignments are reconciled when returning to live simulation.
 
+### Dismissal and voluntary departure
+
+Ending employment should remain mechanically simple even when its consequences are meaningful.
+
+For a player-initiated dismissal, the core interaction is:
+
+`select employee -> Dismiss -> confirm`
+
+There is no mandatory negotiation minigame, notice-period simulation or playable handover phase. Once confirmed, the professional leaves the active workforce immediately.
+
+Any legally or historically appropriate notice, severance, contractual obligation or equivalent cost should be represented through **abstracted economic/rule consequences appropriate to the era and location**, rather than requiring the employee to remain physically simulated for a notice period. Exact legal/historical rules require sourced data before becoming canonical mechanics.
+
+Dismissal can still create persistent consequences such as:
+
+- salary/severance or other economic cost where applicable;
+- morale changes among colleagues;
+- relationship changes toward management or the dismissed professional;
+- subjective memories and grudges;
+- reputation effects where later systems support them;
+- disruption to productions/responsibilities;
+- later return, re-hire or rival-studio opportunities.
+
+The severity should depend on context. Dismissing a respected veteran with strong relationships should not feel equivalent to dismissing a recently hired, socially isolated professional.
+
+Professionals may also **resign autonomously**. Plausible causes include compensation, lack of recognition, conflict, burnout, blocked career goals, outside-life changes or an external opportunity.
+
+Some impending resignations may escalate into a Decision Event when player authority could plausibly change the outcome. Others may occur directly when the underlying situation is sufficiently established and no meaningful management decision remains.
+
+Departure does not erase the person from history. Former employees can remain in character memory, production credits, relationships, archive/history and future recruitment/re-encounter systems.
+
 ### Recruitment channels across eras
 
 Hiring should not come from one timeless global candidate list. **How the studio discovers candidates evolves across the campaign**, and early recruitment should feel much more constrained than modern recruitment.
