@@ -16,6 +16,7 @@ The project was formerly known as **InkTime / Ink Through Time**. Those names ar
 - **Persistent IP foundation:** a minimum persistent IP model has been merged; runtime validation remains bounded by its owning evidence.
 - **Legacy Unity/Flux evidence:** the prior bounded host upgrade remains valid historical evidence for the Unity scaffold. Loomlight Flux is **not** the target runtime framework for the Unreal direction.
 - **AI-heavy development:** accepted. AI may be used extensively for code, content, research, testing, tooling and iteration, while important technical decisions and validation remain human-owned and evidence-based.
+- **First playable production:** one finished **3–4-panel comic strip** — **Accepted direction**; Unreal implementation and local generation remain unvalidated.
 - **Campaign-length target:** approximately **40 hours** for a full 1900–2030 run, including studio management and time spent reading/viewing/watching productions. This remains a design target until playtested.
 
 See [Unreal + AI development strategy](docs/unreal-ai-development-strategy.md).
@@ -37,7 +38,7 @@ The intended long-term loop is:
 
 The first renewed vertical slice should prove a smaller coherent loop:
 
-`Open one studio -> recurring crew -> one IP -> one compact production -> one people/production tradeoff -> view/read/watch result -> release -> durable consequence -> save/reopen`
+`Open one studio -> recurring crew -> one IP -> one 3–4-panel comic strip -> one people/production tradeoff -> read the finished strip -> approve release -> durable consequence -> save/reopen`
 
 ## Domain direction
 
@@ -95,6 +96,7 @@ They must be treated as compatibility identifiers, not as the current game name.
 
 ## Canonical project documents
 
+- **[Repository knowledge index](docs/README.md)** — where to find accepted game rules, technical evidence, legacy history, open implementation work and checks.
 - [Design direction](docs/design.md)
 - [Development roadmap](docs/roadmap.md)
 - [Pre-production design coherence audit](docs/preproduction-design-review.md)

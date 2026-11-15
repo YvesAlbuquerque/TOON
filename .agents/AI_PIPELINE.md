@@ -5,7 +5,7 @@ Use this after root `AGENTS.md`. It keeps the accepted historical living-studio 
 ## Default flow
 
 ```text
-README / design / roadmap / current issue
+README / docs index / design / roadmap / current issue
   -> identify current engine/migration status
   -> identify the smallest T.O.O.N. gameplay or production outcome
   -> preserve game/provider ownership boundaries
@@ -38,7 +38,7 @@ Runtime/player-facing AI may generate or transform production content, but:
 - historical facts come from approved structured context rather than runtime invention;
 - accepted production state/history remains game-owned;
 - player/human authority remains explicit for creative direction and release;
-- Game Studio/Nexus integration is never inferred merely because AI is present.
+- Loomlight product integration is never inferred merely because AI is present.
 
 ## 3. Provider independence does not mean building a DCC
 
@@ -84,7 +84,7 @@ Prefer a compact proof with:
 - one small studio;
 - 3–4 recurring professionals;
 - one IP;
-- one compact production;
+- one completed **3–4-panel comic strip** (first accepted playable format);
 - one relationship/production pressure;
 - one meaningful player tradeoff;
 - one viewable/readable result;
@@ -96,7 +96,7 @@ Do not expand into a professional DCC, full 130-year campaign, complete historic
 
 ## 7. Close the loop
 
-After implementation, reconcile Issues/roadmap and record only evidence actually obtained.
+Before creating new design gaps, consult the [design coherence audit](../docs/preproduction-design-review.md) and trace the accepted rules. After implementation, reconcile Issues/roadmap and record only evidence actually obtained.
 
 ## Local skills
 

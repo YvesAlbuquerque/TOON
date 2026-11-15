@@ -82,6 +82,9 @@ ehthumbs.db
 # ============== #
 
 # User-specific stuff
+# Keep intentional shared Rider code styles/settings; ignore ephemeral AI/editor state.
+.idea/**/copilotDiffState.xml
+.idea/**/copilot.data.migration.ask2agent.xml
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -99,3 +102,8 @@ ehthumbs.db
 # They also could contain extremely sensitive data
 # ============== #
 /[Mm]emoryCaptures/
+# Unreal Engine generated outputs (future target; never ignore Source/, Content/ or .uproject).
+**/Binaries/
+**/Intermediate/
+**/Saved/
+**/DerivedDataCache/
