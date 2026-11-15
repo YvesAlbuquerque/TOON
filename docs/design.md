@@ -762,6 +762,27 @@ Removing a workstation **does not automatically fire an employee**. Employment a
 
 Because construction/build mode pauses simulation, the player may reorganize workstations freely while building. Capacity and assignments are reconciled when returning to live simulation.
 
+### Recruitment channels across eras
+
+Hiring should not come from one timeless global candidate list. **How the studio discovers candidates evolves across the campaign**, and early recruitment should feel much more constrained than modern recruitment.
+
+Accepted directional channels include:
+
+- **Walk-in applications** — especially early in the campaign, a potential employee may physically arrive at the studio to leave a résumé/application. This is a relatively rare event, so the player may have very few candidates to choose from.
+- **Employee referrals** — an existing professional may occasionally recommend someone from their network. Referrals are also relatively rare and can carry useful social context because the recommendation comes through a known employee.
+- **Newspaper job advertisements** — as the studio grows, the player can actively place a job advertisement. The advertisement increases the flow of applicants who then appear/contact the studio. This can become especially relevant during the animation-industry growth periods, but its availability should not imply that newspaper employment ads historically began only then.
+- **Modern digital professional network** — in later eras, the studio gains access to a computer-based recruitment interface analogous to a professional network such as LinkedIn. This allows active searching/browsing of a larger candidate pool rather than waiting for applicants to arrive physically.
+
+The progression should broadly move from:
+
+`scarce inbound opportunities -> referrals -> active mass recruitment -> searchable digital talent market`
+
+These channels change **discovery and access**, not the permanent-employment rule. A discovered candidate can still only be hired when the studio has compatible productive capacity.
+
+The exact amount of information shown about a candidate before hiring remains a separate design decision. A recruitment channel should not automatically reveal perfect hidden simulation values.
+
+The modern professional-network presentation should use an original in-world identity rather than requiring the real LinkedIn brand.
+
 ### Working, idle and blocked states
 
 A professional who is not currently producing should not simply freeze.
