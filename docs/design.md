@@ -1623,6 +1623,10 @@ The player's job is not to own people. It is to keep a functioning studio despit
 
 Competition should use a **small set of persistent, legible rival studios** rather than fully simulating many equivalent companies.
 
+The first competitor proof should begin with **one active rival studio**. Additional rivals are a later scaling decision and should only be introduced after the one-rival loop is shown to add meaningful gameplay.
+
+Long-term, the design may support a small handful of active rivals, but the system should remain bounded enough that individual competitors stay memorable.
+
 A competitor can retain abstract state such as:
 
 - identity and creative focus;
@@ -1635,6 +1639,12 @@ A competitor can retain abstract state such as:
 - important historical events.
 
 Competitors may arise from the wider world or emerge from the campaign, including former T.O.O.N. professionals who leave and later found their own studio.
+
+Competitors can also **fail and leave the active market**. Bankruptcy is one important path, alongside acquisition/merger, prolonged loss of relevance, or a strategic shift outside the game's supported production space.
+
+A competitor leaving the market should not erase its history. Its former employees, IPs, relationships and notable events can remain in the campaign record and may create future opportunities.
+
+Competitor exits should also create room for new rivals to emerge later, keeping the market dynamic without continuously increasing the active-rival count.
 
 Competition should be expressed through concrete consequences such as:
 
