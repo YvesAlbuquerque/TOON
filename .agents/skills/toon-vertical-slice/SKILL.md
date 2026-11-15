@@ -9,18 +9,18 @@ user-invocable: true
 
 ## Checks
 
-1. Verify roadmap dependencies and current Unreal/migration evidence before implementation claims.
+1. Read the [repository index](../../../docs/README.md), verify accepted rules against the [design audit](../../../docs/preproduction-design-review.md), and confirm roadmap dependencies and current Unreal/migration evidence before implementation claims.
 2. Confirm the step reinforces “run a living creative studio across history” rather than animation-only, comic-software, or legacy Unity framing.
 3. Use the smallest persistent studio, professional, relationship, IP and production entities required.
 4. Keep the canonical production core medium-neutral: `IP -> Production -> Medium -> Crew -> Stages -> Release -> Reception -> Legacy`.
-5. Treat panels, storyboard/shots, 3D assets and other medium-specific structures as bounded submodels.
+5. The accepted first completed playable artifact is a **3–4-panel comic strip**, but keep the four-type game-wide production model medium-neutral. Treat panels, storyboard/shots, 3D assets and other medium-specific structures as bounded submodels.
 6. Separate development-time AI from runtime/player-facing AI.
 7. Keep runtime providers behind game-owned contracts and keep historical facts sourced/approved.
 8. Do not require feature-complete manual DCC authoring solely to prove provider independence.
 9. Ensure recurring professionals remain characters with readable identity, history, relationships and longevity rules rather than anonymous worker stats.
 10. Preserve release/reception/history consequences that survive save/reopen.
 11. Treat Flux/Unity code as legacy migration evidence, not the target architecture.
-12. Identify what can be statically reviewed and what requires real Unreal compile/runtime/save/package/profile/visual evidence.
+12. Identify what can be statically reviewed and what requires real Unreal compile/runtime/save/package/profile/visual evidence. Do not reopen already accepted design rules simply because the Unreal implementation is missing.
 
 ## Verdict
 
