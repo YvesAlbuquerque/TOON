@@ -1805,13 +1805,15 @@ The production object owns or references:
 
 This creates a visible relationship between **place + people + production state**.
 
-### Cancellation of an active production
+### Project trash and deletion
 
-**Accepted owner rule (2026-11-15): the player may cancel any active production at any time**, from initial briefing through any creative or technical stage, queued/in-progress generation, review, or the period awaiting final release approval. Cancellation is a normal player management action, **not** a special action unlocked only after rejecting three candidates, exhausting a budget, receiving permission from staff, or recovering a model/provider.
+**Accepted owner rule (2026-11-15; supersedes the earlier active-only cancellation interpretation):** **at any time**, the player may select a production project and move it to the **trash**, **deleting the entire project**. This is a project-level management action, not an unlock after rejecting versions and not conditional on a stage, candidate count, budget, personnel or local AI availability. It also applies to a project after its work has been released; the old rule that a released project could not be deleted is superseded.
 
-A cancel request must prevent the production from advancing or being released. Any in-flight/asynchronous work must be cancelled where practical or its late result ignored; it cannot resurrect the cancelled production or mutate its approved history. The game must preserve coherent studio/IP/crew state and any cancellation history or consequences required by the save/archive system. Cancelling does not automatically reverse already incurred production time or expense, nor does it erase applicable previously agreed external-contract terms; exact financial, employment, reception and contract consequences remain subject to the established simulation/contract rules and their later tuning.
+Trashing a project removes its game-owned project record and all associated project-owned candidate versions, unselected/selected intermediates, final local artifacts, project-only provenance and archive entry. It must not leave stale project references in studio/IP/crew/archive views or resurrect the project on save/reopen. Any in-flight/asynchronous generation or evaluation for that project must be stopped where practical; late responses are ignored and cannot recreate it. There is **no separately preserved cancelled-project record** implied by this command, and no restore/recycle-bin recovery feature is accepted merely because the UI uses a trash icon.
 
-**Release is a separate irreversible historical boundary:** an already published work is part of the archive and is not retroactively made unpublished by the *cancel active production* command. A post-release withdrawal/recall would be a different feature and is not established here.
+**Scope boundary:** deleting a production project does not automatically delete its independent IP identity, professionals, other projects, or undo already-applied studio cash/relationship/contract effects. Those are separate authoritative entities or past consequences, and their references must be reconciled without preserving the deleted project itself. Deleting local project data cannot revoke copies already exported or distributed outside the game. Exact implications for continuing catalogue revenue, externally committed contracts and already-released outside-world exposure are **not yet specified**; do not silently invent a global recall or refund rule.
+
+The UI should make the destructive nature of trashing legible before it happens; exact confirmation/undo presentation is a future UX detail, not evidence of a recoverable trash system.
 
 ### Optional human-in-the-loop creation
 
@@ -1837,20 +1839,22 @@ The exact allowed intervention points remain a scope decision per medium/pipelin
 
 ### Version limit and selection
 
-For stages that support alternatives or regeneration, keep at most **three candidate versions** at once.
+**Accepted owner rule (2026-11-15): up to three generated versions in total per creative stage.** Each successfully produced alternative is the result of requesting a **new version** for that stage. The limit is **not** merely three candidates held concurrently: once the third version has been generated, requesting another version/rework for that stage becomes **unavailable**. Discarding a version does not refund a generation slot or unlock a fourth attempt. Each new stage has its own allowance of up to three versions.
 
-The player views **one version at a time**. A small visual indicator should communicate that additional versions exist and allow navigation/selection between them. Exact presentation, controls and visual language are intentionally deferred to a later UX/UI design pass.
+The player views **one version at a time**. A small indicator should communicate other available versions and allow navigation/selection. Exact controls and visual language are deferred to a later UX/UI pass.
 
-**Automatic creative stages** must be able to advance a valid chosen result under game-owned selection rules without requiring the player to inspect alternatives. **When the player intervenes**, choosing which candidate advances is their decision. Neither path overrides the player's final release authority.
+**Automatic creative stages** may select a valid result under game-owned rules without requiring player inspection. **When the player intervenes**, the player chooses which available version advances. Final public release always remains under player authority.
 
 The player may:
 
-- accept the current version;
-- generate/regenerate alternatives until the three-version limit is reached;
-- inspect the available versions one at a time;
-- choose one version as the approved input for the next stage.
+- request another version only while fewer than three successful versions have been generated **in that stage**;
+- inspect previously generated versions one at a time;
+- select any available version to advance the production;
+- move the **entire project** to trash at any moment, deleting it.
 
-Only the selected version advances. Unselected alternatives are discarded from the active production and do not remain as a permanent archive requirement.
+**On advancing to the next stage, every version except the selected one is discarded.** Only the chosen version is retained as the approved input to subsequent stages. The previous stage's generation allowance cannot be reopened by discarding the others or returning to it; any separate backtracking feature would need an explicit design decision. If no version is selected after the third, generation/rework is disabled; the player may still choose one of the existing versions or trash the entire project.
+
+A generation request that yields **no usable version** because of a provider failure is not established as a completed creative alternative; handling retries, timeouts and refunding failed requests remains a separate technical/experience validation boundary. Do not silently count a failed call as a successfully generated version.
 
 A regeneration/rework request can consume simulation resources such as:
 
@@ -2030,7 +2034,7 @@ By 2030, the player should be able to inspect the history they created:
 - first successful character;
 - major failures;
 - hits;
-- cancelled projects;
+- completed projects that remain in the archive (a project deliberately deleted through the trash action does **not** remain there);
 - important employees;
 - founders and retirees;
 - century-old immortal staff;

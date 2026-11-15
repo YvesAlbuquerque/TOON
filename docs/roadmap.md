@@ -374,18 +374,20 @@ Human-in-the-loop proof requirements:
 - intervention may be authored text, uploaded/reference media, selection between generated alternatives, or regeneration where supported;
 - there is no mandatory universal three-mode Auto/Assisted/Manual system;
 - stages are either resolved automatically or contain optional player intervention;
-- a stage that supports alternatives retains at most **three candidate versions**;
-- versions are reviewed one at a time, with only a lightweight indication that other versions exist; exact UX/UI is deferred;
-- the player chooses which of the available versions advances to the next stage;
-- discarded alternatives are not required to remain in the permanent archive;
-- regeneration/rework has a bounded simulation cost such as time, budget or professional effort;
+- each creative stage that generates alternatives permits **at most three successfully generated versions in total**, not a regenerable pool of three concurrent slots;
+- versions are reviewed one at a time, with a lightweight indication of the others; exact UX/UI is deferred;
+- after the **third** generated version, further rework/new-version requests in that stage are **disabled**, even if earlier versions are discarded;
+- the game can select a valid version automatically when the player does not intervene; otherwise the player selects which available version advances;
+- **all unselected versions are discarded when the selected version moves to the next stage**;
+- requesting a new version within the three-version allowance can have a bounded time, budget or professional-effort cost;
 - player-provided input becomes part of downstream production context and can affect the actual generated artifact;
 - player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
 - the physical production representation changes according to era, medium and pipeline stage;
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
-- **player may cancel any active production at any point**, including during queued/in-flight local generation, review and awaiting release; cancellation must prevent late results from progressing or releasing it;
-- cancelling an active production preserves coherent studio/IP/crew state, applicable spent costs/contract consequences and an appropriate cancellation record; it does not undo an already released publication.
+- **at any point, including after release**, the player may select the project and move it to the **trash**, **deleting the entire project**—project data, stage versions, local artifacts, provenance and archive entry;
+- project trash is destructive, not a soft-cancel/archive state: remove project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
+- independent IP/professionals, other productions and already-applied studio/contract effects are not deleted or retroactively undone; externally distributed files cannot be recalled by local deletion. Exactly how subsequent catalogue income/contract obligations interact with post-release deletion requires further design clarification.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
 

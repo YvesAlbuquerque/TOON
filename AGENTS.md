@@ -51,6 +51,13 @@ Implement only the subset needed for the current proof.
 - Prefer bold macro-shapes, strong line of action, readable posing, and animation-friendly design.
 - Do not copy protected Disney, Warner/Looney Tunes, Fleischer, or other studio/character identities.
 
+## Production version and trash rules (accepted 2026-11-15)
+
+- **Three successfully generated versions total per creative stage**, not a rolling pool of three concurrent alternatives. After the third version, disable further new-version/rework requests for that stage. Selecting one version advances it and deletes all other versions from the stage.
+- The player may select **any project at any time**, including after release, and move it to **trash, deleting the whole project** (project state, versions, local artifacts and its archive entry). Do not reintroduce a recoverable "cancelled project" history as a substitute for deletion.
+- On trash, prevent queued/in-flight AI results from resurrecting the project. Preserve unrelated IPs, employees and authoritative studio state, and avoid dangling references; do not silently refund spent funds or revoke externally exported work.
+- Exact ongoing catalogue/contract effects of deleting already released work remain a separate narrowly scoped design question. This does not block accepting the version or trash rules.
+
 ## Authorship and AI rules
 
 - Development-time AI and runtime/player-facing AI are separate concerns.
