@@ -1623,9 +1623,9 @@ The player's job is not to own people. It is to keep a functioning studio despit
 
 Competition should use a **small set of persistent, legible rival studios** rather than fully simulating many equivalent companies.
 
-The first competitor proof should begin with **one active rival studio**. Additional rivals are a later scaling decision and should only be introduced after the one-rival loop is shown to add meaningful gameplay.
+At the **start of the campaign around 1900**, T.O.O.N. should begin with **one active rival studio**. This is a world-state/campaign-start decision, not a restriction on the first implementation proof.
 
-Long-term, the design may support a small handful of active rivals, but the system should remain bounded enough that individual competitors stay memorable.
+As the market matures, the number of relevant rivals can grow organically. A useful long-term target is a small handful of active competitors — typically around **3–5 relevant rivals**, with **4** as a reasonable default target when the market is mature enough. The system should remain bounded enough that individual competitors stay memorable.
 
 A competitor can retain abstract state such as:
 
