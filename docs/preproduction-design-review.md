@@ -1,7 +1,7 @@
 # T.O.O.N. — Pre-production design coherence and readiness review
 
 **Review date:** 2026-11-15  
-**Status:** **Proposed** review and validation plan; **not** an Accepted direction change or a production-readiness claim.  
+**Status:** Design-gap review remains **Proposed** except **D-01 (Accepted direction, owner confirmed 2026-11-15)**; not a production-readiness claim.  
 **Owner:** T.O.O.N. game repository.  
 **Canonical sources:** [Design direction](design.md), [roadmap](roadmap.md), [Unreal/AI strategy](unreal-ai-development-strategy.md), [creative direction #28](https://github.com/YvesAlbuquerque/TOON/issues/28), [integrated proof #16](https://github.com/YvesAlbuquerque/TOON/issues/16).
 
@@ -32,7 +32,7 @@ The first gate is not permission to claim the third. Do not label T.O.O.N. `Vali
 | ID | Severity | Finding | Resolution / remaining boundary |
 | --- | --- | --- | --- |
 | C-01 | Correctable documentation drift | Earlier descriptive passages called text-only, stand-alone illustration, animatics or realtime works separate finished production types after the accepted four-type restriction. | Reword affected current README/design/roadmap descriptions. Retain these only as *internal stages, techniques or contextual examples* where appropriate. Historical PRs and comments are not retroactively rewritten. |
-| C-02 | High — unresolved proof scope | The design allows four production families but does not pick **one specific initial release artifact** for the vertical slice. A medium-neutral domain alone cannot prove a readable production loop. | **Proposed:** first playable proof releases a **3–4-panel comic strip**. Keep the production domain medium-neutral, with the strip format as the first thin adapter; do not commit to this choice as Accepted until owner review. |
+| C-02 | Direction resolved; validation outstanding | The design previously lacked one specific initial release artifact, despite four supported production families. | **Accepted direction (2026-11-15):** first playable proof releases one **3–4-panel comic strip**. The production domain remains medium-neutral; this is **not** evidence that the strip pipeline or other types are implemented. |
 | C-03 | High — capability gap | 30–120-second 2D/3D animation generated locally, coherently, reproducibly and affordably on target player hardware is an ambition, not demonstrated feasibility. | Treat local animation as a separate **feasibility gate** before promising the full four-type shipped experience. Static fixture/strip proof does not validate animation. |
 | C-04 | High — feedback causality | Hybrid reception requires inspection of the actual artifact, but model output can be unstable, biased, absent, or incoherent with player choices. | Define a game-owned evidence contract, evaluation-unavailable path and repeatability tests. No evaluator may set cash, reputation or canon directly. |
 | C-05 | High — first-loop design | The roadmap lists domain systems but not a single testable event and decision with predictable costs/relationships and player-visible explanations. | Use the proposed bounded play scenario below and a consequence ledger. Review before implementation. |
@@ -44,9 +44,9 @@ The first gate is not permission to claim the third. Do not label T.O.O.N. `Vali
 | C-11 | Medium — candidate exhaustion | "At most three candidate versions" and regeneration at the limit leave no specified path if all three outputs are rejected. | **Proposed:** cap **active candidates** at three; permit a bounded, paid replacement of an unselected candidate, or explicitly allow stage rework/cancellation. Decide whether the cap is concurrent or lifetime before implementation. |
 | C-12 | High — simulation/inference timing | Continuous time, accelerated time and asynchronous local generation can produce stale briefs, overshot deadlines or a simulation that waits indefinitely on inference. | Define snapshot/versioned job inputs, valid waiting/timeout/cancel paths, stale-result rejection and an auto-fast-forward stop when a production becomes reviewable or requires authority. Record game-time cost separately from wall-clock model delay. |
 
-## Proposed first playable proof: one office, one consequential strip
+## First playable proof: accepted format, proposed scenario
 
-This **is a recommendation for owner review**, not canon or an implemented plan.
+**Accepted direction (D-01, 2026-11-15):** the first playable production is a **3–4-panel comic strip**, while the game-wide scope remains comic strip, comic, 2D animation and 3D animation. All **other scenario details and mechanics below remain proposals** pending owner review and validation; nothing here claims an implemented playable loop.
 
 **Setup:** one small early-era studio, three to four named professionals with at least two directional relationships; one persistent IP; one commissioned or original 3–4-panel comic-strip production; one limited compatible workstation bottleneck. The first pass uses **one** production and may reuse authored fixture images/text to isolate the simulation from unfinished inference technology.
 
@@ -74,7 +74,7 @@ This **is a recommendation for owner review**, not canon or an implemented plan.
 
 | Decision | Proposed default | Evidence to accept |
 | --- | --- | --- |
-| D-01: First slice's primary release artifact | Comic strip, 3–4 panels | Owner confirms it demonstrates the player dream, not just a comic editor |
+| **D-01: First slice's primary release artifact — Accepted direction (2026-11-15)** | **Comic strip, 3–4 panels**, as the first finished playable production; retain all four types as game-wide design scope | Owner explicitly confirmed the format choice. **Implementation, playability and player-dream validation remain outstanding.** |
 | D-02: Player attention and intervention budget | One meaningful assignment, one optional creative input, one consequential Decision Event, one release approval | Short paper/interactive walkthrough is comprehensible without reading design docs; player influence has visible causal effect |
 | D-03: Local generation minimum for first proof | Game-owned deterministic fixture for systems proof, then separate local strip-generation/inspection proof | Compare representative locally generated strip on agreed hardware against coherence, waiting, failure and storage criteria |
 | D-04: Animation commitment | Keep 2D/3D in the accepted **design scope**, not in the first validated production slice | On-device sample measuring consistent characters, motion, audio if applicable, generation time, VRAM/RAM, storage, restart/recovery and share/export quality |
@@ -90,7 +90,8 @@ This **is a recommendation for owner review**, not canon or an implemented plan.
 
 **Before starting the bounded vertical-slice implementation:**
 
-- [ ] Owner resolves D-01, D-02, D-06, D-09 and D-10; confirms representative creative direction and does not mistake doc acceptance for visual validation.
+- [x] Owner confirmed **D-01**: first playable artifact is a **3–4-panel comic strip**, without narrowing the four-type long-term design scope (2026-11-15).
+- [ ] Owner resolves **D-02, D-06, D-09 and D-10**; confirms representative creative direction and does not mistake document acceptance for visual validation.
 - [ ] The initial production state machine, two real decision options and their player-visible consequences are specified.
 - [ ] Fixed-fixture artifact and evaluator-absent paths are defined so game logic is testable without waiting for an external model.
 - [ ] The first proof's out-of-scope list is enforced (no full globe/world simulation, four complete media authoring pipelines, feature-length output, large NPC population, automatic social posting).
@@ -109,4 +110,4 @@ This **is a recommendation for owner review**, not canon or an implemented plan.
 
 Hardware profiles, local generation quality/latency, 2D/3D sequence coherence, model licensing, content rights, uploaded-input handling, historical research cost, export privacy, economy balance, simulation pacing, candidate-version exhaustion, asynchronous-work timing, UI usability and market-name clearance are **Unknown / Planned**, not solved by this review.
 
-**Recommendation:** use this as an evidence-driven gate and merge only the factual terminology fixes without silently treating D-01–D-11 as accepted design. Owner review of those choices should precede implementation scope expansion.
+**Recommendation:** use this as an evidence-driven gate. **Only D-01 has owner acceptance; D-02–D-11 remain proposed** unless separately accepted and documented. Approval of an initial production format does not prove or authorize broad production readiness.
