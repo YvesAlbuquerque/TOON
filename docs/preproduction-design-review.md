@@ -19,7 +19,8 @@ A design gap exists only when the owning source lacks a necessary rule or contai
 | Creative participation | **Optional**; a stage can complete automatically or use bounded player-authored/selective input; no universal Auto/Assisted/Manual mode | [Design — Optional human-in-the-loop creation](design.md#optional-human-in-the-loop-creation) |
 | Management | Player manages assignments, priorities, money, workplace and consequential Decision Events, **not** individual idle actions or free-form conversations | [Design — Management model](design.md#management-model-and-autonomous-social-simulation) |
 | Release authority | Automatically completing creative stages **does not** bypass player authority over final release | [Design — Authorship and AI](design.md#authorship-and-ai), [roadmap](roadmap.md) |
-| Alternatives | **At most three concurrent candidate versions** per stage; one approved version advances; rework consumes simulation resources; discarded work need not be archived permanently | [Design — Version limit](design.md#version-limit-and-selection) |
+| Alternatives | **At most three total successfully generated versions per stage**; each new version uses one slot, further rework disabled after the third; one chosen version advances and all others are discarded | [Design — Version limit](design.md#version-limit-and-selection) |
+| Project deletion | The player can move the **entire project** to trash **at any time**, including after release; delete project-owned data/artifacts/archive entry, not a reversible cancellation record | [Design — Project trash](design.md#project-trash-and-deletion) |
 | Workforce | Permanent player-managed employees, hiring gated by compatible built capacity; no instant dismissal when a workstation is removed | [Design — Employment](design.md#employment-workstations-and-studio-capacity) |
 | Economy and reception | Cash/burn/runway; contract, original, catalogue revenue; reception considers process, **actual artifact**, audience/market, distribution and uncertainty; local evaluator returns evidence, not direct authoritative revenue | [Design — Studio economy](design.md#studio-economy), [historical context and reception](design.md#market-and-audience-reception) |
 | Runtime AI | All player-facing generative inference **local**; bounded game-owned state/actions and provenance; async execution/queues, stale-result checks and deterministic fallback where applicable | [Design](design.md#local-background-character-ai-and-cadence), [Unreal and AI strategy](unreal-ai-development-strategy.md) |
@@ -33,17 +34,15 @@ A design gap exists only when the owning source lacks a necessary rule or contai
 3. **Clarified automatic stage selection:** automatic creative completion does not demand manual selection of an alternative. If the player intervenes, they select the approved candidate; otherwise a **game-owned automatic selection rule** advances a valid result. This implements the already accepted optional-intervention rule and does **not** permit automatic public release.
 4. **Previous false positives withdrawn:** the original audit treated creative-participation budget, final release approval, reception/economy, local AI fallback and the ~40-hour campaign target as fresh owner decisions. They are already accepted design rules or validation work; **do not ask the owner to approve them again**.
 
-## Narrow remaining design specification issue
+## E-01 resolved — three versions and project trash (owner, 2026-11-15)
 
-### E-01 — All available candidate versions rejected
+The earlier ambiguity is **closed as a design decision**. Each successful request for a new version is one of **at most three total generated versions in that stage**. When the third exists, the new-version/rework action is disabled; discarding an earlier candidate does not create a new slot. Choosing a version advances it and **discards all others**. With no approved candidate, the player may still pick one of the existing versions or move the **entire project** to trash. There is no automatic advancement of a rejected version after player intervention.
 
-**Real edge-case ambiguity:** A creative stage may hold up to three candidate versions. The docs specify selection, a simultaneous cap and bounded regeneration cost, but do not define the interaction when the player rejects **every** currently available candidate without selecting one. This matters for completion, UI and resource accounting.
+**Trash means deletion, not cancelled-project archival**: the player can select any project at any time, including after release, and remove its project-owned data, versions, local artifacts and archive entry. This explicitly **supersedes** the earlier 'cancel active production, preserve cancellation record, published work cannot be removed' interpretation. See [the owning design](design.md#project-trash-and-deletion).
 
-**Accepted clarification (owner, 2026-11-15):** the player can **cancel any active production at any time**, including before generating candidates, after rejecting them, during generation or review, and while awaiting release authorization. Cancel is always available; it is **not** gated by candidate count, selection state, money, staff or provider availability. An already released work remains historical canon. See [the owning design](design.md#cancellation-of-an-active-production).
+**Engineering verification, not another design vote:** test 0/1/2/3 versions, disable after third, all unselected candidates erased on advance, automatic stage selection, trash before/after release, save/reopen without orphaned project references, and late asynchronous result rejection. Failed generation calls that produce no usable version need a separate timeout/retry policy and actual validation.
 
-**Still proposed, not owner-accepted:** when no candidate is chosen, the stage does **not** silently advance a rejected candidate. The player may select an existing one or request bounded-cost replacement/rework, never exceeding **three concurrent** candidates. The exact replacement interaction and cost treatment remain to be validated/spec'd. This is a narrower gap than previously recorded, because cancellation itself is settled.
-
-**Validation:** write state-machine tests for 0/1/2/3 candidates, select/reject-all/replacement, cancel at every active stage, cancellation during queued/in-flight generation (late-result rejection), save/reload of a cancelled production, awaiting-release cancellation, and timeout. Escalate to the owner **only if** genuine design alternatives remain after engineering validation; do not open a broad questionnaire.
+**Narrow remaining post-release specification:** the rules have not yet defined what happens to future catalogue revenue, contract liabilities and externally distributed works when an *already released* project is deleted. Do not invent cancellation refunds, third-party recalls or retroactive reversal of studio/people state. Only escalate these outcomes when production/economy design reaches that case.
 
 ## Engineering / production-feasibility evidence gaps — NOT undecided design
 
@@ -77,7 +76,7 @@ This scenario is a **test plan**, not an approval for exact character bios, scri
 
 ## Question and completion discipline
 
-- **Do not ask again** about optional creative participation, three concurrent candidates, release authority, four production types, initial strip length, local-only runtime AI, economy families, or the provisional campaign target unless new contradictory owner evidence emerges.
+- **Do not ask again** about optional creative participation, three **total** generated versions per stage, trash deletion at any time, chosen-version advancement/discarding others, release authority, four production types, initial strip length, local-only runtime AI, economy families, or the provisional campaign target unless new contradictory owner evidence emerges.
 - Escalate only an **unresolved consequential design choice** with explicit links to the incompatible/missing canonical rule. Use a narrow recommendation and alternatives, not a general questionnaire.
 - Prefer closing engineering unknowns through benchmarks, artifacts, tests and playtests; preserve all unverified status as **Planned** / **Unknown**.
 - This documentation review does **not** establish a validated Unreal build or production readiness.
