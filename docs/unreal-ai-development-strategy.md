@@ -133,6 +133,7 @@ Candidate capability classes include:
 - speech/voice generation;
 - music/SFX generation where required;
 - animation/video generation where required;
+- artifact critique/evaluation for text, image, audio, animation or other generated works;
 - embeddings/retrieval/ranking where useful.
 
 The preferred starting direction is **small specialized models where practical**, especially for frequent gameplay tasks. Models intended or tuned for embedded/game use are attractive when they provide sufficient quality with lower latency, memory use and installation size.
@@ -150,6 +151,8 @@ Possible runtime profiles may later include:
 - larger unified-model profile for higher-end hardware.
 
 Do not promise these profiles until representative models are actually profiled and packaged.
+
+Runtime artifact evaluators follow the same local-only rule as generators. They should return game-owned structured evaluation data and must not directly decide revenue, audience response or authoritative simulation state. Treat evaluator models as fallible measurement components that require calibration and repeatability testing.
 
 For **routine character cognition and bounded social/action selection**, the model should be packaged with the game or otherwise installed locally and consume only bounded game-owned context/action schemas.
 
