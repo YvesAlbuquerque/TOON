@@ -2120,7 +2120,7 @@ Do not require:
 - hundreds of relationship variables;
 - feature-film production depth;
 - large autonomous AI pipelines;
-- unproven Game Studio/Nexus integrations;
+- unproven Loomlight Game Studio / Loomlight Collective integrations;
 - production readiness.
 
 ## Engine and production strategy
@@ -2149,7 +2149,7 @@ T.O.O.N. is an independent game.
 - **YFramework** owns shared terminology, naming/routing, doctrine, The Y Framework methodology, and status vocabulary.
 - **Loomlight Flux** owns reusable Unity framework implementation but is legacy migration context for T.O.O.N.; the target game implementation is Unreal-owned.
 - **Loomlight Game Studio** may orchestrate production work around T.O.O.N.; it does not own this game's design/runtime.
-- **Loomlight Nexus** participation is optional and cannot be inferred from AI features.
+- **Loomlight Collective** is the selected internal display-name direction for the existing Loomlight Nexus product; participation is optional and cannot be inferred from T.O.O.N.'s AI features. This reference does **not** establish integration, trademark clearance, or permission for a public product launch.
 
 ## Validation questions
 

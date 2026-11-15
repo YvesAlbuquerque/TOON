@@ -878,7 +878,7 @@ Only then should the project expand toward a full 1900–2030 campaign.
 - feature-film-scale production depth;
 - complete animation DCC functionality;
 - large autonomous AI pipelines;
-- unproven Game Studio/Nexus integrations;
+- unproven Loomlight Game Studio / Loomlight Collective integrations (internal display-name direction; public-use clearance remains pending);
 - aggressive technical identifier renames without migration evidence.
 
 ## Technical rename work
