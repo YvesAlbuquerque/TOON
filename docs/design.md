@@ -1767,7 +1767,7 @@ The current game-design scope is intentionally limited to **four production type
 3. **2D animation**;
 4. **3D animation**.
 
-These are the production families T.O.O.N. should support across the campaign. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
+These are the production families T.O.O.N. should support across the campaign. **The accepted first playable production is one 3–4-panel comic strip (owner-confirmed 2026-11-15).** That is a vertical-slice scope choice, not a separate comic-only architecture or a reduction of the four-type game design. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
 
 The four types should share a common conceptual backbone while allowing medium-specific stages:
 
@@ -2087,7 +2087,7 @@ Legacy `InkTime` saves/artifacts are migration evidence rather than a shipped co
 
 The first slice should not attempt 130 years.
 
-It should prove the characteristic interaction among studio, people, production, and persistent consequence.
+It should prove the characteristic interaction among studio, people, production, and persistent consequence. **The first playable production is a complete 3–4-panel comic strip**, using a medium-neutral Production core and a narrow strip-specific output path. Completion, reception and save/reopen remain unvalidated until exercised.
 
 Minimum target:
 
@@ -2095,7 +2095,7 @@ Minimum target:
 2. 3–4 recurring professionals with distinct traits;
 3. at least two meaningful relationships;
 4. one IP;
-5. one production;
+5. one complete **3–4-panel comic strip production**;
 6. one assignment decision;
 7. one people/production conflict;
 8. one player response with tradeoffs;
