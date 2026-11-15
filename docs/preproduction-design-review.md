@@ -1,113 +1,81 @@
-# T.O.O.N. — Pre-production design coherence and readiness review
+# T.O.O.N. — Pre-production design coherence audit
 
-**Review date:** 2026-11-15  
-**Status:** Design-gap review remains **Proposed** except **D-01 (Accepted direction, owner confirmed 2026-11-15)**; not a production-readiness claim.  
-**Owner:** T.O.O.N. game repository.  
-**Canonical sources:** [Design direction](design.md), [roadmap](roadmap.md), [Unreal/AI strategy](unreal-ai-development-strategy.md), [creative direction #28](https://github.com/YvesAlbuquerque/TOON/issues/28), [integrated proof #16](https://github.com/YvesAlbuquerque/TOON/issues/16).
+**Reviewed:** 2026-11-15  
+**Status:** **Documented audit** of the current accepted design, with limited **Proposed** implementation clarifications. **Not** evidence of a validated game or production readiness.  
+**Authority:** [T.O.O.N. design](design.md), [roadmap](roadmap.md), [Unreal and AI strategy](unreal-ai-development-strategy.md), [creative-direction issue #28](https://github.com/YvesAlbuquerque/TOON/issues/28), [integrated-proof issue #16](https://github.com/YvesAlbuquerque/TOON/issues/16).
 
-## Verdict and distinction between gates
+## Audit rule: do not ask to re-decide accepted design
 
-**Current verdict: design direction Documented; not yet validated or approved for broad production.** Unreal bootstrap is Planned; runtime AI, production generation, reception, pacing and the representative art target lack validated game evidence.
+A design gap exists only when the owning source lacks a necessary rule or contains incompatible rules. An **unimplemented** or **unvalidated** accepted rule is *engineering work or a validation gate*, **not** a fresh owner design question. Historical/legacy files and superseded PR text do not override the current design. Before escalating any question, search the current design, roadmap, relevant issues and merged PRs; record the conflicting passages and the consequential alternatives.
 
-Separate three gates:
+## Confirmed decisions — resolved, not open questions
 
-1. **Coherent design for a bounded proof:** the first production, decision, consequences, failure handling and acceptance tests are specified without contradictory scope.
-2. **Ready for bounded Unreal implementation:** an owner-reviewed representative target and a sufficiently small, inspectable vertical-slice contract exist. The Unreal project itself need not be built to approve starting the proof.
-3. **Ready to scale production:** the actual Unreal end-to-end proof, representative generated media, on-device resource/cost/latency measurements, save/reload and player-comprehension evidence exist. This gate is **not met** by documentation, mocked generation, or a standalone model demo.
-
-The first gate is not permission to claim the third. Do not label T.O.O.N. `Validated`, `MVP-ready` or `Production-ready` merely because this review or a design PR merges.
-
-## Confirmed boundaries — do not re-open without an explicit owner decision
-
-- Four supported production types only: **comic strip, comic, 2D animation, 3D animation**. Text writing, illustration, storyboard/animatic, television-era presentation, digital authoring and realtime technology can appear as **techniques, stages or historical context**, but not a fifth type.
-- Player is persistent **management authority**, not a diegetic founder/avatar; staff are persistent characters with agency. The physical studio and archives carry continuity.
-- Production core: `IP -> Production -> Medium -> Crew -> Stages -> Release -> Reception -> Legacy`.
-- Player-managed employees are permanent; compatible built workstations gate hiring; shortage blocks work but does not automatically dismiss employees.
-- Studio time is continuous during active management, with pausing and low-value downtime compression; the 1900–2030 / ~40-hour campaign is a **target**, not established balance.
-- Player-authored creative contributions are optional, external inputs. At most three candidate versions exist at an alternative-generating stage, and only one advances. Release remains player-authorized.
-- All runtime/player-facing generative inference is local; model choice and target hardware are not validated. Game-owned structured state, validation and deterministic fallbacks remain authoritative.
-
-## Contradictions and drift identified
-
-| ID | Severity | Finding | Resolution / remaining boundary |
-| --- | --- | --- | --- |
-| C-01 | Correctable documentation drift | Earlier descriptive passages called text-only, stand-alone illustration, animatics or realtime works separate finished production types after the accepted four-type restriction. | Reword affected current README/design/roadmap descriptions. Retain these only as *internal stages, techniques or contextual examples* where appropriate. Historical PRs and comments are not retroactively rewritten. |
-| C-02 | Direction resolved; validation outstanding | The design previously lacked one specific initial release artifact, despite four supported production families. | **Accepted direction (2026-11-15):** first playable proof releases one **3–4-panel comic strip**. The production domain remains medium-neutral; this is **not** evidence that the strip pipeline or other types are implemented. |
-| C-03 | High — capability gap | 30–120-second 2D/3D animation generated locally, coherently, reproducibly and affordably on target player hardware is an ambition, not demonstrated feasibility. | Treat local animation as a separate **feasibility gate** before promising the full four-type shipped experience. Static fixture/strip proof does not validate animation. |
-| C-04 | High — feedback causality | Hybrid reception requires inspection of the actual artifact, but model output can be unstable, biased, absent, or incoherent with player choices. | Define a game-owned evidence contract, evaluation-unavailable path and repeatability tests. No evaluator may set cash, reputation or canon directly. |
-| C-05 | High — first-loop design | The roadmap lists domain systems but not a single testable event and decision with predictable costs/relationships and player-visible explanations. | Use the proposed bounded play scenario below and a consequence ledger. Review before implementation. |
-| C-06 | High — pacing | 130 historical years in ~40 real hours, real-time office days, multi-stage production, optional artifact viewing and slow local inference can compete for player attention. | Gate with measured time-per-production, meaningful decisions per hour, skipped downtime, work generation waiting, and a multi-era time-compression experiment. Do not prescribe a fixed sim-time conversion before testing. |
-| C-07 | Medium — start-world promise | Globe/location/language scope, historic cost data and global+local events could require an unbounded authored/researched world. | Begin with a **small sourced location set** and one bounded historical period. Keep UI language independent from studio/production languages. Defer unsupported local modifiers rather than inventing facts. |
-| C-08 | High — representative target | Physical production objects, characters, office art language and UI attention cues have no owner-reviewed representative visual proof. | Exit via one early-era office mock/prototype showing four distinct staff, active strip workflow, warning, decision surface and one persistent historical trace. |
-| C-09 | High — release/export | Uploaded/generated assets, credits, continuity, disk storage, rights and sharing require operational policies and tests. | Prove artifact ownership/provenance and private-by-default **local export** for one work. Clear licensing, safety, retention and platform requirements before broader release. |
-| C-10 | High — workflow authority | "Automatic production completion" could be misread as automatic **public release**, even though the player retains release authority. | Explicitly separate **automatic stage completion** from player-authorized **release**; a production can wait in a review-ready state without losing artifacts or advancing its canon. |
-| C-11 | Medium — candidate exhaustion | "At most three candidate versions" and regeneration at the limit leave no specified path if all three outputs are rejected. | **Proposed:** cap **active candidates** at three; permit a bounded, paid replacement of an unselected candidate, or explicitly allow stage rework/cancellation. Decide whether the cap is concurrent or lifetime before implementation. |
-| C-12 | High — simulation/inference timing | Continuous time, accelerated time and asynchronous local generation can produce stale briefs, overshot deadlines or a simulation that waits indefinitely on inference. | Define snapshot/versioned job inputs, valid waiting/timeout/cancel paths, stale-result rejection and an auto-fast-forward stop when a production becomes reviewable or requires authority. Record game-time cost separately from wall-clock model delay. |
-
-## First playable proof: accepted format, proposed scenario
-
-**Accepted direction (D-01, 2026-11-15):** the first playable production is a **3–4-panel comic strip**, while the game-wide scope remains comic strip, comic, 2D animation and 3D animation. All **other scenario details and mechanics below remain proposals** pending owner review and validation; nothing here claims an implemented playable loop.
-
-**Setup:** one small early-era studio, three to four named professionals with at least two directional relationships; one persistent IP; one commissioned or original 3–4-panel comic-strip production; one limited compatible workstation bottleneck. The first pass uses **one** production and may reuse authored fixture images/text to isolate the simulation from unfinished inference technology.
-
-**Player-visible loop:**
-
-1. Open the studio. Staff move/work socially; available capacity, cash/runway, production stage and a relationship signal are legible.
-2. Review the IP, compact brief and crew; choose an assignment or a priority. Production advances through visibly different stage representations rather than only a progress bar.
-3. A specific **authored and causally prepared** tension emerges, e.g. one skilled but tired contributor clashes with the deadline and another professional who feels overlooked. The player sees an earlier warning and its evidence.
-4. Present two or three choices with explicit tradeoffs, such as **delay/reduce pressure** (calendar+burn tradeoff, relationship relief) vs **push deadline** (short-term schedule advantage, increased fatigue/trust risk). Never predefine that one is universally correct; consequences depend on state and are game-owned.
-5. Complete a readable 3–4-panel strip. At least one player choice must alter a visible production or outcome detail rather than only changing an invisible score. A fixture can establish deterministic causality; a later local-model run must prove generative causality separately.
-6. Player reviews and explicitly authorizes release. Reception gives a legible breakdown of production/process evidence, artifact evidence when present, market/context and uncertainty.
-7. Save/reopen. The released artifact, IP release history, relationship/state change, cash consequence and archive entry remain consistent. The player can later re-open the strip and understand why the event occurred.
-
-**Minimum proof artifacts:** event trigger and warning state, option/precondition list, before/after authoritative state snapshots, work/artifact references, release and evaluation evidence, save version, reproduced load, UI screenshots or short capture, exact Unreal build/test identifiers. Do not claim any of this ran until it has.
-
-### Evaluation and failure policy — proposed test contract
-
-- A local evaluator receives the *actual* finished artifact plus bounded brief/continuity context and returns a versioned typed record: dimensions (e.g. readability, panel continuity, IP/brief fidelity), confidence, diagnostics and evaluator provenance. This is **evidence**, not authoritative reception.
-- The simulation combines that evidence with game-owned process and market inputs, records the reasons, and decides outcome. Identical stored evidence and state must reproduce the same resulting reception, independent of model randomness.
-- When evaluation is unavailable, timed out or malformed, record the absence. Apply a clearly signalled deterministic fallback/limited-confidence reception path; never silently invent a positive artifact judgment.
-- Measure repeated evaluation of **unchanged** artifacts and sensitivity to deliberately altered panels/continuity. If variance dwarfs the difference between comparable artifacts, do **not** use those dimensions as consequential scores.
-- Heavy generation cannot freeze office frames; explicit queued/cancelled/failed states and retry bounds are necessary. Generated-media fidelity may degrade, but save/release/history must remain coherent.
-
-## Owner decisions to close before broad production
-
-| Decision | Proposed default | Evidence to accept |
+| Topic | Accepted/current rule | Evidence location |
 | --- | --- | --- |
-| **D-01: First slice's primary release artifact — Accepted direction (2026-11-15)** | **Comic strip, 3–4 panels**, as the first finished playable production; retain all four types as game-wide design scope | Owner explicitly confirmed the format choice. **Implementation, playability and player-dream validation remain outstanding.** |
-| D-02: Player attention and intervention budget | One meaningful assignment, one optional creative input, one consequential Decision Event, one release approval | Short paper/interactive walkthrough is comprehensible without reading design docs; player influence has visible causal effect |
-| D-03: Local generation minimum for first proof | Game-owned deterministic fixture for systems proof, then separate local strip-generation/inspection proof | Compare representative locally generated strip on agreed hardware against coherence, waiting, failure and storage criteria |
-| D-04: Animation commitment | Keep 2D/3D in the accepted **design scope**, not in the first validated production slice | On-device sample measuring consistent characters, motion, audio if applicable, generation time, VRAM/RAM, storage, restart/recovery and share/export quality |
-| D-05: Historical and language pilot | One researched era/location (plus one contrasting location only if it changes the decision) | Source-linked global+local context and language layers correctly survive production and reception |
-| D-06: Minimum visual identity | One small office and 3–4 recurring cast silhouettes, with production stations/era-specific props and readable event signals | Owner-reviewed representative target with corrective feedback recorded |
-| D-07: Economy + reception | A bounded contract-vs-original choice later; first slice only needs one explicit cost/benefit tradeoff and a readable reception consequence | No inscrutable bankruptcy or arbitrary reception spike; deterministic replay and player explanation |
-| D-08: Tempo of 130-year campaign | Keep the ~40h target provisional and compress uninteresting time | Timed multi-era prototype measuring decade progression, production count, decision density and work consumption |
-| D-09: Candidate-cap meaning | Three **concurrent** alternatives; replacing an unselected candidate incurs bounded rework cost | Test rejection of all three, replacement, cancel, provenance and cost; never allow unbounded free retries |
-| D-10: Automatic completion vs release | Stages may run automatically; final release always requires explicit player authority | Auto-run reaches review-ready, waits safely, and remains persistent after save/reopen |
-| D-11: Clock vs asynchronous model work | Treat local inference as a versioned pending job; clock and work cost are game-owned, not wall-clock model latency | Accelerate/pause/save/load/timeout/cancel and stale-return tests; no soft lock or unexpected skipped choice |
+| Project fantasy | Historical living creative studio, roughly 1900–2030; the studio/people/IP/archive accumulate history | [Design](design.md), [#28](https://github.com/YvesAlbuquerque/TOON/issues/28) |
+| Production types | **Exactly four**: comic strip, comic, 2D animation, 3D animation; storyboards, text, standalone illustrations and animatics are not extra independent release types | [Design — Supported production types](design.md#supported-production-types) |
+| **First playable artifact** | **One complete 3–4-panel comic strip**; explicitly confirmed by owner **2026-11-15**. Other three types remain in game-wide design scope | [Design — First validation slice](design.md#first-validation-slice), [#28](https://github.com/YvesAlbuquerque/TOON/issues/28) |
+| Core domain | Medium-neutral `IP -> Production -> Medium -> Crew -> Stages -> Release -> Reception -> Legacy` | [README](../README.md), [Design](design.md) |
+| Creative participation | **Optional**; a stage can complete automatically or use bounded player-authored/selective input; no universal Auto/Assisted/Manual mode | [Design — Optional human-in-the-loop creation](design.md#optional-human-in-the-loop-creation) |
+| Management | Player manages assignments, priorities, money, workplace and consequential Decision Events, **not** individual idle actions or free-form conversations | [Design — Management model](design.md#management-model-and-autonomous-social-simulation) |
+| Release authority | Automatically completing creative stages **does not** bypass player authority over final release | [Design — Authorship and AI](design.md#authorship-and-ai), [roadmap](roadmap.md) |
+| Alternatives | **At most three concurrent candidate versions** per stage; one approved version advances; rework consumes simulation resources; discarded work need not be archived permanently | [Design — Version limit](design.md#version-limit-and-selection) |
+| Workforce | Permanent player-managed employees, hiring gated by compatible built capacity; no instant dismissal when a workstation is removed | [Design — Employment](design.md#employment-workstations-and-studio-capacity) |
+| Economy and reception | Cash/burn/runway; contract, original, catalogue revenue; reception considers process, **actual artifact**, audience/market, distribution and uncertainty; local evaluator returns evidence, not direct authoritative revenue | [Design — Studio economy](design.md#studio-economy), [historical context and reception](design.md#market-and-audience-reception) |
+| Runtime AI | All player-facing generative inference **local**; bounded game-owned state/actions and provenance; async execution/queues, stale-result checks and deterministic fallback where applicable | [Design](design.md#local-background-character-ai-and-cadence), [Unreal and AI strategy](unreal-ai-development-strategy.md) |
+| Time and campaign | Continuous active-simulation clock, configurable acceleration and appropriate pausing/skipping; **~40h** full-campaign target awaits playtesting | [Design — Campaign and time](design.md#campaign-and-time) |
+| Scope of technical work | Unreal target **Accepted direction**, bootstrap **Planned**; Unity/Flux remains legacy scaffold evidence, not current game behaviour | [README](../README.md), [roadmap](roadmap.md) |
 
-## Exit checklist and evidence requirements
+## Reconciliation performed in this PR
 
-**Before starting the bounded vertical-slice implementation:**
+1. **Resolved documentation contradiction:** current high-level descriptions formerly implied text-only, illustration, animatics or realtime were additional production types. Align current README, design and roadmap to the **four** accepted types.
+2. **Resolved initial-format omission:** record the owner's **accepted 3–4-panel comic strip first proof** in canonical design and roadmap without making Production comic-specific.
+3. **Clarified automatic stage selection:** automatic creative completion does not demand manual selection of an alternative. If the player intervenes, they select the approved candidate; otherwise a **game-owned automatic selection rule** advances a valid result. This implements the already accepted optional-intervention rule and does **not** permit automatic public release.
+4. **Previous false positives withdrawn:** the original audit treated creative-participation budget, final release approval, reception/economy, local AI fallback and the ~40-hour campaign target as fresh owner decisions. They are already accepted design rules or validation work; **do not ask the owner to approve them again**.
 
-- [x] Owner confirmed **D-01**: first playable artifact is a **3–4-panel comic strip**, without narrowing the four-type long-term design scope (2026-11-15).
-- [ ] Owner resolves **D-02, D-06, D-09 and D-10**; confirms representative creative direction and does not mistake document acceptance for visual validation.
-- [ ] The initial production state machine, two real decision options and their player-visible consequences are specified.
-- [ ] Fixed-fixture artifact and evaluator-absent paths are defined so game logic is testable without waiting for an external model.
-- [ ] The first proof's out-of-scope list is enforced (no full globe/world simulation, four complete media authoring pipelines, feature-length output, large NPC population, automatic social posting).
-- [ ] First prototype acceptance evidence is assigned to [#16](https://github.com/YvesAlbuquerque/TOON/issues/16) and the design decision to [#28](https://github.com/YvesAlbuquerque/TOON/issues/28).
+## Narrow remaining design specification issue
 
-**Before scaling to broad production:**
+### E-01 — All available candidate versions rejected
 
-- [ ] Unreal baseline compiled/opened with exact version and reproducible instructions.
-- [ ] One full playable loop was observed; one consequential staff/production decision was understood by a tester.
-- [ ] State, provenance, release and archive survive save/reopen.
-- [ ] At least one actual **local model** path has measured generation + inspection, structured failures, memory/latency/storage and frame-time impact on a defined hardware target.
-- [ ] One second production/media transition demonstrates why new people, facilities or technology matter; campaign pacing has measured evidence.
-- [ ] The owner-reviewed art target and public-name/legal clearance have explicit recorded outcomes before commercial claims.
+**Real edge-case ambiguity:** A creative stage may hold up to three candidate versions. The docs specify selection, a simultaneous cap and bounded regeneration cost, but do not define the interaction when the player rejects **every** currently available candidate without selecting one. This matters for completion, UI and resource accounting.
 
-## Explicit unresolved risks
+**Proposed minimal implementation behaviour (not yet accepted):** the stage does **not** silently advance a rejected candidate. The player can (a) select an existing candidate, (b) explicitly cancel/rework the production as allowed by production state, or (c) spend bounded time/budget/effort to discard one candidate and generate a replacement while never exceeding **three concurrent** candidates. Cancellation/rework and generation failure paths must be legible and persist safely.
 
-Hardware profiles, local generation quality/latency, 2D/3D sequence coherence, model licensing, content rights, uploaded-input handling, historical research cost, export privacy, economy balance, simulation pacing, candidate-version exhaustion, asynchronous-work timing, UI usability and market-name clearance are **Unknown / Planned**, not solved by this review.
+**Validation:** write a small state-machine test for 0/1/2/3 candidates, accepting, rejecting all, replacement cost, cancel, save/reload and generation timeout. Escalate to owner **only if** experience-level alternatives genuinely diverge after this engineering test; do not open a broad design questionnaire.
 
-**Recommendation:** use this as an evidence-driven gate. **Only D-01 has owner acceptance; D-02–D-11 remain proposed** unless separately accepted and documented. Approval of an initial production format does not prove or authorize broad production readiness.
+## Engineering / production-feasibility evidence gaps — NOT undecided design
+
+These are outstanding proofs attached to current roadmap/issues, not re-opened conceptual decisions:
+
+| Evidence still missing | Existing direction | How to close |
+| --- | --- | --- |
+| Representative visual identity | Early-era studio, diverse recurring cast, legible relationships, physical production object and warning/decision surfaces | Owner-reviewed target plus recorded corrections: [#28](https://github.com/YvesAlbuquerque/TOON/issues/28) |
+| Unreal end-to-end loop | One studio, 3–4 professionals, two relationships, one IP, one strip, meaningful decision, release, durable consequence, save/reopen | Compile and exercise the integrated proof: [#16](https://github.com/YvesAlbuquerque/TOON/issues/16) |
+| Local generative strip + artifact evaluation | Local models behind game-owned contracts, bounded evidence and graceful fallback | Measure actual panel coherence, IP continuity, evaluator repeatability, latency/RAM/VRAM/storage, queued/failure behaviour; compare deterministic fixture separately |
+| Local 2D/3D animated output | Remains inside the **accepted design scope**, but initial strip proof does not validate it | Separate on-device sequence/character consistency and duration/compute/licensing feasibility before promising release-quality animated production |
+| Historical content and languages | Sourced global/local context; interface language independent of studio/production languages | Small researched starting location/time dataset and working language-layer proof |
+| Economy, era progression and pacing | Three revenue families, legible financial pressure, 1900–2030 / ~40h target | Player-tested decision comprehension, meaningful choices per hour, time spent generating/consuming productions and multi-era transition measurement |
+| Export and commercial clearance | Export-first, explicit player approval, persist attribution/provenance | Rights/licensing, content/privacy/storage and actual export tests; separately verify the current T.O.O.N. name-collision risk |
+
+**Do not confuse them:** *Documented* is not *Implemented*; a deterministic fixture is not local-model media validation; a playable strip is not proof of 2D/3D animation or a 40-hour campaign; release-name clearance is not implied by engine milestones.
+
+## First vertical-slice proof — acceptance scenario, not a new owner decision
+
+Use the accepted small-scope roadmap as a concrete validation fixture:
+
+1. One early-era studio with 3–4 recurring professionals, distinct responsibilities, an IP, relationships and workstations; cash/runway and stage are legible.
+2. A persistent production enters a **3–4-panel strip** pipeline with automatic creative steps, while one optional authoring/selection point remains available.
+3. A causally visible staffing/relationship pressure generates a consequential management Decision Event with at least two different costs or outcomes.
+4. A chosen response changes persistent state **and** something visibly connected to the finished strip or its process/credits.
+5. The studio completes a readable artifact; final **release requires player approval**; reception records the evidence and explains its most consequential causes.
+6. Save/reopen preserves production, released artifact, credits/lineage, relevant relationship/economy consequences and archive history.
+7. A separate local-model experiment tests actual generated outputs; if unavailable, a deterministic fixture proves only the game-owned logic and failure path.
+
+This scenario is a **test plan**, not an approval for exact character bios, script, art direction, cost coefficients, generation stack or release claims.
+
+## Question and completion discipline
+
+- **Do not ask again** about optional creative participation, three concurrent candidates, release authority, four production types, initial strip length, local-only runtime AI, economy families, or the provisional campaign target unless new contradictory owner evidence emerges.
+- Escalate only an **unresolved consequential design choice** with explicit links to the incompatible/missing canonical rule. Use a narrow recommendation and alternatives, not a general questionnaire.
+- Prefer closing engineering unknowns through benchmarks, artifacts, tests and playtests; preserve all unverified status as **Planned** / **Unknown**.
+- This documentation review does **not** establish a validated Unreal build or production readiness.
