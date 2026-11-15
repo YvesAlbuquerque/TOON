@@ -723,7 +723,23 @@ The first proof should test a small set such as:
 
 Validate whether environmental choices produce readable effects on morale, recovery, creativity, concentration, or relationships without forcing excessive furniture micromanagement.
 
-### 7.5 Employee bargaining, dismissal and agency
+### 7.5 Competitor studios
+
+Prototype a lightweight persistent competitor model.
+
+Requirements:
+
+- keep the number of active competitors small enough to remain memorable;
+- competitors retain abstract identity, reputation, financial strength, notable talent, IP/focus and relationship state;
+- former employees can plausibly found new competitor studios;
+- competitors can affect talent, contracts, audience attention, reputation and opportunities;
+- rival productions are **not run through the player production pipeline**;
+- rival productions do **not** require generated artifacts;
+- only outcomes relevant to the world are simulated/persisted, such as release result, reception, commercial success/failure and resulting market/reputation effects;
+- descriptive metadata may be generated for presentation, but not full production content;
+- competition is not assumed to be strictly zero-sum.
+
+### 7.6 Employee bargaining, dismissal and agency
 
 Introduce:
 
