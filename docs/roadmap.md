@@ -21,6 +21,8 @@ This roadmap preserves validated/recovered technical work while rebasing future 
 - Treat Unreal bootstrap as a separate proof before porting broad gameplay.
 - Never claim implementation or validation from documentation alone.
 
+For an evidence-based reconciliation of **already accepted design**, the one remaining candidate-rejection edge case and distinct Unreal/AI validation work, see the [pre-production design coherence audit](preproduction-design-review.md). An implementation proof does not reopen settled design decisions.
+
 ## Phase 0 — Recovered technical baseline
 
 ### 0.1 Reproducible Unity baseline — completed evidence
@@ -62,7 +64,7 @@ Accepted direction now includes:
 - **T.O.O.N. — The Office Of Nonsense** as current project/public name;
 - studio/company fantasy as the primary frame;
 - campaign target approximately 1900–2030;
-- media evolution from text/illustration through strips/comics, animation, digital and 3D/realtime-era production;
+- media evolution through **comic strips, comics, 2D animation and 3D animation**, while text, illustration and digital/realtime techniques remain internal production methods rather than additional top-level types;
 - persistent IPs that can cross media;
 - recurring professionals with agency, relationships and outside lives;
 - mixed character longevity, including mortal, long-lived, cartoon-static and rule-bound existence models;
@@ -346,7 +348,7 @@ Legacy `InkTime` data is migration source evidence, not an automatic compatibili
 
 The production system should support the four accepted production types: **comic strip, comic, 2D animation and 3D animation**.
 
-Avoid hard-coding the first proof exclusively around one of them.
+**Accepted first playable format (owner-confirmed 2026-11-15): one complete 3–4-panel comic strip.** Build the smallest strip-specific output path on a medium-neutral Production domain; do not hard-code the shared domain exclusively around strips. Other production types remain in design scope but are not required as validated output paths in the first vertical slice.
 
 The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
 
@@ -579,14 +581,14 @@ Do not treat provider-specific seeds/prompts as the canonical identity source.
 
 Before scaling content generation, validate representative output sizes.
 
-Initial targets:
+Initial released-work targets for the **four accepted production types**:
 
-- text: one-screen / a few hundred words at most;
-- strip: **3–4 panels**;
-- short comic: **1–4 pages**;
-- animatic: roughly 20–90 seconds;
+- comic strip: **3–4 panels**;
+- comic: **1–4 pages**;
 - 2D animation: roughly 30–120 seconds;
-- 3D/realtime short: roughly 30–120 seconds.
+- 3D animation: roughly 30–120 seconds.
+
+Text, illustration and animatics can still be production-stage materials or intermediate reviews. They are not independent released production types in the current scope.
 
 Measure separately:
 
@@ -816,7 +818,7 @@ Required workflow:
 
 `Open studio -> recurring crew -> one relationship pressure -> one IP -> one production -> assignment/tradeoff -> release -> durable consequence -> save/reopen`
 
-The first integrated slice does **not** need to span the full campaign.
+The first integrated slice does **not** need to span the full campaign. It must complete one **3–4-panel comic strip** as a player-consumable finished work; proving this does **not** validate comics, 2D animation or 3D animation.
 
 Record:
 

@@ -304,21 +304,9 @@ The campaign should feel like an evolving history of creative production, not a 
 
 ### Media evolution
 
-Potential media families include:
+T.O.O.N.'s four accepted production types are **comic strip, comic, 2D animation and 3D animation**. Their historical workflows can incorporate text/humour writing, illustration, storyboards, silent/sound/colour techniques, television-era distribution, digital tools and realtime technology without making those separate top-level production types.
 
-- text/humour writing;
-- illustration/editorial art;
-- strips;
-- comics;
-- early/silent animated work;
-- sound and colour animation;
-- television/serial production;
-- digital 2D;
-- hybrid digital production;
-- 3D/CG;
-- realtime/hybrid contemporary production.
-
-Later media do not automatically invalidate earlier media. New capabilities expand the studio's options.
+New technologies do not automatically invalidate older production types. New capabilities expand the studio's options.
 
 A 1970s T.O.O.N. may still publish comics. A 2020s T.O.O.N. may deliberately retain hand-drawn 2D while another department produces 3D work.
 
@@ -1779,7 +1767,7 @@ The current game-design scope is intentionally limited to **four production type
 3. **2D animation**;
 4. **3D animation**.
 
-These are the production families T.O.O.N. should support across the campaign. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
+These are the production families T.O.O.N. should support across the campaign. **The accepted first playable production is one 3–4-panel comic strip (owner-confirmed 2026-11-15).** That is a vertical-slice scope choice, not a separate comic-only architecture or a reduction of the four-type game design. Historical technologies, workflows and presentation can evolve inside those families, but text-only works, standalone illustration/editorial pieces, live-action production, television as a separate production type, realtime/game production and other media are outside the current scope unless explicitly reconsidered later.
 
 The four types should share a common conceptual backbone while allowing medium-specific stages:
 
@@ -1844,6 +1832,8 @@ The exact allowed intervention points remain a scope decision per medium/pipelin
 For stages that support alternatives or regeneration, keep at most **three candidate versions** at once.
 
 The player views **one version at a time**. A small visual indicator should communicate that additional versions exist and allow navigation/selection between them. Exact presentation, controls and visual language are intentionally deferred to a later UX/UI design pass.
+
+**Automatic creative stages** must be able to advance a valid chosen result under game-owned selection rules without requiring the player to inspect alternatives. **When the player intervenes**, choosing which candidate advances is their decision. Neither path overrides the player's final release authority.
 
 The player may:
 
@@ -1965,11 +1955,11 @@ T.O.O.N. productions are not only abstract score cards.
 
 Where technically and economically feasible, the player should be able to **consume the work the studio produced**:
 
-- read generated/assembled text;
-- read strips and comics;
-- view storyboards or animatics;
-- watch animated shorts/episodes or representative film outputs;
-- later view 3D/realtime-era productions.
+- read dialogue, captions and other text within comic strips and comics;
+- read finished strips and comics;
+- review storyboards or animatics as **intermediate workflow artifacts**, not independent release types;
+- watch compact finished 2D animation shorts;
+- watch compact finished 3D animation shorts.
 
 These outputs may be created through combinations of player direction, simulation, authored templates, procedural systems and runtime AI behind T.O.O.N.-owned contracts.
 
@@ -1996,7 +1986,7 @@ Example pattern:
 
 The adaptation history should remain visible. The studio archive should show how a property changed across decades and which professionals shaped each version.
 
-A later adaptation should ideally make the lineage perceptible: the player should be able to compare the 1910s textual/illustrated form of an IP with its comic, 2D animation and eventual 3D incarnations.
+A later adaptation should ideally make the lineage perceptible: the player should be able to compare a 1910s comic strip version of an IP with its later comic, 2D animation and eventual 3D animation incarnations.
 
 ## Cross-media identity consistency
 
@@ -2099,7 +2089,7 @@ Legacy `InkTime` saves/artifacts are migration evidence rather than a shipped co
 
 The first slice should not attempt 130 years.
 
-It should prove the characteristic interaction among studio, people, production, and persistent consequence.
+It should prove the characteristic interaction among studio, people, production, and persistent consequence. **The first playable production is a complete 3–4-panel comic strip**, using a medium-neutral Production core and a narrow strip-specific output path. Completion, reception and save/reopen remain unvalidated until exercised.
 
 Minimum target:
 
@@ -2107,7 +2097,7 @@ Minimum target:
 2. 3–4 recurring professionals with distinct traits;
 3. at least two meaningful relationships;
 4. one IP;
-5. one production;
+5. one complete **3–4-panel comic strip production**;
 6. one assignment decision;
 7. one people/production conflict;
 8. one player response with tradeoffs;

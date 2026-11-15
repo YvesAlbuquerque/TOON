@@ -1,6 +1,6 @@
 # T.O.O.N. — The Office Of Nonsense
 
-**T.O.O.N. — The Office Of Nonsense** is an independent historical creative-studio management game. The player builds one eccentric company across roughly 1900–2030, hires generations of strange professionals, develops persistent IPs, manages relationships and money, and adapts as media evolve from text and illustration through comics, animation, digital production and 3D.
+**T.O.O.N. — The Office Of Nonsense** is an independent historical creative-studio management game. The player builds one eccentric company across roughly 1900–2030, hires generations of strange professionals, develops persistent IPs, manages relationships and money, and adapts through four supported production types — comic strips, comics, 2D animation and 3D animation — as historical tools, techniques and audiences evolve.
 
 The project was formerly known as **InkTime / Ink Through Time**. Those names are legacy aliases only and remain in historical or compatibility-sensitive technical evidence where rewriting them would falsify history or risk Unity/save compatibility.
 
@@ -97,6 +97,7 @@ They must be treated as compatibility identifiers, not as the current game name.
 
 - [Design direction](docs/design.md)
 - [Development roadmap](docs/roadmap.md)
+- [Pre-production design coherence audit](docs/preproduction-design-review.md)
 - [Unreal + AI development strategy](docs/unreal-ai-development-strategy.md)
 - [Agent instructions](AGENTS.md)
 - [GitHub Issues](https://github.com/YvesAlbuquerque/TOON/issues)
