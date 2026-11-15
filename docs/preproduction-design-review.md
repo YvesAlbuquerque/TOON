@@ -39,9 +39,11 @@ A design gap exists only when the owning source lacks a necessary rule or contai
 
 **Real edge-case ambiguity:** A creative stage may hold up to three candidate versions. The docs specify selection, a simultaneous cap and bounded regeneration cost, but do not define the interaction when the player rejects **every** currently available candidate without selecting one. This matters for completion, UI and resource accounting.
 
-**Proposed minimal implementation behaviour (not yet accepted):** the stage does **not** silently advance a rejected candidate. The player can (a) select an existing candidate, (b) explicitly cancel/rework the production as allowed by production state, or (c) spend bounded time/budget/effort to discard one candidate and generate a replacement while never exceeding **three concurrent** candidates. Cancellation/rework and generation failure paths must be legible and persist safely.
+**Accepted clarification (owner, 2026-11-15):** the player can **cancel any active production at any time**, including before generating candidates, after rejecting them, during generation or review, and while awaiting release authorization. Cancel is always available; it is **not** gated by candidate count, selection state, money, staff or provider availability. An already released work remains historical canon. See [the owning design](design.md#cancellation-of-an-active-production).
 
-**Validation:** write a small state-machine test for 0/1/2/3 candidates, accepting, rejecting all, replacement cost, cancel, save/reload and generation timeout. Escalate to owner **only if** experience-level alternatives genuinely diverge after this engineering test; do not open a broad design questionnaire.
+**Still proposed, not owner-accepted:** when no candidate is chosen, the stage does **not** silently advance a rejected candidate. The player may select an existing one or request bounded-cost replacement/rework, never exceeding **three concurrent** candidates. The exact replacement interaction and cost treatment remain to be validated/spec'd. This is a narrower gap than previously recorded, because cancellation itself is settled.
+
+**Validation:** write state-machine tests for 0/1/2/3 candidates, select/reject-all/replacement, cancel at every active stage, cancellation during queued/in-flight generation (late-result rejection), save/reload of a cancelled production, awaiting-release cancellation, and timeout. Escalate to the owner **only if** genuine design alternatives remain after engineering validation; do not open a broad questionnaire.
 
 ## Engineering / production-feasibility evidence gaps — NOT undecided design
 
