@@ -625,7 +625,11 @@ Requirements:
 - the digital-era network uses a fictional in-world identity rather than requiring a real LinkedIn integration;
 - candidate channels must not expose perfect hidden character stats by default;
 - pre-hire information should come from evidence such as résumé, portfolio, work history, referral provenance, references/endorsements and compensation expectations;
-- different channels should expose different amounts/types of evidence;
+- different channels should expose different amounts/types of evidence and presentation flavour;
+- a referral can include one subjective comment from the referring employee;
+- a walk-in candidate can physically wait at the studio, show occasional thought flavour, and say one short line when clicked without opening an interview/dialogue system;
+- candidate thoughts may hint at private information occasionally, but must not systematically reveal hidden traits or automatically become studio knowledge;
+- modern-network endorsements/testimonials should skew strongly positive and exaggerated, making them lower-confidence evidence than verified work history or portfolio;
 - at least one important professional attribute should remain uncertain until after hiring;
 - the UI should express uncertainty/confidence qualitatively rather than showing false exact values;
 - later discovery of a hidden/uncertain trait should be causally observable through work or behaviour rather than feeling like an arbitrary penalty;
