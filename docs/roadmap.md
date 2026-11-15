@@ -626,11 +626,15 @@ Requirements:
 - candidate channels must not expose perfect hidden character stats by default;
 - pre-hire information should come from evidence such as résumé, portfolio, work history, referral provenance, references/endorsements and compensation expectations;
 - different channels should expose different amounts/types of evidence;
+- referrals can include a short subjective recommendation/comment from the referring employee;
+- walk-in applicants can wait visibly at the studio, show a short comic-style thought, and say a brief line when clicked;
+- these walk-in thoughts/lines are hints and flavour, not authoritative disclosure of hidden stats or an interview mechanic;
+- modern professional-network testimonials should be consistently positive/exaggerated enough that they carry lower evidentiary confidence than structured work-history data;
 - at least one important professional attribute should remain uncertain until after hiring;
 - the UI should express uncertainty/confidence qualitatively rather than showing false exact values;
 - later discovery of a hidden/uncertain trait should be causally observable through work or behaviour rather than feeling like an arbitrary penalty;
-- no interview screen, candidate dialogue, recruitment minigame or extra pre-hire probing step is required;
-- after reviewing available evidence, the player decision is simply Hire / Do not hire;
+- no interview screen, branching candidate dialogue, recruitment minigame or extra pre-hire probing step is required;
+- after reviewing available evidence and flavour cues, the player decision is simply Hire / Do not hire;
 - historical unlock timing should be treated as game progression and researched context, not as a claim that the underlying real-world medium did not previously exist.
 
 ### 7.4 Workplace environment and preferences

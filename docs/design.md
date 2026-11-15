@@ -792,7 +792,14 @@ Before hiring, the player may see information such as:
 - references or endorsements where the channel supports them;
 - broad qualitative impressions rather than exact hidden numbers.
 
-Different recruitment channels provide different evidence. A walk-in application may reveal relatively little. An employee referral adds social provenance and the referrer's opinion. A newspaper applicant may provide a conventional résumé/portfolio. A modern professional-network profile can expose a broader work history, skills, credits and connections.
+Different recruitment channels provide different evidence and should also have distinct **presentation hints**:
+
+- **Employee referral** — the recommending professional may offer a short subjective comment about the candidate. The comment may mix useful information with bias, friendship, humour or concern. For example, a referrer might effectively say that a friend has a serious personal vice but is an exceptional artist.
+- **Walk-in applicant** — the candidate can physically wait at the studio entrance. While waiting, comic-style thoughts can provide flavour or ambiguous foreshadowing, and clicking the candidate can trigger a short spoken line. These are not interviews and do not unlock additional probing.
+- **Newspaper applicant** — the application can remain comparatively document-driven, with résumé/portfolio evidence and limited personal context.
+- **Modern professional network** — the profile exposes a broader work history, skills, credits and connections, but testimonials/endorsements are intentionally **over-positive and exaggerated**. A mediocre candidate may still have praise equivalent to “the greatest artist alive; only a fool would pass.” This makes endorsements entertaining but lowers their evidentiary confidence.
+
+Thoughts, comments and testimonials are **signals, not omniscient truth**. They may be sincere, evasive, biased, self-promotional, mistaken or deliberately comic. If a hint relates to an actual hidden trait, the game controls what can be surfaced; the generative model must not invent a new canonical secret merely to make a funny line.
 
 Some attributes should remain uncertain until the person actually works in the studio. Examples include:
 
@@ -812,7 +819,9 @@ The goal is for hiring to contain informed uncertainty:
 
 `available evidence + recruitment channel + studio knowledge -> hiring judgment -> later discovery through employment`
 
-There is **no separate interview mechanic** in the core hiring flow. The player does not question candidates, run a dialogue scene, perform a recruitment minigame, or spend another interaction step to reveal hidden attributes.
+There is **no separate interview mechanic** in the core hiring flow. The player does not question candidates, run a branching dialogue scene, perform a recruitment minigame, or spend another interaction step to reveal hidden attributes.
+
+A candidate may still speak a short ambient/click line, think visibly where the presentation supports it, or be described by a referrer. Those are flavourful hiring cues, not an interview system and not a way to exhaustively inspect the candidate.
 
 Once a candidate is available, the core decision is simply:
 
