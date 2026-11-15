@@ -304,21 +304,9 @@ The campaign should feel like an evolving history of creative production, not a 
 
 ### Media evolution
 
-Potential media families include:
+T.O.O.N.'s four accepted production types are **comic strip, comic, 2D animation and 3D animation**. Their historical workflows can incorporate text/humour writing, illustration, storyboards, silent/sound/colour techniques, television-era distribution, digital tools and realtime technology without making those separate top-level production types.
 
-- text/humour writing;
-- illustration/editorial art;
-- strips;
-- comics;
-- early/silent animated work;
-- sound and colour animation;
-- television/serial production;
-- digital 2D;
-- hybrid digital production;
-- 3D/CG;
-- realtime/hybrid contemporary production.
-
-Later media do not automatically invalidate earlier media. New capabilities expand the studio's options.
+New technologies do not automatically invalidate older production types. New capabilities expand the studio's options.
 
 A 1970s T.O.O.N. may still publish comics. A 2020s T.O.O.N. may deliberately retain hand-drawn 2D while another department produces 3D work.
 
@@ -1965,11 +1953,11 @@ T.O.O.N. productions are not only abstract score cards.
 
 Where technically and economically feasible, the player should be able to **consume the work the studio produced**:
 
-- read generated/assembled text;
-- read strips and comics;
-- view storyboards or animatics;
-- watch animated shorts/episodes or representative film outputs;
-- later view 3D/realtime-era productions.
+- read dialogue, captions and other text within comic strips and comics;
+- read finished strips and comics;
+- review storyboards or animatics as **intermediate workflow artifacts**, not independent release types;
+- watch compact finished 2D animation shorts;
+- watch compact finished 3D animation shorts.
 
 These outputs may be created through combinations of player direction, simulation, authored templates, procedural systems and runtime AI behind T.O.O.N.-owned contracts.
 
@@ -1996,7 +1984,7 @@ Example pattern:
 
 The adaptation history should remain visible. The studio archive should show how a property changed across decades and which professionals shaped each version.
 
-A later adaptation should ideally make the lineage perceptible: the player should be able to compare the 1910s textual/illustrated form of an IP with its comic, 2D animation and eventual 3D incarnations.
+A later adaptation should ideally make the lineage perceptible: the player should be able to compare a 1910s comic strip version of an IP with its later comic, 2D animation and eventual 3D animation incarnations.
 
 ## Cross-media identity consistency
 
