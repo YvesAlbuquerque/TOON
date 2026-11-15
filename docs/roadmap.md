@@ -605,7 +605,28 @@ The studio-growth proof should eventually distinguish:
 
 At least one non-production object should affect a professional differently based on their preferences/state rather than providing a universal flat bonus.
 
-### 7.3 Workplace environment and preferences
+### 7.3 Recruitment channels across eras
+
+Prototype recruitment as an evolving access system rather than a timeless candidate browser.
+
+The bounded proof should establish at least two distinct channels with different availability/flow, while the long-term direction includes:
+
+- rare walk-in applications at the studio;
+- rare employee referrals;
+- paid newspaper job advertisements that increase applicant flow;
+- a later computer-based professional-network interface with a broader searchable candidate pool.
+
+Requirements:
+
+- early recruitment can genuinely leave the player with very few options;
+- employee referrals retain who made the recommendation;
+- active advertising increases candidate discovery rather than creating employees from nothing;
+- recruitment availability remains separate from workstation/capacity requirements;
+- the digital-era network uses a fictional in-world identity rather than requiring a real LinkedIn integration;
+- candidate channels must not expose perfect hidden character stats by default;
+- historical unlock timing should be treated as game progression and researched context, not as a claim that the underlying real-world medium did not previously exist.
+
+### 7.4 Workplace environment and preferences
 
 Prototype lightweight environmental preferences before building a large furnishing simulation.
 
@@ -619,7 +640,7 @@ The first proof should test a small set such as:
 
 Validate whether environmental choices produce readable effects on morale, recovery, creativity, concentration, or relationships without forcing excessive furniture micromanagement.
 
-### 7.4 Employee bargaining and agency
+### 7.5 Employee bargaining and agency
 
 Introduce:
 
