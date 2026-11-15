@@ -16,12 +16,13 @@ Read the smallest relevant evidence set in this order:
 6. YFramework for shared Polite Goblin/Loomlight terminology, cross-repository decisions, The Y Framework methodology, status vocabulary, and accepted cross-repository naming.
 7. Loomlight Flux only as legacy Unity migration evidence.
 
-Repository evidence overrides memory and previous conversations. Documentation does not prove implementation.
+Use [`docs/README.md`](docs/README.md) as the **navigation index**, never as a competing design authority. Repository evidence overrides memory and previous conversations. Documentation does not prove implementation.
 
 ## Current evidence-based status
 
 - **T.O.O.N. — The Office Of Nonsense** is the accepted current project/public name.
 - The historical living-studio direction (roughly 1900–2030, cross-media production, people, place and historical context) is **Accepted direction** and **Documented**.
+- The first playable production format is one complete **3–4-panel comic strip** (**Accepted direction**, 2026-11-15); the game-wide design retains comic strip, comic, 2D animation and 3D animation.
 - Name clearance remains unresolved; a known exact `TOON` Steam-title collision is recorded as a commercial/legal risk.
 - Continued development is **Planned**.
 - **Unreal Engine** is the accepted target engine; migration remains **Planned** until an Unreal project is actually bootstrapped and validated.
@@ -57,7 +58,7 @@ Implement only the subset needed for the current proof.
 - AI may be a major content-generation mechanism; provider SDK/schema must still remain behind T.O.O.N.-owned contracts.
 - Preserve human/player authority over creative direction, acceptance/rejection where exposed, and release decisions.
 - Do not require feature-complete manual DCC authoring solely to demonstrate provider independence; use deterministic fixtures/fallbacks for validation where appropriate.
-- Do not claim Game Studio or Nexus integration from the presence of AI features.
+- Do not claim integration with Loomlight Game Studio or any other Loomlight product merely from the presence of AI features.
 
 ## Persistence rules
 
@@ -152,6 +153,10 @@ AI may be used extensively for research, code drafting, tests, debugging hypothe
 - Separate development-time AI from runtime/player-facing AI.
 - Runtime providers must remain adapters behind T.O.O.N.-owned contracts.
 - For portfolio-critical Unreal work, preserve enough technical evidence to show what was designed, reviewed, compiled, tested, profiled, or debugged.
+
+## Design-gap discipline
+
+Before asking the owner a new design question, check [`docs/design.md`](docs/design.md), [`docs/preproduction-design-review.md`](docs/preproduction-design-review.md), the owning issue and prior merged decisions. An existing rule that lacks an implementation or benchmark is **validation work**, not an unresolved design decision. Escalate only a consequential contradiction or missing accepted rule, with exact source locations and explicit alternatives. Do not manufacture a second design spec to restate accepted decisions.
 
 ## Validation discipline
 
