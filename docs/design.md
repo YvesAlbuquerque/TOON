@@ -701,13 +701,22 @@ over a large accounting breakdown with many low-value line items.
 
 **Accepted owner rule (2026-11-16): after the player commits to a production's current budget, automatic work, failed internal attempts and automatic technical AI recovery do not recalculate or increase that production's cost.** Those attempts can extend the estimated/actual production schedule. **Only an explicit player request for a new creative version/rework at an eligible stage triggers a new calculation of that work's production cost**; communicate the cost consequence to the player. This keeps incremental creative spending under player direction and does not create a pay-per-inference fee.
 
-This rule applies to **production-specific budgeting and version generation**, not an automatic freeze of all studio finances. Existing recurring studio operating costs, salaries, other player-authorized financial commitments and cash/runway continue to obey their established game rules as simulation time advances. Do not book an additional production fee merely because a background generator retried. Any contractually specified lateness penalty is a **separate existing contract obligation**, not a hidden regeneration charge; its interaction with unplanned technical delays needs explicit treatment before promising there are no total economic consequences.
+This rule applies to **production-specific budgeting and version generation**, not an automatic freeze of all studio finances. Existing recurring studio operating costs, salaries, other player-authorized financial commitments and cash/runway continue to obey their established game rules as simulation time advances. Do not book an additional production fee merely because a background generator retried. Any contractually specified lateness penalty is a **separate existing contract obligation**, not a hidden regeneration charge. **G-05 below** defines a bounded technical-delay grace against such deadlines; this does not freeze the simulation or guarantee that every resulting late delivery is penalty-free.
 
 Conceptually:
 
 `automatic internal failure/retry -> possible production delay; production budget unchanged`
 
 `player requests new version (while version slots remain) -> recalculate/communicate new production cost + schedule consequence`
+
+### G-05 — Bounded contract-deadline grace for technical AI failures
+
+**Accepted owner choice (2026-11-16): option C, partial compensation.** If an accepted external contract's production is delayed by **verified technical generation failures or automatic technical retries**, it may receive **limited, capped grace** for evaluating that contract's deadline and lateness penalty. This is neither a permanently suspended contract clock nor an unconditional deadline extension: once the bounded allowance is exhausted, further lateness is treated under the contract's normal terms. The precise allowance, accumulation and cap are **balance/implementation parameters**, not yet fixed.
+
+- Only **game-owned evidence of technical generation delay** qualifies. Do not classify poor artistic quality, an ordinary creative revision, player-requested new version, staffing/management decisions, missing equipment or ordinary production slippage as an AI technical failure eligible for grace. Do not double-count overlapping delay intervals.
+- The **world clock, studio operating burn, salaries, financing instalments and other unrelated obligations continue**. Grace affects only the relevant **contract deadline/late-penalty assessment**, not production-budget accounting or the actual passage of time.
+- Show the contract's base deadline and any applied/remaining technical allowance clearly enough for the player to distinguish ordinary lateness from protected technical delay. Preserve the allowance and its causal evidence across save/reload; do not regrant it when a failed job is retried or a save is loaded.
+- Ordinary contract penalties remain possible after grace is exhausted. No new technical-failure production charge or creative-version consumption is implied; G-02 remains the source of those rules.
 
 ### Financial pressure and failure
 
