@@ -394,7 +394,7 @@ Human-in-the-loop proof requirements:
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
 - the physical production representation changes according to era, medium and pipeline stage; each completed stage returns the object for **player-initiated placement** at the correct following station, with appropriate state validation;
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
-- **before release only**, the player may send an in-production project to **trash**, deleting its project-owned draft data/versions/artifacts; **spent money is never refunded**;
+- **before release only**, the player may send an in-production project to **trash**, deleting its project-owned draft data/versions/artifacts; **spent money is never refunded**. **G-06:** trashing a project under an already accepted external contract also terminates the contract and charges a **single global X% of its guaranteed payment**, independent of elapsed time/progress/client; X awaits balance, and the player must see the fee before confirmation;
 - project trash is destructive, not a soft-cancel/archive state: remove unreleased project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
 - **after explicit player-authorized release**, the project leaves active production and becomes a **published work in a separate published/catalogue menu**; it cannot be moved to trash or deleted, and its durable artifact/credits/history survives save/reload;
 - studio recurring burn continues as time passes, but internal generation recovery must not itself book a new production expense; **G-05 accepts capped/partial grace for verified AI technical delays against contract deadline penalties**, not a paused world clock or unlimited waiver. Normal lateness penalties still apply beyond the allowance and for ordinary production delays;
@@ -679,7 +679,7 @@ Requirements:
 - support the three production origins: player initiative, external contract and single-originator internal proposal;
 - an accepted internal proposal gives its one originator persistent credit and a fixed **5%** of studio revenue from that production;
 - internal-proposal participation continues after the employee leaves but does not automatically propagate to future productions in the same IP;
-- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation, bonuses and penalties;
+- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation and bonuses; **G-06 cancellation uses one globally configured percentage of guaranteed payment**, not per-client cancellation clauses; other contract penalties remain distinct;
 - contract outcomes are determined by game-owned rules rather than free-form AI judgment;
 - G-05: contract lateness assessment applies a **bounded technical-delay grace** only for game-verified AI technical failures/retries; preserve the base deadline, allowance, causal evidence and final penalty result across save/reload. The grace cap/measurement and coefficients remain balancing details. Staff, resource, player-requested revision and ordinary production delays do not consume or qualify for technical grace;
 - model an abstract personal-finance state sufficient for revenue participation, financial pressure, wealth and resulting employee-agency consequences.
@@ -891,6 +891,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-06 contract-abandonment proof (later, game-owned):** trash an unreleased original versus a contracted project at early/late stages. Check nonrefundable sunk costs, exactly one cancellation charge equal to configured X% of guaranteed contract payment, clear pre-deletion confirmation, terminated contractual future payment, no surviving project/archive entry, retained independent studio/IP/crew history, no late AI resurrection, and no duplicate settlement after save/reload. The actual percentage X remains balancing work.
 
 **G-05 contract-deadline proof (later, game-owned):** compare a normal late delivery, technical retries within the grace cap, technical retries beyond that cap, and mixed-cause delay. Verify the bounded allowance changes only contract lateness/penalty assessment, not the simulation clock, salaries, loan instalments, production cost or the three-version counter; repeated events and save/reload must not duplicate credited delay. Exact caps and weights require balancing evidence.
 
