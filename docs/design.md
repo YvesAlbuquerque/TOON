@@ -670,7 +670,7 @@ External contracts should remain compact and legible. A contract can define:
 - ownership/rights;
 - studio revenue participation where applicable;
 - optional bonuses;
-- penalties for lateness, cancellation or failure to satisfy explicit mandatory requirements.
+- penalties for lateness or failure to satisfy explicit mandatory requirements; **early project abandonment follows the global G-06 cancellation formula**, not a contract-by-contract negotiated cancellation percentage.
 
 The base interaction is an offer that can be **accepted or rejected**. Advanced clause-by-clause negotiation is not required for the core system.
 
@@ -679,6 +679,17 @@ Client satisfaction should derive from game-owned checks such as:
 `brief compliance + mandatory requirements + deadline + artifact/process quality -> contract result`
 
 AI can dramatize client reaction, but does not decide authoritative payment or penalties.
+
+### G-06 — Abandoning an accepted external contract
+
+**Accepted owner design (2026-11-16):** the player may **abandon an already accepted external contract by trashing its unreleased production project**. This is allowed at any pre-release production stage; there is no requirement to finish the contracted work. Trashing an original/self-funded unreleased project only destroys that project without reimbursing spent money; abandoning a **contracted** unreleased project additionally triggers the cancellation settlement below.
+
+- **Fixed global cancellation formula:** the cancellation charge is **X% of the contract's guaranteed payment**, independent of the production's elapsed time, stage, progress or client. **X is a global balancing parameter**, not a variable contract clause or a presently accepted numerical rate.
+- **Consequences:** project data/drafts/artifacts are deleted permanently, committed money already spent is **not refunded**, the accepted external contract is **terminated**, the cancellation charge is booked once to studio finances, and **no future payments for completing that abandoned contract** are owed. Do not double-charge sunk costs as a new deletion fee or invent retroactive refunds.
+- **Player confirmation:** before destructive trash, clearly display that the contract will end, the **new cancellation charge**, non-refundable already-spent costs and the loss of remaining contracted payment. Declining this confirmation leaves the project and contract intact.
+- **State integrity:** persist the cancellation's financial/contract consequences even though the unreleased project is deleted. Save/reload and queued generation must not resurrect the project or duplicate the cancellation charge. There is no separate cancelled-project archive entry or post-publication trash path.
+
+Any future client advances, partial payments or settlement offsets must be reconciled against actual game-owned ledger facts before implementation; they are **not** authorization to invent refunds, deposits or a second cancellation-fee model now.
 
 ### Main cost families
 
@@ -1864,9 +1875,9 @@ This creates a visible relationship between **place + people + production state*
 
 **Release is the deletion boundary.** After the player explicitly authorizes release, the project leaves the active-production workflow and becomes a **published work in a separate published/catalogue menu**. The **trash/delete action is unavailable for published works**; published records, final artifacts, credits/lineage and catalogue/history references persist across save/reload. Existing catalogue/IP revenue, contract and external distribution rules can operate normally without post-release deletion exceptions. Simply finishing a stage or artifact does **not** release it; the player must authorize publication.
 
-When an **unreleased** project is trashed, remove its production state and project-owned draft versions/artifacts/references. Stop in-flight generation where practical, reject late responses, and prevent the deleted draft from being recreated by queued work or save/reload. Do not preserve a recoverable cancelled-project archive record by default, and do not assume a restore feature. Preserve independent IPs, professionals, other productions and already-applied financial/social effects; reconcile cross-entity references without restoring the trashed production.
+When an **unreleased** project is trashed, remove its production state and project-owned draft versions/artifacts/references. **G-06** applies the fixed global cancellation settlement when that unreleased project belongs to an **accepted external contract**; original projects have no contract cancellation charge. Stop in-flight generation where practical, reject late responses, and prevent the deleted draft from being recreated by queued work or save/reload. Do not preserve a recoverable cancelled-project archive record by default, and do not assume a restore feature. Preserve independent IPs, professionals, other productions and already-applied financial/social effects; reconcile cross-entity references without restoring the trashed production.
 
-The UI should make unreleased-project trash irreversible and its **no-refund** consequence clear. After release, present the work only through the published catalogue/history rather than as an active trashable project. Exact interaction controls are deferred to UX validation.
+The UI should make unreleased-project trash irreversible and its **no-refund** consequence clear, and show the G-06 cancellation fee before confirming the deletion of a contracted project. After release, present the work only through the published catalogue/history rather than as an active trashable project. Exact interaction controls are deferred to UX validation.
 
 ### Optional human-in-the-loop creation
 
