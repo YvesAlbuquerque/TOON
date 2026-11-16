@@ -8,6 +8,8 @@ The project was formerly known as InkTime / Ink Through Time. Those names are le
 
 Read the smallest relevant evidence set in this order:
 
+**Fast lookup:** begin with [`docs/README.md`](docs/README.md#agent-task-routing) for task-based routes and [its topical design index](docs/README.md#design-topic-index). Follow links to the owning headings rather than loading full documents by default. The index is navigation, **not** another source of design authority.
+
 1. `README.md` for project identity, status, and routes.
 2. `docs/design.md` for accepted T.O.O.N. game-design direction.
 3. `docs/roadmap.md` and current GitHub Issues for planned work and dependencies.
