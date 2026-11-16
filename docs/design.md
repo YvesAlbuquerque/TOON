@@ -163,25 +163,11 @@ The preferred opening direction is an interactive **globe/world view** around th
 
 `Stylized world view -> select country -> first studio`
 
-The visual art direction of the map/globe, geographic abstractions, starter-country catalogue and any implicit city naming remain later design/content decisions. The choice is **country-level for gameplay**, not a requirement for photorealistic cartography or world-scale historical simulation. Do not invent country/era effects without researched, reviewable data.
+The visual art direction of the map/globe, geographic abstractions and starter-country catalogue remain later art/content decisions. **Owner correction (2026-11-16) supersedes any earlier economic/geographic interpretation of G-09:** the selected country is **only a source for language defaults and country-relevant historical/cultural events/context**. It is **not** an economic modifier, territory, foreign-market unlock, travel destination, branch-management system or country-based expansion progression. The map is stylized, not a world-simulation feature. Event facts require sourced, reviewable data.
 
 ### Starting location
 
-Starting **country** should be a meaningful campaign input rather than cosmetic flavour. A game-defined locality may support presentation or sourced context without making cities separately selectable.
-
-It can influence, where supported by data and content:
-
-- initial spoken/studio language;
-- default language of produced works;
-- available local talent;
-- salary/rent and operating-cost pressures;
-- initial audience/market;
-- cultural opportunities and constraints;
-- access to technologies/media;
-- local professional networks;
-- later expansion opportunities.
-
-Real-world historical differences must not be invented casually. Any factual country/region/locality/era modifiers require researched, reviewable data before becoming canonical gameplay rules. G-09 does not authorize fabricated country modifiers.
+The starting **country** supplies (1) the studio/world language default, which can inform the default production language, and (2) relevant, sourced country-specific historical/cultural events and narrative context. The interface language remains independently configurable. **Country choice does not itself alter salaries, rent, talent availability, markets, technology, distribution reach, contracts or opportunities, nor does it unlock geographic expansion.** Any economic/market consequences arising from independently designed historical events must be explicitly authored and evidenced as event mechanics, **not inferred automatically from a national label**. There is no required city selection or city simulation.
 
 ### Language layers
 
@@ -225,20 +211,9 @@ Later systems may support:
 
 These are expansion candidates, not first-slice requirements.
 
-### Geographic growth
+### Geographic scope boundary (G-09 owner correction)
 
-Starting location should not permanently trap the studio.
-
-Later campaign possibilities may include:
-
-- moving headquarters;
-- opening branches;
-- hiring internationally;
-- co-productions;
-- distributing work abroad;
-- becoming a multinational creative studio.
-
-These systems should be added only after the single-location studio loop is validated.
+**There is no gameplay system for international expansion based on starting country.** Do not add moving headquarters, overseas branches, multinational office management, geographic progression or automatic country-specific business modifiers as a consequence of the country picker. The game remains focused on its single studio; country selection is a **language and event-context input only**. Any unrelated later publishing/localization feature must earn a separate design decision, rather than being inferred from the start-of-campaign map.
 
 ## Campaign and time
 
