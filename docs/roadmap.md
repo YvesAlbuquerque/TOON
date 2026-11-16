@@ -94,9 +94,8 @@ Prototype the campaign opening as a bounded world/location selection.
 
 Minimum proof:
 
-- world/globe presentation;
-- choose one of a small validated set of starting locations;
-- starting location supplies a default studio/world language;
+- **G-09:** stylized interactive world map/globe at campaign opening; choose a **country** from a small researched/validated starting set, with **no mandatory city-choice UI**; establish the studio in an implicit/game-defined locality;
+- starting country supplies a sensible default studio/world language while interface language remains independent;
 - one production inherits a default production language;
 - interface/subtitle language remains independently selectable;
 - character dialogue can display/voice in the studio language while management UI stays understandable in the player's UI language.
@@ -910,7 +909,7 @@ Only then should the project expand toward a full 1900–2030 campaign.
 ## Deferred until proofs earn expansion
 
 - every historical medium;
-- deep city simulation;
+- deep city simulation or player-selected starting city (G-09 uses stylized country selection);
 - complete family simulation;
 - hundreds of relationship variables;
 - large fandom/community systems;
