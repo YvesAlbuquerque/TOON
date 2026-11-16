@@ -356,7 +356,7 @@ The production system should support the four accepted production types: **comic
 
 **Accepted first playable target (owner-confirmed 2026-11-15): one complete 3–4-panel comic strip.** This remains the fixed validation-fixture target; a separately generated strip with fewer panels is still a valid creative result when it functions as a strip, not an automatic technical failure. Build the smallest strip-specific output path on a medium-neutral Production domain; do not hard-code the shared domain exclusively around strips. Other production types remain in design scope but are not required as validated output paths in the first vertical slice.
 
-The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
+The first production proof must treat the production as a **persistent physical workflow object**. On completion of each stage, the object returns to the player; **the player places it at the next compatible station** to begin the next stage. The studio may automatically generate creative contents but **must not silently transport or advance the project to another workstation**. An incompatible/unavailable workstation blocks the handoff without losing the project. The accepted first route is `concept accepted -> physical project object -> scriptwriting station -> art-direction station -> later medium-specific stations -> review/release`.
 
 The minimum production representation should support:
 
@@ -375,21 +375,24 @@ The minimum production representation should support:
 
 Human-in-the-loop proof requirements:
 
-- the game can complete the representative production without player-authored creative input;
-- at least one stage also permits optional player intervention;
-- intervention may be authored text, uploaded/reference media, selection between generated alternatives, or regeneration where supported;
+- concept form can originate from (a) a partially filled external/client proposal with offer-specific editable/locked fields, (b) a partially filled one-originator employee pitch, or (c) a player-created concept with optional prefill/AI auto-fill and editing;
+- accepting the concept creates the physical project object for the **scriptwriting workstation**;
+- in scriptwriting, the game can produce a short script automatically; **only here** may the player optionally edit the script;
+- in art direction, generation is automatic unless the player optionally edits/supplies **art-direction references**, including image uploads;
+- **concept, scriptwriting and art direction are the only stages with direct player content editing/authoring**; storyboard/layout and every later stage have **no player free-text entry or bespoke creative input upload**;
+- all generating stages can complete their contents without player-authored creative inputs; the player still **physically routes** the completed project object to the next station;
+- regeneration/new-version selection is available **at every generating stage**, including those without direct editing, within the established three-successful-version limit;
 - there is no mandatory universal three-mode Auto/Assisted/Manual system;
-- stages are either resolved automatically or contain optional player intervention;
 - each creative stage that generates alternatives permits **at most three successfully generated versions in total**, not a regenerable pool of three concurrent slots;
 - versions are reviewed one at a time, with a lightweight indication of the others; exact UX/UI is deferred;
 - after the **third** generated version, further rework/new-version requests in that stage are **disabled**, even if earlier versions are discarded;
-- the game can select a valid version automatically when the player does not intervene; otherwise the player selects which available version advances;
+- the initial output may be the default chosen version when the player does not intervene; otherwise they may select an existing generated version; the **player's physical routing to the next station** accepts the chosen/default version and discards the rest;
 - **all unselected versions are discarded when the selected version moves to the next stage**;
 - **only an explicit player request for a new version** (within the three-version allowance) triggers recalculation/communication of incremental production/rework cost; internal failed work or automatic AI retry may extend the deadline **without recalculating the production budget**;
 - player-provided input becomes part of downstream production context and can affect the actual generated artifact;
 - player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
-- the physical production representation changes according to era, medium and pipeline stage;
+- the physical production representation changes according to era, medium and pipeline stage; each completed stage returns the object for **player-initiated placement** at the correct following station, with appropriate state validation;
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
 - **at any point, including after release**, the player may select the project and move it to the **trash**, **deleting the entire project**—project data, stage versions, local artifacts, provenance and archive entry;
 - project trash is destructive, not a soft-cancel/archive state: remove project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
@@ -402,7 +405,7 @@ Pipeline-direction proof should preserve a shared conceptual backbone:
 
 `concept -> script/structure -> design/art direction -> storyboard/layout -> production -> finishing -> review -> release`
 
-Not every production type requires every stage. Medium-specific technical substeps should drive staffing, facilities, equipment, time, cost and production risk without automatically becoming player-facing minigames. Human-in-the-loop should focus primarily on authorship/pre-production stages.
+Not every production type requires every stage. Medium-specific technical substeps should drive staffing, facilities, equipment, time, cost and production risk without automatically becoming player-facing minigames. **Direct content editing is limited to concept, script and art-direction material;** physical station routing and capped player-requested regeneration apply throughout the production pipeline.
 
 ### 4.2 One people/production conflict
 

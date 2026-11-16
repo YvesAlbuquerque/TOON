@@ -51,6 +51,14 @@ Implement only the subset needed for the current proof.
 - Prefer bold macro-shapes, strong line of action, readable posing, and animation-friendly design.
 - Do not copy protected Disney, Warner/Looney Tunes, Fleischer, or other studio/character identities.
 
+## G-03 concept, authorship and physical workflow (accepted 2026-11-16)
+
+- Concept may arrive partly populated from an **external contract** (only terms/fields explicitly allowed by the offer are editable), a **single-originator employee pitch**, or **player initiative** (optionally prefilled or AI-assisted).
+- **Only concept, scriptwriting and art direction** expose direct player editable creative content. Scriptwriting normally creates a short automatic script but can be player-edited; art direction normally generates automatically and permits reference/image uploads.
+- **No direct player text entry or bespoke content-upload editor at storyboard/layout, production, finishing or other later stages**. All generating stages still support requesting another version (maximum three successful versions total for each stage).
+- After a valid result, the production **physical object returns to the player**. The player places it at the **next compatible workstation** to advance the chosen/default version; the game does not auto-route between stations. An unavailable/incompatible station is a blocker, not an implicit stage skip.
+- Content creation may be automatic without player typing/editing; **station-to-station handoffs remain player management actions**. Final release still requires player authority. The precise interaction affordance and art-direction field schema remain UX/implementation decisions, not evidence of running software.
+
 ## Production version and trash rules (accepted 2026-11-15)
 
 - **Three successfully generated versions total per creative stage**, not a rolling pool of three concurrent alternatives. After the third version, disable further new-version/rework requests for that stage. Selecting one version advances it and deletes all other versions from the stage.
