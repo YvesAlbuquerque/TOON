@@ -21,7 +21,7 @@ This roadmap preserves validated/recovered technical work while rebasing future 
 - Treat Unreal bootstrap as a separate proof before porting broad gameplay.
 - Never claim implementation or validation from documentation alone.
 
-For an evidence-based reconciliation of **already accepted design**, the one remaining candidate-rejection edge case and distinct Unreal/AI validation work, see the [pre-production design coherence audit](preproduction-design-review.md). An implementation proof does not reopen settled design decisions.
+For an evidence-based reconciliation of **already accepted design**, the resolved candidate-selection and G-02 failure rules, and separate Unreal/AI validation work, see the [pre-production design coherence audit](preproduction-design-review.md). An implementation proof does not reopen settled design decisions.
 
 ## Phase 0 — Recovered technical baseline
 
