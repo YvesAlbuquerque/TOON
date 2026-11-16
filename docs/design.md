@@ -159,15 +159,15 @@ A new campaign should begin by presenting the world before presenting the studio
 
 The preferred opening direction is an interactive **globe/world view** around the campaign start date, from which the player chooses where T.O.O.N. begins.
 
-The initial choice may be:
+**G-09 owner decision (2026-11-16, option A, stylized):** the campaign opens with a **stylized interactive world map or globe** and the player selects a **country**, not a city. The first studio is then established in an **implicit or game-defined starting locality** associated with the selected country; there is **no mandatory city-selection step** or full city-level simulation in the base opening flow.
 
-`World -> country/region -> city -> first studio`
+`Stylized world view -> select country -> first studio`
 
-The exact geographic granularity remains a design/production decision. The first implementation does not need every city on Earth.
+The visual art direction of the map/globe, geographic abstractions, starter-country catalogue and any implicit city naming remain later design/content decisions. The choice is **country-level for gameplay**, not a requirement for photorealistic cartography or world-scale historical simulation. Do not invent country/era effects without researched, reviewable data.
 
 ### Starting location
 
-Starting location should be a meaningful campaign input rather than cosmetic flavour.
+Starting **country** should be a meaningful campaign input rather than cosmetic flavour. A game-defined locality may support presentation or sourced context without making cities separately selectable.
 
 It can influence, where supported by data and content:
 
@@ -181,7 +181,7 @@ It can influence, where supported by data and content:
 - local professional networks;
 - later expansion opportunities.
 
-Real-world historical differences must not be invented casually. Any factual country/city/era modifiers require researched, reviewable data before becoming canonical gameplay rules.
+Real-world historical differences must not be invented casually. Any factual country/region/locality/era modifiers require researched, reviewable data before becoming canonical gameplay rules. G-09 does not authorize fabricated country modifiers.
 
 ### Language layers
 
