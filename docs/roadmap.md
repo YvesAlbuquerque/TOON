@@ -666,8 +666,8 @@ Requirements:
 - historical media/business changes may alter presentation and parameters without requiring a wholly separate economy each era;
 - G-04 distress emerges through existing systems: **more frequent external project proposals with worse/stricter commercial terms**, rather than a special insolvency negotiation UI;
 - when salaries are unpaid, **some** workers may take a decorative prop home, miss shifts or move to a competitor, using character-dependent simulation and preserving object/employee state;
-- first crossing of an adjustable **negative cash threshold** triggers **one optional financing offer**, not an endless bailout loop;
-- the **second distinct** crossing of that threshold after the studio has recovered above it triggers a **forced company sale, ending the campaign**. Staying below the threshold is not a repeated daily/tick trigger;
+- first crossing of an adjustable **negative cash threshold** triggers **one optional debt-clearing financing rescue**: accepting it settles all then-outstanding studio financial debt and overdue payments (including unpaid salaries), sets debt to **zero** and restores nonnegative cash; **do not automatically replace this with another loan/debt**, and do not invent repeatable bailouts;
+- the **second distinct** crossing of that threshold after the studio has recovered above it triggers a **forced company sale, ending the campaign**. Staying below the threshold is not a repeated daily/tick trigger; the rescue does not reverse historical relationship/absence/departure/property consequences or remove newly arising future expenses;
 - game over presents an **archive-based retrospective** and game-owned coherent *what happened next* for meaningful IPs, employees and competing studios;
 - the exact handling of refusing financing or remaining below the threshold continuously without recovery is **not yet defined**; do not fabricate a countdown or second crossing;
 - the economic/behavioural parameters, threshold/offer values and epilogue logic require tuning and Unreal proof before promotion to Validated;
@@ -888,7 +888,7 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 
 Only then should the project expand toward a full 1900–2030 campaign.
 
-**Endgame G-04 proof (later, game-owned):** exercise the two distinct negative-cash crossings, the one-time financing offer, distress-weighted contract offers, conditional unpaid-staff behaviours, forced sale and retrospective/future epilogue. Verify no duplicate threshold trigger during one continuous negative period, save/reopen of financing availability and threshold history, and an ending before 2030. Resolve the still-open refusal/continuous-distress edge case before calling the full terminal flow validated.
+**Endgame G-04 proof (later, game-owned):** exercise the two distinct negative-cash crossings, the one-time **debt-clearing** financing offer, distress-weighted contract offers, conditional unpaid-staff behaviours, forced sale and retrospective/future epilogue. Verify that acceptance pays outstanding debts/salary arrears, resets debt to zero and cash to nonnegative without creating a replacement loan, but retains previously applied social/physical consequences and future normal expenses; no duplicate threshold trigger during one continuous negative period; save/reopen of financing availability and threshold history; and an ending before 2030. Resolve the still-open refusal/continuous-distress edge case before calling the full terminal flow validated.
 
 ## Deferred until proofs earn expansion
 
