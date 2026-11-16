@@ -397,7 +397,7 @@ Human-in-the-loop proof requirements:
 - **before release only**, the player may send an in-production project to **trash**, deleting its project-owned draft data/versions/artifacts; **spent money is never refunded**;
 - project trash is destructive, not a soft-cancel/archive state: remove unreleased project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
 - **after explicit player-authorized release**, the project leaves active production and becomes a **published work in a separate published/catalogue menu**; it cannot be moved to trash or deleted, and its durable artifact/credits/history survives save/reload;
-- studio recurring burn continues as time passes, but internal generation recovery must not itself book a new production expense; existing contractual lateness clauses remain a separately tracked obligation;
+- studio recurring burn continues as time passes, but internal generation recovery must not itself book a new production expense; **G-05 accepts capped/partial grace for verified AI technical delays against contract deadline penalties**, not a paused world clock or unlimited waiver. Normal lateness penalties still apply beyond the allowance and for ordinary production delays;
 - independent IP/professionals, other productions and already-applied studio/contract effects are not deleted or retroactively undone; released works remain in the published catalogue with normal income/contract consequences, so there is **no post-release deletion case** to model.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
@@ -681,6 +681,7 @@ Requirements:
 - internal-proposal participation continues after the employee leaves but does not automatically propagate to future productions in the same IP;
 - external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation, bonuses and penalties;
 - contract outcomes are determined by game-owned rules rather than free-form AI judgment;
+- G-05: contract lateness assessment applies a **bounded technical-delay grace** only for game-verified AI technical failures/retries; preserve the base deadline, allowance, causal evidence and final penalty result across save/reload. The grace cap/measurement and coefficients remain balancing details. Staff, resource, player-requested revision and ordinary production delays do not consume or qualify for technical grace;
 - model an abstract personal-finance state sufficient for revenue participation, financial pressure, wealth and resulting employee-agency consequences.
 
 
@@ -890,6 +891,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-05 contract-deadline proof (later, game-owned):** compare a normal late delivery, technical retries within the grace cap, technical retries beyond that cap, and mixed-cause delay. Verify the bounded allowance changes only contract lateness/penalty assessment, not the simulation clock, salaries, loan instalments, production cost or the three-version counter; repeated events and save/reload must not duplicate credited delay. Exact caps and weights require balancing evidence.
 
 **Endgame G-04 proof (later, game-owned):** exercise two distinct negative-cash crossings **while rescue is unpaid**, full repayment resetting rescue eligibility, a **subsequent eligible rescue offer**, distress-weighted contract offers, conditional unpaid-staff behaviours, forced sale and retrospective/future epilogue. Validate old debt/salary arrears clearance and positive calculated cash buffer **plus the new repayable financing balance**; automatic scheduled instalment posting **with insufficient cash**, visible remaining balance and projected payments, correct repayment/zero-balance transition; no reset for partial repayment; no duplicate charge on reload or special missed-payment penalty; test insolvency threshold crossing caused by a charge, including the final-instalment zero-balance edge case; no repeated trigger in one continuous negative period; save/reopen of financing balance and cycle; and early ending before 2030. Prove accept/decline transitions, **paused simulation with no financial ticks while the Decision Event is pending**, direct sale on decline, no duplicate triggers within continuous negative cash, full-payment eligibility reset and save/reload of a pending offer before the terminal flow can be marked Validated.
 
