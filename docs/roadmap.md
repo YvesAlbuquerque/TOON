@@ -652,7 +652,7 @@ Revenue should initially distinguish three families:
 
 - predictable **contract work**;
 - riskier **original productions** with greater IP/upside potential;
-- **catalogue/IP revenue** from previously released work.
+- **catalogue/IP revenue** from previously released **studio-owned** work; client-owned commissioned works remain viewable in history but do not automatically create studio IP income (G-13).
 
 Costs should remain concentrated in:
 
@@ -683,7 +683,7 @@ Requirements:
 - support the three production origins: player initiative, external contract and single-originator internal proposal;
 - an accepted internal proposal gives its one originator persistent credit and a fixed **5%** of studio revenue from that production;
 - internal-proposal participation continues after the employee leaves but does not automatically propagate to future productions in the same IP;
-- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation and bonuses; **G-11 pays no advance or milestones: guaranteed payment is posted on player-authorized release/contract delivery**, with **no post-delivery client approval, rejection or quality/brief-based payment reduction (G-12)**. Explicit pre-existing deadline penalties remain separate under G-05. **G-06 cancellation uses one globally configured percentage of guaranteed payment**, not per-client cancellation clauses; other contract penalties remain distinct;
+- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, **fixed client ownership of commissioned IP (G-13)** and optional payment bonuses; **G-11 pays no advance or milestones: guaranteed payment is posted on player-authorized release/contract delivery**, with **no post-delivery client approval, rejection or quality/brief-based payment reduction (G-12)**. Explicit pre-existing deadline penalties remain separate under G-05. **G-06 cancellation uses one globally configured percentage of guaranteed payment**, not per-client cancellation clauses; other contract penalties remain distinct;
 - contract outcomes are determined by game-owned rules rather than free-form AI judgment;
 - G-05: contract lateness assessment applies a **bounded technical-delay grace** only for game-verified AI technical failures/retries; preserve the base deadline, allowance, causal evidence and final penalty result across save/reload. The grace cap/measurement and coefficients remain balancing details. Staff, resource, player-requested revision and ordinary production delays do not consume or qualify for technical grace;
 - model an abstract personal-finance state sufficient for revenue participation, financial pressure, wealth and resulting employee-agency consequences.
@@ -895,6 +895,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-13 IP-ownership proof (later, game-owned):** create/deliver a client-commissioned work, persist client ownership in the immutable published catalogue and verify no player-initiated sequel/adaptation/reuse of its new commissioned IP and no automatic studio-owned catalogue royalties. Confirm the studio still receives G-11 delivery payment, and that studio-owned original IP retains its normal adaptation/catalogue path. Block or separately design any proposal that would implicitly transfer pre-existing studio IP. No client-ownership system is yet implemented or validated.
 
 **G-11/G-12 contract-payment and reputation proof (later, game-owned):** accept an external contract and verify **zero immediate cash credit**, no milestone instalments or spendable pre-delivery income. Finish production but hold it unpublished and confirm there is still no contract payout. On player-authorized release/delivery, **post the guaranteed payment once, without a client acceptance/rejection gate or quality/brief-based deduction**; separately assess only already accepted explicit deadline penalties (G-05) and verify correct cash changes and no repeat after save/reload. Compare high- and low-quality delivered works and verify **studio reputation changes and feeds both the frequency and value of subsequent external offers**, rather than altering completed-delivery payment. Abandon a separate unreleased contracted project and verify **zero delivery payment** plus G-06's fixed percentage cancellation charge, with no advance refund.
 
