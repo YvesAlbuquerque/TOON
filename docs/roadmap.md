@@ -94,7 +94,7 @@ Prototype the campaign opening as a bounded world/location selection.
 
 Minimum proof:
 
-- **G-09:** stylized interactive world map/globe at campaign opening; choose a **country** from a small researched/validated starting set, with **no mandatory city-choice UI**; establish the studio in an implicit/game-defined locality;
+- **G-09 (owner-corrected):** stylized interactive world map/globe at campaign opening; choose a **country** from a small researched/validated set, with **no city-choice UI**; use that choice **only for language defaults and relevant sourced historical/cultural events**, not economic/geographic bonuses or international expansion;
 - starting country supplies a sensible default studio/world language while interface language remains independent;
 - one production inherits a default production language;
 - interface/subtitle language remains independently selectable;
@@ -102,7 +102,7 @@ Minimum proof:
 
 Do not require a complete historical world simulation.
 
-Any location-specific economic, cultural, technology or legal modifiers must be backed by researched data before being treated as factual gameplay rules.
+Do **not** infer country-specific wages, costs, talent, technology, market access, legal modifiers or international expansion from the chosen country. The G-09 selection contributes **language defaults and sourced event/context selection only**; any economic consequences must belong to separately accepted, evidenced event rules.
 
 ## Phase 2 — Unreal domain foundation
 
@@ -909,7 +909,7 @@ Only then should the project expand toward a full 1900–2030 campaign.
 ## Deferred until proofs earn expansion
 
 - every historical medium;
-- deep city simulation or player-selected starting city (G-09 uses stylized country selection);
+- deep city simulation, player-selected starting city, or international branch/headquarters relocation mechanics driven by G-09 (country supplies language and historical-event context only);
 - complete family simulation;
 - hundreds of relationship variables;
 - large fandom/community systems;
