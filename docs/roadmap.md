@@ -21,7 +21,7 @@ This roadmap preserves validated/recovered technical work while rebasing future 
 - Treat Unreal bootstrap as a separate proof before porting broad gameplay.
 - Never claim implementation or validation from documentation alone.
 
-For an evidence-based reconciliation of **already accepted design**, the one remaining candidate-rejection edge case and distinct Unreal/AI validation work, see the [pre-production design coherence audit](preproduction-design-review.md). An implementation proof does not reopen settled design decisions.
+For an evidence-based reconciliation of **already accepted design**, the resolved candidate-selection and G-02 failure rules, and separate Unreal/AI validation work, see the [pre-production design coherence audit](preproduction-design-review.md). An implementation proof does not reopen settled design decisions.
 
 ## Phase 0 — Recovered technical baseline
 
@@ -164,6 +164,8 @@ Requirements:
 - optional speech/thought can accompany the action without directly changing simulation state;
 - malformed, stale or disallowed tags are rejected;
 - a deterministic/weighted fallback can choose an action without the generative model;
+- when inference is slow or unavailable, a **contextually selected game-authored action, dialogue, thought or reaction** from an indexed/localized library prevents characters from waiting indefinitely;
+- a late model result must not override an already executed authored fallback action; measure latency thresholds and repeated-line frequency;
 - only game-owned execution mutates authoritative state.
 
 The first runtime character-AI proof should also validate **local embedded background inference**:
@@ -183,6 +185,10 @@ Runtime AI validation must also preserve the broader rule that **all player-faci
 - prove at least one representative heavy generation path without a remote inference API;
 - run it asynchronously or through a local job queue so it does not block the game thread;
 - record generation latency, memory/VRAM use, storage/model footprint and failure behaviour;
+- automatically retry **technical** production-generation failures a bounded number of times; exhausted retry budgets create a legible, recoverable blocker rather than a soft lock or fictitious output;
+- a failed technical attempt with **no usable delivered artifact** consumes **none** of a stage's three creative-version slots; each completed creative result consumes exactly one, regardless of perceived artistic quality;
+- preserve media-specific expressive freedom: a functioning one-/two-panel strip is valid even though **3–4 panels** is the first-slice target; apply the same principle across the four media rather than treating target lengths or evaluator taste scores as hard errors;
+- express failed technical attempts through appropriate professional/workstation animations where useful without automatically assigning gameplay penalties or blame to employees for model instability;
 - keep character-cognition inference and heavyweight production generation as separate workload classes even though both are local;
 - compare at least one small-specialist route against a broader/larger-model route for a representative capability before freezing the runtime architecture;
 - measure not only output quality but latency, RAM/VRAM, install size, throughput, cross-task consistency and orchestration complexity;
@@ -348,7 +354,7 @@ Legacy `InkTime` data is migration source evidence, not an automatic compatibili
 
 The production system should support the four accepted production types: **comic strip, comic, 2D animation and 3D animation**.
 
-**Accepted first playable format (owner-confirmed 2026-11-15): one complete 3–4-panel comic strip.** Build the smallest strip-specific output path on a medium-neutral Production domain; do not hard-code the shared domain exclusively around strips. Other production types remain in design scope but are not required as validated output paths in the first vertical slice.
+**Accepted first playable target (owner-confirmed 2026-11-15): one complete 3–4-panel comic strip.** This remains the fixed validation-fixture target; a separately generated strip with fewer panels is still a valid creative result when it functions as a strip, not an automatic technical failure. Build the smallest strip-specific output path on a medium-neutral Production domain; do not hard-code the shared domain exclusively around strips. Other production types remain in design scope but are not required as validated output paths in the first vertical slice.
 
 The first production proof should also treat the production as a **persistent workflow object** that can visibly move between relevant stations/departments as pipeline state changes.
 
@@ -587,12 +593,12 @@ Before scaling content generation, validate representative output sizes.
 
 Initial released-work targets for the **four accepted production types**:
 
-- comic strip: **3–4 panels**;
+- comic strip: **3–4 panels** (target, not a strict minimum for a functioning strip);
 - comic: **1–4 pages**;
 - 2D animation: roughly 30–120 seconds;
 - 3D animation: roughly 30–120 seconds.
 
-Text, illustration and animatics can still be production-stage materials or intermediate reviews. They are not independent released production types in the current scope.
+Text, illustration and animatics can still be production-stage materials or intermediate reviews. They are not independent released production types in the current scope. Targets for length, panels and duration are **not** hard technical gates: a shorter coherent result may be a valid version, while subjective quality concerns belong in creative evaluation. Only genuinely unreadable, missing, corrupt or unplayable outputs trigger technical recovery.
 
 Measure separately:
 
