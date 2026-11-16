@@ -687,6 +687,18 @@ Production budgets should remain compact. Prefer:
 
 over a large accounting breakdown with many low-value line items.
 
+### Production spending authority and schedule slippage
+
+**Accepted owner rule (2026-11-16): after the player commits to a production's current budget, automatic work, failed internal attempts and automatic technical AI recovery do not recalculate or increase that production's cost.** Those attempts can extend the estimated/actual production schedule. **Only an explicit player request for a new creative version/rework at an eligible stage triggers a new calculation of that work's production cost**; communicate the cost consequence to the player. This keeps incremental creative spending under player direction and does not create a pay-per-inference fee.
+
+This rule applies to **production-specific budgeting and version generation**, not an automatic freeze of all studio finances. Existing recurring studio operating costs, salaries, other player-authorized financial commitments and cash/runway continue to obey their established game rules as simulation time advances. Do not book an additional production fee merely because a background generator retried. Any contractually specified lateness penalty is a **separate existing contract obligation**, not a hidden regeneration charge; its interaction with unplanned technical delays needs explicit treatment before promising there are no total economic consequences.
+
+Conceptually:
+
+`automatic internal failure/retry -> possible production delay; production budget unchanged`
+
+`player requests new version (while version slots remain) -> recalculate/communicate new production cost + schedule consequence`
+
 ### Financial pressure and failure
 
 The player should be able to understand financial danger before it becomes terminal. The UI should expose a clear burn-rate/runway signal such as an estimate of how long the current cash position can sustain current recurring costs.
@@ -1860,24 +1872,15 @@ The player may:
 
 **Accepted owner direction (2026-11-15): production AI technical failures receive a bounded number of automatic recovery attempts.** This is distinct from short character cognition/dialogue fallback and does **not** permit substituting generic pre-authored media for a failed finished production.
 
-- **Technical failure:** unavailable or crashed model, timeout, out-of-memory condition, corrupted/unreadable output, interrupted work or a result that cannot be presented/consumed at all. Retry/recover automatically within a limited budget; use queued/asynchronous execution and reject stale results. No technical-failure attempt without a usable deliverable consumes one of the stage's **three generated-version slots**.
+- **Technical failure:** unavailable or crashed model, timeout, out-of-memory condition, corrupted/unreadable output, interrupted work or a result that cannot be presented/consumed at all. Retry/recover automatically within a **bounded technical attempt/time budget**; use queued/asynchronous execution and reject stale results. No technical-failure attempt without a usable deliverable consumes one of the stage's **three generated-version slots**, recalculates the production budget or charges extra production costs. Automatic recovery may extend the stage's schedule.
 - **Completed creative result:** an artifact the player can actually read/view/watch as the intended production type, even if it is artistically imperfect, odd, uneven, off-brief or shorter than the target length. It counts as **one of the three versions**. A strip with one or two panels can still function as a strip; do **not** reject it just because a target says three or four. Apply the same flexible, function-first standard to comics and 2D/3D animation.
 - **Creative feedback, not artistic veto:** an evaluator may surface uncertain evidence about continuity, readability, craft or intent, and the game may connect those observations to authored production/professional outcomes. It must not turn subjective quality, a fixed panel count, or an aesthetic-score threshold into an automatic technical rejection or effectively grant unlimited free versions. Do not claim a specific professional *caused* a model defect without game-owned causal evidence.
-- **Diegetic presentation:** an unsuccessful technical attempt may be represented by an era/medium-appropriate action (e.g., a cartoonist crumpling a sheet and starting again). This visual is a presentation of the technical retry, not proof of staff incompetence, and must not invent fatigue, reputation, morale or cash penalties merely because the local model failed.
+- **Diegetic presentation:** an unsuccessful technical attempt may be represented by an era/medium-appropriate action (e.g., a cartoonist crumpling a sheet and starting again). This visual is a presentation of the technical retry, not proof of staff incompetence, and must not invent fatigue, reputation, morale or cash penalties merely because the local model failed. Its game-visible process consequence may be **time dilation**, not an automatic budget revision.
 - **Persistent failure:** after the bounded recovery policy is exhausted, keep the stage and game-owned production state intact, indicate an actionable technical blocker, and provide an explicit safe recovery path when possible. Do not loop forever, silently skip the stage, publish a fabricated artifact, or consume creative-version slots for missing outputs. The whole project can still be trashed at any time.
 
 Retry count, deadlines/backoff, classification thresholds, technical job lifecycle, persistence while blocked, and actual local-model/Unreal feasibility remain **Planned** until measured. Technical retry is **not** player-requested creative rework; the approved three-version maximum remains unchanged.
 
-A regeneration/rework request can consume simulation resources such as:
-
-- time;
-- budget;
-- professional effort;
-- fatigue/creative energy;
-- schedule slack;
-- production risk.
-
-The exact cost depends on stage, era, medium and production state.
+**Player-requested new versions are different from automatic retries.** Only clicking/requesting a **new creative version** can trigger a recalculation of that production's version/rework cost (within the existing three-successful-version limit). The player should see the cost/schedule consequences in the production interface. These requests can consume time and game-owned effort and affect other appropriate simulation states, but **automatic technical/creative recovery within the same requested version never silently creates an extra spending decision**. Exact cost coefficients remain tuning parameters. The project's regular budget is not recalculated each time a worker discards an unsuccessful attempt.
 
 Player-authored or uploaded material becomes part of the production's real creative input and therefore can affect downstream generation and final artifact evaluation. It is not merely cosmetic metadata.
 
