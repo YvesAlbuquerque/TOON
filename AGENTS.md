@@ -59,12 +59,12 @@ Implement only the subset needed for the current proof.
 - After a valid result, the production **physical object returns to the player**. The player places it at the **next compatible workstation** to advance the chosen/default version; the game does not auto-route between stations. An unavailable/incompatible station is a blocker, not an implicit stage skip.
 - Content creation may be automatic without player typing/editing; **station-to-station handoffs remain player management actions**. Final release still requires player authority. The precise interaction affordance and art-direction field schema remain UX/implementation decisions, not evidence of running software.
 
-## Production version and trash rules (accepted 2026-11-15)
+## Production version, pre-release trash and published catalogue rules (updated 2026-11-16)
 
 - **Three successfully generated versions total per creative stage**, not a rolling pool of three concurrent alternatives. After the third version, disable further new-version/rework requests for that stage. Selecting one version advances it and deletes all other versions from the stage.
-- The player may select **any project at any time**, including after release, and move it to **trash, deleting the whole project** (project state, versions, local artifacts and its archive entry). Do not reintroduce a recoverable "cancelled project" history as a substitute for deletion.
-- On trash, prevent queued/in-flight AI results from resurrecting the project. Preserve unrelated IPs, employees and authoritative studio state, and avoid dangling references; do not silently refund spent funds or revoke externally exported work.
-- Exact ongoing catalogue/contract effects of deleting already released work remain a separate narrowly scoped design question. This does not block accepting the version or trash rules.
+- **Owner rule (2026-11-16) supersedes the prior post-release trash permission:** only **unreleased** in-production projects can be permanently trashed (delete project-owned drafts/versions/artifacts). **Spent money is not refunded**. Do not reintroduce a recoverable "cancelled project" archive history as a substitute for deletion.
+- On **pre-release** trash, prevent queued/in-flight AI results from resurrecting the deleted draft. Preserve independent IPs, employees and authoritative studio/contract state; avoid dangling references and **never reimburse incurred project costs**.
+- After **player-authorized release**, the work leaves active production and enters a **separate published catalogue/history menu**. **Published works cannot be trashed or deleted**. Persist their artifacts, credits and normal catalogue income/contract consequences. The old post-release deletion/royalties ambiguity is closed by disallowing post-release deletion.
 
 ## G-04 financial crisis and terminal company sale (accepted 2026-11-16)
 
