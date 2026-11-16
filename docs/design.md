@@ -655,6 +655,14 @@ Client satisfaction should derive from game-owned checks such as:
 
 AI can dramatize client reaction, but does not decide authoritative payment or penalties.
 
+### G-11 — External contract payment on delivery
+
+**Accepted owner choice (2026-11-16): option B, payment at delivery.** Accepting a client contract **does not deposit any money** into studio cash. There are **no upfront advances or milestone/instalment payments** in the base external-contract payment flow. The player finances all ongoing studio and production costs until the commissioned work reaches **player-authorized release and contract delivery**, at which point the game-owned contract result evaluates the **guaranteed payment and any applicable bonuses/penalties** and posts the resulting settlement to studio finances **once**. Do not infer an automatic positive payout regardless of explicit client requirements or penalties; those outcomes remain governed by existing contract terms and deterministic game-owned checks, not free-form AI verdicts.
+
+- **Ready is not delivered:** completed work may wait unpublished at the G-08 physical publishing endpoint. Waiting creates no contract income and does not suspend its contractual deadline.
+- **Abandoned work is unpaid:** under G-06, trashing an unreleased contracted project forfeits its delivery payment and posts the **global X% guaranteed-payment cancellation fee**; there are no client advances to refund or offset under G-11.
+- **No cash-flow shortcut:** a prospective guaranteed payment is shown as expected future income, **not current cash** or a realized receivable to spend before delivery. Persist the delivery/settlement state and prevent duplicate credit or penalties after save/reload. Exact payment amounts and existing penalty/bonus coefficients remain balancing/contract data.
+
 ### G-06 — Abandoning an accepted external contract
 
 **Accepted owner design (2026-11-16):** the player may **abandon an already accepted external contract by trashing its unreleased production project**. This is allowed at any pre-release production stage; there is no requirement to finish the contracted work. Trashing an original/self-funded unreleased project only destroys that project without reimbursing spent money; abandoning a **contracted** unreleased project additionally triggers the cancellation settlement below.
@@ -664,7 +672,7 @@ AI can dramatize client reaction, but does not decide authoritative payment or p
 - **Player confirmation:** before destructive trash, clearly display that the contract will end, the **new cancellation charge**, non-refundable already-spent costs and the loss of remaining contracted payment. Declining this confirmation leaves the project and contract intact.
 - **State integrity:** persist the cancellation's financial/contract consequences even though the unreleased project is deleted. Save/reload and queued generation must not resurrect the project or duplicate the cancellation charge. There is no separate cancelled-project archive entry or post-publication trash path.
 
-Any future client advances, partial payments or settlement offsets must be reconciled against actual game-owned ledger facts before implementation; they are **not** authorization to invent refunds, deposits or a second cancellation-fee model now.
+**G-11 eliminates advances and partial client payments from the base contract flow.** Therefore G-06 abandonment creates **only** the fixed-percentage cancellation fee and forfeits the unpaid delivery settlement; do not invent refunds, deposits, offsets or a second cancellation-fee model.
 
 ### Main cost families
 
