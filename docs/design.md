@@ -713,17 +713,21 @@ Conceptually:
 
 The player should be able to understand financial danger before it becomes terminal. The UI should expose a clear burn-rate/runway signal such as an estimate of how long the current cash position can sustain current recurring costs.
 
-Running out of cash should not normally produce an immediate unexplained game over. Financial distress can first create escalating consequences such as:
+### G-04 — Financial distress, one-time financing and forced studio sale
 
-- emergency financing or costly rescue options where historically appropriate;
-- delayed obligations or salary pressure;
-- morale and retention problems;
-- blocked purchases/services;
-- pressure to dismiss staff, cancel work or accept unattractive contracts.
+**Accepted owner design (2026-11-16):** do **not** introduce a broad bankruptcy-rescue menu (asset-liquidation options, mandatory restructuring packages, repeated financing negotiations, etc.). Financial danger should emerge through the normal contract market and employee agency, then have exactly **one** special financing opportunity before a possible forced sale/game over.
 
-Only after a meaningful recovery window should insolvency become terminal or otherwise force a major campaign consequence.
+- **Distressed market:** as the studio runs into financial difficulty, **third-party project offers become more frequent**, but generally offer **more oppressive commercial terms** (e.g., lower pay for the work or harsher requirements). Their frequency and severity should scale with financial distress and use the existing proposal/contract flow, not a separate emergency-project minigame. The player still chooses whether to accept each offer.
+- **Unpaid staff:** when the studio fails to pay employees, affected professionals may, depending on personality, relationship, circumstances and their own financial pressures, **consider taking home a studio decorative object, miss work, or accept another studio's job offer**. These are **possible** authored/simulation outcomes, not automatic universal punishments or a new direct player action menu. The stolen/removed prop is a physical workplace consequence; absence and departures affect workforce/production state. Preserve coherent object and staff persistence. Unpaid obligations are not silently erased.
+- **First negative-cash threshold event:** on the **first** crossing of a configurable negative cash threshold, present a **one-time financing option** to the player. Its exact threshold, financing amount, attached terms and decision UI are balancing/content work. Do not create a repeated bailout market or guarantee funding thereafter.
+- **Second negative-cash threshold event:** if the studio later **recovers above the triggering threshold and crosses it downward again**, the company is **forcibly sold and the campaign ends**. This is the second distinct threshold occurrence, **not** a counter that increases every simulation tick/day while cash remains below the same value. The player does not receive another rescue/financing menu at that point.
+- **Game-over epilogue:** on forced sale, show a studio retrospective plus bounded, coherent **what-happened-next** outcomes for relevant **IPs, employees and competitors**. These follow from saved game history and game-authored/procedural outcome rules; local AI may dramatize them but does not independently invent authoritative changes. The epilogue is a narrative payoff, not a continuing post-sale player management mode.
 
-Exact credit, bankruptcy, employment and legal rules must be sourced for the relevant era/location before being represented as historical fact.
+Financial health warnings, cash, burn rate, obligations and runway remain legible before the threshold. Normal production and contract choices remain possible while the studio can operate; one financing offer does not magically cure an otherwise unviable economy. A forced sale here is a **game-design terminal event**, not a historically accurate statement about bankruptcy, creditor law, employment law or corporate acquisitions.
+
+**Narrow unresolved edge case:** if the player declines the sole financing offer or cash stays continuously below the threshold without first recovering above it, the exact terminal timing/condition has not been specified. Do **not** silently count the same threshold crossing twice or invent an additional automatic financial rescue. This must be resolved when defining the insolvency state machine, independently of the four accepted G-04 directions. The negative threshold, re-arming/hysteresis, offer rates, employee probabilities and epilogue content remain tunable and unvalidated.
+
+Exact credit, bankruptcy, employment and legal rules must be sourced for the relevant era/location before being presented as historical fact.
 
 ## Studio space, facilities and workplace culture
 
@@ -2071,6 +2075,12 @@ By 2030, the player should be able to inspect the history they created:
 - legendary productions.
 
 The archive should make the campaign feel authored by the player's decisions.
+
+### Financial game-over retrospective
+
+When G-04's **second distinct negative-cash threshold** forces a sale, the campaign ends with a condensed studio retrospective followed by **what happened next** for meaningful IPs, professionals and rivals. Possible endings should refer to actual persistent context (ownership, reputations, relationships, active competitors, surviving IPs) rather than inventing a full off-screen simulation. The narrative may be illustrated/dramatized with local AI behind bounded game-owned contracts.
+
+This closing view is available even when the studio ends before the planned 2030 historical campaign endpoint. A project the player explicitly put in the trash is not secretly restored to the playable archive or rewritten into an extant production merely to fill an epilogue; independent IPs, people and other saved history still supply material.
 
 ## Art direction
 
