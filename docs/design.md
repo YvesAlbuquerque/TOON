@@ -1259,6 +1259,8 @@ The simulation owns the permitted magnitude and final change to relationships, f
 
 A deterministic/weighted fallback must remain possible when the runtime character model is unavailable, overloaded or returns unusable output.
 
+**Accepted G-02 character-response rule (2026-11-15):** if character inference takes too long or fails, the simulation promptly chooses an eligible, game-authored **action, speech line, thought or reaction** instead of leaving that character waiting. A broad, localized library of authored lines/reactions should be indexed by action intent, personality, emotional state, relationship, historical context and situation; availability/weights/repetition control belong to game-owned selection, not unrestricted text parsing. A late AI answer cannot override a fallback action already executed or mutate now-stale state. Authored responses may also be used proactively when an AI call would add little value. The exact timeout, library size and weighting are implementation/tuning decisions, not evidence of a currently built content catalogue.
+
 ### Character memory and subjective interpretation
 
 Long-term character memory belongs to the **game simulation**, not to hidden conversational state inside the generative model.
@@ -1854,7 +1856,17 @@ The player may:
 
 **On advancing to the next stage, every version except the selected one is discarded.** Only the chosen version is retained as the approved input to subsequent stages. The previous stage's generation allowance cannot be reopened by discarding the others or returning to it; any separate backtracking feature would need an explicit design decision. If no version is selected after the third, generation/rework is disabled; the player may still choose one of the existing versions or trash the entire project.
 
-A generation request that yields **no usable version** because of a provider failure is not established as a completed creative alternative; handling retries, timeouts and refunding failed requests remains a separate technical/experience validation boundary. Do not silently count a failed call as a successfully generated version.
+### Runtime generation failure and creative-result boundary (G-02)
+
+**Accepted owner direction (2026-11-15): production AI technical failures receive a bounded number of automatic recovery attempts.** This is distinct from short character cognition/dialogue fallback and does **not** permit substituting generic pre-authored media for a failed finished production.
+
+- **Technical failure:** unavailable or crashed model, timeout, out-of-memory condition, corrupted/unreadable output, interrupted work or a result that cannot be presented/consumed at all. Retry/recover automatically within a limited budget; use queued/asynchronous execution and reject stale results. No technical-failure attempt without a usable deliverable consumes one of the stage's **three generated-version slots**.
+- **Completed creative result:** an artifact the player can actually read/view/watch as the intended production type, even if it is artistically imperfect, odd, uneven, off-brief or shorter than the target length. It counts as **one of the three versions**. A strip with one or two panels can still function as a strip; do **not** reject it just because a target says three or four. Apply the same flexible, function-first standard to comics and 2D/3D animation.
+- **Creative feedback, not artistic veto:** an evaluator may surface uncertain evidence about continuity, readability, craft or intent, and the game may connect those observations to authored production/professional outcomes. It must not turn subjective quality, a fixed panel count, or an aesthetic-score threshold into an automatic technical rejection or effectively grant unlimited free versions. Do not claim a specific professional *caused* a model defect without game-owned causal evidence.
+- **Diegetic presentation:** an unsuccessful technical attempt may be represented by an era/medium-appropriate action (e.g., a cartoonist crumpling a sheet and starting again). This visual is a presentation of the technical retry, not proof of staff incompetence, and must not invent fatigue, reputation, morale or cash penalties merely because the local model failed.
+- **Persistent failure:** after the bounded recovery policy is exhausted, keep the stage and game-owned production state intact, indicate an actionable technical blocker, and provide an explicit safe recovery path when possible. Do not loop forever, silently skip the stage, publish a fabricated artifact, or consume creative-version slots for missing outputs. The whole project can still be trashed at any time.
+
+Retry count, deadlines/backoff, classification thresholds, technical job lifecycle, persistence while blocked, and actual local-model/Unreal feasibility remain **Planned** until measured. Technical retry is **not** player-requested creative rework; the approved three-version maximum remains unchanged.
 
 A regeneration/rework request can consume simulation resources such as:
 
@@ -1906,11 +1918,11 @@ T.O.O.N. should favor **small complete works** rather than attempting real-world
 
 The goal is that a player can finish many works across one campaign, actually consume them, remember them, compare adaptations, and optionally share favorites.
 
-Target output scales are intentionally compact and remain subject to prototype validation:
+Target output scales are intentionally compact and remain subject to prototype validation. They are **design targets, not hard technical validation limits**: shorter output is acceptable when it still works as the intended medium (for example, a readable one- or two-panel strip). The first controlled playable fixture still targets a complete 3–4-panel strip:
 
 | Medium | Initial target scale |
 | --- | --- |
-| Comic strip | **3–4 panels** |
+| Comic strip | **3–4 panels** (target, not a validity minimum) |
 | Comic | **1–4 pages** |
 | 2D animation | roughly 30–120 seconds |
 | 3D animation | roughly 30–120 seconds |
