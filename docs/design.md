@@ -645,23 +645,23 @@ External contracts should remain compact and legible. A contract can define:
 - ownership/rights;
 - studio revenue participation where applicable;
 - optional bonuses;
-- penalties for lateness or failure to satisfy explicit mandatory requirements; **early project abandonment follows the global G-06 cancellation formula**, not a contract-by-contract negotiated cancellation percentage.
+- contractual **lateness penalties** where explicitly defined (subject to G-05); **quality, brief compliance and mandatory-content shortfalls after delivery affect studio reputation and future offers, not acceptance, rejection or withheld/reduced guaranteed payment** (G-12). Early project abandonment follows the global G-06 cancellation formula, not a contract-by-contract negotiated cancellation percentage.
 
 The base interaction is an offer that can be **accepted or rejected**. Advanced clause-by-clause negotiation is not required for the core system.
 
-Client satisfaction should derive from game-owned checks such as:
+**G-12 accepted (owner correction 2026-11-16): delivery is final.** There is no post-delivery client acceptance/rejection stage, rework request, approval gate or non-payment/quality-based reduction for a delivered work. At player-authorized publication/delivery (G-08/G-11), the guaranteed contract payment becomes due under the existing payment rule. **Quality, creative execution and how well the work meets the brief** inform the studio's **reputation**, which in turn directly affects both the **value and frequency of future external contract offers**. Do not create a client veto of a published work, or make subjective AI scores authoritative for money. This does **not** silently repeal already accepted explicit contract-deadline penalties (G-05); lateness remains a separate rule.
 
-`brief compliance + mandatory requirements + deadline + artifact/process quality -> contract result`
+`delivered artifact + production/brief evidence -> studio reputation -> future contract offer value and frequency`
 
-AI can dramatize client reaction, but does not decide authoritative payment or penalties.
+Game-owned rules determine reputation and future offer generation from bounded, provenance-aware evidence; AI may dramatize reactions or provide evaluation evidence, but cannot directly change cash or authoritatively reject delivery. The exact reputation coefficients, memory/decay and offer-response curves require later balancing/validation.
 
 ### G-11 — External contract payment on delivery
 
-**Accepted owner choice (2026-11-16): option B, payment at delivery.** Accepting a client contract **does not deposit any money** into studio cash. There are **no upfront advances or milestone/instalment payments** in the base external-contract payment flow. The player finances all ongoing studio and production costs until the commissioned work reaches **player-authorized release and contract delivery**, at which point the game-owned contract result evaluates the **guaranteed payment and any applicable bonuses/penalties** and posts the resulting settlement to studio finances **once**. Do not infer an automatic positive payout regardless of explicit client requirements or penalties; those outcomes remain governed by existing contract terms and deterministic game-owned checks, not free-form AI verdicts.
+**Accepted owner choice (2026-11-16): option B, payment at delivery.** Accepting a client contract **does not deposit any money** into studio cash. There are **no upfront advances or milestone/instalment payments** in the base external-contract payment flow. The player finances all ongoing studio and production costs until the commissioned work reaches **player-authorized release and contract delivery**, at which point the game-owned finance system posts the **guaranteed contract payment once**, subject only to separately accepted explicit financial terms such as **lateness penalties** (G-05). **Quality, brief compliance and creative merit do not gate, reduce, reject or delay this guaranteed payment**; G-12 routes those outcomes through studio reputation and subsequent contract-offer value/frequency instead. Do not invent client approval, post-delivery rework or AI-authoritative financial vetoes.
 
 - **Ready is not delivered:** completed work may wait unpublished at the G-08 physical publishing endpoint. Waiting creates no contract income and does not suspend its contractual deadline.
 - **Abandoned work is unpaid:** under G-06, trashing an unreleased contracted project forfeits its delivery payment and posts the **global X% guaranteed-payment cancellation fee**; there are no client advances to refund or offset under G-11.
-- **No cash-flow shortcut:** a prospective guaranteed payment is shown as expected future income, **not current cash** or a realized receivable to spend before delivery. Persist the delivery/settlement state and prevent duplicate credit or penalties after save/reload. Exact payment amounts and existing penalty/bonus coefficients remain balancing/contract data.
+- **No cash-flow shortcut:** a prospective guaranteed payment is shown as expected future income, **not current cash** or a realized receivable to spend before delivery. Persist the delivery/settlement state and prevent duplicate credit or penalties after save/reload. Exact payment amounts and previously accepted explicit deadline-penalty coefficients remain balancing/contract data; reputation and future offers follow G-12.
 
 ### G-06 — Abandoning an accepted external contract
 
