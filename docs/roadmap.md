@@ -387,7 +387,7 @@ Human-in-the-loop proof requirements:
 - versions are reviewed one at a time, with a lightweight indication of the others; exact UX/UI is deferred;
 - after the **third** generated version, further rework/new-version requests in that stage are **disabled**, even if earlier versions are discarded;
 - the initial output may be the default chosen version when the player does not intervene; otherwise they may select an existing generated version; the **player's physical routing to the next station** accepts the chosen/default version and discards the rest;
-- **all unselected versions are discarded when the selected version moves to the next stage**;
+- **G-07: progressing to the next compatible station permanently closes the previous stage**; the chosen/default result becomes committed, all other versions are discarded, and the player **cannot return, regenerate or revise an earlier stage**. Versions remain available only at the current stage before moving forward; incompatible/failed routing never commits the stage;
 - **only an explicit player request for a new version** (within the three-version allowance) triggers recalculation/communication of incremental production/rework cost; internal failed work or automatic AI retry may extend the deadline **without recalculating the production budget**;
 - player-provided input becomes part of downstream production context and can affect the actual generated artifact;
 - player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
@@ -891,6 +891,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-07 stage-finality proof (later, game-owned):** complete one production with a selected/default stage result, move it to the next station, attempt to return to or regenerate the closed stage, and confirm the action is unavailable. Validate that remaining current-stage alternatives are discarded on successful handoff, wrong/incompatible routing does not close the current stage, save/reopen preserves closed-stage state, and stale local-AI results cannot reopen it. Do not imply runtime validation from this documented rule.
 
 **G-06 contract-abandonment proof (later, game-owned):** trash an unreleased original versus a contracted project at early/late stages. Check nonrefundable sunk costs, exactly one cancellation charge equal to configured X% of guaranteed contract payment, clear pre-deletion confirmation, terminated contractual future payment, no surviving project/archive entry, retained independent studio/IP/crew history, no late AI resurrection, and no duplicate settlement after save/reload. The actual percentage X remains balancing work.
 
