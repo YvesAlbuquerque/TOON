@@ -591,7 +591,7 @@ Do not require the player to manage accounting minutiae such as individual consu
 
 Use three broad revenue families:
 
-1. **Contract work** — an outside client pays the studio to make something. This should generally provide more predictable income and lower financial risk, but less creative freedom and/or less long-term IP value.
+1. **Contract work** — an outside client pays the studio to make something. Under **G-13**, the client owns the IP created for its commissioned work; the studio receives the agreed delivery payment, not ongoing ownership or automatic IP/catalogue exploitation rights. This provides more predictable income but less creative freedom and no studio-owned long-tail value from that commission.
 2. **Original productions** — the studio funds its own work. This creates greater financial risk but can produce valuable persistent IP, stronger upside and long-term studio identity.
 3. **Catalogue/IP revenue** — previously released work can continue generating value through mechanisms appropriate to the era, such as republication, syndication, distribution, licensing, adaptation or later equivalents.
 
@@ -611,7 +611,7 @@ A production can begin from three sources that converge into the same production
 
 **G-03 accepted concept-authoring boundary (2026-11-16):** all three origins converge on a **concept form**, but they arrive with different editable fields:
 
-- **External client/agent proposal:** concept and terms arrive partially populated. The player may review them and edit only fields explicitly negotiable/editable under that proposal; mandatory client requirements, rights or other locked terms stay fixed unless the offer itself permits a change. Accepting/rejecting the offer remains separate from editing its allowed creative fields.
+- **External client/agent proposal:** concept and terms arrive partially populated. The player may review them and edit only fields explicitly negotiable/editable under that proposal; mandatory client requirements and **client ownership under G-13** remain fixed. Accepting/rejecting the offer remains separate from editing its allowed creative fields.
 - **Internal employee proposal:** the originating employee provides a partially populated concept. The player may keep or edit the fields the proposal exposes before approving it as a production. The employee still retains the established single-originator credit and participation rules when the proposal is accepted.
 - **Player-originated proposal:** the player may fill a concept from scratch, accept contextual default/pre-filled values and edit them, or ask the game/local creative system to fill suitable fields automatically. Auto-fill is **optional**, never a requirement to type every field.
 
@@ -642,12 +642,22 @@ External contracts should remain compact and legible. A contract can define:
 - mandatory requirements;
 - deadline;
 - guaranteed payment;
-- ownership/rights;
-- studio revenue participation where applicable;
+- **client ownership of commissioned IP (G-13; fixed, not a negotiable right transfer)**;
 - optional bonuses;
 - contractual **lateness penalties** where explicitly defined (subject to G-05); **quality, brief compliance and mandatory-content shortfalls after delivery affect studio reputation and future offers, not acceptance, rejection or withheld/reduced guaranteed payment** (G-12). Early project abandonment follows the global G-06 cancellation formula, not a contract-by-contract negotiated cancellation percentage.
 
 The base interaction is an offer that can be **accepted or rejected**. Advanced clause-by-clause negotiation is not required for the core system.
+
+### G-13 — Client ownership of commissioned works
+
+**Owner accepted option A (2026-11-16):** IP **created for an external client contract belongs to the client**, not to the player's studio. The contract pays for delivery under G-11; after delivery the studio cannot independently commission sequels, remakes, adaptations or reuse the commissioned characters/property as its own IP. Do not introduce negotiable split ownership, automatic licensing, revenue shares or studio catalogue royalties for such commissions. This is a **gameplay ownership rule**, not a claim about real-world copyright law.
+
+- **Archive is not ownership:** the completed work remains visible in the studio's immutable published history with its credits, delivered artifact and client-owner attribution. Historical display and review do **not** imply rights to commercially exploit the client's IP.
+- **Studio-owned original work remains separate:** player-original and eligible employee-originated studio productions follow their own IP/participation rules; G-13 does not remove the accepted employee-originator 5% rule for qualifying internal proposals.
+- **Pre-existing studio IP boundary:** if a client brief proposes using already-owned studio IP, do not silently transfer that pre-existing IP by virtue of accepting an ordinary commission. Such a contract form needs explicit later design or must be excluded from the initial offering set. This avoids manufacturing a rights-sale mechanic without owner approval.
+- **Do not infer continuing studio income:** commissioned work does not generate studio-owned catalogue/licensing/adaptation income merely because it is in the published catalogue. Any hypothetical future licensing/participation exception requires a separate owner decision.
+
+
 
 **G-12 accepted (owner correction 2026-11-16): delivery is final.** There is no post-delivery client acceptance/rejection stage, rework request, approval gate or non-payment/quality-based reduction for a delivered work. At player-authorized publication/delivery (G-08/G-11), the guaranteed contract payment becomes due under the existing payment rule. **Quality, creative execution and how well the work meets the brief** inform the studio's **reputation**, which in turn directly affects both the **value and frequency of future external contract offers**. Do not create a client veto of a published work, or make subjective AI scores authoritative for money. This does **not** silently repeal already accepted explicit contract-deadline penalties (G-05); lateness remains a separate rule.
 
@@ -1864,7 +1874,7 @@ As the studio grows and historical technology changes, the owner can **optionall
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
 
-**Release is the deletion boundary.** A finished unreleased project may wait for G-08's physical publishing action; merely becoming ready does not trigger catalogue publication. After the player explicitly authorizes release, the project leaves the active-production workflow and becomes a **published work in a separate published/catalogue menu**. The **trash/delete action is unavailable for published works**; published records, final artifacts, credits/lineage and catalogue/history references persist across save/reload. Existing catalogue/IP revenue, contract and external distribution rules can operate normally without post-release deletion exceptions. Simply finishing a stage or artifact does **not** release it; the player must authorize publication.
+**Release is the deletion boundary.** A finished unreleased project may wait for G-08's physical publishing action; merely becoming ready does not trigger catalogue publication. After the player explicitly authorizes release, the project leaves the active-production workflow and becomes a **published work in a separate published/catalogue menu**. The **trash/delete action is unavailable for published works**; published records, final artifacts, credits/lineage and catalogue/history references persist across save/reload. Catalogue/IP revenue and adaptation rights apply only where the studio actually owns the relevant IP; **G-13 commissioned works remain in the historical catalogue but client-owned**. Contract settlement and other historical records persist without post-release deletion exceptions. Simply finishing a stage or artifact does **not** release it; the player must authorize publication.
 
 When an **unreleased** project is trashed, remove its production state and project-owned draft versions/artifacts/references. **G-06** applies the fixed global cancellation settlement when that unreleased project belongs to an **accepted external contract**; original projects have no contract cancellation charge. Stop in-flight generation where practical, reject late responses, and prevent the deleted draft from being recreated by queued work or save/reload. Do not preserve a recoverable cancelled-project archive record by default, and do not assume a restore feature. Preserve independent IPs, professionals, other productions and already-applied financial/social effects; reconcile cross-entity references without restoring the trashed production.
 
