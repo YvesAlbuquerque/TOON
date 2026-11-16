@@ -437,6 +437,11 @@ The player must receive at least two materially different responses that trade a
 
 ### 4.4 Release and durable consequence
 
+**G-08 accepted direction (owner 2026-11-16):** create a **physical publishing desk** as the initial complete release endpoint; a finished project may remain **unpublished until the player chooses to move it to publication**. Final publication remains a separate explicit player decision, after which the work enters the permanent catalogue. External-contract deadlines and ordinary studio costs continue while a work waits. **Later, optional** specialized facilities for unpublished holdings, marketing and distribution can enrich reach/throughput without making them compulsory launch gates; specific facilities and effects are not designed or validated yet.
+
+**Deferred scaling candidate — staffed physical handoff:** explore an assignable/hired **permanent professional** who physically transports the project across compatible production stations as a studio scales. Player-directed manual handoff remains the fastest direct option; delegated movement uses worker time and can carry suitable production forward through multiple stages but **must stop before final publication authority and any unresolved player decision**. Compatible capacity, stage finality, version caps and blocking states must remain correct. The **first vertical slice retains manual handoff requirements** until a separate owner-approved delegation contract and gameplay proof exist. No fully automatic production pipeline is currently accepted.
+
+
 Completing the production should alter at least one of:
 
 - studio state;
@@ -891,6 +896,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-08 physical publishing proof (later, game-owned):** finish an artifact, leave it unpublished while the simulation advances, move it to an initial physical publishing station, explicitly authorize release and verify durable catalogue transfer. Verify that optional later publishing facilities do not become prerequisites and that contract deadlines do not pause for waiting projects. **Later delegation candidate:** separately test staffed handoff versus faster manual movement, worker occupancy, compatible stations, player decision blockers, stage finality and inability to autonomously release. Neither the specialist staffing rule nor advanced structures are yet implemented or validated.
 
 **G-07 stage-finality proof (later, game-owned):** complete one production with a selected/default stage result, move it to the next station, attempt to return to or regenerate the closed stage, and confirm the action is unavailable. Validate that remaining current-stage alternatives are discarded on successful handoff, wrong/incompatible routing does not close the current stage, save/reopen preserves closed-stage state, and stale local-AI results cannot reopen it. Do not imply runtime validation from this documented rule.
 
