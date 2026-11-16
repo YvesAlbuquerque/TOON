@@ -683,7 +683,7 @@ Requirements:
 - support the three production origins: player initiative, external contract and single-originator internal proposal;
 - an accepted internal proposal gives its one originator persistent credit and a fixed **5%** of studio revenue from that production;
 - internal-proposal participation continues after the employee leaves but does not automatically propagate to future productions in the same IP;
-- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation and bonuses; **G-06 cancellation uses one globally configured percentage of guaranteed payment**, not per-client cancellation clauses; other contract penalties remain distinct;
+- external contracts use a compact term set: client, production type, brief, mandatory requirements, deadline, guaranteed payment, ownership/rights, optional studio participation and bonuses; **G-11 pays no advance or milestones: payment is settled only on player-authorized release/contract delivery**, subject to existing game-owned quality/compliance/deadline terms. **G-06 cancellation uses one globally configured percentage of guaranteed payment**, not per-client cancellation clauses; other contract penalties remain distinct;
 - contract outcomes are determined by game-owned rules rather than free-form AI judgment;
 - G-05: contract lateness assessment applies a **bounded technical-delay grace** only for game-verified AI technical failures/retries; preserve the base deadline, allowance, causal evidence and final penalty result across save/reload. The grace cap/measurement and coefficients remain balancing details. Staff, resource, player-requested revision and ordinary production delays do not consume or qualify for technical grace;
 - model an abstract personal-finance state sufficient for revenue participation, financial pressure, wealth and resulting employee-agency consequences.
@@ -895,6 +895,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-11 contract-payment proof (later, game-owned):** accept an external contract and verify **zero immediate cash credit**, no milestone instalments or spendable pre-delivery income. Finish production but hold it unpublished and confirm there is still no contract payout. On player-authorized release/delivery, apply one game-owned contract settlement with relevant bonuses/penalties; verify the correct cash change and no repeat on save/reload. Abandon a separate unreleased contracted project and verify **zero delivery payment** plus only G-06's fixed percentage cancellation charge, with no advance refund.
 
 **G-08 physical publishing proof (later, game-owned):** finish an artifact, leave it unpublished while the simulation advances, move it to an initial physical publishing station, explicitly authorize release and verify durable catalogue transfer. Verify that optional later publishing facilities do not become prerequisites and that contract deadlines do not pause for waiting projects. **Later delegation candidate:** separately test staffed handoff versus faster manual movement, worker occupancy, compatible stations, player decision blockers, stage finality and inability to autonomously release. Neither the specialist staffing rule nor advanced structures are yet implemented or validated.
 
