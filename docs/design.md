@@ -601,6 +601,15 @@ A central economic tension should be:
 
 `predictable contract work <-> risky original production <-> long-tail catalogue value`
 
+### G-14 — Hybrid revenue for studio-owned original productions
+
+**Owner accepted option C (2026-11-16):** releasing a **studio-owned original work** may generate **initial commercial revenue at publication** and **subsequent catalogue revenue over time**. Both are grounded in the work's reception, audience, medium, distribution and historical context, using **game-owned simulation/accounting rules**. An original can earn little or nothing, recoup its costs, or become a long-running success. Neither immediate profitability nor continuing revenue is guaranteed, and the timing/rates/decay of later earnings are **balancing and validation parameters**, not approved fixed numbers.
+
+- **Publication boundary:** no initial or catalogue revenue accrues before the player's explicit G-08 release. On release, process any initial commercial result **once**, independently of ongoing catalogue income thereafter; save/reload must not duplicate release proceeds or historical ticks.
+- **Recurring value:** published studio-owned originals can produce subsequent income as simulation time passes; actual revenue may fluctuate or fall to zero depending on the game-owned reception/distribution model. Do not equate permanent archive storage with permanent positive income.
+- **No mandatory sales minigame:** ordinary publication can participate in this hybrid model without requiring the player to negotiate distribution for every production. Optional later publishing/marketing infrastructure under G-08 remains unapproved in its exact mechanics.
+- **Ownership separation:** client-owned commissioned IP remains excluded from studio-owned release/catalogue earnings under G-13; G-11 contract delivery payment continues separately. For employee-originated studio productions, the existing originator's **5% participation on revenue from that production and its direct catalogue revenue** remains applicable; do not multiply it across unrelated works using the same IP.
+
 ### How productions originate
 
 A production can begin from three sources that converge into the same production pipeline:

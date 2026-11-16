@@ -651,7 +651,7 @@ The core proof should expose:
 Revenue should initially distinguish three families:
 
 - predictable **contract work**;
-- riskier **original productions** with greater IP/upside potential;
+- riskier **original productions** with greater IP/upside potential; **G-14** permits an initial commercial result **on player-authorized publication** and **subsequent catalogue revenue over time**, without guaranteeing either;
 - **catalogue/IP revenue** from previously released **studio-owned** work; client-owned commissioned works remain viewable in history but do not automatically create studio IP income (G-13).
 
 Costs should remain concentrated in:
@@ -895,6 +895,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-14 hybrid original-revenue proof (later, game-owned):** produce a studio-owned original, verify **zero publication/catalogue revenue while unpublished**, then release and record **at most one initial commercial posting** plus independently scheduled subsequent catalogue receipts as appropriate. Demonstrate reception-sensitive outcomes including zero/poor returns and changing or exhausted catalogue income; preserve the record without double-posting after save/reopen. Ensure no manual distribution negotiation is a release prerequisite, client-owned commissioned IP accrues no studio original/catalogue revenue (G-13), and the 5% single-originator participation attaches only to the employee-originated production and its direct catalogue receipts. Revenue formulas, cadence, tail duration and distribution coefficients require balancing/validation, not additional fixed owner choices.
 
 **G-13 IP-ownership proof (later, game-owned):** create/deliver a client-commissioned work, persist client ownership in the immutable published catalogue and verify no player-initiated sequel/adaptation/reuse of its new commissioned IP and no automatic studio-owned catalogue royalties. Confirm the studio still receives G-11 delivery payment, and that studio-owned original IP retains its normal adaptation/catalogue path. Reject an external offer referencing any existing studio-owned IP as invalid; **do not introduce a separate rights-transfer contract type**. No client-ownership system is yet implemented or validated.
 
