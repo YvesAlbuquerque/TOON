@@ -385,7 +385,7 @@ Human-in-the-loop proof requirements:
 - after the **third** generated version, further rework/new-version requests in that stage are **disabled**, even if earlier versions are discarded;
 - the game can select a valid version automatically when the player does not intervene; otherwise the player selects which available version advances;
 - **all unselected versions are discarded when the selected version moves to the next stage**;
-- requesting a new version within the three-version allowance can have a bounded time, budget or professional-effort cost;
+- **only an explicit player request for a new version** (within the three-version allowance) triggers recalculation/communication of incremental production/rework cost; internal failed work or automatic AI retry may extend the deadline **without recalculating the production budget**;
 - player-provided input becomes part of downstream production context and can affect the actual generated artifact;
 - player-authored/uploaded input is treated as an external creative contribution rather than work performed by a specific employee;
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
@@ -393,6 +393,7 @@ Human-in-the-loop proof requirements:
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
 - **at any point, including after release**, the player may select the project and move it to the **trash**, **deleting the entire project**—project data, stage versions, local artifacts, provenance and archive entry;
 - project trash is destructive, not a soft-cancel/archive state: remove project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
+- studio recurring burn continues as time passes, but internal generation recovery must not itself book a new production expense; existing contractual lateness clauses remain a separately tracked obligation;
 - independent IP/professionals, other productions and already-applied studio/contract effects are not deleted or retroactively undone; externally distributed files cannot be recalled by local deletion. Exactly how subsequent catalogue income/contract obligations interact with post-release deletion requires further design clarification.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
