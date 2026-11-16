@@ -634,6 +634,16 @@ A production can begin from three sources that converge into the same production
 2. **External contract** — an outside client offers a bounded job that the player can accept or reject.
 3. **Internal proposal** — one employee proposes a specific creative project based on their interests, experiences, relationships, IP context or current historical/cultural context.
 
+**G-03 accepted concept-authoring boundary (2026-11-16):** all three origins converge on a **concept form**, but they arrive with different editable fields:
+
+- **External client/agent proposal:** concept and terms arrive partially populated. The player may review them and edit only fields explicitly negotiable/editable under that proposal; mandatory client requirements, rights or other locked terms stay fixed unless the offer itself permits a change. Accepting/rejecting the offer remains separate from editing its allowed creative fields.
+- **Internal employee proposal:** the originating employee provides a partially populated concept. The player may keep or edit the fields the proposal exposes before approving it as a production. The employee still retains the established single-originator credit and participation rules when the proposal is accepted.
+- **Player-originated proposal:** the player may fill a concept from scratch, accept contextual default/pre-filled values and edit them, or ask the game/local creative system to fill suitable fields automatically. Auto-fill is **optional**, never a requirement to type every field.
+
+Concept field schema and editable/locked masks depend on origin and offer constraints; the player must see which fields can be changed. Do not let a cosmetic edit implicitly rewrite an accepted external contract or confuse employee originator credit.
+
+**After the concept is accepted**, it becomes the persistent physical production object and must be taken to the **first creative station: scriptwriting**. Creative generation/automatic filling does not mean the player relinquishes control of where the production physically goes next.
+
 Internal proposals have **exactly one originator**. Do not model co-originated internal pitches in the base system.
 
 If an internal proposal is accepted and becomes a production:
@@ -1789,7 +1799,9 @@ The four types should share a common conceptual backbone while allowing medium-s
 
 Not every medium requires every stage, and some stages can split into medium-specific technical substeps. Those technical substeps exist primarily to drive people, facilities, equipment, time, cost and production problems; they should not automatically become separate player-facing minigames.
 
-Human-in-the-loop should concentrate mainly on authorship/pre-production stages such as concept, script, character/art-direction reference and storyboard/layout, while technical execution remains primarily the responsibility of the studio simulation and local AI/procedural pipeline.
+**G-03 accepted authoring boundary (2026-11-16):** the only direct player editable/authorable creative content is (1) the **concept form** (subject to proposal field restrictions), (2) the **script** at the scriptwriting stage, and (3) the **art-direction input/references** at the art-direction stage (including uploaded images/reference materials). **Storyboard/layout and every later technical/finishing/review production stage have no player free-text editor or direct creative-content authoring**. Each stage still permits a player-requested new version, subject to the three-version limit. The player operates the physical production workflow rather than a full comic/animation authoring tool.
+
+The medium-neutral conceptual stages remain applicable to the four finished production types, with medium-specific internal technical steps handled by the studio; they do not expand the set of direct editable stages.
 
 ## Production as a physical workflow object
 
@@ -1803,7 +1815,11 @@ The production should have a **strong physical representation** whose appearance
 
 A comic production, a cel-animation production and a later 3D production should not share one timeless generic prop. Their physical representation should communicate what kind of work they are and where they currently are in the process.
 
-The player should be able to perceive the production moving through departments/stations as it advances through its pipeline. The representation can evolve from paper folders, boards, reels, cels, tapes, drives, digital work packages or other era/medium-appropriate forms without requiring literal handling simulation for every technology.
+**G-03 accepted physical routing rule (2026-11-16):** after a stage produces its result, the physical production object becomes available again to the player. The player **moves/places that object at the correct next workstation/station** to start the next applicable stage; the studio does **not** silently auto-route it between stations just because content generation completed. An incorrect/incompatible station or an unavailable capacity slot must not secretly advance the production. Player movement between stations is a **management action** and does not count as manually writing/editing creative content.
+
+Concept approval creates the first physical object to route to **scriptwriting**. At scriptwriting, leaving the script alone lets the responsible worker/local AI produce a short script automatically; the player may instead edit the script. After completion, the script/material returns as the production object, ready to be routed to **art direction**. There, generation is automatic unless the player edits/supplies art-direction material (for example image uploads and references). After art direction, subsequent relevant stages run their professional/AI creative or technical work automatically when the player places the object at their matching station. The player may inspect outputs and request versions but cannot type or upload bespoke content into later stages.
+
+The physical representation can evolve from paper folders, boards, reels, cels, tapes, drives, digital work packages or other era/medium-appropriate forms without requiring literal handling simulation for every technology. The exact drag/drop or station-interaction UI is a later UX proof; **player-controlled station routing itself is an accepted game rule**.
 
 The production object owns or references:
 
@@ -1831,25 +1847,19 @@ The UI should make the destructive nature of trashing legible before it happens;
 
 ### Optional human-in-the-loop creation
 
-Creative intervention by the player is optional. The game must remain capable of completing productions automatically.
+Creative **content authorship** by the player is optional. Once the player has supplied/accepted a concept, the game can generate all subsequent creative-stage results without the player typing, drawing or uploading content. **Physical transport to the next compatible station remains a player action**, not an optional authoring mode.
 
-The interaction model has only two top-level states:
+For the accepted G-03 interaction model, direct player content intervention is limited to:
 
-- **Automatic** — the studio/game resolves the stage using simulation and local AI/procedural systems.
-- **Player-intervened** — the player contributes to that stage through whatever inputs the stage supports, such as writing a short script, selecting a direction, uploading a reference image, choosing among generated alternatives, or requesting regeneration.
+1. **Concept** — inspect/complete/edit allowed fields of an external, employee or player-originated idea; optionally use game-provided prefill/auto-fill.
+2. **Scriptwriting** — normally the worker/local AI automatically creates the short script; the player may edit the script if desired.
+3. **Art direction** — normally the worker/local AI generates the art-direction result; the player may edit/provide relevant art-direction material, particularly uploaded image/reference inputs.
 
-There is no separate universal “assisted” versus “manual” mode. Those are simply different forms of player intervention.
+All later stages—including storyboard/layout, medium-specific production, finishing and technical review—**do not expose direct player text entry, upload or creative authoring**. Their work happens at the station, driven by crew, game simulation and local AI/procedural generation. The player still controls placement of the physical object, may review the result, may request another version, and retains final release authority.
 
-Candidate intervention points include:
+Each stage has an **automatic content path** and an optional **player-requested new-version path**, but these are not separate universal Auto/Assisted/Manual modes. The three-version limit applies at **every applicable generating stage**, even those without any manual editor.
 
-- concept/brief;
-- short script;
-- character reference;
-- art direction/reference image;
-- storyboard;
-- selected later review/approval stages where useful.
-
-The exact allowed intervention points remain a scope decision per medium/pipeline.
+A stage's first valid result can be the default approved output if the player leaves it untouched; requesting or selecting another version is optional. **Moving the resulting physical object to the next correct station is the handoff/advance action**: it uses the chosen/default version and discards all other versions in the current stage. Thus automatic stage content completion never implies automatic physical routing or player-free final release.
 
 ### Version limit and selection
 
@@ -1857,7 +1867,7 @@ The exact allowed intervention points remain a scope decision per medium/pipelin
 
 The player views **one version at a time**. A small indicator should communicate other available versions and allow navigation/selection. Exact controls and visual language are deferred to a later UX/UI pass.
 
-**Automatic creative stages** may select a valid result under game-owned rules without requiring player inspection. **When the player intervenes**, the player chooses which available version advances. Final public release always remains under player authority.
+**Automatic creative results** provide a valid default stage output without mandatory player inspection or manual editing. If the player requests alternatives, their selected version advances; otherwise, **physically routing the object to the next valid workstation** accepts the current/default version. This handoff discards the other versions. Even a late technical stage without a manual editor supports the same bounded new-version action. Final public release always remains under player authority.
 
 The player may:
 
