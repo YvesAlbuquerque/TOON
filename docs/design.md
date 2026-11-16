@@ -1849,13 +1849,13 @@ This creates a visible relationship between **place + people + production state*
 
 ### Project trash and deletion
 
-**Accepted owner rule (2026-11-15; supersedes the earlier active-only cancellation interpretation):** **at any time**, the player may select a production project and move it to the **trash**, **deleting the entire project**. This is a project-level management action, not an unlock after rejecting versions and not conditional on a stage, candidate count, budget, personnel or local AI availability. It also applies to a project after its work has been released; the old rule that a released project could not be deleted is superseded.
+**Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
 
-Trashing a project removes its game-owned project record and all associated project-owned candidate versions, unselected/selected intermediates, final local artifacts, project-only provenance and archive entry. It must not leave stale project references in studio/IP/crew/archive views or resurrect the project on save/reopen. Any in-flight/asynchronous generation or evaluation for that project must be stopped where practical; late responses are ignored and cannot recreate it. There is **no separately preserved cancelled-project record** implied by this command, and no restore/recycle-bin recovery feature is accepted merely because the UI uses a trash icon.
+**Release is the deletion boundary.** After the player explicitly authorizes release, the project leaves the active-production workflow and becomes a **published work in a separate published/catalogue menu**. The **trash/delete action is unavailable for published works**; published records, final artifacts, credits/lineage and catalogue/history references persist across save/reload. Existing catalogue/IP revenue, contract and external distribution rules can operate normally without post-release deletion exceptions. Simply finishing a stage or artifact does **not** release it; the player must authorize publication.
 
-**Scope boundary:** deleting a production project does not automatically delete its independent IP identity, professionals, other projects, or undo already-applied studio cash/relationship/contract effects. Those are separate authoritative entities or past consequences, and their references must be reconciled without preserving the deleted project itself. Deleting local project data cannot revoke copies already exported or distributed outside the game. Exact implications for continuing catalogue revenue, externally committed contracts and already-released outside-world exposure are **not yet specified**; do not silently invent a global recall or refund rule.
+When an **unreleased** project is trashed, remove its production state and project-owned draft versions/artifacts/references. Stop in-flight generation where practical, reject late responses, and prevent the deleted draft from being recreated by queued work or save/reload. Do not preserve a recoverable cancelled-project archive record by default, and do not assume a restore feature. Preserve independent IPs, professionals, other productions and already-applied financial/social effects; reconcile cross-entity references without restoring the trashed production.
 
-The UI should make the destructive nature of trashing legible before it happens; exact confirmation/undo presentation is a future UX detail, not evidence of a recoverable trash system.
+The UI should make unreleased-project trash irreversible and its **no-refund** consequence clear. After release, present the work only through the published catalogue/history rather than as an active trashable project. Exact interaction controls are deferred to UX validation.
 
 ### Optional human-in-the-loop creation
 
@@ -1886,7 +1886,7 @@ The player may:
 - request another version only while fewer than three successful versions have been generated **in that stage**;
 - inspect previously generated versions one at a time;
 - select any available version to advance the production;
-- move the **entire project** to trash at any moment, deleting it.
+- move an **unreleased project** to trash at any time before publication, permanently deleting it with **no reimbursement of spent money**; after player-authorized release, the work lives in the separate **published catalogue** and is **not deletable**.
 
 **On advancing to the next stage, every version except the selected one is discarded.** Only the chosen version is retained as the approved input to subsequent stages. The previous stage's generation allowance cannot be reopened by discarding the others or returning to it; any separate backtracking feature would need an explicit design decision. If no version is selected after the third, generation/rework is disabled; the player may still choose one of the existing versions or trash the entire project.
 
@@ -2071,7 +2071,7 @@ By 2030, the player should be able to inspect the history they created:
 - first successful character;
 - major failures;
 - hits;
-- completed projects that remain in the archive (a project deliberately deleted through the trash action does **not** remain there);
+- **published works** kept permanently in the published catalogue/archive after player-authorized release (unreleased projects that were trashed never become published works);
 - important employees;
 - founders and retirees;
 - century-old immortal staff;
@@ -2088,7 +2088,7 @@ The archive should make the campaign feel authored by the player's decisions.
 
 When G-04's **second distinct negative-cash threshold** forces a sale, the campaign ends with a condensed studio retrospective followed by **what happened next** for meaningful IPs, professionals and rivals. Possible endings should refer to actual persistent context (ownership, reputations, relationships, active competitors, surviving IPs) rather than inventing a full off-screen simulation. The narrative may be illustrated/dramatized with local AI behind bounded game-owned contracts.
 
-This closing view is available even when the studio ends before the planned 2030 historical campaign endpoint. A project the player explicitly put in the trash is not secretly restored to the playable archive or rewritten into an extant production merely to fill an epilogue; independent IPs, people and other saved history still supply material.
+This closing view is available even when the studio ends before the planned 2030 historical campaign endpoint. A **trashed unreleased project** is not secretly restored to the playable archive or rewritten as a released work merely to fill an epilogue. **Published projects remain in the historical catalogue** and can appear in the retrospective. Independent IPs, people and other saved history still supply material.
 
 ## Art direction
 
