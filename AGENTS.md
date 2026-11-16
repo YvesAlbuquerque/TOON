@@ -60,6 +60,9 @@ Implement only the subset needed for the current proof.
 
 ## Authorship and AI rules
 
+- **G-02 accepted:** if character cognition/dialogue/thought inference is delayed or unavailable, choose an eligible contextual **pre-authored action, speech line, thought or reaction**, without letting late output override committed state.
+- Production-generative AI **technical** failures receive **bounded automatic retries**. Unusable/absent technical outputs do not consume one of three creative-version slots; exhausted attempts leave an inspectable blocked stage. Diegetic failure animations do not mean a worker caused the technical error.
+- **Creative imperfections are not technical failures**: a functioning one-/two-panel strip can count as a version despite the 3–4-panel initial target; similarly avoid hard validity gates for other media based purely on target length or subjective aesthetic scores.
 - Development-time AI and runtime/player-facing AI are separate concerns.
 - Runtime production intent, generated outputs and accepted history converge on game-owned data.
 - AI may be a major content-generation mechanism; provider SDK/schema must still remain behind T.O.O.N.-owned contracts.
