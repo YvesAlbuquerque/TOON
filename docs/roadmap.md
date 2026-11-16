@@ -394,10 +394,11 @@ Human-in-the-loop proof requirements:
 - intervention replaces only that contribution/stage input; later professionals and AI continue to transform the production normally;
 - the physical production representation changes according to era, medium and pipeline stage; each completed stage returns the object for **player-initiated placement** at the correct following station, with appropriate state validation;
 - provenance records whether relevant inputs were automatic, player-authored/uploaded or selected from generated alternatives;
-- **at any point, including after release**, the player may select the project and move it to the **trash**, **deleting the entire project**—project data, stage versions, local artifacts, provenance and archive entry;
-- project trash is destructive, not a soft-cancel/archive state: remove project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
+- **before release only**, the player may send an in-production project to **trash**, deleting its project-owned draft data/versions/artifacts; **spent money is never refunded**;
+- project trash is destructive, not a soft-cancel/archive state: remove unreleased project-owned references and prevent in-flight/late AI results from recreating it; no restore feature is implied;
+- **after explicit player-authorized release**, the project leaves active production and becomes a **published work in a separate published/catalogue menu**; it cannot be moved to trash or deleted, and its durable artifact/credits/history survives save/reload;
 - studio recurring burn continues as time passes, but internal generation recovery must not itself book a new production expense; existing contractual lateness clauses remain a separately tracked obligation;
-- independent IP/professionals, other productions and already-applied studio/contract effects are not deleted or retroactively undone; externally distributed files cannot be recalled by local deletion. Exactly how subsequent catalogue income/contract obligations interact with post-release deletion requires further design clarification.
+- independent IP/professionals, other productions and already-applied studio/contract effects are not deleted or retroactively undone; released works remain in the published catalogue with normal income/contract consequences, so there is **no post-release deletion case** to model.
 
 Detailed media-specific structures should be adapters or submodels introduced only when required. Do not require full manual DCC authoring for every medium; deterministic fixtures can prove the core production contract while runtime AI supplies representative media where appropriate.
 
