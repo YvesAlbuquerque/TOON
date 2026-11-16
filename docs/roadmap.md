@@ -664,8 +664,14 @@ Requirements:
 - production budgeting should remain compact rather than decomposing into low-value accounting line items;
 - the UI should make burn rate/runway legible without requiring the player to calculate it manually;
 - historical media/business changes may alter presentation and parameters without requiring a wholly separate economy each era;
-- running out of cash should first create recoverable pressure/consequences rather than an immediate unexplained game over;
-- any claimed credit, bankruptcy, employment or legal rule must be sourced for the relevant era/location before becoming canonical;
+- G-04 distress emerges through existing systems: **more frequent external project proposals with worse/stricter commercial terms**, rather than a special insolvency negotiation UI;
+- when salaries are unpaid, **some** workers may take a decorative prop home, miss shifts or move to a competitor, using character-dependent simulation and preserving object/employee state;
+- first crossing of an adjustable **negative cash threshold** triggers **one optional financing offer**, not an endless bailout loop;
+- the **second distinct** crossing of that threshold after the studio has recovered above it triggers a **forced company sale, ending the campaign**. Staying below the threshold is not a repeated daily/tick trigger;
+- game over presents an **archive-based retrospective** and game-owned coherent *what happened next* for meaningful IPs, employees and competing studios;
+- the exact handling of refusing financing or remaining below the threshold continuously without recovery is **not yet defined**; do not fabricate a countdown or second crossing;
+- the economic/behavioural parameters, threshold/offer values and epilogue logic require tuning and Unreal proof before promotion to Validated;
+- any claimed credit, bankruptcy, employment or legal rule must be sourced for the relevant era/location before becoming a historical fact;
 - catalogue/IP value should persist across time and later connect to the release/reception/distribution model;
 - support the three production origins: player initiative, external contract and single-originator internal proposal;
 - an accepted internal proposal gives its one originator persistent credit and a fixed **5%** of studio revenue from that production;
@@ -881,6 +887,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**Endgame G-04 proof (later, game-owned):** exercise the two distinct negative-cash crossings, the one-time financing offer, distress-weighted contract offers, conditional unpaid-staff behaviours, forced sale and retrospective/future epilogue. Verify no duplicate threshold trigger during one continuous negative period, save/reopen of financing availability and threshold history, and an ending before 2030. Resolve the still-open refusal/continuous-distress edge case before calling the full terminal flow validated.
 
 ## Deferred until proofs earn expansion
 
