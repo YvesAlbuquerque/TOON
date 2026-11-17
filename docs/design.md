@@ -1945,6 +1945,17 @@ Manual takeover must never create duplicate object instances/carriers, duplicate
 
 **Accepted direction / Documented**, not implemented or Unreal-validated.
 
+#### G-25 — Transport and operational production organization
+
+**Owner accepted option B (2026-11-17):** the **Production Assistant (Assistente de Produção)** is responsible for **physically transporting production objects and organizing the operational production workflow**. Beyond G-18–G-24 logistics, the assistant can **organize and monitor production queues, track stage/project progress and communicate blockers to the player**. This gives the recurring professional operational value and a readable presence in the studio without turning the role into an all-purpose manager or creative director.
+
+- Queue organization and transport selection must obey G-20's contract-first precedence, G-19's combined proximity/deadline/last-worker relationship factors and G-21's exclusive reservations. Assistants must not secretly reorder work by a contradictory separate policy.
+- Progress monitoring and blocker reporting are **observations/information**, not authority to initiate paid creative versions, change creative outcomes, override player decisions, reassign/hire/fire staff, accept contracts, trash productions or approve G-08 publication. Stalled projects still require the appropriate player decision or station/resource to proceed.
+- The assistant may surface actionable warnings about station unavailability, halted production or queue congestion, but exact interface, update frequency and presentation remain implementation/UX work. Avoid assuming AI generative autonomy or a new management system.
+- The role remains an optional later progression hire (G-24); the first playable slice's player-routed handoffs remain unchanged. Costs, worker capacity and pacing need validation.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
