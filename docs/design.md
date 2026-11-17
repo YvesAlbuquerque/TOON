@@ -1997,6 +1997,14 @@ Manual takeover must never create duplicate object instances/carriers, duplicate
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-30 — Physical placement gates marketing decisions
+
+**Owner clarification (2026-11-17):** **marketing decisions occur only when the production object is physically placed in the Marketing Department**. This applies to the G-27 choice of modality and investment intensity and to any future permitted changes: there is **no remote/global marketing decision panel** that can operate on an absent production. After a campaign is chosen, its already-authorized G-28 pre-release and later post-release effects can continue while the object is elsewhere, including en route to G-08 publication.
+
+The Marketing Department is an **optional physical workflow visit** available after G-26 progression, not a mandatory gate for publishing all works and not a new creative stage that reopens G-07-closed production steps. Player authority over marketing decisions and G-08 final release remains intact. This clarification **does not decide whether campaigns may be modified after starting**; if changes are accepted later, the project must be physically brought back to the department before deciding. Transport eligibility/routing through the department and how physical occupancy is presented remain to be validated without inventing new approvals.
+
+**Accepted direction / Documented** for the physical decision gate; G-30 edit policy remains open. No Unreal runtime evidence.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
