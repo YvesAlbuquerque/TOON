@@ -2035,6 +2035,17 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented, playtested or validated in Unreal.
 
+#### G-34 — Marketing modality affinity by audience, historical era and media type
+
+**Owner accepted a combined rule (2026-11-17), rather than any single exclusive option:** each G-27 promotional modality has **affinity with particular audience segments**, while its effectiveness and suitability **vary by the historical period and the media type of the finished production**. Era and medium are interacting contextual variables, not substitutes for audience affinity. A modality that suits one audience and medium in one decade need not perform equally in another; there should be no universally optimal promotional option.
+
+- For a given finished work, game-owned marketing/reception rules consider **selected modality × audience affinity × historical context × media type × committed investment**. Additional constraints can govern whether a modality is historically available at all, consistently with G-26. Do not infer that newer channels always outperform older ones, or add an unrelated bespoke marketing system for every medium.
+- Preserve G-30: one physically initiated, immutable campaign; G-31 requires finished/unpublished production; G-32 holds the object while staff execute the campaign; G-33 gradually reduces remaining pre-launch anticipation if the completed campaign is followed by publication delay.
+- Modality selection should be legible to the player through grounded signals of likely audience fit and period/media suitability, without revealing guaranteed ROI. G-14 reception and revenue remain uncertain and game-owned, not a direct deterministic reward from spending.
+- **Not yet decided:** the audience-segment taxonomy, concrete modality catalogue, era/media affinity data, interaction weights and presentation. These require explicit balancing/content validation and should not be stated as implemented.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
