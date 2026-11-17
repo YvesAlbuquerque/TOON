@@ -1935,6 +1935,16 @@ Interruption alone does **not** cancel or trash the production, alter its creati
 
 Manual takeover must never create duplicate object instances/carriers, duplicate G-07 stage advancement, stale carried state after save/reload, unapproved creative changes, or an implicit G-08 final release. No creative-version slot or production-generation charge is consumed simply by taking over. Manual transport remains the fastest individual handoff. Specific animation, reachability, collision, and moment-of-transfer arbitration are **implementation/UX validation** rather than further owner choices. **Accepted direction / Documented**, not implemented or validated.
 
+#### G-24 — Historically evolving professionalization unlocks assistants
+
+**Owner accepted option C (2026-11-17), with the explicit interpretation that Production Assistants are not a newly invented modern technology:** the capability to **hire Production Assistants** becomes available as the studio progresses through historical changes in **organization and increasingly structured production processes**. This represents the studio's professionalization and greater capacity to delegate physical handoffs, rather than requiring a specific hardware invention or implying that such workers did not exist in earlier eras.
+
+- Preserve the first vertical slice's fully manual routing proof. At a later progression milestone, **optional hiring** of an assistant becomes available; the role should not be granted automatically or made a mandatory gate for production/release.
+- Once hired, assistants obey G-18 through G-23, including external-contract-first selection, individual distance/deadline/relationship choice, exclusive reservation, interruption release, and instant manual player takeover.
+- **Still to balance/validate:** the concrete historical/organizational milestone, how the game communicates it, cost/wages, availability, staffing progression and its effect on player workload. No fixed date, technology tree item, staff-count threshold or manual-production count is implied by option C.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
