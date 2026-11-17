@@ -120,7 +120,11 @@ The owner wants differentiated publicity/marketing options **similar in spirit t
 
 ## G-27 accepted — modality with investment intensity (owner, 2026-11-17)
 
-Owner chose **A**: after unlocking the G-26 Marketing Department, the player selects a **type/modality of promotion** and the **level/amount invested** in that campaign. More investment increases **potential audience reach**, not guaranteed success or profit. This does not require combining individually purchased publicity actions or delegating campaign strategy entirely to AI/staff. The department is absent in the strip-only phase and optional for publication. Exact modalities, numerical spending/reach model, repetition and the before/after-release timing question (G-28 candidate) remain open. **Accepted direction / Documented**, not Unreal/runtime validation.
+Owner chose **A**: after unlocking the G-26 Marketing Department, the player selects a **type/modality of promotion** and the **level/amount invested** in that campaign. More investment increases **potential audience reach**, not guaranteed success or profit. This does not require combining individually purchased publicity actions or delegating campaign strategy entirely to AI/staff. The department is absent in the strip-only phase and optional for publication. Exact modalities, numerical spending/reach model and repeatability remain open; G-28 resolves decision timing and cross-release effects. **Accepted direction / Documented**, not Unreal/runtime validation.
+
+## G-28 accepted — marketing chosen before release, affecting both sides (owner, 2026-11-17)
+
+The owner clarified the marketing campaign **decision is made before publication**, but the chosen G-27 modality and investment may influence **both pre-publication anticipation and post-publication reach/reception**. This is a single decision spanning the release boundary, **not** a new separate post-release promotional choice. Actual G-08 player-authorized release remains required; no original publication income or published-catalogue entry arises merely from marketing before release (G-14). Exact campaign lead time, effect duration, repeatability, and treatment if an unreleased production is abandoned need further design/balancing. **Accepted direction / Documented**, not Unreal implementation evidence.
 
 ## G-06 accepted — contracted project trash and fixed cancellation (owner, 2026-11-16)
 
