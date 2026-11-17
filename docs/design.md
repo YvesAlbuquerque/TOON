@@ -2138,6 +2138,17 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-43 — Campaign execution competence affects quality, not automatic speed
+
+**Owner accepted option B (2026-11-17):** professional competence and experience of the Marketing staff **executing** a committed promotion campaign influence the **quality and potential effectiveness of publicity achieved with the chosen modality and investment**. More competent campaign workers may generate stronger results under otherwise equivalent conditions; they do **not** receive an automatic execution-speed benefit merely for being more skilled. Execution duration primarily reflects campaign work volume and the finite staff capacity available.
+
+- Distinguish **research/report quality** (G-35/G-41) from **campaign execution quality** (G-43). G-42 remains intact: undertaking a research study, choosing a deeper tier or employing better researchers does **not** in itself buff promotion. Only the competence of staff actually doing the promotional execution is a direct quality input.
+- Campaign effectiveness remains contextual and uncertain under G-27/G-34: modality, selected investment intensity, audience affinity, historical period, media type and skill of the executing professionals can matter. Competence must not force a successful release, guaranteed revenue or universally superior modality.
+- Preserve the **physical Marketing workflow** (G-31/G-32): the completed, unpublished production remains occupied and unavailable to the player throughout staff work, then becomes physically interactable once the job finishes. G-33 anticipation decay still applies if the player delays publication afterward; G-30 prohibits campaign edits or repeat commitment.
+- **Not yet approved:** precise competence attributes/weights, whether particular workers specialize in specific modalities, staffing aggregation, required work units/duration, and quantitative quality modifiers. Do not assume a universal skill-to-time acceleration or claim an implemented Unreal model.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
