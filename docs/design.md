@@ -2115,6 +2115,18 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-41 — Combined effect of research depth and professional competence
+
+**Owner accepted option C (2026-11-17):** the usefulness and quality of an optional G-38 integrated market-research report depend on **both** the chosen G-39 research tier (**Basic, In-depth, Extensive**) **and** the competence/experience of the Marketing professionals performing it. Both dimensions can improve the report's **detail and reliability** in evaluating relevant audiences and suitable promotional modalities, within G-34 historical/media context.
+
+- **Neither factor substitutes fully for the other:** a deep study by inexperienced staff is not guaranteed to outperform a basic study by skilled specialists, nor vice versa; meaningful results follow both inputs, and no universal ranking across all combinations is preapproved.
+- Do not interpret this as a skill-level gate that locks Extensive research, nor a model in which the research tier alone determines quality while staff only change processing time. Professional expertise remains important to making uncertain assessments under G-35.
+- Preserve **uncertainty** in all output; extensive research conducted by experts does not guarantee commercial success, predict revenue perfectly, or determine the player's eventual G-27/G-30 fixed campaign. The single study limit (G-40) still holds even when the result is disappointing.
+- Execution consumes finite staff time/resources and **occupies the completed, unpublished production's physical object** until the research process completes (G-31/G-32). Findings alone enrich the contextual, aging institutional archive (G-36/G-37), not actual promotion outcomes automatically.
+- **Open balancing/engineering:** which professional attributes count, their weights, how a team contributes, the influence of tier on depth vs reliability, the effect on processing time, and presentation of uncertainty. These are not accepted formulae or validated Unreal behavior.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
