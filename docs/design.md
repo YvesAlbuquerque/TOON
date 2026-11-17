@@ -2005,6 +2005,14 @@ The Marketing Department is an **optional physical workflow visit** available af
 
 **Accepted direction / Documented** for the physical decision gate and fixed campaign. No Unreal runtime evidence.
 
+#### G-31 — Marketing eligibility only for completed, unpublished productions
+
+**Owner accepted option A (2026-11-17):** a production may enter the G-26 Marketing Department for its G-27/G-30 publicity commitment **only when all required creative/production stages are complete and the physical production object is still unpublished**. Marketing is an optional step **between completed production and G-08 player-authorized publication**, not an early-development publicity option and not a mandatory passage for every release. No marketing selection for incomplete concepts, scripts or intermediate production objects; already-published catalogue works cannot start a new campaign under this rule.
+
+After finishing production, the player can take the completed object directly to publishing or first route it physically to marketing and commit its one fixed modality/investment choice. The marketing desk does not edit the creative artifact, consume creative-version slots, reopen a G-07 stage, or itself release the work. G-28 campaign effects may build anticipation while the completed work remains unpublished, but post-release effects and G-14 publication income only begin following actual G-08 release. G-29 still applies if the marketed, unreleased work is subsequently trashed.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal. The operational time/capacity demands of carrying out a marketing campaign remain to be decided separately.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
