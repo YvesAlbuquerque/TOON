@@ -25,6 +25,7 @@ Use [`docs/README.md`](docs/README.md) as the **navigation index**, never as a c
 - **T.O.O.N. — The Office Of Nonsense** is the accepted current project/public name.
 - The historical living-studio direction (roughly 1900–2030, cross-media production, people, place and historical context) is **Accepted direction** and **Documented**.
 - The first playable production format is one complete **3–4-panel comic strip** (**Accepted direction**, 2026-11-15); the game-wide design retains comic strip, comic, 2D animation and 3D animation.
+- **Owner-approved opening progression (2026-11-17):** teach the **entire first comic-strip workflow with a guided external/client contract**, from offer through player-authorized physical delivery. Then teach a **second strip initiated from the player's own concept** using the same production flow and studio-owned IP. **Only after both** should more external strip demand prompt studio expansion and introduce the **first simple interpersonal conflict**, with an easy, clearly readable resolution. These are sequential tutorial/story beats, **not three unrelated minigames**. The previously proposed G-57 immediate interpersonal-conflict scenario is superseded as the *first* playable event; the people-conflict mechanic is introduced at beat three. Narrative specifics, cast names, scenario scripts and balance remain to design/validate; no Unreal proof.
 - Name clearance remains unresolved; a known exact `TOON` Steam-title collision is recorded as a commercial/legal risk.
 - Continued development is **Planned**.
 - **Unreal Engine** is the accepted target engine; migration remains **Planned** until an Unreal project is actually bootstrapped and validated.
@@ -42,6 +43,14 @@ Canonical production core:
 Media-specific structures such as panels, storyboard/shots or 3D asset stages are bounded submodels. Do not promote any one medium's pipeline into the permanent game-wide hierarchy.
 
 Implement only the subset needed for the current proof.
+
+## First onboarding progression — owner accepted (2026-11-17)
+
+1. **Guided external comic-strip commission:** the story introduces a client-owned IP and an explicit external brief. The player learns to accept the contract, carry the physical production between stations, complete the 3–4-panel strip and personally authorize delivery at the physical publishing/release endpoint. Under G-11/G-12, there is **no advance**, guaranteed payment is due **on delivery**, and there is **no client approval/rejection gate** afterward; brief/quality affects reputation and future offers rather than guaranteed payment. The IP stays client-owned under G-13. The onboarding should not introduce Marketing or interpersonal conflict as a prerequisite to completing the first paid job.
+2. **Player-original comic strip:** the player originates the next strip's **own concept** (with the G-03 permitted concept-level editing/AI assistance) and repeats the **same physical production route**, with reduced guidance. This production belongs to the studio's original-IP flow, **not the external client's IP**; commercial returns are governed by G-14 rather than G-11 contractual delivery. The player still explicitly authorizes publication (G-08).
+3. **More strip commissions → studio growth → first manageable conflict:** further requests for tirinhas create a visible reason to expand studio capacity, learn a small staffing/expansion action, and then encounter a **low-stakes, clearly resolvable conflict between recurring professionals**. Introduce the decision/relation consequence **here**, not before the first two full production cycles. The actual story trigger, characters, options, numbers, building expansion and persistence proof remain unspecified; do not invent an entire conflict subsystem or resolve G-57's previously offered alternatives by assumption.
+
+**Proof checkpoints:** finish/deliver one client strip; finish/publish one player-original strip; expose new strip workload and basic studio expansion; present/resolve one simple people Decision Event with an observable persistent effect. This revises the previous all-at-once first vertical-slice fixture into **three sequential validation milestones**. 3–4 panels are a target, not a hard validity gate. No Marketing in the strip-only phase; player transports work manually in this initial sequence; keep G-07 stage closure and G-08 final authority. **Accepted direction / Documented, not Unreal implementation evidence.**
 
 ## Studio/cast rules
 
