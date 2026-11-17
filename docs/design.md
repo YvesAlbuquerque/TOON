@@ -2190,10 +2190,22 @@ These exemplify how the object changes through the historical/media workflow. Do
 - Classify **technical failure** separately from **a completed generation whose artistic quality is disappointing**. The latter is a creative-quality result and must not be silently treated as a provider outage or a reason for unlimited auto-regeneration.
 - During active recovery, the **same G-46 production object** remains occupied and unavailable at Marketing under G-32. Do not produce a second physical project, reopen earlier G-07 stages or permit publishing a partially generated marketing presentation. Preserve G-30 campaign modality and investment without silently changing or charging again.
 - Each retry belongs to the **same logical generation job**; persist its attempt count and committed result identity, deduplicate late/out-of-order provider responses and ensure campaign effects and asset attachment are committed **at most once**. G-44's **one active Marketing AI generation at a time** remains binding, including recovery attempts; other campaigns wait.
-- If the bounded retry budget is exhausted, enter a **recoverable intervention-required fault state**, without claiming that a default presentation, refund, new campaign or unrestricted manual retry is authorized. The precise recovery interaction, whether queued work may proceed, and treatment of unavailable-generation time are unresolved and must be designed separately (including interaction with G-05 contract technical delays).
+- **G-48 supersedes the previous post-exhaustion intervention rule:** after exhausting bounded retries, **commit an approved standard media-appropriate presentation template automatically and finish Marketing**, releasing the same physical production for the player's next action. Do not demand manual retries, silently authorize publishing, grant a refund or create a new campaign. Interaction with G-05 contract technical-delay accounting remains to validate.
 - The numeric retry cap, fault taxonomy, backoff/timeout strategy and save/reload behavior require implementation and validation. Retry processing should reflect genuine provider time rather than an artificial marketing timer.
 
 **Accepted direction / Documented**, not implemented or validated with Unreal or an AI-generation provider.
+
+#### G-48 — Automatic media-appropriate template after exhausted AI retries
+
+**Owner decision (2026-11-17):** if the Marketing AI presentation generation continues to fail technically and the finite G-47 automatic retry allowance is exhausted, **the project must progress using a standard template**. The fallback replaces the missing generated *presentation art*, not the production's actual completed creative content. It does **not** require another generation attempt or a player decision to unblock the project.
+
+- Select a **predefined, media-appropriate template** consistent with G-45 (e.g., comic-book cover presentation, traditional animation film-reel/tape appearance, 3D animation DVD-case appearance); do not claim those template designs or assets exist yet. Tirinhas remain outside Marketing.
+- Finalize the **same G-46 production object** with its fallback appearance and existing campaign commitment (G-30). Upon completion, release the physical object from G-32 station occupation, allowing player transport; **G-08 still requires separate player-authorized publication**.
+- Distinguish a real provider/technical failure from an AI generation that succeeded but looks poor: the latter is a completed creative result and **does not qualify** for automatic template replacement under G-47/G-48.
+- Store terminal presentation status as **AI generated OR fallback template**, apply it **once**, and reject late/out-of-order AI outputs after fallback finalization. No double debit, duplicate objects or duplicate promotional effects; free the G-44 generator for next waiting job.
+- **Undecided:** exact template assets per medium and historical period; whether/what effect using fallback has on G-43 campaign-quality result multiplier; presentation to player; precise retry count, technical-delay accounting under G-05 and any cost compensation. Do not invent a penalty, identical quality to generated art, or refunds.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
 
 ### Project trash and deletion
 
