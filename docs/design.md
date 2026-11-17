@@ -1919,9 +1919,15 @@ This is **Accepted direction / Documented**, not implemented or validated.
 - A project must have **at most one active assistant transport reservation**, with atomic acquisition when several assistants decide simultaneously. An assistant cannot carry multiple projects at once. Reserve only when project/stage eligibility and destination compatibility hold.
 - Reservation is not a creative approval, project ownership transfer or stage commit. Successful arrival/handoff alone may commit G-07 stage advancement under existing rules, with final publication still player-authorized.
 - Never duplicate transport, consume stage versions twice, or let stale reservations cause double-commit after save/reload. Cancelled/trashed/ineligible projects cannot remain valid work assignments.
-- **Next consequential design choice (G-22):** what happens to an already-reserved project if the assigned assistant becomes unavailable, is interrupted, or the job ceases to be eligible? Exact expiry/return/resumption semantics and player override need an explicit decision; implementation of atomicity and save persistence requires validation.
+- **G-22 resolves interruption behavior:** a transport interruption releases the assistant's exclusive reservation automatically. Manual player interference and exceptional ineligible/deleted jobs still require safe implementation semantics; reservation atomicity and save persistence require validation.
 
 **Accepted direction / Documented**; no Unreal scheduler, tests or runtime behaviour verified.
+
+#### G-22 — Automatic release of interrupted assistant transport
+
+**Owner accepted option B (2026-11-17):** when a Production Assistant is interrupted or becomes unable to continue transporting a project, the transport reservation is **automatically released**. If pickup has not occurred, the production object stays at its prior pickup location; if already picked up, it remains **physically at the location where the interruption happened**. The project becomes eligible for a fresh G-21 reservation by an available assistant, subject to G-20 class priority, G-19 per-assistant factors and compatible downstream workstations.
+
+Interruption alone does **not** cancel or trash the production, alter its creative result, charge another creative-generation expense, consume a creative version or commit/close a production stage. Its physical object must remain reachable and recoverable; saving/reopening must neither resurrect an obsolete reservation nor duplicate pickups/commits. An unrelated ineligibility, deletion or completed handoff still requires normal game-owned guards. **G-23 candidate:** whether and how the player may manually seize/move an object reserved or in transit with an assistant. Exact interruption reasons, placement collision resolution, recovery timing and tests are implementation/validation work. **Accepted direction / Documented**, not implemented or Unreal-validated.
 
 ### Project trash and deletion
 
