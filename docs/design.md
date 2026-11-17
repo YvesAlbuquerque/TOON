@@ -2225,7 +2225,7 @@ These exemplify how the object changes through the historical/media workflow. Do
 - Choose **historically appropriate visual forms** from media-specific content data. The passage of time/historical context drives their availability; this decision does **not** establish new studio equipment purchases, research unlocks, required technology upgrades or additional business modifiers solely to determine the physical shape.
 - G-46 is unchanged: Marketing transforms the appearance of the **same physical production object** without changing its persistent identity, underlying creative content, ownership, contract lineage or player-only G-08 release authorization. Comic strips still **never go to Marketing** (G-26/G-45), and Marketing remains optional for eligible non-strip works.
 - The G-48 technical-failure fallback template must fit **both the media and the historically appropriate presentation**, while G-49 preserves its **commercial equivalence** with successfully generated art. Do not introduce a new time-related commercial penalty solely for package appearance.
-- **Open implementation/content details:** exact media/era format catalogue, chronology thresholds and design variants; the precise moment the presentation's historical format is chosen, and whether already transformed objects ever change appearance as time advances. Do not assume they update retroactively; no additional equipment-management rule approved.
+- **Open implementation/content details:** exact media/era format catalogue, chronology thresholds and design variants; the specific presentation format is **locked on production completion under G-52**, with no subsequent automatic repackaging. No additional equipment-management rule approved.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
@@ -2236,7 +2236,18 @@ These exemplify how the object changes through the historical/media workflow. Do
 - A non-strip work **that optionally enters Marketing** receives a more elaborate/customized media-appropriate commercial appearance when the committed promotional work completes. Under G-46, **the same physical object and underlying creative content/identity continue unchanged**; Marketing changes its presentation rather than spawning a second object. G-31/G-32 physical occupancy during Marketing remains.
 - **Comic strips (tirinhas) never visit Marketing** (G-26/G-45) and can use their own basic finished presentation through direct publication. Do not incorrectly require a promotional cover or campaign for strip release.
 - Distinguish three concepts: (1) **automatic basic production appearance** after finishing without Marketing; (2) **personalized Marketing presentation** through a successful G-44 generation; (3) **standard Marketing fallback presentation** after G-47/G-48 technical exhaustion. G-49 means (2) and (3) have **equivalent campaign rules**; it does not grant campaign benefits to (1) when the player never chose Marketing.
-- **Unresolved:** exact medium/era basic appearance asset catalogue, moment when historical format is fixed, any updates after time progression, and visual distinction between default and Marketing template. No new production work time, AI cost, commercial penalty or object-ID change is authorized merely by basic appearance.
+- **Unresolved:** exact medium/era basic appearance asset catalogue and visual distinction between default and Marketing template. **G-52 fixes the historic physical format at production completion and disallows later automatic conversion.** No new production work time, AI cost, commercial penalty or object-ID change is authorized merely by basic appearance.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-52 — Lock the historical physical presentation format at production completion
+
+**Owner accepted option B (2026-11-17):** the production's **historical physical presentation format is determined once when creative production finishes**, alongside the automatic basic physical appearance of G-51. The selection uses the **media type and the historical era at that moment** (G-45/G-50), and the chosen physical-format identity then **remains fixed** even if the work is marketed or published years later.
+
+- Later optional Marketing modifies/personalizes the presentation **within that already assigned physical format**. For example, a work completed as a VHS-era format may gain AI-generated cover/presentation art later, but **must not be silently repackaged as a DVD** simply because Marketing happens during the DVD era. G-46's single physical object, production identity, underlying finished creative content and contract/IP associations remain intact.
+- If G-47 AI generation fails and G-48 standard fallback applies, use a template **matching the originally locked media/era format** rather than selecting the period of failure, retry, Marketing or G-08 publication. G-49's commercial parity holds.
+- No automatic reformatting on passage of time or at publication; no extra equipment upgrade or technology unlock needed solely to assign an era-appropriate presentation (G-50). The G-08 publishing station remains separately player-authorized.
+- Persist the locked format and its derivation across save/load; ensure generated Marketing images and templates bind to that format without changing the underlying production. **Still open:** exact historical format chronology, available variants and authored art assets, and technical selection/asset implementation. The format-lock decision does not validate an Unreal pipeline.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
