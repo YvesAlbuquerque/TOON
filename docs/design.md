@@ -305,19 +305,17 @@ Late adoption may bring:
 - staff frustration;
 - audience or market lag.
 
-### Research Department — studio technology access (new owner direction, 2026-11-17)
+### Research Department — mandatory studio technology research (owner chose A, 2026-11-17)
 
-**Owner direction:** T.O.O.N. must have a **Research Department (Pesquisa e Desenvolvimento)** that **influences the point at which technologies become available to the studio**. This is a genuine strategic dimension of the previously selected **organic progression**, not a return to a rigid universal mission chain. A historically relevant technique/equipment category may exist in the world before the particular studio can exploit it; research can determine or influence studio access and preparedness, alongside its existing finances, people and physical production capacity.
+**Accepted design rule:** all **new technologies that the studio adopts** must be **researched through its Research Department before they become usable**, even if historically common by that year. The passage of calendar time makes a technology historically **eligible to investigate** but **does not itself unlock studio usage**. Research is an explicit strategic investment and a technology-access gate, not a bonus/discount-only mechanic.
 
-**Separate ownership and boundaries:**
-- **Research Department / technology R&D:** researches the studio's production capabilities, processes and technology adoption. Its precise gating role is **not yet decided**.
-- **Marketing Department / formal audience research (G-35–G-42):** studies audience preferences and promotion modes for finished unpublished projects. It **does not grant production technology**; conversely R&D is **not** the promotional research system.
-- **Historical context:** remains the basis for plausibility of global technology/medium emergence. Investment cannot simply invent any future technology ahead of historical possibility without an explicit later direction.
-- **Actual adoption and production:** existing capacity constraints remain; even if access is researched, the studio still needs appropriate workstations, employees and resources. Research alone does not automatically complete a production, purchase/install equipment, or force adoption of a new medium.
+- **World availability versus studio readiness:** historical events and dates constrain what exists and what the Research Department may investigate. The studio may lag behind the world's state if it does not research. No independent anachronistic inventions are implied by choosing to invest.
+- **Studio knowledge versus physical execution:** completed R&D unlocks the capability to adopt/use a technology, but does not automatically build a workstation, buy equipment, train/hire compatible staff, pay ongoing costs, produce media, or override stage compatibility. Those remain separate existing constraints.
+- **Choice and continuity:** the player chooses which historically eligible technologies to research and when. Existing older methods remain usable; research should not delete them or force adoption of newer media. This is compatible with the accepted **organic progression**, not a mandatory sequence of story missions or levels.
+- **Different research domain:** R&D concerns technical capability and production processes, **not** Marketing's formal G-35–G-42 studies of audiences and promotional modalities. Do not share Marketing research limits or research-report rules by assumption.
+- **First-playable safety:** the two initial comic-strip productions must remain possible. **The exact baseline starting technologies and whether they are treated as already researched at game start are not yet decided.** The Research Department's unlock/installation moment is likewise unresolved; do not impose a new initial tutorial stage or claim the first commission is blocked without explicit owner approval.
 
-**Open consequential choice, intentionally not assumed:** whether R&D must always be completed to unlock a historically emerging capability, whether it only accelerates/discounts/improves optional adoption, or whether different technology categories use different rules. Avoid authoring a full tech tree, research-point currency, researcher job specification, forced tutorial R&D requirement, resource curves, fixed historical dates or mandatory arbitrary timers until this rule is accepted and tested. The first two strip tutorials remain unchanged unless the owner explicitly changes them.
-
-**Status:** Research Department and its influence on studio technology availability = **Accepted direction / Documented**. The precise access mechanism = **Proposed / unresolved design**; not an Unreal implementation or validated technology system.
+**Remaining genuinely structural design choices, ranked:** (1) starting technologies / initial R&D access so early comic-strip production is achievable; (2) what counts as a researchable technology as opposed to ordinary purchases and workstation upgrades; (3) whether research prerequisites are a simple dependency order or broader choice, without forcing a detailed tree. Researcher staffing, job duration, prices, UI and historical technology entries are design content/balancing/implementation validation after these boundaries. No R&D system is implemented or validated in Unreal by this document.
 
 ## Historical context: global and local timelines
 
