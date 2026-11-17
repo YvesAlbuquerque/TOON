@@ -2251,6 +2251,18 @@ These exemplify how the object changes through the historical/media workflow. Do
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-53 — Configurable historical format catalogue, not AI-selected packaging
+
+**Owner accepted option B (2026-11-17):** author a **data-driven catalogue** associating **media types and historical periods** with supported physical presentation formats, basic visuals, Marketing art-compatible layouts and standard fallback templates. At the G-52 production-completion boundary, deterministic game logic consults this catalogue to select the era-appropriate format and **locks the resulting format identity** on the same G-46 production object.
+
+- Represent the association as configurable content (e.g., an authored table or equivalent engine-friendly data asset), not hardcoded media/date branches embedded in core logic. The exact Unreal data structure, schema and asset references are **not yet selected or implemented**.
+- The catalogue governs **historically eligible physical formats**, associated media-specific base representations (G-51), AI-personalized Marketing presentation targets (G-45/G-50) and matching G-48 template fallback assets. No new player-facing equipment or technology unlock gate is implied (G-50).
+- AI remains responsible for **artwork/prompt-based customization** when Marketing is chosen (G-43/G-44), but **must not decide whether a VHS, DVD, reel or other format exists or is suitable for the historical date**. A successful generation or technical fallback **must use the already locked format**, not reconsult the player's current historical era.
+- Preserve the **stable format ID** and production identity across save/load, later Marketing and G-08 publishing; catalogue updates should not silently transform pre-existing work. Tirinhas never enter Marketing (G-45) but may still have a basic medium-appropriate physical presentation (G-51).
+- **Still unresolved:** catalogue schema, authoritative historical chronology and source-validation, how to choose when multiple formats overlap, what happens when data/asset mappings are absent or malformed, and automated validation/test requirements. These are engineering/content decisions, not evidence of an implemented Unreal catalogue.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
