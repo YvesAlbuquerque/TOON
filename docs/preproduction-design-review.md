@@ -261,6 +261,12 @@ These are outstanding proofs attached to current roadmap/issues, not re-opened c
 
 **Do not confuse them:** *Documented* is not *Implemented*; a deterministic fixture is not local-model media validation; a playable strip is not proof of 2D/3D animation or a 40-hour campaign; release-name clearance is not implied by engine milestones.
 
+## Research Department — new owner technology-progression direction (2026-11-17)
+
+**Owner explicitly adds a Research Department**, responsible for influencing **when technologies become available to the studio**. This is a meaningful design addition and therefore **reopens technology progression** after the preceding preliminary design-freeze recommendation; do not claim the full design is frozen. It is consistent with **organic progression** when research affects the studio's capacity/technology choices, rather than forcing global chronological story missions. Historical world existence remains distinct from studio access, and usable production capacity still depends on compatible staff/workstations/resources. **Research Department R&D is not G-35–G-42 Marketing's optional audience research.**
+
+**Accepted direction:** department exists and contributes to studio technology-access timing. **One unresolved high-impact choice:** research as mandatory access gate versus optional advantage/early preparedness versus different rules by category. Do **not** prematurely accept any one as canon, establish anachronistic world technologies or invent a detailed tech tree/currency, historical schedule, staffing multipliers or initial-tutorial requirement. No Unreal code, runtime system, research UI, tests or balancing evidence. Reassess structural design freeze only after resolving this high-impact distinction.
+
 ## Structural design-gap triage — organic progression and minimum defaults (2026-11-17)
 
 **Owner accepted option A: organic progression**, replacing a rigid mission/milestone ladder as the general campaign advancement model. The first three guided story/tutorial beats stay sequential; beyond them the player reacts to contract opportunities and production constraints while deciding whether to build, hire and adopt historically plausible new media. The progression remains consistent with G-15 reputation shaping offers, physical staff/workstation capacity and G-24/G-26 special historical/professionalization boundaries. There is **no additional mandatory prestige level, reputation number, unlock currency or linear mission gate**. This rule is **Accepted direction / Documented**.
