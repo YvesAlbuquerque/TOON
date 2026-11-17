@@ -305,6 +305,20 @@ Late adoption may bring:
 - staff frustration;
 - audience or market lag.
 
+### Research Department — studio technology access (new owner direction, 2026-11-17)
+
+**Owner direction:** T.O.O.N. must have a **Research Department (Pesquisa e Desenvolvimento)** that **influences the point at which technologies become available to the studio**. This is a genuine strategic dimension of the previously selected **organic progression**, not a return to a rigid universal mission chain. A historically relevant technique/equipment category may exist in the world before the particular studio can exploit it; research can determine or influence studio access and preparedness, alongside its existing finances, people and physical production capacity.
+
+**Separate ownership and boundaries:**
+- **Research Department / technology R&D:** researches the studio's production capabilities, processes and technology adoption. Its precise gating role is **not yet decided**.
+- **Marketing Department / formal audience research (G-35–G-42):** studies audience preferences and promotion modes for finished unpublished projects. It **does not grant production technology**; conversely R&D is **not** the promotional research system.
+- **Historical context:** remains the basis for plausibility of global technology/medium emergence. Investment cannot simply invent any future technology ahead of historical possibility without an explicit later direction.
+- **Actual adoption and production:** existing capacity constraints remain; even if access is researched, the studio still needs appropriate workstations, employees and resources. Research alone does not automatically complete a production, purchase/install equipment, or force adoption of a new medium.
+
+**Open consequential choice, intentionally not assumed:** whether R&D must always be completed to unlock a historically emerging capability, whether it only accelerates/discounts/improves optional adoption, or whether different technology categories use different rules. Avoid authoring a full tech tree, research-point currency, researcher job specification, forced tutorial R&D requirement, resource curves, fixed historical dates or mandatory arbitrary timers until this rule is accepted and tested. The first two strip tutorials remain unchanged unless the owner explicitly changes them.
+
+**Status:** Research Department and its influence on studio technology availability = **Accepted direction / Documented**. The precise access mechanism = **Proposed / unresolved design**; not an Unreal implementation or validated technology system.
+
 ## Historical context: global and local timelines
 
 T.O.O.N. should treat real history as an active **context layer** around the player's fictional studio.
