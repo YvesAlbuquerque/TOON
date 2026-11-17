@@ -2065,9 +2065,20 @@ After finishing production, the player can take the completed object directly to
 - Model diminishing confidence/weight of stale research as contexts diverge and time passes, **without deleting the historical record just because its predictive value fades**. Subsequent relevant research can update or contradict earlier conclusions; staff must communicate uncertainty rather than presenting accumulated lore as objective truth.
 - **Knowledge belongs to the studio institution**, not exclusively to one professional: an employee departure does not delete the archive. G-35 employee experience still affects the quality of interpretation and recommendations; institutional memory does not replace skill.
 - Retain the G-35 optional physical research step with finite Marketing staff capacity and completed/unpublished production object held during active work (G-31/G-32). Reusing knowledge does not force a paid research step for every work and cannot retroactively revise the immutable G-30 campaign, bypass G-08 publication or guarantee G-14 revenue.
-- Exact knowledge schema, aggregation, similarity/context weighting, aging/decay curve, retention, and how campaign outcomes feed back into research are **unresolved design/engineering/validation**, not automatic or proven AI memory.
+- Exact knowledge schema, aggregation, similarity/context weighting, aging/decay curve, and retention are **unresolved design/engineering/validation**; G-37 explicitly rules out automatic institutional learning from campaign or launch outcomes, not automatic or proven AI memory.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-37 — Formal research is the only source of institutional marketing learning
+
+**Owner accepted option A (2026-11-17):** **only explicit formal G-35 market/audience research updates the reusable institutional marketing knowledge established by G-36**. The studio may retain and display actual promotion, release, reception and revenue results as **commercial history**, but merely observing a successful or failed campaign **does not automatically update audience affinity findings, recalibrate modality effectiveness, or improve later estimates through institutional learning**.
+
+- Separate **historical performance records** from **formal research evidence** in game-owned state. Historic outcomes may be inspected as context by the player or staff, but this does not create an automatic research finding, postmortem analysis or hidden model-training loop. Do not claim that poor predictions self-correct without a research action.
+- Professional experience can still influence the uncertain judgment and recommendations of staff (G-35), but that is not an exception permitting automatic writes into the **institutional research knowledge base**. Keep provenance so the game can distinguish research-supported findings from anecdotal or historical observations.
+- To update institutional knowledge, the player must elect research via the Marketing Department, incurring finite time/resources and respecting the G-31/G-32 physical object occupancy. Findings remain contextual and subject to G-36 relevance decay; the campaign choice remains immutable once confirmed (G-30).
+- Exact research scope, cost, confidence updates, presentation of historical results and archive implementation require design/balancing and validation; this direction does **not** establish a new automatic analytical workflow.
+
+**Accepted direction / Documented**, not Unreal-implemented or validated.
 
 ### Project trash and deletion
 
