@@ -1973,7 +1973,17 @@ Manual takeover must never create duplicate object instances/carriers, duplicate
 
 - The selected modality determines the kind of outreach; investment intensity/amount controls its potential scale. Era-appropriate options and operational constraints are to be specified, but no particular medium, cost tier, spend formula or action list is approved yet.
 - Marketing requires the later-unlocked department (G-26) and remains optional for G-08 player-authorized publication. Reception and any initial/catalogue earnings remain owned by G-14's broader game simulation, not a guaranteed reward for spending.
-- **Next consequential question (G-28):** when the player may run a promotional campaign relative to a production's publication. Duration, repeatability, stacking, costs and measurable outcomes remain open for design/balancing.
+- **G-28 resolves the campaign decision point:** before publication, with effects both before and after release. Duration, repeatability, stacking, costs and measurable outcomes remain open for design/balancing.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-28 — Pre-publication marketing decision with pre- and post-release effects
+
+**Owner accepted direction (2026-11-17):** the player chooses a G-27 **promotion modality and investment intensity before publishing a production**, with the resulting campaign able to have **effects before release** (such as anticipation/awareness) **and after release** (such as subsequent reach and audience discovery). This is **one up-front decision with effects across the release boundary**, not a model requiring a second player marketing purchase/decision after publication and not an always-on discretionary advertising budget.
+
+- The G-26 Marketing Department is required for the optional campaign; a work can still be released through the G-08 player-authorized physical publishing desk without marketing.
+- Before actual player-authorized release, any marketing consequences may affect pre-release awareness/expectations, but **must not post publication revenue, put the unreleased work in the catalogue, or treat a promised release as completed**. Post-release effects begin only upon real release and follow game-owned reception/G-14 economy constraints.
+- Campaign decisions, spending and effects need persistent game-owned records to avoid duplicated debits or outcomes across save/reload. Exact launch lead time, duration/decay, repeatability, stacking, unused campaign treatment if a project is trashed before release, and balance remain **unresolved**, not silently decided here.
 
 **Accepted direction / Documented**, not implemented or Unreal-validated.
 
