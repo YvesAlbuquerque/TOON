@@ -2183,6 +2183,18 @@ These exemplify how the object changes through the historical/media workflow. Do
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-47 — Bounded automatic recovery from technical Marketing AI generation failures
+
+**Owner accepted option B (2026-11-17):** if the Marketing Department's G-44 AI art generation suffers a **transient technical failure** (e.g. generation-service error or infrastructure interruption), the system automatically retries recovery within a **finite attempt budget**, rather than requiring player intervention for each transient fault.
+
+- Classify **technical failure** separately from **a completed generation whose artistic quality is disappointing**. The latter is a creative-quality result and must not be silently treated as a provider outage or a reason for unlimited auto-regeneration.
+- During active recovery, the **same G-46 production object** remains occupied and unavailable at Marketing under G-32. Do not produce a second physical project, reopen earlier G-07 stages or permit publishing a partially generated marketing presentation. Preserve G-30 campaign modality and investment without silently changing or charging again.
+- Each retry belongs to the **same logical generation job**; persist its attempt count and committed result identity, deduplicate late/out-of-order provider responses and ensure campaign effects and asset attachment are committed **at most once**. G-44's **one active Marketing AI generation at a time** remains binding, including recovery attempts; other campaigns wait.
+- If the bounded retry budget is exhausted, enter a **recoverable intervention-required fault state**, without claiming that a default presentation, refund, new campaign or unrestricted manual retry is authorized. The precise recovery interaction, whether queued work may proceed, and treatment of unavailable-generation time are unresolved and must be designed separately (including interaction with G-05 contract technical delays).
+- The numeric retry cap, fault taxonomy, backoff/timeout strategy and save/reload behavior require implementation and validation. Retry processing should reflect genuine provider time rather than an artificial marketing timer.
+
+**Accepted direction / Documented**, not implemented or validated with Unreal or an AI-generation provider.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
