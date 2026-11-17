@@ -2087,7 +2087,7 @@ After finishing production, the player can take the completed object directly to
 - Professional recommendations remain **fallible assessments with uncertainty** (G-35), not deterministic revenue or reception forecasts. Research should improve the information behind the later G-27 choice without selecting or committing that campaign for the player.
 - The integrated research is performed as **finite Marketing work** on the **single physical production object**, which is unavailable for interaction, movement, trash or publication while the process runs (G-31/G-32). When research completes, its report becomes available for the player's optional next action; the subsequent campaign is still physically chosen at Marketing, fixed once committed (G-30).
 - Research findings contribute **context-scoped, reusable, aging institutional knowledge** (G-36), and **only formal research may update that knowledge** (G-37). Commercial outcomes remain historical performance evidence, never an automatic retraining loop.
-- G-39 establishes three discrete research-depth tiers; their precise costs, durations and confidence improvements, along with the number of repeat researches permitted on one production, remain design/balancing questions. The two-part scope must not be interpreted as inherently perfect market visibility.
+- G-39 establishes three discrete research-depth tiers; their precise costs, durations and confidence improvements, remain design/balancing questions; G-40 disallows repeating research on the same production. The two-part scope must not be interpreted as inherently perfect market visibility.
 
 **Accepted direction / Documented**, not implemented, tested or validated in Unreal.
 
@@ -2100,9 +2100,20 @@ After finishing production, the player can take the completed object directly to
 - **Extensive:** higher cost and departmental time demand; potentially the richest and most reliable of the three, but it must **not eliminate uncertainty** or guarantee a successful campaign.
 - Research occupies the **single completed/unpublished physical object** during the entire selected work process (G-31/G-32/G-35). The object becomes interactable only on completion. Deeper tiers consume more finite staff capacity and other resources; no instant report or remote purchase.
 - Results contribute evidence to the reusable, contextual, aging research archive (G-36), updated only through formal research (G-37). Subsequent G-27 campaign selection and intensity stay a separate one-time, immutable decision under G-30; research does not choose for the player.
-- **Not yet decided:** numerical costs/times, precise tier-specific evidence gains, access limitations as Marketing develops, and whether the same production may be researched repeatedly before campaign commitment. These need explicit balancing/design validation, not invented fixed thresholds.
+- **Not yet decided:** numerical costs/times, precise tier-specific evidence gains, access limitations as Marketing develops, while G-40 establishes that each production may be formally researched only once, with no upgrade/repetition afterward. Those quantities need explicit balancing/design validation, not invented fixed thresholds.
 
 **Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-40 — One optional research job per production
+
+**Owner accepted option A (2026-11-17):** each production may receive **no more than one formal integrated G-38 market research job**. If research is chosen, the player must select **one** of the three G-39 levels (Basic, In-depth, Extensive) before beginning. Once the research has been conducted, the production **cannot be researched again**, including repeating the same tier or paying to upgrade to a deeper tier. This is a per-production limit, not a global limit on the studio's research activities.
+
+- Research remains **optional**, so skipping it does not block campaign selection or G-08 publication; if selected, it requires the **completed, unpublished physical object** at Marketing and consumes finite staff time and resources while that object is unavailable until processing finishes (G-31/G-32/G-35).
+- The single research report can inform the subsequent **player-owned, immutable G-27/G-30 campaign choice**, but cannot force a particular modality or guarantee reception. Once the report exists, no further research action for that same production should appear in the normal player workflow.
+- Research findings contribute to the **reusable studio-wide archive** (G-36/G-37), and earlier research on other productions may inform advice. Reusable knowledge does **not** permit a second formal job on an already researched production.
+- Persist research-used state across scene changes/save/reload so that revisiting the physical department cannot restart the study, duplicate costs, or create multiple reports. Handling aborted/failed work without unintended consumption remains a specific implementation/recovery decision, not permission for routine repeat research.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
 
 ### Project trash and deletion
 
