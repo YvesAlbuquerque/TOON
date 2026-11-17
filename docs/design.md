@@ -2203,9 +2203,20 @@ These exemplify how the object changes through the historical/media workflow. Do
 - Finalize the **same G-46 production object** with its fallback appearance and existing campaign commitment (G-30). Upon completion, release the physical object from G-32 station occupation, allowing player transport; **G-08 still requires separate player-authorized publication**.
 - Distinguish a real provider/technical failure from an AI generation that succeeded but looks poor: the latter is a completed creative result and **does not qualify** for automatic template replacement under G-47/G-48.
 - Store terminal presentation status as **AI generated OR fallback template**, apply it **once**, and reject late/out-of-order AI outputs after fallback finalization. No double debit, duplicate objects or duplicate promotional effects; free the G-44 generator for next waiting job.
-- **Undecided:** exact template assets per medium and historical period; whether/what effect using fallback has on G-43 campaign-quality result multiplier; presentation to player; precise retry count, technical-delay accounting under G-05 and any cost compensation. Do not invent a penalty, identical quality to generated art, or refunds.
+- **G-49 resolves commercial scoring:** the fallback has the **same campaign effectiveness rules as a successful AI-generated presentation**, without fallback-specific penalty or change to G-43's professional result multiplier. The generated and templated images may look different; this rule addresses **commercial mechanics**, not artistic equality. Exact template assets per medium/era, presentation to player, retry cap, technical-delay accounting under G-05 and cost treatment remain open. Do not invent refunds.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-49 — Template fallback has no commercial penalty
+
+**Owner accepted option A (2026-11-17):** when a G-47 technically failed Marketing AI generation falls back to the G-48 standard media-specific template, the fallback **does not change the campaign's commercial effectiveness**. It is an **alternative visual presentation only**; there is no fixed penalty, lowered baseline quality, reduced reach/revenue/reception modifier, or extra variance solely because the AI provider failed.
+
+- Given the **same G-27/G-30 modality and investment**, G-34 audience/media/era context, G-43 professional execution competence/multiplier, and timing/release conditions, commercial rules must behave **identically** whether the presentation is generated art or the standard template. Do not remove the professional multiplier when fallback is used, or inadvertently give the templated version a bonus.
+- Record **generated versus fallback** as an art-source and technical-provenance distinction only. The visual identity can differ, but that distinction must not feed hidden market scoring. This does not assert equivalent artistic quality of all assets or eliminate unrelated differences between productions.
+- Preserve G-46 one physical object, G-32 Marketing completion/release of the object, G-08 player publication authorization, G-44 serialized generation, and idempotent G-47/G-48 retry/fallback completion. No repeated campaign charge or additional promotional decision.
+- Actual template visuals, AI provider behavior and outcome calculation still require implementation/tests; the equality is an accepted design rule, not verified gameplay.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
 
 ### Project trash and deletion
 
