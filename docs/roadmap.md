@@ -589,11 +589,11 @@ The proof should preserve:
 
 - stable IP/character identifiers;
 - canonical visual/narrative anchors;
-- explicit adaptation changes;
+- explicit adaptation changes, scoped as either **shared persistent IP continuity** or **production/adaptation-local variants** (G-16);
 - provenance/reference artifacts used by runtime generation;
 - player-readable lineage in the archive.
 
-Do not treat provider-specific seeds/prompts as the canonical identity source.
+**G-16 owner decision:** prove one recognizable, persistent studio-owned IP across two productions/media while allowing one adaptation-specific change that **does not** alter the shared identity, and one game-owned-accepted change that **does** persist for later works. Record change origin/provenance and preserve earlier published versions unchanged. Generated AI artifacts may suggest changes but must not silently promote them to shared canon. The exact promotion/approval affordance is deferred for focused design and validation; do not treat per-detail player review as a requirement. Client-owned commissioned IP remains excluded from studio-controlled adaptation under G-13. Do not treat provider-specific seeds/prompts as the canonical identity source.
 
 ### 6.5 Compact production-output validation
 
@@ -895,6 +895,8 @@ After the vertical slice is stable, prove a bounded multi-era campaign containin
 - measured real-time pacing for management plus production consumption.
 
 Only then should the project expand toward a full 1900–2030 campaign.
+
+**G-16 evolving-continuity proof (later, game-owned):** generate/publish two successive studio-owned IP works with stable shared anchors, a local-only variant and an explicitly game-owned-accepted persistent evolution. Verify that AI-suggested but unaccepted changes cannot mutate canonical shared facts, that local variants do not leak into unrelated future works, and that earlier published works/credits/lineage remain immutable across save/reopen. Check G-13 client-owned works cannot be continued through this path and G-07 closed stages remain closed. Canon-change policy and UI require later validation; these are not current Unreal claims.
 
 **G-15 hybrid reputation proof (later, game-owned):** persist **one global studio reputation and four production-type facets (comic strip, comic, 2D animation, 3D animation)**. Compare successful/poor delivered works in different types and verify game-owned updates to overall plus relevant type-specific standing. Confirm **both global and matching type reputation affect subsequent external-offer value and frequency**, without granting full specialist standing in an untried type. Ensure this does not create client acceptance/rejection, quality deductions from completed contract delivery, or new medium unlock gates. Save/reopen should preserve all facets and not duplicate outcome updates. Exact reputation weights, decay/transfer, UI and offer-response curves are balancing/validation, not claimed Unreal implementation.
 
