@@ -2472,26 +2472,31 @@ Long-term persistence must be able to represent at least:
 
 Legacy `InkTime` saves/artifacts are migration evidence rather than a shipped compatibility promise. Preserve representative fixtures or extract useful data where valuable, but do not make full Unity-save compatibility a blocker for the Unreal game without explicit need.
 
+## First onboarding progression — external commission, player-original strip, then growth
+
+**Owner accepted sequence (2026-11-17):** the playable opening should teach **two complete strip-production cycles before introducing staff conflict**, then use subsequent strip demand to motivate studio growth. These are story-linked steps rather than a sequence of separate systems tutorials.
+
+1. **Guided external contract, beginning to delivery.** An outside client offers an initial 3–4-panel tirinha project whose **IP is client-owned (G-13)**. Guide the player from the brief/contract to staff/creative stages, manual physical movement between compatible stations, completion and explicit release/delivery at G-08. Under G-11/G-12, no contract money arrives on acceptance; the guaranteed contract payment is earned on delivery, with **no client rejection or approval afterward**. Quality and brief adherence may influence reputation and later contract offers, not guaranteed payment. This should be the smallest complete usable loop, without mandatory Marketing, studio expansion or personnel conflict.
+2. **Player-originated strip, same flow with creative ownership.** The next story beat invites the player to **idealize a fresh concept themselves** using only the already-approved G-03 editable concept/script/art-direction bounds; reuse the same workstations, physical route and release action, with progressively less tutorial guidance. Its IP belongs to the studio, **not the first client**. Release may yield G-14 original-work income/catalogue value but does not guarantee sales; do not reuse client IP or add a separate production system.
+3. **Incoming strip demand, small expansion, gentle first relationship conflict.** After both completed strips, new comic-strip commissions increase perceived workload and motivate a simple capacity/studio expansion. During this growth, introduce the first **low-stakes, easy-to-understand disagreement between recurring professionals**, so the player sees a relationship-management choice and a visible persistent consequence. The moment is **deliberately later** than the first two production lessons; no immediate forced G-57 conflict in the opening commission. It should exercise existing employee and Decision Event capabilities, not prompt a new general-purpose subsystem.
+
+**Narrative structure:** tie these episodes causally to the story (first work establishes the studio's reputation and operating flow, original work establishes creative autonomy, further demand gives reason to expand and introduces human dynamics). Exact characters, lines, initial finances, the reason for the first client commission, the expansion operation and the conflict resolution options are **not yet specified**. Do not fabricate them as accepted story canon.
+
+**Milestone gates for design and engineering validation:** (1) successful client-owned strip delivery + correct contract payment/ownership; (2) a new studio-owned strip produced from player concept + release and distinct income path; (3) at least one further strip demand + legible expansion/capacity action + one small people conflict with visible persistent consequence; (4) save/reopen preserves both completed works, ownership, payment/receipts and relationships. These are design acceptance scenarios, **not evidence of a compiled or playable Unreal implementation**. The 3–4-panel output remains a production target, not a hard validator.
+
 ## First validation slice
 
 The first slice should not attempt 130 years.
 
 It should prove the characteristic interaction among studio, people, production, and persistent consequence. **The first playable production is a complete 3–4-panel comic strip**, using a medium-neutral Production core and a narrow strip-specific output path. Completion, reception and save/reopen remain unvalidated until exercised.
 
-Minimum target:
+**Stage the proof instead of demanding every mechanic on the first strip:**
 
-1. one small studio;
-2. 3–4 recurring professionals with distinct traits;
-3. at least two meaningful relationships;
-4. one IP;
-5. one complete **3–4-panel comic strip production**;
-6. one assignment decision;
-7. one people/production conflict;
-8. one player response with tradeoffs;
-9. release;
-10. one persistent studio/professional/IP consequence;
-11. save/reopen;
-12. one visual signal of historical continuity.
+1. **Milestone 1 (minimum first playable):** one small studio, readable staff/workstations, one externally commissioned 3–4-panel strip, physical stage handoffs, player-authorized delivery, correct client IP ownership and G-11 contract settlement. Save/reopen the delivery and credits/state.
+2. **Milestone 2 (creator autonomy):** the same production loop with a **player-created concept** and studio-owned original IP, different ownership/revenue semantics and less guidance.
+3. **Milestone 3 (studio/people):** additional incoming strip demand, one simple capacity expansion and one accessible interpersonal conflict/Decision Event with a clear consequence that survives save/reopen.
+
+The continuing target is a memorable recurring cast, relationships, persistent consequences and historical identity; **they are introduced incrementally** rather than all blocking the first external commission. Local AI generation quality must be validated separately from deterministic fixtures.
 
 A second bounded prototype should later test one media/era transition.
 
