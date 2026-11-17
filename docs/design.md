@@ -2145,7 +2145,7 @@ After finishing production, the player can take the completed object directly to
 - Distinguish **research/report quality** (G-35/G-41) from **campaign execution quality** (G-43). G-42 remains intact: undertaking a research study, choosing a deeper tier or employing better researchers does **not** in itself buff promotion. Only the competence of staff actually doing the promotional execution is a direct quality input.
 - Campaign effectiveness remains contextual and uncertain under G-27/G-34: modality, selected investment intensity, audience affinity, historical period, media type and skill of the executing professionals can matter. Competence must not force a successful release, guaranteed revenue or universally superior modality.
 - Preserve the **physical Marketing workflow** (G-31/G-32): the completed, unpublished production remains occupied and unavailable to the player throughout staff work, then becomes physically interactable once the job finishes. G-33 anticipation decay still applies if the player delays publication afterward; G-30 prohibits campaign edits or repeat commitment.
-- **Not yet approved:** precise competence attributes/weights, how prompts are constructed, the value/meaning of the result multiplier, whether particular workers specialize in modalities, whether all modalities require cover art, and generation failure/retry behavior. Do not invent a universal skill-to-time acceleration or claim an implemented Unreal model.
+- **Not yet approved:** precise competence attributes/weights, how prompts are constructed, the value/meaning of the result multiplier, whether particular workers specialize in modalities, generation failure/retry behavior. G-45 now establishes a media-specific AI presentation for every non-strip production processed by Marketing, with tirinhas excluded. Do not invent a universal skill-to-time acceleration or claim an implemented Unreal model.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
@@ -2156,10 +2156,32 @@ After finishing production, the player can take the completed object directly to
 - **One campaign AI generation at a time.** Even if multiple Marketing staff and several completed productions exist, no two Marketing cover-art generations execute concurrently. Additional eligible campaign jobs must wait for the generator to become available. **The specific queue/prioritization policy is not accepted yet.**
 - For a Marketing job requiring cover art, the active work time **must not exceed what is necessary for the AI to generate that art** through an artificial, independent campaign duration. Queue wait time, actual processing time, and technical error/retry should be represented distinctly; do not confuse waiting for an occupied generator with work execution.
 - Respect G-31/G-32 physical-object ownership: the production being processed stays at the Marketing station and cannot be picked up, moved or published until its processing completes. The exact behavior of physically queued, not-yet-processing objects needs future design; do not assume multi-object station capacity.
-- **Not established:** whether **every** marketing modality mandates cover art or **only some** do; whether any other kinds of promotional assets are generated; exact art format, prompt structure, generation provider/settings, multiplier formula, and faults. Do not silently turn 'may generate cover art' into 'must generate cover art for all modalities'.
+- **G-45 later resolves the art requirement for Marketing-processed non-strip media:** AI produces a **media-specific physical presentation**, not a universal cover-art sheet. Comic strips never visit Marketing; comic books get a comic-book presentation with cover art, traditional animation a tape/film-reel presentation with generated artwork, and 3D animation an AI-produced DVD-case presentation. Do not infer mandatory Marketing for every non-strip release. Exact formats, historical presentation variants, prompt structure, provider/settings, multiplier formula, and fault recovery remain unresolved.
 - This constraint replaces the proposed G-44 options about parallel autonomous staff assignments; they were not chosen. G-27 one fixed campaign, G-30 immutability, G-34 affinity and G-42 information-only research remain intact. The chosen campaign's potential outcome can be influenced by the **competence of its execution professional**, not by the prior research itself.
 
 **Accepted direction / Documented**, not evidence that AI cover-art generation, scheduling, queueing, or Unreal runtime behaviour is implemented.
+
+#### G-45 — Marketing-generated presentation follows the work's medium; comic strips excluded
+
+**Owner correction (2026-11-17): comic strips (tirinhas) do not pass through Marketing.** For **other media when they undergo Marketing**, the AI-generated result is **a physical presentation suitable for the media type**, rather than a shared generic cover-art image. Explicit owner examples:
+
+- **Comic book / quadrinho:** a **comic-book-looking object with AI-generated cover art**.
+- **Traditional cartoon/2D animation (desenho):** a **film tape or reel**, with generated artwork applied to its presentation.
+- **3D animation:** an **AI-generated DVD-case presentation**.
+
+These exemplify how the object changes through the historical/media workflow. Do not extrapolate concrete physical packaging for unspecified media or eras without a separate design decision. This defines what happens **if an eligible work enters Marketing**; it does not repeal G-26's optional marketing or introduce a universal new release requirement for all non-strip media. G-31's completed-and-unpublished eligibility still applies to media that use the department. G-44's one-at-a-time AI generation applies; G-43 professional prompt quality and promotional multiplier continue to matter. The exact art generation formats/provider are not yet validated.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-46 — Preserve the single production object's identity across Marketing transformation
+
+**Owner selected option B (2026-11-17):** completing the G-45 Marketing stage **changes the existing production object's physical form/presentation**, **without replacing its identity**. The physical artifact becomes the suitable comic book, film reel/tape, DVD case, or eventually another approved media representation while continuing to be **the same production** in game state, rather than a second object or a freshly created independent project.
+
+- Preserve stable production identity/ID, ownership/contract links, IP and catalogue lineage, previous creative versions/stage finality (G-07), and G-08's later publication authorization. The AI-generated presentation is an output attached to the original production record and reflected in its visual representation; it must not overwrite underlying completed creative work.
+- While Marketing actively processes the object it is unavailable for physical interaction (G-32). Once generation finishes, the **same object** becomes interactable again, now showing its media-specific commercial appearance. No duplicated pickups, release records or extra campaign opportunities result from the appearance change (G-30).
+- Save/reload, AI asset failure, reference integrity and historical/media-appropriate art assets remain implementation/validation questions; do not assert a verified Unreal object/asset pipeline.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
 
 ### Project trash and deletion
 
