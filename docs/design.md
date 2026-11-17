@@ -2011,7 +2011,18 @@ The Marketing Department is an **optional physical workflow visit** available af
 
 After finishing production, the player can take the completed object directly to publishing or first route it physically to marketing and commit its one fixed modality/investment choice. The marketing desk does not edit the creative artifact, consume creative-version slots, reopen a G-07 stage, or itself release the work. G-28 campaign effects may build anticipation while the completed work remains unpublished, but post-release effects and G-14 publication income only begin following actual G-08 release. G-29 still applies if the marketed, unreleased work is subsequently trashed.
 
-**Accepted direction / Documented**, not implemented or validated in Unreal. The operational time/capacity demands of carrying out a marketing campaign remain to be decided separately.
+**Accepted direction / Documented**, not implemented or validated in Unreal. G-32 establishes that execution consumes finite marketing staff capacity over time; its detailed pacing remains to be validated.
+
+#### G-32 — Marketing campaigns consume professional work time
+
+**Owner accepted option B (2026-11-17):** after the player physically places a **completed, unpublished** production in the G-26 Marketing Department and commits its one fixed G-27/G-30 promotion modality and investment, marketing professionals **execute that campaign over simulation time**. Campaign delivery is not an immediate full-effect purchase: the work takes time and uses the department's **finite professional capacity**.
+
+- Marketing professionals must participate in the general autonomous staffing/workload model: they have finite time, may be busy/unavailable, and concurrent campaigns compete for capacity. Do not invent unlimited instantaneous throughput or assume a dedicated worker becomes permanently bound to a single project.
+- Only the **decision** requires the production object to be physically present at Marketing (G-30). The object may leave for G-08 publishing while staff continue executing the committed campaign; execution does **not** hold the object hostage or automatically block the player's publication authorization.
+- Pre-release publicity can create awareness while the work remains unreleased, while post-release influence can occur only after actual G-08 publication (G-28). Staff effort and campaign state must persist without double-spending, duplicate work or duplicate reputation/revenue outcomes. Cancelled unreleased productions still obey G-29; no completed-release state may be fabricated by marketing.
+- The **campaign definition remains immutable**: employee work may progress through its fixed plan but cannot autonomously increase spending, switch promotional modality or solicit another approval to extend it. Exact execution duration, capacity allocation, efficiency, pacing, partial effects and how staffing interruptions affect campaigns remain unbalanced and unvalidated.
+
+**Accepted direction / Documented**, not Unreal implemented or validated.
 
 ### Project trash and deletion
 
