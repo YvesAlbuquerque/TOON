@@ -261,19 +261,29 @@ These are outstanding proofs attached to current roadmap/issues, not re-opened c
 
 **Do not confuse them:** *Documented* is not *Implemented*; a deterministic fixture is not local-model media validation; a playable strip is not proof of 2D/3D animation or a 40-hour campaign; release-name clearance is not implied by engine milestones.
 
-## First vertical-slice proof — acceptance scenario, not a new owner decision
+## Owner-approved sequential onboarding (2026-11-17) — supersedes first-slice conflict timing
 
-Use the accepted small-scope roadmap as a concrete validation fixture:
+The user defined an explicit narrative/tutorial sequence and **moved the first conflict to the expansion beat**, instead of requiring it inside the first tirinha. This supersedes only the timing/order of the earlier all-at-once first vertical-slice fixture, not the existing contract, IP, station, release or relationship mechanics.
 
-1. One early-era studio with 3–4 recurring professionals, distinct responsibilities, an IP, relationships and workstations; cash/runway and stage are legible.
-2. A persistent production enters a **3–4-panel strip** pipeline with automatic creative steps, while one optional authoring/selection point remains available.
-3. A causally visible staffing/relationship pressure generates a consequential management Decision Event with at least two different costs or outcomes.
-4. A chosen response changes persistent state **and** something visibly connected to the finished strip or its process/credits.
-5. The studio completes a readable artifact; final **release requires player approval**; reception records the evidence and explains its most consequential causes.
-6. Save/reopen preserves production, released artifact, credits/lineage, relevant relationship/economy consequences and archive history.
-7. A separate local-model experiment tests actual generated outputs; if unavailable, a deterministic fixture proves only the game-owned logic and failure path.
+| Beat | Player learns | Gameplay proof | What must not be invented |
+| --- | --- | --- | --- |
+| **1. External strip commission** | Full guided production from client brief through physical workstations to final delivery | Client owns IP (G-13); **no advance** (G-11); G-08 player-authorized delivery makes guaranteed payment due; no post-delivery acceptance/rejection (G-12) | Do not add client approval, Marketing, or mandatory relationship conflict before delivery |
+| **2. Original player strip** | Same full flow again, this time player chooses/ideates the concept and owns the studio-original IP | G-03 concept input, physical handoffs, distinct studio ownership and G-14 original-release possibilities | Do not transform the client IP into studio IP, promise sales or create a new production pipeline |
+| **3. More strip demand and growth** | Increasing commissions justify a simple studio expansion; introduce basic people management | One legible capacity/staffing change and **one small, easy-to-resolve disagreement** between recurring professionals with persistent visible consequence | Do not build complex relationship-management mechanics or a major conflict in the first two tutorials |
 
-This scenario is a **test plan**, not an approval for exact character bios, script, art direction, cost coefficients, generation stack or release claims.
+**G-57 proposed choices:** the previous assistant offered an immediate interpersonal-conflict scenario, but the owner instead specified the three-stage timing above. Treat that old vote prompt as **superseded by this owner direction**, not an independently accepted G-57 B scenario.
+
+The exact narrative events, client/person identities, conflict options and economic values are **open**, not approved canon. Initial manual handoffs (G-03), comic-strip-only opening with no Marketing (G-26/G-45), full player publication authority (G-08), final commissioned delivery (G-11/G-12) and owner-specific IP rules (G-13/G-14) remain. **Accepted direction / Documented**; none of these milestones has been validated in Unreal.
+
+## First vertical-slice proof — historical fixture revised by owner direction
+
+The earlier all-in-one slice included a relationship conflict inside the first production; that **timing is superseded**. Test three sequential checkpoints instead:
+
+1. **First external strip:** a small early-era studio, recognizable staff and physical workstations; guided 3–4-panel commissioned strip production, player-authorized delivery, correct client IP ownership and guaranteed contract payment on delivery. A separate local-model experiment may test actual content; deterministic fixtures validate only game-owned flow and technical fallback.
+2. **First player-original strip:** player-owned concept and studio-original IP using the same stages and physical manual transfers, publication, appropriate original-income/reception logic, save/reopen.
+3. **Additional demands and expansion:** new strip offers, small studio-capacity growth, first low-stakes people Decision Event and an observable relationship/production consequence, persisted across save/reopen.
+
+This is a **validation sequence and accepted progression**, not proof of Unreal runtime, authored cutscenes, AI-generated panels or exact dialogue.
 
 ## Question and completion discipline
 
