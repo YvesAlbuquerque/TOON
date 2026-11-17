@@ -2138,152 +2138,26 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
-#### G-43 — Campaign execution competence affects quality, not automatic speed
+#### Simplified Marketing presentation and generation — current owner direction (2026-11-17)
 
-**Owner accepted option B (2026-11-17):** professional competence and experience of the Marketing staff **executing** a committed promotion campaign influence the **quality and potential effectiveness of publicity achieved with the chosen modality and investment**. More competent campaign workers may generate stronger results under otherwise equivalent conditions through **better AI cover-art prompting and a game-owned promotional result multiplier**. They do **not** receive an automatic generation-speed benefit for being more skilled. For a campaign involving AI art, execution duration is **bounded by the time actually required to generate the art**, rather than artificial campaign work-days; G-44 serializes this generation work.
+**This section supersedes the more elaborate G-43–G-55 historical presentation system; it is the active design contract.** The objective is to deliver readable physical production objects and optional AI customization without implementing a separate historical packaging simulation.
 
-- Distinguish **research/report quality** (G-35/G-41) from **campaign execution quality** (G-43). G-42 remains intact: undertaking a research study, choosing a deeper tier or employing better researchers does **not** in itself buff promotion. Only the competence of staff actually doing the promotional execution is a direct quality input.
-- Campaign effectiveness remains contextual and uncertain under G-27/G-34: modality, selected investment intensity, audience affinity, historical period, media type and skill of the executing professionals can matter. Competence must not force a successful release, guaranteed revenue or universally superior modality.
-- Preserve the **physical Marketing workflow** (G-31/G-32): the completed, unpublished production remains occupied and unavailable to the player throughout staff work, then becomes physically interactable once the job finishes. G-33 anticipation decay still applies if the player delays publication afterward; G-30 prohibits campaign edits or repeat commitment.
-- **Not yet approved:** precise competence attributes/weights, how prompts are constructed, the value/meaning of the result multiplier, whether particular workers specialize in modalities, generation failure/retry behavior. G-45 now establishes a media-specific AI presentation for every non-strip production processed by Marketing, with tirinhas excluded. Do not invent a universal skill-to-time acceleration or claim an implemented Unreal model.
+1. **Basic physical representation (simplified G-51):** every completed work gets **one simple, media-appropriate default physical appearance** automatically, with no extra AI generation or game step. The existing object can go straight to G-08 for player-authorized publication without Marketing. **Comic strips (tirinhas) never enter Marketing** (G-26/G-45).
+2. **Optional personalization of the same object (G-45/G-46):** eligible completed, unpublished non-strip works may enter Marketing. Successful Marketing generation adds customized artwork/presentation to the **same persistent physical production object**; do not create a second object, replace its stable ID, remove underlying creative work, change IP/contract ownership, or reopen closed stages. A comic book can show AI cover art; animation can have media-appropriate visible packaging or artwork. The precise prop meshes/art surfaces are **content choices** and can remain simple initially. A G-30 campaign remains one-time and immutable.
+3. **Competence, time and serialization (simplified G-43/G-44):** the executing professional affects the AI prompt quality and game-owned **campaign outcome multiplier**, without automatic speed gains. Only **one AI Marketing art generation at a time**; its execution lasts only as long as the necessary generation, not arbitrary extra simulated marketing days. Other Marketing jobs wait. During an active job, G-32 holds its physical object unavailable until completion. No new staff assignment subsystem is authorized by this presentation rule.
+4. **Fault handling without blocking (simplified G-47/G-48/G-49):** transient technical AI errors receive a **small, bounded automatic retry policy** (exact count unapproved). If retries fail, use a **predefined default visual template for that media**, finalize Marketing and return the original physical object. The resulting committed campaign keeps **the same commercial scoring** as if the artwork generation succeeded, assuming identical modality, investment, professional competence and other circumstances. Do not reroll completed unattractive artwork under technical-retry rules, double-charge, double-apply marketing effects, create duplicate objects, or automatically publish. The G-08 publishing decision remains the player's.
+5. **History is optional visual dressing (simplified G-50):** variations inspired by different historical periods are welcome as art/content polish **when useful and affordable**, but are **not required to finish, market or publish** and do not demand a historical timeline system. The minimum content requirement is one recognizable default form per media; a generated art region/template can share that form.
 
-**Accepted direction / Documented**, not implemented or validated in Unreal.
+**Explicitly superseded as implementation requirements (owner simplification A):**
+- **G-52:** no compulsory historical physical-format lock at production completion.
+- **G-53:** no mandatory configurable historical-format catalogue or media/date-to-packaging database.
+- **G-54:** no format-predominance selection subsystem.
+- **G-55:** no first-eligible catalogue-order fallback or catalogue-specific error flow.
+- **G-56:** was proposed but **never approved**; no missing-historical-format gameplay/error system is required.
 
-#### G-44 — Technical Marketing generation bottleneck and AI cover-art workflow
+The original owner choices are recorded in the preproduction review as **historical/superseded decisions**, not active acceptance criteria. This does **not** supersede unrelated campaign design: G-26–G-42 still govern Marketing eligibility, fixed choice, audience/era/media promotional affinities, finite professional availability, formal research and the physical publication boundary. Historical context may affect marketing effectiveness under G-34 independently of how the package **looks**. Avoid conflating historical **audience dynamics** with optional historical **packaging art**.
 
-**Owner correction (2026-11-17), superseding the prior unapproved G-44 staff-allocation choices:** Marketing execution **may involve generating cover art with AI**. This is a real content-production operation, not a generic simulation-time occupation designed to make Marketing take longer. The Marketing professional prepares the **prompt**; under corrected G-43, their competence affects the **quality of that prompt** and an explicit **game-owned result multiplier** that influences the quality/effectiveness of the promotional outcome. Competence does **not** shorten the generator's processing time.
-
-- **One campaign AI generation at a time.** Even if multiple Marketing staff and several completed productions exist, no two Marketing cover-art generations execute concurrently. Additional eligible campaign jobs must wait for the generator to become available. **The specific queue/prioritization policy is not accepted yet.**
-- For a Marketing job requiring cover art, the active work time **must not exceed what is necessary for the AI to generate that art** through an artificial, independent campaign duration. Queue wait time, actual processing time, and technical error/retry should be represented distinctly; do not confuse waiting for an occupied generator with work execution.
-- Respect G-31/G-32 physical-object ownership: the production being processed stays at the Marketing station and cannot be picked up, moved or published until its processing completes. The exact behavior of physically queued, not-yet-processing objects needs future design; do not assume multi-object station capacity.
-- **G-45 later resolves the art requirement for Marketing-processed non-strip media:** AI produces a **media-specific physical presentation**, not a universal cover-art sheet. Comic strips never visit Marketing; comic books get a comic-book presentation with cover art, traditional animation a tape/film-reel presentation with generated artwork, and 3D animation an AI-produced DVD-case presentation. Do not infer mandatory Marketing for every non-strip release. Exact formats, historical presentation variants, prompt structure, provider/settings, multiplier formula, and fault recovery remain unresolved.
-- This constraint replaces the proposed G-44 options about parallel autonomous staff assignments; they were not chosen. G-27 one fixed campaign, G-30 immutability, G-34 affinity and G-42 information-only research remain intact. The chosen campaign's potential outcome can be influenced by the **competence of its execution professional**, not by the prior research itself.
-
-**Accepted direction / Documented**, not evidence that AI cover-art generation, scheduling, queueing, or Unreal runtime behaviour is implemented.
-
-#### G-45 — Marketing-generated presentation follows the work's medium; comic strips excluded
-
-**Owner correction (2026-11-17): comic strips (tirinhas) do not pass through Marketing.** For **other media when they undergo Marketing**, the AI-generated result is **a physical presentation suitable for the media type**, rather than a shared generic cover-art image. Explicit owner examples:
-
-- **Comic book / quadrinho:** a **comic-book-looking object with AI-generated cover art**.
-- **Traditional cartoon/2D animation (desenho):** a **film tape or reel**, with generated artwork applied to its presentation.
-- **3D animation:** an **AI-generated DVD-case presentation**.
-
-These exemplify how the object changes through the historical/media workflow. Do not extrapolate concrete physical packaging for unspecified media or eras without a separate design decision. This defines what happens **if an eligible work enters Marketing**; it does not repeal G-26's optional marketing or introduce a universal new release requirement for all non-strip media. G-31's completed-and-unpublished eligibility still applies to media that use the department. G-44's one-at-a-time AI generation applies; G-43 professional prompt quality and promotional multiplier continue to matter. The exact art generation formats/provider are not yet validated.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-46 — Preserve the single production object's identity across Marketing transformation
-
-**Owner selected option B (2026-11-17):** completing the G-45 Marketing stage **changes the existing production object's physical form/presentation**, **without replacing its identity**. The physical artifact becomes the suitable comic book, film reel/tape, DVD case, or eventually another approved media representation while continuing to be **the same production** in game state, rather than a second object or a freshly created independent project.
-
-- Preserve stable production identity/ID, ownership/contract links, IP and catalogue lineage, previous creative versions/stage finality (G-07), and G-08's later publication authorization. The AI-generated presentation is an output attached to the original production record and reflected in its visual representation; it must not overwrite underlying completed creative work.
-- While Marketing actively processes the object it is unavailable for physical interaction (G-32). Once generation finishes, the **same object** becomes interactable again, now showing its media-specific commercial appearance. No duplicated pickups, release records or extra campaign opportunities result from the appearance change (G-30).
-- Save/reload, AI asset failure, reference integrity and historical/media-appropriate art assets remain implementation/validation questions; do not assert a verified Unreal object/asset pipeline.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-47 — Bounded automatic recovery from technical Marketing AI generation failures
-
-**Owner accepted option B (2026-11-17):** if the Marketing Department's G-44 AI art generation suffers a **transient technical failure** (e.g. generation-service error or infrastructure interruption), the system automatically retries recovery within a **finite attempt budget**, rather than requiring player intervention for each transient fault.
-
-- Classify **technical failure** separately from **a completed generation whose artistic quality is disappointing**. The latter is a creative-quality result and must not be silently treated as a provider outage or a reason for unlimited auto-regeneration.
-- During active recovery, the **same G-46 production object** remains occupied and unavailable at Marketing under G-32. Do not produce a second physical project, reopen earlier G-07 stages or permit publishing a partially generated marketing presentation. Preserve G-30 campaign modality and investment without silently changing or charging again.
-- Each retry belongs to the **same logical generation job**; persist its attempt count and committed result identity, deduplicate late/out-of-order provider responses and ensure campaign effects and asset attachment are committed **at most once**. G-44's **one active Marketing AI generation at a time** remains binding, including recovery attempts; other campaigns wait.
-- **G-48 supersedes the previous post-exhaustion intervention rule:** after exhausting bounded retries, **commit an approved standard media-appropriate presentation template automatically and finish Marketing**, releasing the same physical production for the player's next action. Do not demand manual retries, silently authorize publishing, grant a refund or create a new campaign. Interaction with G-05 contract technical-delay accounting remains to validate.
-- The numeric retry cap, fault taxonomy, backoff/timeout strategy and save/reload behavior require implementation and validation. Retry processing should reflect genuine provider time rather than an artificial marketing timer.
-
-**Accepted direction / Documented**, not implemented or validated with Unreal or an AI-generation provider.
-
-#### G-48 — Automatic media-appropriate template after exhausted AI retries
-
-**Owner decision (2026-11-17):** if the Marketing AI presentation generation continues to fail technically and the finite G-47 automatic retry allowance is exhausted, **the project must progress using a standard template**. The fallback replaces the missing generated *presentation art*, not the production's actual completed creative content. It does **not** require another generation attempt or a player decision to unblock the project.
-
-- Select a **predefined, media-appropriate template** consistent with G-45 (e.g., comic-book cover presentation, traditional animation film-reel/tape appearance, 3D animation DVD-case appearance); do not claim those template designs or assets exist yet. Tirinhas remain outside Marketing.
-- Finalize the **same G-46 production object** with its fallback appearance and existing campaign commitment (G-30). Upon completion, release the physical object from G-32 station occupation, allowing player transport; **G-08 still requires separate player-authorized publication**.
-- Distinguish a real provider/technical failure from an AI generation that succeeded but looks poor: the latter is a completed creative result and **does not qualify** for automatic template replacement under G-47/G-48.
-- Store terminal presentation status as **AI generated OR fallback template**, apply it **once**, and reject late/out-of-order AI outputs after fallback finalization. No double debit, duplicate objects or duplicate promotional effects; free the G-44 generator for next waiting job.
-- **G-49 resolves commercial scoring:** the fallback has the **same campaign effectiveness rules as a successful AI-generated presentation**, without fallback-specific penalty or change to G-43's professional result multiplier. The generated and templated images may look different; this rule addresses **commercial mechanics**, not artistic equality. Exact template assets per medium/era, presentation to player, retry cap, technical-delay accounting under G-05 and cost treatment remain open. Do not invent refunds.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-49 — Template fallback has no commercial penalty
-
-**Owner accepted option A (2026-11-17):** when a G-47 technically failed Marketing AI generation falls back to the G-48 standard media-specific template, the fallback **does not change the campaign's commercial effectiveness**. It is an **alternative visual presentation only**; there is no fixed penalty, lowered baseline quality, reduced reach/revenue/reception modifier, or extra variance solely because the AI provider failed.
-
-- Given the **same G-27/G-30 modality and investment**, G-34 audience/media/era context, G-43 professional execution competence/multiplier, and timing/release conditions, commercial rules must behave **identically** whether the presentation is generated art or the standard template. Do not remove the professional multiplier when fallback is used, or inadvertently give the templated version a bonus.
-- Record **generated versus fallback** as an art-source and technical-provenance distinction only. The visual identity can differ, but that distinction must not feed hidden market scoring. This does not assert equivalent artistic quality of all assets or eliminate unrelated differences between productions.
-- Preserve G-46 one physical object, G-32 Marketing completion/release of the object, G-08 player publication authorization, G-44 serialized generation, and idempotent G-47/G-48 retry/fallback completion. No repeated campaign charge or additional promotional decision.
-- Actual template visuals, AI provider behavior and outcome calculation still require implementation/tests; the equality is an accepted design rule, not verified gameplay.
-
-**Accepted direction / Documented**, not implemented or Unreal-validated.
-
-#### G-50 — Historically evolving physical presentation by media type
-
-**Owner accepted option B (2026-11-17):** the appearance of commercial presentation artifacts produced by Marketing **evolves with the historical era**, while continuing to represent the work's medium. An audiovisual work could be presented on a film reel/tape in an earlier period, home-video packaging such as VHS or DVD in historically appropriate later periods, and other formats only when justified by the era/media catalogue. G-45's concrete illustrations — comic book with generated cover, traditional animation in film tape/reel and 3D animation in DVD packaging — are **representative examples**, not rules that DVD packaging must appear in eras when it did not exist.
-
-- Choose **historically appropriate visual forms** from media-specific content data. The passage of time/historical context drives their availability; this decision does **not** establish new studio equipment purchases, research unlocks, required technology upgrades or additional business modifiers solely to determine the physical shape.
-- G-46 is unchanged: Marketing transforms the appearance of the **same physical production object** without changing its persistent identity, underlying creative content, ownership, contract lineage or player-only G-08 release authorization. Comic strips still **never go to Marketing** (G-26/G-45), and Marketing remains optional for eligible non-strip works.
-- The G-48 technical-failure fallback template must fit **both the media and the historically appropriate presentation**, while G-49 preserves its **commercial equivalence** with successfully generated art. Do not introduce a new time-related commercial penalty solely for package appearance.
-- **Open implementation/content details:** exact media/era format catalogue, chronology thresholds and design variants; the specific presentation format is **locked on production completion under G-52**, with no subsequent automatic repackaging. No additional equipment-management rule approved.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-51 — Automatic basic media-appropriate physical appearance without Marketing
-
-**Owner accepted option A (2026-11-17):** on completing production, **the existing production object automatically has a basic, recognizable physical appearance** matching its medium and the historical presentation context (G-45/G-50). This appearance does **not require Marketing, further AI generation or an extra workstation action**. The player can take this completed work directly to the G-08 publishing station and authorize publication without commissioning any campaign.
-
-- A non-strip work **that optionally enters Marketing** receives a more elaborate/customized media-appropriate commercial appearance when the committed promotional work completes. Under G-46, **the same physical object and underlying creative content/identity continue unchanged**; Marketing changes its presentation rather than spawning a second object. G-31/G-32 physical occupancy during Marketing remains.
-- **Comic strips (tirinhas) never visit Marketing** (G-26/G-45) and can use their own basic finished presentation through direct publication. Do not incorrectly require a promotional cover or campaign for strip release.
-- Distinguish three concepts: (1) **automatic basic production appearance** after finishing without Marketing; (2) **personalized Marketing presentation** through a successful G-44 generation; (3) **standard Marketing fallback presentation** after G-47/G-48 technical exhaustion. G-49 means (2) and (3) have **equivalent campaign rules**; it does not grant campaign benefits to (1) when the player never chose Marketing.
-- **Unresolved:** exact medium/era basic appearance asset catalogue and visual distinction between default and Marketing template. **G-52 fixes the historic physical format at production completion and disallows later automatic conversion.** No new production work time, AI cost, commercial penalty or object-ID change is authorized merely by basic appearance.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-52 — Lock the historical physical presentation format at production completion
-
-**Owner accepted option B (2026-11-17):** the production's **historical physical presentation format is determined once when creative production finishes**, alongside the automatic basic physical appearance of G-51. The selection uses the **media type and the historical era at that moment** (G-45/G-50), and the chosen physical-format identity then **remains fixed** even if the work is marketed or published years later.
-
-- Later optional Marketing modifies/personalizes the presentation **within that already assigned physical format**. For example, a work completed as a VHS-era format may gain AI-generated cover/presentation art later, but **must not be silently repackaged as a DVD** simply because Marketing happens during the DVD era. G-46's single physical object, production identity, underlying finished creative content and contract/IP associations remain intact.
-- If G-47 AI generation fails and G-48 standard fallback applies, use a template **matching the originally locked media/era format** rather than selecting the period of failure, retry, Marketing or G-08 publication. G-49's commercial parity holds.
-- No automatic reformatting on passage of time or at publication; no extra equipment upgrade or technology unlock needed solely to assign an era-appropriate presentation (G-50). The G-08 publishing station remains separately player-authorized.
-- Persist the locked format and its derivation across save/load; ensure generated Marketing images and templates bind to that format without changing the underlying production. **Still open:** exact historical format chronology, available variants and authored art assets, and technical selection/asset implementation. The format-lock decision does not validate an Unreal pipeline.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-53 — Configurable historical format catalogue, not AI-selected packaging
-
-**Owner accepted option B (2026-11-17):** author a **data-driven catalogue** associating **media types and historical periods** with supported physical presentation formats, basic visuals, Marketing art-compatible layouts and standard fallback templates. At the G-52 production-completion boundary, deterministic game logic consults this catalogue to select the era-appropriate format and **locks the resulting format identity** on the same G-46 production object.
-
-- Represent the association as configurable content (e.g., an authored table or equivalent engine-friendly data asset), not hardcoded media/date branches embedded in core logic. The exact Unreal data structure, schema and asset references are **not yet selected or implemented**.
-- The catalogue governs **historically eligible physical formats**, associated media-specific base representations (G-51), AI-personalized Marketing presentation targets (G-45/G-50) and matching G-48 template fallback assets. No new player-facing equipment or technology unlock gate is implied (G-50).
-- AI remains responsible for **artwork/prompt-based customization** when Marketing is chosen (G-43/G-44), but **must not decide whether a VHS, DVD, reel or other format exists or is suitable for the historical date**. A successful generation or technical fallback **must use the already locked format**, not reconsult the player's current historical era.
-- Preserve the **stable format ID** and production identity across save/load, later Marketing and G-08 publishing; catalogue updates should not silently transform pre-existing work. Tirinhas never enter Marketing (G-45) but may still have a basic medium-appropriate physical presentation (G-51).
-- **Still unresolved:** catalogue schema, authoritative historical chronology and source-validation, G-54 resolves multiple overlapping eligible formats by choosing the **configured predominant one per medium/era**; data/asset mappings absent or malformed, ambiguous predominance and automated validation/test requirements remain open. These are engineering/content decisions, not evidence of an implemented Unreal catalogue.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-54 — Predominant physical format determines the default when formats coexist
-
-**Owner accepted option B (2026-11-17):** historical media formats can **overlap in availability** in the G-53 configurable catalogue (for example VHS and DVD coexisting). For each relevant **media type and period**, the catalogue identifies a **predominant/default physical format**; when a production is completed, the deterministic G-52 selection chooses this predominating format even if alternative formats are concurrently eligible.
-
-- **Keep alternative historically available formats in the catalogue** as contextual data, but do not expose a mandatory format picker or allow AI to arbitrate which format is selected. Nor should code always select whichever format was most recently introduced, since availability and predominance are different facts.
-- At G-52 completion, resolve the predominant format, **lock its stable format ID** to the same G-46 physical production object and attach the appropriate G-51 basic appearance. Later G-45 Marketing personalization and G-48 technical-failure presentation templates must match that same locked format rather than the current period's predominant one. G-49 commercial equality of AI and fallback presentations still applies.
-- Predominance may evolve **as historical periods advance**, with chronology and regional/historical evidence still to curate; it must **not retroactively repackage an already completed work**. G-50 does not require the player to buy physical-media technology or equipment to unlock the primary format.
-- **G-55 resolves missing/ambiguous predominant defaults:** if at least one format is historically eligible, choose the first eligible format in the explicit stable catalogue order. Precise dates, source-backed chronology, conflicting validity/missing eligibility, asset failures and automated validation remain open; do not claim this is implemented in Unreal.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
-
-#### G-55 — Deterministic first-eligible catalogue fallback when predominance is missing
-
-**Owner accepted option D (2026-11-17):** if a production reaches the G-52 completion boundary and the G-53 historical format catalogue **cannot resolve one predominant G-54 format** for the medium and date, the system **selects the first historically eligible format in a predetermined catalogue order**. This prevents a missing default/predominance marker from blocking an otherwise valid finished production while preserving deterministic, data-driven selection.
-
-- **Normal path:** select the explicitly configured predominant format for the medium/period (G-54).
-- **Fallback path:** if the predominant choice is absent or not uniquely resolved but **one or more eligible formats are available**, select the **first eligible** according to an **explicit, stable and authored order**. Do not use an incidental collection/hash iteration order, random choice, newer-first logic or generative-AI judgment. Do not ask the player to choose.
-- The fallback still chooses an actual historically **eligible** format, **not** a generic format that might be invalid for the era. Store its stable format ID on the same G-46 project at completion; G-51 basic representation, optional G-45 Marketing custom art and G-48 technical-error template must use that locked format. Historical progression or catalogue edits must not silently repackage it.
-- **Not decided:** what happens when **no** formats are eligible, when eligible rows lack required visuals/templates, or how to recover invalid or corrupt catalogue entries. These cases should be diagnosed and validated, but G-55 does not authorize inventing a generic fallback or treating ineligible formats as eligible. The exact ordering/schema and data validation/test strategy remain engineering decisions.
-
-**Accepted direction / Documented**, not implemented or validated in Unreal.
+**Acceptance / verification boundaries:** Accepted direction / Documented. No validated Unreal prefabs/assets, AI integration, generation timings, retry handling, commercial multiplier, tests or gameplay claims. Minimal future checks: basic object exists without Marketing; tirinha bypasses it; Marketing customizes the same object; one generation at a time; technical exhaustion releases a templated object with no commercial scoring delta; G-08 still controls publication.
 
 ### Project trash and deletion
 
