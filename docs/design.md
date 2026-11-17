@@ -2270,7 +2270,18 @@ These exemplify how the object changes through the historical/media workflow. Do
 - **Keep alternative historically available formats in the catalogue** as contextual data, but do not expose a mandatory format picker or allow AI to arbitrate which format is selected. Nor should code always select whichever format was most recently introduced, since availability and predominance are different facts.
 - At G-52 completion, resolve the predominant format, **lock its stable format ID** to the same G-46 physical production object and attach the appropriate G-51 basic appearance. Later G-45 Marketing personalization and G-48 technical-failure presentation templates must match that same locked format rather than the current period's predominant one. G-49 commercial equality of AI and fallback presentations still applies.
 - Predominance may evolve **as historical periods advance**, with chronology and regional/historical evidence still to curate; it must **not retroactively repackage an already completed work**. G-50 does not require the player to buy physical-media technology or equipment to unlock the primary format.
-- **Still open:** precise catalogued dates/format dominance periods, source-backed content, how to validate exactly one predominant entry per media/time interval, and how to handle missing/conflicting data at runtime. Do not silently invent a tie-breaker or assert the catalogue is implemented in Unreal.
+- **G-55 resolves missing/ambiguous predominant defaults:** if at least one format is historically eligible, choose the first eligible format in the explicit stable catalogue order. Precise dates, source-backed chronology, conflicting validity/missing eligibility, asset failures and automated validation remain open; do not claim this is implemented in Unreal.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-55 — Deterministic first-eligible catalogue fallback when predominance is missing
+
+**Owner accepted option D (2026-11-17):** if a production reaches the G-52 completion boundary and the G-53 historical format catalogue **cannot resolve one predominant G-54 format** for the medium and date, the system **selects the first historically eligible format in a predetermined catalogue order**. This prevents a missing default/predominance marker from blocking an otherwise valid finished production while preserving deterministic, data-driven selection.
+
+- **Normal path:** select the explicitly configured predominant format for the medium/period (G-54).
+- **Fallback path:** if the predominant choice is absent or not uniquely resolved but **one or more eligible formats are available**, select the **first eligible** according to an **explicit, stable and authored order**. Do not use an incidental collection/hash iteration order, random choice, newer-first logic or generative-AI judgment. Do not ask the player to choose.
+- The fallback still chooses an actual historically **eligible** format, **not** a generic format that might be invalid for the era. Store its stable format ID on the same G-46 project at completion; G-51 basic representation, optional G-45 Marketing custom art and G-48 technical-error template must use that locked format. Historical progression or catalogue edits must not silently repackage it.
+- **Not decided:** what happens when **no** formats are eligible, when eligible rows lack required visuals/templates, or how to recover invalid or corrupt catalogue entries. These cases should be diagnosed and validated, but G-55 does not authorize inventing a generic fallback or treating ineligible formats as eligible. The exact ordering/schema and data validation/test strategy remain engineering decisions.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
