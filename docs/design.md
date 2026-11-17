@@ -2127,6 +2127,17 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-42 — Formal research affects decisions, not campaign mechanics directly
+
+**Owner accepted option A (2026-11-17):** formal integrated Marketing research is an **information-gathering investment**, not a direct campaign-effectiveness upgrade. A G-35/G-38 research report helps the player understand likely audience segments and suitable G-34 promotional modalities and judge uncertainty before confirming the one G-27/G-30 campaign, **but the existence, depth or accuracy of a research report does not by itself alter promotional reach, campaign efficacy, expected commercial outcomes or the distribution/variance of results**.
+
+- Two otherwise equivalent completed productions receiving the **same modality and intensity** under equivalent historical/media/audience conditions, professional execution, time and release timing should use the **same campaign outcome rules** whether one commissioned research and the other did not. Research may influence the outcome **indirectly only by changing what the player decides to do** (or through ordinary time/resource opportunity costs), not by hidden modifiers, extra audience targeting bonuses, automatic variance reduction or guaranteed return.
+- G-39 tier selection and G-41 professional competence can improve the **reliability and depth of advice**, not the direct mechanical quality of marketing work. Once the player confirms the modality/investment, G-30 immutability continues to apply; research cannot auto-optimize or rewrite that commitment.
+- Retain research as **optional**, one formal study per production (G-40), consuming finite staff time/resources and holding the physical completed unpublished production during work (G-31/G-32). Findings enter contextual, aging institutional knowledge only via formal studies (G-36/G-37), but knowledge does not silently boost a campaign when not used for decision-making.
+- Quantitative uncertainty, research quality and outcome rules still require balancing and validation. **Do not introduce a compulsory research tax to attain maximum campaign performance.**
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
