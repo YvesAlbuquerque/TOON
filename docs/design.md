@@ -2046,6 +2046,17 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-35 — Professional audience estimates and optional pre-campaign research
+
+**Owner accepted B + D (2026-11-17):** Marketing professionals **provide uncertain evaluations and recommendations** about audience affinity and suitable G-34 publicity modalities for a completed unpublished production. Relevant experience can improve the reliability of these estimates; character expertise is **not** an omniscient forecast of sales or guaranteed reception. Before the one-time G-27/G-30 campaign decision, the player can **optionally request audience/market research**, spending simulation time and departmental resources to improve the understanding of audiences and likely modality fit.
+
+- Use the established G-34 dimensions: audience segments, historical period and production media type. Convey estimates and uncertainty clearly rather than exact guaranteed revenue or hidden-perfect effectiveness scores.
+- Research is **separate from committing a promotional campaign**: it can refine advice before the irreversible G-30 choice; once a campaign is confirmed, research must not secretly reselect the modality, revise the investment or create an additional campaign. Research is optional, not a new mandatory prerequisite for publication or marketing.
+- Preserve G-31/G-32 physical workflow. With a completed, unpublished physical production at the Marketing Department, any active research processing **occupies the single production object until that work completes**, just as other workstation processes do. While research is running it cannot be picked up, transported, published or interacted with. Once processing finishes the production becomes available for the player's next authorized step; the exact selection UI and whether the next marketing action begins immediately are implementation/UX details.
+- Research consumes **finite staff time and resources**, may have cost, and can reduce uncertainty but **does not eliminate it**. Prior evidence and research outputs must be represented as game-owned provenance/observations, never guaranteed commercial outcomes supplied by AI. Specific costs, research designs, accuracy curves, repeatability and how much insight transfers to other productions remain **unresolved design/balancing**.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
