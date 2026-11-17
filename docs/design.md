@@ -2087,9 +2087,22 @@ After finishing production, the player can take the completed object directly to
 - Professional recommendations remain **fallible assessments with uncertainty** (G-35), not deterministic revenue or reception forecasts. Research should improve the information behind the later G-27 choice without selecting or committing that campaign for the player.
 - The integrated research is performed as **finite Marketing work** on the **single physical production object**, which is unavailable for interaction, movement, trash or publication while the process runs (G-31/G-32). When research completes, its report becomes available for the player's optional next action; the subsequent campaign is still physically chosen at Marketing, fixed once committed (G-30).
 - Research findings contribute **context-scoped, reusable, aging institutional knowledge** (G-36), and **only formal research may update that knowledge** (G-37). Commercial outcomes remain historical performance evidence, never an automatic retraining loop.
-- The **depth, cost, duration, number of repeat researches permitted on one production**, and quantitative confidence improvements are not approved by this choice and remain design/balancing questions. The two-part scope must not be interpreted as inherently perfect market visibility.
+- G-39 establishes three discrete research-depth tiers; their precise costs, durations and confidence improvements, along with the number of repeat researches permitted on one production, remain design/balancing questions. The two-part scope must not be interpreted as inherently perfect market visibility.
 
 **Accepted direction / Documented**, not implemented, tested or validated in Unreal.
+
+#### G-39 — Three preset depths of integrated marketing research
+
+**Owner accepted option C (2026-11-17):** when optionally commissioning G-38 integrated research on the finished, unpublished production physically placed at Marketing, the player chooses one of **three predefined research-depth tiers**: **Basic (básica), In-depth (aprofundada), Extensive (extensiva)**. These are alternative levels of the **same integrated audience-and-promotional-modality study**, not three different research topics and not a continuously adjustable research budget.
+
+- **Basic:** lower expected cost and work time; less detailed, more uncertain insight into audiences and suitable available modalities.
+- **In-depth:** intermediate effort, potential detail and reliability.
+- **Extensive:** higher cost and departmental time demand; potentially the richest and most reliable of the three, but it must **not eliminate uncertainty** or guarantee a successful campaign.
+- Research occupies the **single completed/unpublished physical object** during the entire selected work process (G-31/G-32/G-35). The object becomes interactable only on completion. Deeper tiers consume more finite staff capacity and other resources; no instant report or remote purchase.
+- Results contribute evidence to the reusable, contextual, aging research archive (G-36), updated only through formal research (G-37). Subsequent G-27 campaign selection and intensity stay a separate one-time, immutable decision under G-30; research does not choose for the player.
+- **Not yet decided:** numerical costs/times, precise tier-specific evidence gains, access limitations as Marketing develops, and whether the same production may be researched repeatedly before campaign commitment. These need explicit balancing/design validation, not invented fixed thresholds.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
 
 ### Project trash and deletion
 
