@@ -1956,6 +1956,17 @@ Manual takeover must never create duplicate object instances/carriers, duplicate
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-26 — Marketing department and multiple publicity options
+
+**Owner accepted direction (2026-11-17):** later in the studio's historical/media progression, the player may establish a **Marketing Department** that enables **multiple ways to publicize individual productions**, using *The Movies* as a gameplay reference for having differentiated promotion actions rather than a single generic spend slider. **There is no Marketing Department while the studio is only producing comic strips**; the capability becomes available **after** that strip-only phase. The precise unlock milestone is not yet fixed and must not be silently equated to a particular year, workforce threshold or specific technology.
+
+- Promotion options belong to the established department; do not add an early strip-era standalone promotional purchase button or require a marketing department to publish.
+- Once established, differentiated marketing actions should be represented with their own costs, staff/capacity or historical constraints and potential distribution/audience effects; exact catalogue, budget model, timing and period variants remain to be decided. The inspiration from *The Movies* does not authorize copying protected content or claiming an exact reconstruction of its mechanics.
+- Keep G-08's simple player-authorized publication desk viable without marketing. G-14's reception-sensitive original launch and catalogue earnings remain possible without a mandatory campaign. Marketing may influence reach and audience response but **does not guarantee revenue or substitute for game-owned reception**.
+- Do not force marketing/advertising into the first strip vertical slice; this is a later studio-development mechanic, with historical appropriateness, staffing and playtest proof still outstanding.
+
+**Accepted direction / Documented**; no Unreal implementation or balanced commercial effects verified.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
