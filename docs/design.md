@@ -2076,9 +2076,20 @@ After finishing production, the player can take the completed object directly to
 - Separate **historical performance records** from **formal research evidence** in game-owned state. Historic outcomes may be inspected as context by the player or staff, but this does not create an automatic research finding, postmortem analysis or hidden model-training loop. Do not claim that poor predictions self-correct without a research action.
 - Professional experience can still influence the uncertain judgment and recommendations of staff (G-35), but that is not an exception permitting automatic writes into the **institutional research knowledge base**. Keep provenance so the game can distinguish research-supported findings from anecdotal or historical observations.
 - To update institutional knowledge, the player must elect research via the Marketing Department, incurring finite time/resources and respecting the G-31/G-32 physical object occupancy. Findings remain contextual and subject to G-36 relevance decay; the campaign choice remains immutable once confirmed (G-30).
-- Exact research scope, cost, confidence updates, presentation of historical results and archive implementation require design/balancing and validation; this direction does **not** establish a new automatic analytical workflow.
+- G-38 resolves formal research scope as an integrated audience-and-modality study; exact cost, confidence updates, presentation of historical results and archive implementation require design/balancing and validation; this direction does **not** establish a new automatic analytical workflow.
 
 **Accepted direction / Documented**, not Unreal-implemented or validated.
+
+#### G-38 — Integrated research of audience and promotion suitability
+
+**Owner accepted option C (2026-11-17):** when the player optionally commissions formal research at Marketing for a **completed, unpublished production**, the department conducts **one integrated investigation** into both **(a) which audience segments are likely to respond to that production** and **(b) which currently available promotion modalities are best suited to reaching those segments**. The joint analysis accounts for G-34's media-type and historical-period context. This is not a compulsory pair of separately ordered studies, nor a new player-directed menu of unrelated research questions.
+
+- Professional recommendations remain **fallible assessments with uncertainty** (G-35), not deterministic revenue or reception forecasts. Research should improve the information behind the later G-27 choice without selecting or committing that campaign for the player.
+- The integrated research is performed as **finite Marketing work** on the **single physical production object**, which is unavailable for interaction, movement, trash or publication while the process runs (G-31/G-32). When research completes, its report becomes available for the player's optional next action; the subsequent campaign is still physically chosen at Marketing, fixed once committed (G-30).
+- Research findings contribute **context-scoped, reusable, aging institutional knowledge** (G-36), and **only formal research may update that knowledge** (G-37). Commercial outcomes remain historical performance evidence, never an automatic retraining loop.
+- The **depth, cost, duration, number of repeat researches permitted on one production**, and quantitative confidence improvements are not approved by this choice and remain design/balancing questions. The two-part scope must not be interpreted as inherently perfect market visibility.
+
+**Accepted direction / Documented**, not implemented, tested or validated in Unreal.
 
 ### Project trash and deletion
 
