@@ -116,7 +116,11 @@ Owner chose **B**: Production Assistants physically transport projects and perfo
 
 ## G-26 accepted — Marketing Department after strip-only period (owner, 2026-11-17)
 
-The owner wants differentiated publicity/marketing options **similar in spirit to *The Movies***, available only after developing a **Marketing Department**. The department is **absent during the studio's comic-strip-only phase** and unlocks later in historical/media progression; the exact trigger remains undecided. A release still uses G-08's physical player-authorized publishing desk, with no mandatory marketing purchase. Promotional actions may affect reception/distribution but do not guarantee success or bypass G-14's game-owned revenue rules. Promotion action types, spending/staffing, timing and historical constraints are an unresolved subsequent design choice. **Accepted direction / Documented**, not runtime proof.
+The owner wants differentiated publicity/marketing options **similar in spirit to *The Movies***, available only after developing a **Marketing Department**. The department is **absent during the studio's comic-strip-only phase** and unlocks later in historical/media progression; the exact trigger remains undecided. A release still uses G-08's physical player-authorized publishing desk, with no mandatory marketing purchase. Promotional actions may affect reception/distribution but do not guarantee success or bypass G-14's game-owned revenue rules. G-27 now defines a modality with adjustable investment; exact modalities, spending balance, timing and historical constraints still need design/validation. **Accepted direction / Documented**, not runtime proof.
+
+## G-27 accepted — modality with investment intensity (owner, 2026-11-17)
+
+Owner chose **A**: after unlocking the G-26 Marketing Department, the player selects a **type/modality of promotion** and the **level/amount invested** in that campaign. More investment increases **potential audience reach**, not guaranteed success or profit. This does not require combining individually purchased publicity actions or delegating campaign strategy entirely to AI/staff. The department is absent in the strip-only phase and optional for publication. Exact modalities, numerical spending/reach model, repetition and the before/after-release timing question (G-28 candidate) remain open. **Accepted direction / Documented**, not Unreal/runtime validation.
 
 ## G-06 accepted — contracted project trash and fixed cancellation (owner, 2026-11-16)
 
