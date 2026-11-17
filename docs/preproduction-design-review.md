@@ -275,6 +275,16 @@ The user defined an explicit narrative/tutorial sequence and **moved the first c
 
 The exact narrative events, client/person identities, conflict options and economic values are **open**, not approved canon. Initial manual handoffs (G-03), comic-strip-only opening with no Marketing (G-26/G-45), full player publication authority (G-08), final commissioned delivery (G-11/G-12) and owner-specific IP rules (G-13/G-14) remain. **Accepted direction / Documented**; none of these milestones has been validated in Unreal.
 
+## Tutorial guidance B — first external commission (owner accepted 2026-11-17)
+
+**Decision:** contextual and progressive onboarding, not full click-by-click locking or unguided discovery. Story names the objective, and the interface highlights the next relevant physical action/station when useful; the player performs ordinary contract, workstation handoff, version choice and G-08 delivery controls. Reduce hints once learned, and reduce them further on the second, self-conceived strip. G-57's earlier immediate interpersonal-conflict prompt was **not accepted**; the first conflict still belongs to the subsequent growth beat.
+
+**First commissioned strip — bounded proof specification, with fiction still proposed:** one authored outside-client offer and short prefilled brief; **3–4-panel target**; client IP ownership; explicit acceptance without advance; staged production through the already-designed station-compatible physical flow, G-03 allowed concept/script/art-direction edits and max-three-successful-versions guard, G-07 irreversible stage handoffs; basic completed strip, player-owned final G-08 physical delivery; G-11 one-time guaranteed settlement and G-12 no subsequent client accept/reject gate. Show appropriate credits and evidence-based reputation changes. No Marketing for strips and no hiring/expansion/staff conflict to finish this first deliverable.
+
+**Suggested six-checkpoint UX validation:** (1) offer and terms understood; (2) first physical handoff; (3) completed stage pickup and correct next station; (4) inspect final strip; (5) player-authorized final delivery and payment; (6) result/history and save/reopen. State-based prompts, gentle object/station highlighting and blocked-action explanations are minimal proposed affordances, **not implementation evidence**. Exact story/script/cast/amount, hint thresholds and UI presentation are not approved and must be authored/tested rather than treated as canon. Fixtures alone do not establish actual local AI output quality or performance.
+
+**Acceptance boundary:** first commission delivers end-to-end with valid client IP, payment and persistence. Original-IP creation and relationship conflict follow later, not as new requirements for the first commission. **Accepted direction / Documented; Unreal build, gameplay and local generation remain unvalidated.**
+
 ## First vertical-slice proof — historical fixture revised by owner direction
 
 The earlier all-in-one slice included a relationship conflict inside the first production; that **timing is superseded**. Test three sequential checkpoints instead:
