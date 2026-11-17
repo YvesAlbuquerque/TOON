@@ -1900,7 +1900,7 @@ As the studio grows and historical technology changes, the owner can **optionall
 
 **Owner accepted option B with clarification (2026-11-17):** when two or more productions are ready for transport, **the Production Assistant** determines which production to carry first based on a combined evaluation of **the distance from that assistant to each waiting physical production object**, **how soon each production's deadline expires**, and **the assistant's personal relationship with the professional who most recently worked on that production** (its previous station's professional). This is not a relationship with the destination station's professional. Neither deadline nor affinity is an unconditional override: **all three factors contribute to the choice**. This selection occurs for each assistant with transport capacity; only hired Production Assistants undertake automated transport, while the player's manual handoffs remain separate.
 
-The game owns the deterministic, explainable scheduler and derives affinity from persisted professional relationships. Do not infer that the assistant's relationship automatically changes the production's quality or that the assistant can make creative decisions. Eligibility, compatible available stations, G-07 stage finality and final player-authorized publication remain binding. **Still open for balancing/validation:** the three weights and normalization (including distance and time units), G-20 class priority and no-deadline handling, tie-breaking and concurrent assistant contention. **Accepted direction / Documented**, not implemented or validated.
+The game owns the deterministic, explainable scheduler and derives affinity from persisted professional relationships. Do not infer that the assistant's relationship automatically changes the production's quality or that the assistant can make creative decisions. Eligibility, compatible available stations, G-07 stage finality and final player-authorized publication remain binding. **Still open for balancing/validation:** the three weights and normalization (including distance and time units), G-20 class priority and no-deadline handling, tie-breaking and G-21 reservation/coordination semantics. **Accepted direction / Documented**, not implemented or validated.
 
 #### G-20 — External contracts before original productions in assistant transport
 
@@ -1908,9 +1908,20 @@ The game owns the deterministic, explainable scheduler and derives affinity from
 
 Within the eligible class, G-19 remains in force: assistants compare their own physical distance to each object, deadline urgency where applicable, and their relationship with the **last professional who worked on that project**. For original projects without an external deadline, the deadline component must be neutral/not applicable, not a fictitious contractual deadline or progressive aging. Do not introduce an implicit starvation-prevention promotion that contradicts the accepted external-first rule; project starvation under sustained contract backlog is an explicit balancing/playtest risk. Blocked or incompatible contract projects are **not eligible waiting transport jobs** and therefore cannot freeze original-project movement. Player manual carrying remains a separate action; stage compatibility, G-07 finality and G-08 release authorization are unchanged.
 
-**Accepted direction / Documented**, not implemented or validated. Exact prioritization coefficients, tie-breaking and multi-assistant collision handling remain engineering/balancing work.
+**Accepted direction / Documented**, not implemented or validated. Exact prioritization coefficients, tie-breaking and the G-21 exclusive reservation implementation remain engineering/balancing work.
 
 This is **Accepted direction / Documented**, not implemented or validated.
+
+#### G-21 — Exclusive automatic reservation for concurrent assistants
+
+**Owner accepted option B (2026-11-17):** when multiple Production Assistants are available, **each assistant reserves an eligible production transport job before travelling to pick up its physical project**. A reserved production is removed from other assistants' candidate sets; the remaining assistants choose from other unreserved eligible projects, respecting **G-20's strict external-contract-before-original class** and **G-19's per-assistant combined distance, deadline and relationship-with-last-worker scoring**. This is neither a race to an already claimed object nor a central planner reassigning everyone's work.
+
+- A project must have **at most one active assistant transport reservation**, with atomic acquisition when several assistants decide simultaneously. An assistant cannot carry multiple projects at once. Reserve only when project/stage eligibility and destination compatibility hold.
+- Reservation is not a creative approval, project ownership transfer or stage commit. Successful arrival/handoff alone may commit G-07 stage advancement under existing rules, with final publication still player-authorized.
+- Never duplicate transport, consume stage versions twice, or let stale reservations cause double-commit after save/reload. Cancelled/trashed/ineligible projects cannot remain valid work assignments.
+- **Next consequential design choice (G-22):** what happens to an already-reserved project if the assigned assistant becomes unavailable, is interrupted, or the job ceases to be eligible? Exact expiry/return/resumption semantics and player override need an explicit decision; implementation of atomicity and save persistence requires validation.
+
+**Accepted direction / Documented**; no Unreal scheduler, tests or runtime behaviour verified.
 
 ### Project trash and deletion
 
