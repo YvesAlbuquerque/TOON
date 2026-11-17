@@ -670,9 +670,19 @@ The base interaction is an offer that can be **accepted or rejected**. Advanced 
 
 **G-12 accepted (owner correction 2026-11-16): delivery is final.** There is no post-delivery client acceptance/rejection stage, rework request, approval gate or non-payment/quality-based reduction for a delivered work. At player-authorized publication/delivery (G-08/G-11), the guaranteed contract payment becomes due under the existing payment rule. **Quality, creative execution and how well the work meets the brief** inform the studio's **reputation**, which in turn directly affects both the **value and frequency of future external contract offers**. Do not create a client veto of a published work, or make subjective AI scores authoritative for money. This does **not** silently repeal already accepted explicit contract-deadline penalties (G-05); lateness remains a separate rule.
 
-`delivered artifact + production/brief evidence -> studio reputation -> future contract offer value and frequency`
+`delivered artifact + production/brief evidence -> global studio reputation + relevant production-type reputation -> future contract offer value and frequency`
 
-Game-owned rules determine reputation and future offer generation from bounded, provenance-aware evidence; AI may dramatize reactions or provide evaluation evidence, but cannot directly change cash or authoritatively reject delivery. The exact reputation coefficients, memory/decay and offer-response curves require later balancing/validation.
+### G-15 — Hybrid studio and production-type reputation
+
+**Owner accepted option C (2026-11-17):** track **one global studio reputation** and **one production-type reputation for each of the four accepted types**: comic strip, comic, 2D animation and 3D animation. The studio's overall standing and its specific track record in the relevant production type **both influence the value and frequency of future external contract offers**. Strong results in one type can help the studio enter another through its global reputation, without automatically awarding equal competence/reputation in an unfamiliar type. Poor work can likewise have persistent consequences in the relevant specialization and the studio's general standing.
+
+- **No permanent specialization lock:** a studio may enter new production types when other existing gameplay requirements allow it; an inexperienced type does not inherit a fully established specialist reputation merely from global fame.
+- **Reputation follows authored outcomes:** at delivery/release, game-owned evaluation of relevant evidence may update global and corresponding type-specific reputation, without creating a client approval/rejection stage or altering G-11's guaranteed delivery payment for quality reasons (G-12).
+- **One legible system:** present global and four type-specific reputations as facets of the studio, not separate departments or independently micromanaged reputation subsystems. Starting values, aggregation/transfer weights, change magnitude, decay, offer-frequency/value response and UI details require **balancing and validation**; do not invent numeric multipliers.
+- **Ownership independent:** commissioned work remains client-owned under G-13; its delivery performance may still inform studio reputation. Studio-owned original work follows G-14 for revenue, independently of the reputation model.
+
+
+Game-owned rules determine reputation and future offer generation from bounded, provenance-aware evidence, using **G-15's global plus production-type reputation**. AI may dramatize reactions or provide evaluation evidence, but cannot directly change cash or authoritatively reject delivery. The exact reputation coefficients, memory/decay and offer-response curves require later balancing/validation.
 
 ### G-11 — External contract payment on delivery
 
