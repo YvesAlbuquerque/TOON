@@ -261,6 +261,24 @@ These are outstanding proofs attached to current roadmap/issues, not re-opened c
 
 **Do not confuse them:** *Documented* is not *Implemented*; a deterministic fixture is not local-model media validation; a playable strip is not proof of 2D/3D animation or a 40-hour campaign; release-name clearance is not implied by engine milestones.
 
+## Structural design-gap triage — organic progression and minimum defaults (2026-11-17)
+
+**Owner accepted option A: organic progression**, replacing a rigid mission/milestone ladder as the general campaign advancement model. The first three guided story/tutorial beats stay sequential; beyond them the player reacts to contract opportunities and production constraints while deciding whether to build, hire and adopt historically plausible new media. The progression remains consistent with G-15 reputation shaping offers, physical staff/workstation capacity and G-24/G-26 special historical/professionalization boundaries. There is **no additional mandatory prestige level, reputation number, unlock currency or linear mission gate**. This rule is **Accepted direction / Documented**.
+
+**Owner requested bulk closure of remaining structural gaps using simple defaults rather than micro-votes.** The following are **recommended validation baselines derived from the already accepted design**, not independently owner-approved detailed mechanics:
+
+| Structural block | Default closure for first-playable design | Still requires evidence, not another design vote |
+| --- | --- | --- |
+| **Player decisions / core loop** | Existing opportunity, crew/priorities, limited editable concept/script/art direction, bounded creative alternatives, physical handoff and final publication offer decisions; **no station minigames** | Show a genuine choice and clear consequence during the first two strips; test avoiding 'only moving objects' |
+| **Quality / commercial consequences** | Existing hybrid artifact + game-owned production/brief/context assessment, structured uncertain local-AI evidence, explainable G-15 reputation and G-11/G-12/G-14 reward semantics | Calibrate rubric/model repeatability and inspect outcome explanations; no invented immutable weights |
+| **Studio expansion** | Visible backlog + finite staff/compatible workstation slots + spending decision motivates the smallest room/station/hire expansion | Prove capacity changes throughput and costs without new abstract studio-level system |
+| **Professional conflict** | One authored low-stakes two-choice Decision Event after tutorial strips, bounded deterministic relationship/workflow consequence | Validate clarity of cause/action/persistent consequence; specific cast/dialogue still narrative work |
+| **Campaign pacing** | Existing continuously advancing clock, pauses and idle compression; 1900–2030/~40h remains a target | Instrument time in production, idling, interaction and media transition; tune from playtests |
+
+**Gap status:** these five are no longer invitations for free-form new feature design. They are **baseline definitions pending proof**. No owner sign-off for hard formulas, exact unlock years, event outcome numbers, first-contract narrative or a complete production-ready design freeze is implied. **Design-freeze candidate for the opening vertical slice**, contingent on targeted gameplay/AI feasibility proof; wider campaign remains **Accepted direction / Documented**, not technically validated. Engineering, content and balancing unknowns are routed to their owning work rather than recast as design gaps.
+
+**Explicitly deferred from this decision round:** exact staff competence multipliers, reputation/economy weights, offer frequency, media availability years, construction costs, historical events/content, later Marketing research tiers, relationship graph details, Unreal data layouts, first scene/contract fiction and AI performance/quality benchmarks. These are parameters, production tasks or later-media proofs unless an observed contradiction genuinely changes the player-facing design.
+
 ## Owner-approved sequential onboarding (2026-11-17) — supersedes first-slice conflict timing
 
 The user defined an explicit narrative/tutorial sequence and **moved the first conflict to the expansion beat**, instead of requiring it inside the first tirinha. This supersedes only the timing/order of the earlier all-at-once first vertical-slice fixture, not the existing contract, IP, station, release or relationship mechanics.
