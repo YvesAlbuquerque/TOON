@@ -71,6 +71,10 @@ Implement only the subset needed for the current proof.
 
 **Closure boundary:** owner approved only the **organic progression model** in this turn; the five remaining bullets are **default validation baselines**, suitable for preproduction planning but not independent immutable owner decisions. Proposed **design-freeze candidate** pending checks of meaningful first-strip choices, cause/effect visibility, early staffing capacity and expected pacing; detailed values, era transition thresholds, asset schemas, AI performance, Unreal implementation and narrative are content/engineering/playtest work, not repeated owner design votes. Continue only for demonstrated contradictions or decisions that materially affect the player-facing loop.
 
+## Research Department — new owner direction (2026-11-17)
+
+**Owner requested a dedicated Research Department that influences when technologies become available to the studio.** This **reopens the technology-progression part of the previous proposed design-freeze candidate**, without discarding owner-approved **organic progression**: the studio may make strategic R&D investments affecting technology access, rather than receiving every capability automatically on a calendar date. Distinguish **historical/world availability** from **studio access/adoption**; do not claim the department makes anachronistic technologies exist globally. Keep technological research **separate from G-35–G-42 Marketing Department audience research**, which does not unlock production equipment or techniques. Compatible workstations, qualified professionals and budget requirements still matter after any research outcome. **Open owner-facing key decision:** is R&D mandatory for adoption, optional acceleration/advantage, or technology-dependent? No specific research tree, dates, research points, staffing scheme, progress rates, costs or mechanics approved yet. Treat the department's role as **Accepted direction / Documented** but its exact gate as **Proposed**; no Unreal implementation evidence.
+
 ## Studio/cast rules
 
 - Studio professionals are recurring characters, not interchangeable worker resources.
