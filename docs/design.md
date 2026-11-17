@@ -2218,6 +2218,17 @@ These exemplify how the object changes through the historical/media workflow. Do
 
 **Accepted direction / Documented**, not implemented or Unreal-validated.
 
+#### G-50 — Historically evolving physical presentation by media type
+
+**Owner accepted option B (2026-11-17):** the appearance of commercial presentation artifacts produced by Marketing **evolves with the historical era**, while continuing to represent the work's medium. An audiovisual work could be presented on a film reel/tape in an earlier period, home-video packaging such as VHS or DVD in historically appropriate later periods, and other formats only when justified by the era/media catalogue. G-45's concrete illustrations — comic book with generated cover, traditional animation in film tape/reel and 3D animation in DVD packaging — are **representative examples**, not rules that DVD packaging must appear in eras when it did not exist.
+
+- Choose **historically appropriate visual forms** from media-specific content data. The passage of time/historical context drives their availability; this decision does **not** establish new studio equipment purchases, research unlocks, required technology upgrades or additional business modifiers solely to determine the physical shape.
+- G-46 is unchanged: Marketing transforms the appearance of the **same physical production object** without changing its persistent identity, underlying creative content, ownership, contract lineage or player-only G-08 release authorization. Comic strips still **never go to Marketing** (G-26/G-45), and Marketing remains optional for eligible non-strip works.
+- The G-48 technical-failure fallback template must fit **both the media and the historically appropriate presentation**, while G-49 preserves its **commercial equivalence** with successfully generated art. Do not introduce a new time-related commercial penalty solely for package appearance.
+- **Open implementation/content details:** exact media/era format catalogue, chronology thresholds and design variants; the precise moment the presentation's historical format is chosen, and whether already transformed objects ever change appearance as time advances. Do not assume they update retroactively; no additional equipment-management rule approved.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
