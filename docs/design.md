@@ -2024,6 +2024,17 @@ After finishing production, the player can take the completed object directly to
 
 **Accepted direction / Documented**, not Unreal implemented or validated.
 
+#### G-33 — Gradual loss of pre-release anticipation after marketing completes
+
+**Owner accepted option B (2026-11-17):** once the G-32 Marketing Department **finishes campaign execution**, returns the completed work's **single physical object** to interaction, and the player chooses to wait before G-08 publication, the **pre-release audience expectation/anticipation accumulated by that campaign decreases gradually with elapsed waiting time**. Publishing sooner after marketing completion tends to preserve more of the pre-launch attention.
+
+- The decay begins from the completed marketing work's return-to-interaction/publication-ready point while the production remains **unpublished**. A production still being actively processed at Marketing is unavailable for player transport/publication; this G-33 does **not** reopen the invalid scenario of publishing before Marketing finishes.
+- Use smooth/progressive decay rather than an abrupt all-or-nothing expiry deadline. The precise simulation-time curve, floor and sensitivity to delay remain **unapproved balance parameters**, not a fixed example percentage or promised duration.
+- The campaign's G-27 modality and committed spending remain immutable (G-30), and waiting neither creates a refund nor retroactively cancels all post-release effects. G-28 still permits influence following real publication, but its realized launch anticipation is lower after a long delay. G-29 governs any pre-release trash consequences using already accrued public exposure/expectation, not a fabricated release.
+- Store campaign-completion time, subsequent waiting duration, and release boundary in game-owned state to avoid duplicated outcomes or invalid save/reload transitions. Inform players that waiting weakens pre-launch expectation without requiring an extra manual decision.
+
+**Accepted direction / Documented**, not implemented, playtested or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
