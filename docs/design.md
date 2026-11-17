@@ -2229,6 +2229,17 @@ These exemplify how the object changes through the historical/media workflow. Do
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
+#### G-51 — Automatic basic media-appropriate physical appearance without Marketing
+
+**Owner accepted option A (2026-11-17):** on completing production, **the existing production object automatically has a basic, recognizable physical appearance** matching its medium and the historical presentation context (G-45/G-50). This appearance does **not require Marketing, further AI generation or an extra workstation action**. The player can take this completed work directly to the G-08 publishing station and authorize publication without commissioning any campaign.
+
+- A non-strip work **that optionally enters Marketing** receives a more elaborate/customized media-appropriate commercial appearance when the committed promotional work completes. Under G-46, **the same physical object and underlying creative content/identity continue unchanged**; Marketing changes its presentation rather than spawning a second object. G-31/G-32 physical occupancy during Marketing remains.
+- **Comic strips (tirinhas) never visit Marketing** (G-26/G-45) and can use their own basic finished presentation through direct publication. Do not incorrectly require a promotional cover or campaign for strip release.
+- Distinguish three concepts: (1) **automatic basic production appearance** after finishing without Marketing; (2) **personalized Marketing presentation** through a successful G-44 generation; (3) **standard Marketing fallback presentation** after G-47/G-48 technical exhaustion. G-49 means (2) and (3) have **equivalent campaign rules**; it does not grant campaign benefits to (1) when the player never chose Marketing.
+- **Unresolved:** exact medium/era basic appearance asset catalogue, moment when historical format is fixed, any updates after time progression, and visual distinction between default and Marketing template. No new production work time, AI cost, commercial penalty or object-ID change is authorized merely by basic appearance.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
 ### Project trash and deletion
 
 **Accepted owner rule (2026-11-16; explicitly supersedes the 2026-11-15 rule allowing deletion after release):** the player can send an **unreleased / in-production project** to the trash at any stage, permanently deleting that project and its project-owned draft artifacts and versions. **Money already spent is not refunded**; the studio's realized cash, expenses, relationships, history of consequences and prior contractual obligations are not rolled back.
