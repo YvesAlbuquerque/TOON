@@ -2259,7 +2259,18 @@ These exemplify how the object changes through the historical/media workflow. Do
 - The catalogue governs **historically eligible physical formats**, associated media-specific base representations (G-51), AI-personalized Marketing presentation targets (G-45/G-50) and matching G-48 template fallback assets. No new player-facing equipment or technology unlock gate is implied (G-50).
 - AI remains responsible for **artwork/prompt-based customization** when Marketing is chosen (G-43/G-44), but **must not decide whether a VHS, DVD, reel or other format exists or is suitable for the historical date**. A successful generation or technical fallback **must use the already locked format**, not reconsult the player's current historical era.
 - Preserve the **stable format ID** and production identity across save/load, later Marketing and G-08 publishing; catalogue updates should not silently transform pre-existing work. Tirinhas never enter Marketing (G-45) but may still have a basic medium-appropriate physical presentation (G-51).
-- **Still unresolved:** catalogue schema, authoritative historical chronology and source-validation, how to choose when multiple formats overlap, what happens when data/asset mappings are absent or malformed, and automated validation/test requirements. These are engineering/content decisions, not evidence of an implemented Unreal catalogue.
+- **Still unresolved:** catalogue schema, authoritative historical chronology and source-validation, G-54 resolves multiple overlapping eligible formats by choosing the **configured predominant one per medium/era**; data/asset mappings absent or malformed, ambiguous predominance and automated validation/test requirements remain open. These are engineering/content decisions, not evidence of an implemented Unreal catalogue.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-54 — Predominant physical format determines the default when formats coexist
+
+**Owner accepted option B (2026-11-17):** historical media formats can **overlap in availability** in the G-53 configurable catalogue (for example VHS and DVD coexisting). For each relevant **media type and period**, the catalogue identifies a **predominant/default physical format**; when a production is completed, the deterministic G-52 selection chooses this predominating format even if alternative formats are concurrently eligible.
+
+- **Keep alternative historically available formats in the catalogue** as contextual data, but do not expose a mandatory format picker or allow AI to arbitrate which format is selected. Nor should code always select whichever format was most recently introduced, since availability and predominance are different facts.
+- At G-52 completion, resolve the predominant format, **lock its stable format ID** to the same G-46 physical production object and attach the appropriate G-51 basic appearance. Later G-45 Marketing personalization and G-48 technical-failure presentation templates must match that same locked format rather than the current period's predominant one. G-49 commercial equality of AI and fallback presentations still applies.
+- Predominance may evolve **as historical periods advance**, with chronology and regional/historical evidence still to curate; it must **not retroactively repackage an already completed work**. G-50 does not require the player to buy physical-media technology or equipment to unlock the primary format.
+- **Still open:** precise catalogued dates/format dominance periods, source-backed content, how to validate exactly one predominant entry per media/time interval, and how to handle missing/conflicting data at runtime. Do not silently invent a tie-breaker or assert the catalogue is implemented in Unreal.
 
 **Accepted direction / Documented**, not implemented or validated in Unreal.
 
