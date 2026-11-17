@@ -2079,6 +2079,15 @@ The adaptation history should remain visible. The studio archive should show how
 
 A later adaptation should ideally make the lineage perceptible: the player should be able to compare a 1910s comic strip version of an IP with its later comic, 2D animation and eventual 3D animation incarnations.
 
+### G-16 — Evolving IP continuity across productions
+
+**Owner accepted option C (2026-11-17):** studio-owned IP retains a **persistent, recognizable identity** while successive productions and cross-media adaptations can introduce changes. **Some changes may become lasting continuity for future works; others are local to the specific production/adaptation** and must not silently rewrite the shared IP identity. This is neither an immutable canon that forbids development nor an unrelated reboot at every release, and it does **not** require a manual player approval prompt for every new incidental detail.
+
+- Maintain **game-owned shared IP/character identity and continuity evidence**, distinguished from **production/adaptation-local variants** (for example a period costume or medium-specific presentation). A later work can inherit established shared anchors while deliberately differing in its local version.
+- **Local AI proposals and generated media are evidence, not authority to rewrite canon.** A proposed persistent change must pass an explicit game-owned acceptance/validation boundary; do not automatically promote every generated detail into the shared source of truth. Exact promotion heuristics, player-facing controls and conflicting-canon resolution remain **design/validation work**, not decided mechanisms.
+- Preserve the **lineage and provenance** of shared changes and local variants so the player can inspect how the IP evolved over years, productions and media. Published works remain immutable catalogue entries; later continuity changes do not rewrite earlier released artifacts.
+- Apply this to **studio-owned IP**. Client-owned commissioned works remain historical delivered artifacts but are not available for studio-controlled continuations or adaptations under G-13. Honor G-07's irreversible closed production stages; G-16 does not reopen them.
+
 ## Cross-media identity consistency
 
 Persistent IP only works if the player can recognize the same property and characters across decades and media.
@@ -2097,7 +2106,7 @@ Useful identity evidence may include:
 - canon facts and adaptation constraints;
 - deliberate changes introduced by a specific adaptation.
 
-The goal is **continuity with evolution**, not pixel-identical reproduction.
+The goal is **continuity with evolution (G-16)**, not pixel-identical reproduction. Shared canon/identity and local adaptation variants must be distinguished; generated details never independently become authoritative permanent changes.
 
 A 1910 illustration and a 2025 3D adaptation should be allowed to look different while remaining recognizably descended from the same property.
 
