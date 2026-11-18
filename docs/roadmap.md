@@ -295,6 +295,8 @@ The same proof should exercise **workload and autonomous recovery**:
 - a professional can autonomously take a break or stop working;
 - recovery reduces fatigue without unrealistically erasing longer-term burnout pressure.
 
+**G-21 candidate-selection fixture (Documented/Planned):** test the accepted recruitment flow using a small game-owned set of generated named candidates, compare legitimate skill/cost evidence, select one for a compatible available station, and persist the chosen professional. Include one eligible exact-name G-20 direct skill modifier and a nonmatch, with no duplicated bonus on rehire or save/reload. Do not imply all recruitment eras or a perpetual list of candidates are implemented; scarce early walk-ins/referrals remain valid.
+
 ### 3.3 Character memory proof
 
 Prove the smallest persistent memory model needed to support local character cognition without preserving full conversation transcripts.
