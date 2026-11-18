@@ -305,6 +305,27 @@ Late adoption may bring:
 - staff frustration;
 - audience or market lag.
 
+### Research Department — mandatory studio technology research (owner chose A, 2026-11-17)
+
+**Accepted design rule:** all **new technologies that the studio adopts** must be **researched through its Research Department before they become usable**, even if historically common by that year. The passage of calendar time makes a technology historically **eligible to investigate** but **does not itself unlock studio usage**. Research is an explicit strategic investment and a technology-access gate, not a bonus/discount-only mechanic.
+
+- **World availability versus studio readiness:** historical events and dates constrain what exists and what the Research Department may investigate. The studio may lag behind the world's state if it does not research. No independent anachronistic inventions are implied by choosing to invest.
+- **Studio knowledge versus physical execution:** completed R&D unlocks the capability to adopt/use a technology, but does not automatically build a workstation, buy equipment, train/hire compatible staff, pay ongoing costs, produce media, or override stage compatibility. Those remain separate existing constraints.
+- **Choice and continuity:** the player chooses which historically eligible technologies to research and when. Existing older methods remain usable; research should not delete them or force adoption of newer media. This is compatible with the accepted **organic progression**, not a mandatory sequence of story missions or levels.
+- **Different research domain:** R&D concerns technical capability and production processes, **not** Marketing's formal G-35–G-42 studies of audiences and promotional modalities. Do not share Marketing research limits or research-report rules by assumption.
+- **Starting-state exception — owner accepted option A (2026-11-17):** the studio **already knows the baseline technologies needed to complete its first external commissioned strip and second player-originated strip**. Treat these as established starting capabilities, with no research time, cost, completed research job or Research Department visit imposed on onboarding. **Research Department construction/access comes later**, when new technological research becomes relevant; its exact moment is not yet specified. This does **not** automatically grant all technologies historically available at campaign start, nor waive mandatory research for newly acquired studio technologies afterward.
+- **Scope guard:** do not introduce R&D as another opening tutorial stage, a hidden requirement for the first two strips, or an automatic technology unlock from merely advancing the calendar. The exact list of baseline technology entries and first R&D access milestone remains content/progression work.
+
+**Research scope — owner accepted option B (2026-11-17):** the unit of R&D is a **meaningful technological capability**, such as a new production technique, distinct production process, specialized tool capability or significant functional upgrade. Each **new** historically eligible capability must be researched before use; acquiring **another unit** of already understood equipment, purchasing an ordinary replacement/model, installing an additional workstation of an already known type or expanding physical space **does not create a new research requirement**. The completed result is shared studio know-how, not a per-product, per-workstation or per-employee unlock. Buying/installing/operating facilities and employing competent staff still cost resources and obey the existing productive-capacity rules. Do not infer that purchasing a model containing genuinely new functionality automatically grants its unknown capability; classify by function rather than SKU.
+
+**Research dependency model — owner accepted option C (2026-11-17):** use a **structured technological research tree**: meaningful capabilities organized into branches, including **multi-step prerequisites** for advanced capabilities. A node is eligible to research only if **(a)** its technology is historically available in the world and **(b)** all required predecessor nodes are already completed by the studio. Completing a node enables that capability for the studio, while equipment purchases, professional compatibility, station capacity and production costs remain separate. This **supersedes the previous proposed minimal-dependencies default**; do not treat the tree as an optional cosmetic map or flatten it into mutually independent research items. The player chooses the branch and ordering among eligible nodes, preserving organic progression and old-media viability. Initial comic-strip know-how is represented as the starting researched baseline, not a forced tutorial research chain. Avoid filler nodes representing individual equipment models and avoid granting every historically available technology automatically.
+
+**Research execution — owner accepted option B (2026-11-17): existing professionals perform R&D.** The player assigns members of the studio's **already-employed production workforce** to work on a selected eligible technological research project. There is **no obligatory separate specialized researcher profession or dedicated researcher hiring pool**. Research uses finite staff time, consumes studio resources and therefore directly competes with production commitments and deadlines. A worker's time spent on research **cannot count again as productive work on another project**; use the established staff responsibility, priority and finite-time model rather than inventing a parallel labor system. Research must represent actual professional work; passive cash spending or calendar advancement **without assigned research effort does not complete it**. The Research Department owns the research workflow and unlocked capabilities at studio level; it does not own separate marketing research, project artwork or IP.
+
+**Research workflow baseline (derived implementation contract, not independent owner mechanics):** (1) show historically eligible research-tree node whose prerequisites are complete; (2) player commits it as a research task and assigns available existing professionals; (3) time/resources accrue through actual work, with staff temporarily unavailable or less available for regular production; (4) successful completion marks that capability researched once for the studio; (5) the player separately buys/builds compatible infrastructure and assigns staff to use it. If staff are no longer contributing, progress should not advance from cash alone; exact pause/resume/task scheduling and team-size rules remain implementation decisions. Preserve progress/completion and avoid double-counting after save/reopen.
+
+**Department structural design closure — preproduction level:** mandatory research before a new technological capability can be used; a known initial strip-production baseline; a structured branched prerequisite tree gated by historical eligibility; **existing staff reassigned to execute research**. No other new player-level structural vote is indispensable before authoring a representative branch and testing it. **Content:** starter capability inventory, research branches/nodes, historical eligibility and prerequisites, first opportunity to establish the department. **Implementation:** worker assignment/progress and time accounting, department/workspace representation, pause/resume and persistence, UI, schema, unlock/use compatibility. **Balance:** costs, speeds, skills, workload pressure and choice clarity. **Validation:** no tutorial deadlock, correct prerequisite gating, no double-booking, research unlock once, no automatic equipment grant, save/reopen correctness, and whether researching instead of producing feels consequential. These are not proof that R&D is built in Unreal. No Unreal R&D implementation, build, or validation evidenced here.
+
 ## Historical context: global and local timelines
 
 T.O.O.N. should treat real history as an active **context layer** around the player's fictional studio.
@@ -909,6 +930,24 @@ A possible progression:
 
 Growth should follow needs created by people, media and production scale rather than existing only as a linear upgrade tree.
 
+## Human Resources Department — integrated people, culture and workplace interventions (owner chose C, 2026-11-18)
+
+**Accepted direction / Documented:** add an **integrated Human Resources (RH) Department** responsible for offering and organizing **professional development, people-management support, wellbeing, studio culture and workplace/environment initiatives**, including meaningful decorative options. This department's gameplay is about the player's **influence on an autonomous recurring cast**, not direct puppet control or a second character simulation.
+
+**Owner boundaries / reuse:**
+- **Employment and authority:** use existing hiring channels, permanent employee rules, compatible workstation staffing, dismissal, priorities, career expectations, conversations and parameterized Decision Events; RH can support or inform them, but should not invent a second hiring/dismissal or conflict-resolution subsystem. Player retains final management choices.
+- **Environment/decor:** use existing room-building, prop placement, environmental preference, culture/identity and character reactions. RH may make initiatives, recommendations and decor-related opportunities available; **the player still buys/places physical objects through construction**, and object art/asset generation is not automatically a human-resources operation. Decorative effects must be contextual and character-dependent rather than universal scalar bonuses.
+- **Programmes and consequences:** an RH initiative may affect development, morale/recovery, cultural norms, contact opportunities, expectations, perceived recognition or conflict pressure through **existing game-owned state**. Costs and opportunity costs matter. Different employees may respond differently; there are no guaranteed reconciliation or 'remove conflict' buttons. AI may flavor reactions but does not directly mutate authoritative state.
+- **Progression — owner accepted demand-driven research (2026-11-18):** staff-management needs emerging from a growing or strained studio make the RH organizational capability a **relevant research opportunity in the existing structured Research Department technology tree**. After the studio researches that capability, the player may establish the RH Department using normal expansion/resource rules. Demand explains/reveals the opportunity; **research unlocks the capability**; building/using RH remains optional. Existing direct management, hiring/dismissal, conversations, basic construction and decor never require RH. No mandatory RH/R&D stage in the first two strip tutorials.
+
+**Examples to evaluate, not separately approved mechanics:** mentoring that consumes mentor time; recognition that helps one person and irritates another; a quieter workplace area that helps concentration but reduces spontaneous social contact; facilitated mediation with uncertain outcomes; social events that cost work time but alter relationship opportunities. These are candidate interventions for authored content/validation, not promised features or new universal stats.
+
+**Two consequential structural gaps remaining:**
+1. **Execution resolved — owner chose B (2026-11-18):** RH initiatives are **performed by existing studio employees temporarily assigned by the player**, with finite employee time and studio resources consumed. While a worker performs an RH initiative, that same worker time **cannot concurrently advance a production or Research Department task**. Reuse the accepted staffing, assignments, priorities and time-accounting rules; no mandatory new RH specialist occupation, independent employee pool or cash-only passive program progress. RH owns its organizational intervention but not an employee's labor capacity. Work allocation, interruption/resumption, exact number of participants, competency scaling and cost remain implementation/balancing/validation rather than new owner choices.
+2. **Availability resolved — owner direction (2026-11-18):** the RH Department becomes establishable **through research triggered/motivated by actual organizational demand**, using the **pre-existing Research Department technology tree**. Model the unlock as management-process/organizational technology, not a decorative SKU or a separate unlock currency. Its research can be undertaken **without RH already existing**, preventing circular requirements. Preserve any historical eligibility/prerequisite requirements from the established research system, but do not invent exact staff-count triggers, years or branch IDs. Once researched, RH can be optionally established; direct everyday management, ordinary furniture purchase and placement remain available without it.
+
+After those two, candidate initiatives, equipment/decor content, historical thematic changes, detailed employee response rules, durations, costs, UX, animation and save/reopen tests belong to **content, balancing, implementation or validation**. No additional independent people-management layer is approved, and no Unreal implementation is evidenced.
+
 ## Studio professionals
 
 Studio professionals are recurring characters, not interchangeable worker resources.
@@ -1127,6 +1166,31 @@ Leaving the studio is a real simulation consequence, not cosmetic flavour:
 Blocked behaviour should be biased differently from ordinary idleness. A professional who has assigned work but cannot proceed is more likely to wait, seek another route, complain, help elsewhere where appropriate, or accumulate frustration around the cause of the block.
 
 The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
+
+## Cultural name combinations, historical pairings and achievements (owner direction, 2026-11-18)
+
+**Accepted direction / Documented:** a character's **given name** and **surname** are assembled from a **curated pool associated with notable artists, cartoonists/comics creators, directors and illustrators**. The generator usually produces a new fictional combination, but a rare **exact full-name match** may reproduce the name of a real historical creative professional by recombination. That fictional character earns a **bounded, legible bonus** as a cultural easter egg, without becoming the historical person, inheriting their biography or overriding their independently generated personality, appearance, career or relationships.
+
+**Historical creative pairings:** for a curated, historically sourced pair of real professionals with documented creative **collaboration/partnership** or **disagreement**, if the studio contemporaneously has **two different fictional characters whose complete names match both pair entries**, the pairing may yield an **additional bounded positive or negative gameplay effect** through existing collaboration, staff/relationship or event rules and award a relevant **player achievement**. The underlying fictional characters retain agency; the historical association is an easter egg/affinity, **not a forced friendship, mandatory feud or assertion that the fictional characters are those real people**. Avoid every arbitrary surname-only match activating pair logic; require validated full-name entity identifiers.
+
+**Implementation/content constraints:**
+- Maintain a **curated given-name and surname source list** and a separate **verified-match/pair catalogue**; use stable IDs for referenced historical individuals and their sourced pair associations. Normalize typography/accents consistently for matching while keeping displayed names natural; avoid assigning rewards through fuzzy surname-only equivalences.
+- Recognize a matching fictional full name as an **optional rare discovery**, not as a main path for career progression. A bonus should be meaningful but **small compared with actual skill, working conditions and relationships**, and transparent enough for the player to discover why it occurred. Apply match effects once or deterministically without stacking/duplication from repeatedly reloading, rehiring, transferring or saving.
+- A pairing should matter only under **well-defined shared-studio eligibility** and use **existing** people and collaboration state; if a negative historical association is used, it is a **small contextual pressure**, not guaranteed hostility, violence, discrimination or automatic firing. Its final expression should be moderated by fictional personality and current relationship history. Never use AI-generated historical claims as factual evidence.
+- Historical pairs (especially alleged feuds) require **credible, attributable sources and editorial/legal review** before inclusion. Distinguish documented creative disagreement from personal animosity; avoid living-person insinuations, gossip, or implied endorsement. Do not reproduce copyrighted character designs or specific protected artistic identities as part of the easter egg.
+- Achievements should be based on **game-owned, idempotent eligibility events**: first matching full-name character and qualifying documented pair in the studio. Exact titles, icons, conditions, rewards, full candidate pool, rarity and bonus strengths remain **content/balancing/implementation/validation** work, not separate structural design votes.
+
+**Scope:** This is a new **character-naming and historical easter-egg** layer atop the already approved staff, relationships, archive and simulation systems, **not a historical-person-character generator** or a separate relationship-simulation feature. No content catalogue, historical verification or Unreal implementation has yet been completed.
+
+## Cartoon archetypes — small starting palette and directional social relationships (owner proposal, 2026-11-18)
+
+**Owner direction:** create a **small, extensible starting palette of approximately eight classic cartoon archetypes**, with dog/cat/mouse as explicit examples. An archetype's interaction with another may influence **asymmetric first impressions and potential social/comedic behaviours**. Reuse the existing directional character relationship and autonomous action systems; do not implement a parallel affinity meter or deterministic pair stereotypes. A cat's curiosity/chase tendency toward a mouse and a mouse's caution or defiance toward a cat, for example, can differ and both be changed through experience, personality and management. Existing actual relations ultimately matter more than an archetypal first impression.
+
+**Eight candidates for owner review, not an approved roster:** dog, cat, mouse, rabbit, fox, duck, wolf, sheep. Directional example motifs for creative evaluation: dog-to-cat rivalry, cat-to-mouse chase/curiosity, mouse-to-cat caution, fox-to-rabbit trickery, rabbit-to-fox suspicion and wolf-to-sheep tension. These are fictional cartoon cultural motifs, **not real animal behaviour claims, mandatory personality templates or copied protected character interactions**. Human, creature and living-object appearances stay legal under the broader ontology, even without bespoke pair data in the first version.
+
+**Bounded reusable model (proposed):** stable archetype IDs plus **sparse directed pair definitions** with neutral default; optional eligible interaction motifs can inform the existing game-owned behaviour/event system. Existing personality, relationship history, immediate state, work context and character ontology modify outcomes; no universal forced dislike and no free professional skill boost. Data can add new archetypes and links later without changing all combinations. Keep historical exact-name pair achievements separate from archetype social bias.
+
+**Status:** approximate count and pair-interaction idea are **owner-proposed direction / Documented for evaluation**; candidate eight, affinity effects, tuning and playable content remain **Proposed** until explicit owner acceptance and testing. Do not require implementing all 64 ordered pairs to ship the initial comic-strip tutorial. No Unreal implementation or validation evidence.
 
 ## Character ontology and lifespan
 
@@ -1887,7 +1951,277 @@ This creates a visible relationship between **place + people + production state*
 
 As the studio grows and historical technology changes, the owner can **optionally develop more specialized publishing facilities/capabilities**, potentially for holding unpublished works, promotion and distribution. These are opportunities for improved reach, throughput or convenience, **not mandatory additional stations or a locked multi-building release pipeline**. A simple publishing desk must remain a viable basic release path. Specific facility taxonomy, staffing, upgrade costs, queues, limits, promotional effects and era unlocks remain **Proposed / balance and validation work**, not approved implemented mechanics. Do not invent an unconditional promotion bonus.
 
-**Deferred direction — Production Assistant / Assistente de Produção (owner-approved role title 2026-11-16):** as production volume grows, the game should explore **hiring/assigning a permanent studio professional to carry physical production objects between compatible stations**, progressively relieving repetitive player routing. The **manual move remains the most efficient direct route**; delegation trades that immediate direct control for convenience and takes simulated worker time/capacity. The worker could continue the workflow through successive eligible stages until near final release, but **must never autonomously approve publication**, and must respect G-07's irreversible stage commits, three-version limits, station compatibility, blockers and player-owned creative/management decisions. This is a **future design/validation candidate**, not a fully approved autonomous pipeline or a rule for the first vertical slice; assignment/control, costs, station coverage, exception handling, additional administrative responsibilities and when delegation unlocks remain open. The title **Production Assistant (Assistente de Produção)** is accepted; the detailed role mechanics are not. Specifically, this **qualifies** the existing player-routed handoff rule for a potential later upgrade; it does not silently supersede the first playable's required manual handoffs.
+### G-18 — Autonomous studio-wide production logistics
+
+**Owner accepted option D (2026-11-17):** as a later progression capability, hired **Production Assistants (Assistentes de Produção)** automatically observe **all eligible studio projects**, identify which physical production objects can advance, and carry them between compatible workstations. This is **studio-wide delegation**, not per-move instructions, per-project assignment, or station-only responsibility. Assistants consume simulated worker time and finite capacity; additional staff can expand transport capacity. **A direct manual move remains the fastest individual transport**, but requires player attention. This decision does not replace **manual player-controlled handoffs in the first vertical slice**.
+
+- An assistant can advance a project only when its current stage has a valid committed/default selection and a compatible available next station; G-07 irreversible stage finality, the three-successful-version limit and blocked/failed-stage handling still apply.
+- Assistants **cannot** request paid creative alternatives, make player-owned creative/management decisions, trash projects, silently override a player choice, or authorize final publication. Finished work waits for the player's explicit G-08 release action at the physical publishing desk.
+- Assistant time/capacity, congestion and station availability constrain throughput; do not assume unlimited instantaneous movement, parallel carriage by a single worker, or extra creative automation.
+- **Still unresolved:** player override/pause controls, tie-breaking/fairness, exception presentation, hire/unlock costs and tuning. G-19 resolves which factors drive the choice, but not their numerical weighting. These are not validated Unreal runtime mechanics.
+
+#### G-19 — Three-factor assistant transport choice
+
+**Owner accepted option B with clarification (2026-11-17):** when two or more productions are ready for transport, **the Production Assistant** determines which production to carry first based on a combined evaluation of **the distance from that assistant to each waiting physical production object**, **how soon each production's deadline expires**, and **the assistant's personal relationship with the professional who most recently worked on that production** (its previous station's professional). This is not a relationship with the destination station's professional. Neither deadline nor affinity is an unconditional override: **all three factors contribute to the choice**. This selection occurs for each assistant with transport capacity; only hired Production Assistants undertake automated transport, while the player's manual handoffs remain separate.
+
+The game owns the deterministic, explainable scheduler and derives affinity from persisted professional relationships. Do not infer that the assistant's relationship automatically changes the production's quality or that the assistant can make creative decisions. Eligibility, compatible available stations, G-07 stage finality and final player-authorized publication remain binding. **Still open for balancing/validation:** the three weights and normalization (including distance and time units), G-20 class priority and no-deadline handling, tie-breaking and G-21 reservation/coordination semantics. **Accepted direction / Documented**, not implemented or validated.
+
+#### G-20 — External contracts before original productions in assistant transport
+
+**Owner accepted option C (2026-11-17):** automated Production Assistants always prefer **eligible external-contract productions** to **studio-owned original productions** awaiting transport. When at least one contract production is ready for an eligible pickup, original productions wait. Only when there is no eligible contract transport to serve does an assistant pick an original. This is a **strict ordering between the two production classes**, not a claim that deadline urgency alone dominates the three G-19 factors *within* the contract queue.
+
+Within the eligible class, G-19 remains in force: assistants compare their own physical distance to each object, deadline urgency where applicable, and their relationship with the **last professional who worked on that project**. For original projects without an external deadline, the deadline component must be neutral/not applicable, not a fictitious contractual deadline or progressive aging. Do not introduce an implicit starvation-prevention promotion that contradicts the accepted external-first rule; project starvation under sustained contract backlog is an explicit balancing/playtest risk. Blocked or incompatible contract projects are **not eligible waiting transport jobs** and therefore cannot freeze original-project movement. Player manual carrying remains a separate action; stage compatibility, G-07 finality and G-08 release authorization are unchanged.
+
+**Accepted direction / Documented**, not implemented or validated. Exact prioritization coefficients, tie-breaking and the G-21 exclusive reservation implementation remain engineering/balancing work.
+
+This is **Accepted direction / Documented**, not implemented or validated.
+
+#### G-21 — Exclusive automatic reservation for concurrent assistants
+
+**Owner accepted option B (2026-11-17):** when multiple Production Assistants are available, **each assistant reserves an eligible production transport job before travelling to pick up its physical project**. A reserved production is removed from other assistants' candidate sets; the remaining assistants choose from other unreserved eligible projects, respecting **G-20's strict external-contract-before-original class** and **G-19's per-assistant combined distance, deadline and relationship-with-last-worker scoring**. This is neither a race to an already claimed object nor a central planner reassigning everyone's work.
+
+- A project must have **at most one active assistant transport reservation**, with atomic acquisition when several assistants decide simultaneously. An assistant cannot carry multiple projects at once. Reserve only when project/stage eligibility and destination compatibility hold.
+- Reservation is not a creative approval, project ownership transfer or stage commit. Successful arrival/handoff alone may commit G-07 stage advancement under existing rules, with final publication still player-authorized.
+- Never duplicate transport, consume stage versions twice, or let stale reservations cause double-commit after save/reload. Cancelled/trashed/ineligible projects cannot remain valid work assignments.
+- **G-22 resolves interruption behavior:** a transport interruption releases the assistant's exclusive reservation automatically. G-23 resolves manual player takeover; exceptional ineligible/deleted jobs still require safe implementation semantics; reservation atomicity and save persistence require validation.
+
+**Accepted direction / Documented**; no Unreal scheduler, tests or runtime behaviour verified.
+
+#### G-22 — Automatic release of interrupted assistant transport
+
+**Owner accepted option B (2026-11-17):** when a Production Assistant is interrupted or becomes unable to continue transporting a project, the transport reservation is **automatically released**. If pickup has not occurred, the production object stays at its prior pickup location; if already picked up, it remains **physically at the location where the interruption happened**. The project becomes eligible for a fresh G-21 reservation by an available assistant, subject to G-20 class priority, G-19 per-assistant factors and compatible downstream workstations.
+
+Interruption alone does **not** cancel or trash the production, alter its creative result, charge another creative-generation expense, consume a creative version or commit/close a production stage. Its physical object must remain reachable and recoverable; saving/reopening must neither resurrect an obsolete reservation nor duplicate pickups/commits. An unrelated ineligibility, deletion or completed handoff still requires normal game-owned guards. **G-23 resolves immediate manual takeover** of a reserved or in-transit object. Exact interruption reasons, placement collision resolution, recovery timing and tests are implementation/validation work. **Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-23 — Immediate player priority over automated transport
+
+**Owner accepted option B (2026-11-17):** the player may **manually pick up any eligible physical production project**, even when it is reserved by, or already being carried by, a Production Assistant. If the assistant has only reserved the job or is travelling to pickup, the player's pickup automatically cancels that reservation. If the assistant already carries the object, manual pickup **atomically interrupts the assistant and transfers that same physical object to the player**. No extra mandatory confirmation dialog is shown. The assistant is free to select another unreserved eligible job using G-20 then G-19 and acquire a G-21 reservation.
+
+Manual takeover must never create duplicate object instances/carriers, duplicate G-07 stage advancement, stale carried state after save/reload, unapproved creative changes, or an implicit G-08 final release. No creative-version slot or production-generation charge is consumed simply by taking over. Manual transport remains the fastest individual handoff. Specific animation, reachability, collision, and moment-of-transfer arbitration are **implementation/UX validation** rather than further owner choices. **Accepted direction / Documented**, not implemented or validated.
+
+#### G-24 — Historically evolving professionalization unlocks assistants
+
+**Owner accepted option C (2026-11-17), with the explicit interpretation that Production Assistants are not a newly invented modern technology:** the capability to **hire Production Assistants** becomes available as the studio progresses through historical changes in **organization and increasingly structured production processes**. This represents the studio's professionalization and greater capacity to delegate physical handoffs, rather than requiring a specific hardware invention or implying that such workers did not exist in earlier eras.
+
+- Preserve the first vertical slice's fully manual routing proof. At a later progression milestone, **optional hiring** of an assistant becomes available; the role should not be granted automatically or made a mandatory gate for production/release.
+- Once hired, assistants obey G-18 through G-23, including external-contract-first selection, individual distance/deadline/relationship choice, exclusive reservation, interruption release, and instant manual player takeover.
+- **Still to balance/validate:** the concrete historical/organizational milestone, how the game communicates it, cost/wages, availability, staffing progression and its effect on player workload. No fixed date, technology tree item, staff-count threshold or manual-production count is implied by option C.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-25 — Transport and operational production organization
+
+**Owner accepted option B (2026-11-17):** the **Production Assistant (Assistente de Produção)** is responsible for **physically transporting production objects and organizing the operational production workflow**. Beyond G-18–G-24 logistics, the assistant can **organize and monitor production queues, track stage/project progress and communicate blockers to the player**. This gives the recurring professional operational value and a readable presence in the studio without turning the role into an all-purpose manager or creative director.
+
+- Queue organization and transport selection must obey G-20's contract-first precedence, G-19's combined proximity/deadline/last-worker relationship factors and G-21's exclusive reservations. Assistants must not secretly reorder work by a contradictory separate policy.
+- Progress monitoring and blocker reporting are **observations/information**, not authority to initiate paid creative versions, change creative outcomes, override player decisions, reassign/hire/fire staff, accept contracts, trash productions or approve G-08 publication. Stalled projects still require the appropriate player decision or station/resource to proceed.
+- The assistant may surface actionable warnings about station unavailability, halted production or queue congestion, but exact interface, update frequency and presentation remain implementation/UX work. Avoid assuming AI generative autonomy or a new management system.
+- The role remains an optional later progression hire (G-24); the first playable slice's player-routed handoffs remain unchanged. Costs, worker capacity and pacing need validation.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-26 — Marketing department and multiple publicity options
+
+**Owner accepted direction (2026-11-17):** later in the studio's historical/media progression, the player may establish a **Marketing Department** that enables **multiple ways to publicize individual productions**, using *The Movies* as a gameplay reference for having differentiated **promotion modalities**, whose specific investment intensity is controlled under G-27. **There is no Marketing Department while the studio is only producing comic strips**; the capability becomes available **after** that strip-only phase. The precise unlock milestone is not yet fixed and must not be silently equated to a particular year, workforce threshold or specific technology.
+
+- Promotion options belong to the established department; do not add an early strip-era standalone promotional purchase button or require a marketing department to publish.
+- Once established, differentiated promotion modalities should respect historical availability and marketing capability; G-27 defines choosing a modality plus investment intensity rather than buying many separate action items. Exact modality catalogue, spending balance, timing and period variants remain to be decided. The inspiration from *The Movies* does not authorize copying protected content or claiming an exact reconstruction of its mechanics.
+- Keep G-08's simple player-authorized publication desk viable without marketing. G-14's reception-sensitive original launch and catalogue earnings remain possible without a mandatory campaign. Marketing may influence reach and audience response but **does not guarantee revenue or substitute for game-owned reception**.
+- Do not force marketing/advertising into the first strip vertical slice; this is a later studio-development mechanic, with historical appropriateness, staffing and playtest proof still outstanding.
+
+**Accepted direction / Documented**; no Unreal implementation or balanced commercial effects verified.
+
+#### G-27 — One promotion modality with adjustable investment intensity
+
+**Owner accepted option A (2026-11-17):** with a functioning G-26 Marketing Department, the player may choose a **publicity/promotion modality** for a production and set **how much to invest** in it. Greater spend raises the **potential audience reach**, without making awareness, reception or revenue certain. The decision is deliberately simpler than assembling several individual advertising actions into a combined campaign; do not treat G-26's different promotional *options* as an obligation to purchase or schedule multiple actions independently.
+
+- The selected modality determines the kind of outreach; investment intensity/amount controls its potential scale. Era-appropriate options and operational constraints are to be specified, but no particular medium, cost tier, spend formula or action list is approved yet.
+- Marketing requires the later-unlocked department (G-26) and remains optional for G-08 player-authorized publication. Reception and any initial/catalogue earnings remain owned by G-14's broader game simulation, not a guaranteed reward for spending.
+- **G-28 resolves the campaign decision point:** before publication, with effects both before and after release. Duration, repeatability, stacking, costs and measurable outcomes remain open for design/balancing.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-28 — Pre-publication marketing decision with pre- and post-release effects
+
+**Owner accepted direction (2026-11-17):** the player chooses a G-27 **promotion modality and investment intensity before publishing a production**, with the resulting campaign able to have **effects before release** (such as anticipation/awareness) **and after release** (such as subsequent reach and audience discovery). This is **one up-front decision with effects across the release boundary**, not a model requiring a second player marketing purchase/decision after publication and not an always-on discretionary advertising budget.
+
+- The G-26 Marketing Department is required for the optional campaign; a work can still be released through the G-08 player-authorized physical publishing desk without marketing.
+- Before actual player-authorized release, any marketing consequences may affect pre-release awareness/expectations, but **must not post publication revenue, put the unreleased work in the catalogue, or treat a promised release as completed**. Post-release effects begin only upon real release and follow game-owned reception/G-14 economy constraints.
+- Campaign decisions, spending and effects need persistent game-owned records to avoid duplicated debits or outcomes across save/reload. Exact launch lead time, duration/decay, repeatability, stacking, G-29 cancellation consequences and remaining balance details require validation; lead-time, duration/decay, repeatability and stacking remain **unresolved**, not silently decided here.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-29 — Cancelled promoted production: sunk cost and public disappointment
+
+**Owner accepted option B (2026-11-17):** when the player **trashes an unreleased production** that was marketed under G-26–G-28, all **already spent promotional money stays spent**, with **no refund or transfer to another project**. In addition, cancellation **may reduce studio reputation according to the actual public expectation generated by the campaign**. Weak or nonexistent awareness may create little or no damage; heavily promoted work may create a larger disappointment. Do not impose a uniform reputation penalty irrespective of audience awareness.
+
+- Use game-owned evidence of pre-release exposure/anticipation to determine impact on **G-15 global and relevant production-type reputation**. A cancellation is not a release or delivery and must not trigger post-release campaign effects, reception income or a published catalogue entry.
+- G-06's **single contract cancellation charge** still applies independently if the discarded production belonged to an accepted external contract. Do not replace that fee with marketing effects or invent another fixed contract fee. Studio cash and marketing expense postings persist as economic history, while the unreleased production-owned draft artifacts are permanently deleted under existing trash rules.
+- Persist cancellation reputation consequences and charge posting exactly once through save/reload. Exact publicity-to-reputation curve, timing and UI are balancing/validation, not claims of implementation.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-30 — Physical placement gates marketing decisions
+
+**Owner clarification (2026-11-17):** **marketing decisions occur only when the production object is physically placed in the Marketing Department**. This applies to the G-27 initial choice of modality and investment intensity: there is **no remote/global marketing decision panel** that can operate on an absent production. After Marketing **finishes executing the campaign and releases the physical object**, its G-28 pre-release and later post-release effects can continue as the object moves to the G-08 publication desk.
+
+The Marketing Department is an **optional physical workflow visit** available after G-26 progression, not a mandatory gate for publishing all works and not a new creative stage that reopens G-07-closed production steps. Player authority over marketing decisions and G-08 final release remains intact. **Owner accepted option A (2026-11-17): once the player confirms the chosen marketing modality and investment at the department, the campaign is immutable for that production.** The player cannot increase/decrease budget, switch modality, add another campaign, or reset the decision by bringing the project back. An unexpected delay does not reopen marketing; G-29 governs cancellation before release. Record the single commitment and charges idempotently across save/reload. Transport eligibility/routing through the department and how physical occupancy is presented remain to be validated without inventing new approvals.
+
+**Accepted direction / Documented** for the physical decision gate and fixed campaign. No Unreal runtime evidence.
+
+#### G-31 — Marketing eligibility only for completed, unpublished productions
+
+**Owner accepted option A (2026-11-17):** a production may enter the G-26 Marketing Department for its G-27/G-30 publicity commitment **only when all required creative/production stages are complete and the physical production object is still unpublished**. Marketing is an optional step **between completed production and G-08 player-authorized publication**, not an early-development publicity option and not a mandatory passage for every release. No marketing selection for incomplete concepts, scripts or intermediate production objects; already-published catalogue works cannot start a new campaign under this rule.
+
+After finishing production, the player can take the completed object directly to publishing or first route it physically to marketing and commit its one fixed modality/investment choice. The marketing desk does not edit the creative artifact, consume creative-version slots, reopen a G-07 stage, or itself release the work. G-28 campaign effects may build anticipation while the completed work remains unpublished, but post-release effects and G-14 publication income only begin following actual G-08 release. G-29 still applies if the marketed, unreleased work is subsequently trashed.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal. G-32 establishes that execution consumes finite marketing staff capacity over time; its detailed pacing remains to be validated.
+
+#### G-32 — Marketing campaigns consume professional work time
+
+**Owner accepted option B (2026-11-17):** after the player physically places a **completed, unpublished** production in the G-26 Marketing Department and commits its one fixed G-27/G-30 promotion modality and investment, marketing professionals **execute that campaign over simulation time**. Campaign delivery is not an immediate full-effect purchase: the work takes time and uses the department's **finite professional capacity**.
+
+- Marketing professionals remain subject to finite availability. **Current simplified owner direction (2026-11-17): only one AI promotional-art generation may run at a time**; additional campaign jobs wait rather than proceeding concurrently. Execution follows **actual necessary AI generation time**, not an additional simulated multi-day marketing timer. The minimal bounded technical-retry and template-fallback rule is specified in the simplified Marketing presentation section below; detailed queue/order and provider integration are still unvalidated.
+- **Owner correction (2026-11-17), overriding the earlier G-32 interpretation:** both the decision **and execution** occupy the production's **single physical object** at the Marketing workstation. As with every other active production stage, while Marketing is processing it, the player **cannot interact with, collect, move, trash, or publish the object**. When the work completes, the object is released back into the world as an interactable physical production item; it can then be carried to G-08's publication desk. **There is no path to publish before Marketing finishes.**
+- Pre-release publicity can create awareness while the work remains unreleased, while post-release influence can occur only after actual G-08 publication (G-28). Staff effort and campaign state must persist without double-spending, duplicate work or duplicate reputation/revenue outcomes. Cancelled unreleased productions still obey G-29; no completed-release state may be fabricated by marketing.
+- The **campaign definition remains immutable**: employee work may progress through its fixed plan but cannot autonomously increase spending, switch promotional modality or solicit another approval to extend it. Exact execution duration, capacity allocation, efficiency, pacing and how staffing interruptions affect work remain unbalanced and unvalidated. The proposed G-33 scenario of publishing an in-progress marketing job is invalidated by the same physical processing rule used at other workstations.
+
+**Accepted direction / Documented**, not Unreal implemented or validated.
+
+#### G-33 — Gradual loss of pre-release anticipation after marketing completes
+
+**Owner accepted option B (2026-11-17):** once the G-32 Marketing Department **finishes campaign execution**, returns the completed work's **single physical object** to interaction, and the player chooses to wait before G-08 publication, the **pre-release audience expectation/anticipation accumulated by that campaign decreases gradually with elapsed waiting time**. Publishing sooner after marketing completion tends to preserve more of the pre-launch attention.
+
+- The decay begins from the completed marketing work's return-to-interaction/publication-ready point while the production remains **unpublished**. A production still being actively processed at Marketing is unavailable for player transport/publication; this G-33 does **not** reopen the invalid scenario of publishing before Marketing finishes.
+- Use smooth/progressive decay rather than an abrupt all-or-nothing expiry deadline. The precise simulation-time curve, floor and sensitivity to delay remain **unapproved balance parameters**, not a fixed example percentage or promised duration.
+- The campaign's G-27 modality and committed spending remain immutable (G-30), and waiting neither creates a refund nor retroactively cancels all post-release effects. G-28 still permits influence following real publication, but its realized launch anticipation is lower after a long delay. G-29 governs any pre-release trash consequences using already accrued public exposure/expectation, not a fabricated release.
+- Store campaign-completion time, subsequent waiting duration, and release boundary in game-owned state to avoid duplicated outcomes or invalid save/reload transitions. Inform players that waiting weakens pre-launch expectation without requiring an extra manual decision.
+
+**Accepted direction / Documented**, not implemented, playtested or validated in Unreal.
+
+#### G-34 — Marketing modality affinity by audience, historical era and media type
+
+**Owner accepted a combined rule (2026-11-17), rather than any single exclusive option:** each G-27 promotional modality has **affinity with particular audience segments**, while its effectiveness and suitability **vary by the historical period and the media type of the finished production**. Era and medium are interacting contextual variables, not substitutes for audience affinity. A modality that suits one audience and medium in one decade need not perform equally in another; there should be no universally optimal promotional option.
+
+- For a given finished work, game-owned marketing/reception rules consider **selected modality × audience affinity × historical context × media type × committed investment**. Additional constraints can govern whether a modality is historically available at all, consistently with G-26. Do not infer that newer channels always outperform older ones, or add an unrelated bespoke marketing system for every medium.
+- Preserve G-30: one physically initiated, immutable campaign; G-31 requires finished/unpublished production; G-32 holds the object while staff execute the campaign; G-33 gradually reduces remaining pre-launch anticipation if the completed campaign is followed by publication delay.
+- Modality selection should be legible to the player through grounded signals of likely audience fit and period/media suitability, without revealing guaranteed ROI. G-14 reception and revenue remain uncertain and game-owned, not a direct deterministic reward from spending.
+- **Not yet decided:** the audience-segment taxonomy, concrete modality catalogue, era/media affinity data, interaction weights and presentation. These require explicit balancing/content validation and should not be stated as implemented.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-35 — Professional audience estimates and optional pre-campaign research
+
+**Owner accepted B + D (2026-11-17):** Marketing professionals **provide uncertain evaluations and recommendations** about audience affinity and suitable G-34 publicity modalities for a completed unpublished production. Relevant experience can improve the reliability of these estimates; character expertise is **not** an omniscient forecast of sales or guaranteed reception. Before the one-time G-27/G-30 campaign decision, the player can **optionally request audience/market research**, spending simulation time and departmental resources to improve the understanding of audiences and likely modality fit.
+
+- Use the established G-34 dimensions: audience segments, historical period and production media type. Convey estimates and uncertainty clearly rather than exact guaranteed revenue or hidden-perfect effectiveness scores.
+- Research is **separate from committing a promotional campaign**: it can refine advice before the irreversible G-30 choice; once a campaign is confirmed, research must not secretly reselect the modality, revise the investment or create an additional campaign. Research is optional, not a new mandatory prerequisite for publication or marketing.
+- Preserve G-31/G-32 physical workflow. With a completed, unpublished physical production at the Marketing Department, any active research processing **occupies the single production object until that work completes**, just as other workstation processes do. While research is running it cannot be picked up, transported, published or interacted with. Once processing finishes the production becomes available for the player's next authorized step; the exact selection UI and whether the next marketing action begins immediately are implementation/UX details.
+- Research consumes **finite staff time and resources**, may have cost, and can reduce uncertainty but **does not eliminate it**. Prior evidence and research outputs must be represented as game-owned provenance/observations, never guaranteed commercial outcomes supplied by AI. Specific costs, research designs, accuracy curves and repeatability remain **unresolved design/balancing**; G-36 establishes that knowledge can be reused across productions but loses relevance as conditions change.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-36 — Reusable but time-sensitive institutional market knowledge
+
+**Owner accepted option C (2026-11-17):** the Marketing Department **accumulates reusable institutional knowledge** from G-35 audience/market research. Information gathered for one production may improve later audience-fit estimates and publicity advice for relevant productions, instead of forcing the player to start from zero each time. However, **audience preferences, historical conditions and media markets change**: older evidence may become less relevant/reliable rather than remaining permanently correct.
+
+- Maintain research findings as **studio-owned observations with provenance and contextual scope**, such as audience segment, observed historical period, media type, modality and evidence age. Their applicability is conditional: similar productions and audiences can benefit, but findings are not automatically universal across unrelated media or markets.
+- Model diminishing confidence/weight of stale research as contexts diverge and time passes, **without deleting the historical record just because its predictive value fades**. Subsequent relevant research can update or contradict earlier conclusions; staff must communicate uncertainty rather than presenting accumulated lore as objective truth.
+- **Knowledge belongs to the studio institution**, not exclusively to one professional: an employee departure does not delete the archive. G-35 employee experience still affects the quality of interpretation and recommendations; institutional memory does not replace skill.
+- Retain the G-35 optional physical research step with finite Marketing staff capacity and completed/unpublished production object held during active work (G-31/G-32). Reusing knowledge does not force a paid research step for every work and cannot retroactively revise the immutable G-30 campaign, bypass G-08 publication or guarantee G-14 revenue.
+- Exact knowledge schema, aggregation, similarity/context weighting, aging/decay curve, and retention are **unresolved design/engineering/validation**; G-37 explicitly rules out automatic institutional learning from campaign or launch outcomes, not automatic or proven AI memory.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-37 — Formal research is the only source of institutional marketing learning
+
+**Owner accepted option A (2026-11-17):** **only explicit formal G-35 market/audience research updates the reusable institutional marketing knowledge established by G-36**. The studio may retain and display actual promotion, release, reception and revenue results as **commercial history**, but merely observing a successful or failed campaign **does not automatically update audience affinity findings, recalibrate modality effectiveness, or improve later estimates through institutional learning**.
+
+- Separate **historical performance records** from **formal research evidence** in game-owned state. Historic outcomes may be inspected as context by the player or staff, but this does not create an automatic research finding, postmortem analysis or hidden model-training loop. Do not claim that poor predictions self-correct without a research action.
+- Professional experience can still influence the uncertain judgment and recommendations of staff (G-35), but that is not an exception permitting automatic writes into the **institutional research knowledge base**. Keep provenance so the game can distinguish research-supported findings from anecdotal or historical observations.
+- To update institutional knowledge, the player must elect research via the Marketing Department, incurring finite time/resources and respecting the G-31/G-32 physical object occupancy. Findings remain contextual and subject to G-36 relevance decay; the campaign choice remains immutable once confirmed (G-30).
+- G-38 resolves formal research scope as an integrated audience-and-modality study; exact cost, confidence updates, presentation of historical results and archive implementation require design/balancing and validation; this direction does **not** establish a new automatic analytical workflow.
+
+**Accepted direction / Documented**, not Unreal-implemented or validated.
+
+#### G-38 — Integrated research of audience and promotion suitability
+
+**Owner accepted option C (2026-11-17):** when the player optionally commissions formal research at Marketing for a **completed, unpublished production**, the department conducts **one integrated investigation** into both **(a) which audience segments are likely to respond to that production** and **(b) which currently available promotion modalities are best suited to reaching those segments**. The joint analysis accounts for G-34's media-type and historical-period context. This is not a compulsory pair of separately ordered studies, nor a new player-directed menu of unrelated research questions.
+
+- Professional recommendations remain **fallible assessments with uncertainty** (G-35), not deterministic revenue or reception forecasts. Research should improve the information behind the later G-27 choice without selecting or committing that campaign for the player.
+- The integrated research is performed as **finite Marketing work** on the **single physical production object**, which is unavailable for interaction, movement, trash or publication while the process runs (G-31/G-32). When research completes, its report becomes available for the player's optional next action; the subsequent campaign is still physically chosen at Marketing, fixed once committed (G-30).
+- Research findings contribute **context-scoped, reusable, aging institutional knowledge** (G-36), and **only formal research may update that knowledge** (G-37). Commercial outcomes remain historical performance evidence, never an automatic retraining loop.
+- G-39 establishes three discrete research-depth tiers; their precise costs, durations and confidence improvements, remain design/balancing questions; G-40 disallows repeating research on the same production. The two-part scope must not be interpreted as inherently perfect market visibility.
+
+**Accepted direction / Documented**, not implemented, tested or validated in Unreal.
+
+#### G-39 — Three preset depths of integrated marketing research
+
+**Owner accepted option C (2026-11-17):** when optionally commissioning G-38 integrated research on the finished, unpublished production physically placed at Marketing, the player chooses one of **three predefined research-depth tiers**: **Basic (básica), In-depth (aprofundada), Extensive (extensiva)**. These are alternative levels of the **same integrated audience-and-promotional-modality study**, not three different research topics and not a continuously adjustable research budget.
+
+- **Basic:** lower expected cost and work time; less detailed, more uncertain insight into audiences and suitable available modalities.
+- **In-depth:** intermediate effort, potential detail and reliability.
+- **Extensive:** higher cost and departmental time demand; potentially the richest and most reliable of the three, but it must **not eliminate uncertainty** or guarantee a successful campaign.
+- Research occupies the **single completed/unpublished physical object** during the entire selected work process (G-31/G-32/G-35). The object becomes interactable only on completion. Deeper tiers consume more finite staff capacity and other resources; no instant report or remote purchase.
+- Results contribute evidence to the reusable, contextual, aging research archive (G-36), updated only through formal research (G-37). Subsequent G-27 campaign selection and intensity stay a separate one-time, immutable decision under G-30; research does not choose for the player.
+- **Not yet decided:** numerical costs/times, precise tier-specific evidence gains, access limitations as Marketing develops, while G-40 establishes that each production may be formally researched only once, with no upgrade/repetition afterward. Those quantities need explicit balancing/design validation, not invented fixed thresholds.
+
+**Accepted direction / Documented**, not implemented or Unreal-validated.
+
+#### G-40 — One optional research job per production
+
+**Owner accepted option A (2026-11-17):** each production may receive **no more than one formal integrated G-38 market research job**. If research is chosen, the player must select **one** of the three G-39 levels (Basic, In-depth, Extensive) before beginning. Once the research has been conducted, the production **cannot be researched again**, including repeating the same tier or paying to upgrade to a deeper tier. This is a per-production limit, not a global limit on the studio's research activities.
+
+- Research remains **optional**, so skipping it does not block campaign selection or G-08 publication; if selected, it requires the **completed, unpublished physical object** at Marketing and consumes finite staff time and resources while that object is unavailable until processing finishes (G-31/G-32/G-35).
+- The single research report can inform the subsequent **player-owned, immutable G-27/G-30 campaign choice**, but cannot force a particular modality or guarantee reception. Once the report exists, no further research action for that same production should appear in the normal player workflow.
+- Research findings contribute to the **reusable studio-wide archive** (G-36/G-37), and earlier research on other productions may inform advice. Reusable knowledge does **not** permit a second formal job on an already researched production.
+- Persist research-used state across scene changes/save/reload so that revisiting the physical department cannot restart the study, duplicate costs, or create multiple reports. Handling aborted/failed work without unintended consumption remains a specific implementation/recovery decision, not permission for routine repeat research.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-41 — Combined effect of research depth and professional competence
+
+**Owner accepted option C (2026-11-17):** the usefulness and quality of an optional G-38 integrated market-research report depend on **both** the chosen G-39 research tier (**Basic, In-depth, Extensive**) **and** the competence/experience of the Marketing professionals performing it. Both dimensions can improve the report's **detail and reliability** in evaluating relevant audiences and suitable promotional modalities, within G-34 historical/media context.
+
+- **Neither factor substitutes fully for the other:** a deep study by inexperienced staff is not guaranteed to outperform a basic study by skilled specialists, nor vice versa; meaningful results follow both inputs, and no universal ranking across all combinations is preapproved.
+- Do not interpret this as a skill-level gate that locks Extensive research, nor a model in which the research tier alone determines quality while staff only change processing time. Professional expertise remains important to making uncertain assessments under G-35.
+- Preserve **uncertainty** in all output; extensive research conducted by experts does not guarantee commercial success, predict revenue perfectly, or determine the player's eventual G-27/G-30 fixed campaign. The single study limit (G-40) still holds even when the result is disappointing.
+- Execution consumes finite staff time/resources and **occupies the completed, unpublished production's physical object** until the research process completes (G-31/G-32). Findings alone enrich the contextual, aging institutional archive (G-36/G-37), not actual promotion outcomes automatically.
+- **Open balancing/engineering:** which professional attributes count, their weights, how a team contributes, the influence of tier on depth vs reliability, the effect on processing time, and presentation of uncertainty. These are not accepted formulae or validated Unreal behavior.
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### G-42 — Formal research affects decisions, not campaign mechanics directly
+
+**Owner accepted option A (2026-11-17):** formal integrated Marketing research is an **information-gathering investment**, not a direct campaign-effectiveness upgrade. A G-35/G-38 research report helps the player understand likely audience segments and suitable G-34 promotional modalities and judge uncertainty before confirming the one G-27/G-30 campaign, **but the existence, depth or accuracy of a research report does not by itself alter promotional reach, campaign efficacy, expected commercial outcomes or the distribution/variance of results**.
+
+- Two otherwise equivalent completed productions receiving the **same modality and intensity** under equivalent historical/media/audience conditions, professional execution, time and release timing should use the **same campaign outcome rules** whether one commissioned research and the other did not. Research may influence the outcome **indirectly only by changing what the player decides to do** (or through ordinary time/resource opportunity costs), not by hidden modifiers, extra audience targeting bonuses, automatic variance reduction or guaranteed return.
+- G-39 tier selection and G-41 professional competence can improve the **reliability and depth of advice**, not the direct mechanical quality of marketing work. Once the player confirms the modality/investment, G-30 immutability continues to apply; research cannot auto-optimize or rewrite that commitment.
+- Retain research as **optional**, one formal study per production (G-40), consuming finite staff time/resources and holding the physical completed unpublished production during work (G-31/G-32). Findings enter contextual, aging institutional knowledge only via formal studies (G-36/G-37), but knowledge does not silently boost a campaign when not used for decision-making.
+- Quantitative uncertainty, research quality and outcome rules still require balancing and validation. **Do not introduce a compulsory research tax to attain maximum campaign performance.**
+
+**Accepted direction / Documented**, not implemented or validated in Unreal.
+
+#### Simplified Marketing presentation and generation — current owner direction (2026-11-17)
+
+**This section supersedes the more elaborate G-43–G-55 historical presentation system; it is the active design contract.** The objective is to deliver readable physical production objects and optional AI customization without implementing a separate historical packaging simulation.
+
+1. **Basic physical representation (simplified G-51):** every completed work gets **one simple, media-appropriate default physical appearance** automatically, with no extra AI generation or game step. The existing object can go straight to G-08 for player-authorized publication without Marketing. **Comic strips (tirinhas) never enter Marketing** (G-26/G-45).
+2. **Optional personalization of the same object (G-45/G-46):** eligible completed, unpublished non-strip works may enter Marketing. Successful Marketing generation adds customized artwork/presentation to the **same persistent physical production object**; do not create a second object, replace its stable ID, remove underlying creative work, change IP/contract ownership, or reopen closed stages. A comic book can show AI cover art; animation can have media-appropriate visible packaging or artwork. The precise prop meshes/art surfaces are **content choices** and can remain simple initially. A G-30 campaign remains one-time and immutable.
+3. **Competence, time and serialization (simplified G-43/G-44):** the executing professional affects the AI prompt quality and game-owned **campaign outcome multiplier**, without automatic speed gains. Only **one AI Marketing art generation at a time**; its execution lasts only as long as the necessary generation, not arbitrary extra simulated marketing days. Other Marketing jobs wait. During an active job, G-32 holds its physical object unavailable until completion. No new staff assignment subsystem is authorized by this presentation rule.
+4. **Fault handling without blocking (simplified G-47/G-48/G-49):** transient technical AI errors receive a **small, bounded automatic retry policy** (exact count unapproved). If retries fail, use a **predefined default visual template for that media**, finalize Marketing and return the original physical object. The resulting committed campaign keeps **the same commercial scoring** as if the artwork generation succeeded, assuming identical modality, investment, professional competence and other circumstances. Do not reroll completed unattractive artwork under technical-retry rules, double-charge, double-apply marketing effects, create duplicate objects, or automatically publish. The G-08 publishing decision remains the player's.
+5. **History is optional visual dressing (simplified G-50):** variations inspired by different historical periods are welcome as art/content polish **when useful and affordable**, but are **not required to finish, market or publish** and do not demand a historical timeline system. The minimum content requirement is one recognizable default form per media; a generated art region/template can share that form.
+
+**Explicitly superseded as implementation requirements (owner simplification A):**
+- **G-52:** no compulsory historical physical-format lock at production completion.
+- **G-53:** no mandatory configurable historical-format catalogue or media/date-to-packaging database.
+- **G-54:** no format-predominance selection subsystem.
+- **G-55:** no first-eligible catalogue-order fallback or catalogue-specific error flow.
+- **G-56:** was proposed but **never approved**; no missing-historical-format gameplay/error system is required.
+
+The original owner choices are recorded in the preproduction review as **historical/superseded decisions**, not active acceptance criteria. This does **not** supersede unrelated campaign design: G-26–G-42 still govern Marketing eligibility, fixed choice, audience/era/media promotional affinities, finite professional availability, formal research and the physical publication boundary. Historical context may affect marketing effectiveness under G-34 independently of how the package **looks**. Avoid conflating historical **audience dynamics** with optional historical **packaging art**.
+
+**Acceptance / verification boundaries:** Accepted direction / Documented. No validated Unreal prefabs/assets, AI integration, generation timings, retry handling, commercial multiplier, tests or gameplay claims. Minimal future checks: basic object exists without Marketing; tirinha bypasses it; Marketing customizes the same object; one generation at a time; technical exhaustion releases a templated object with no commercial scoring delta; G-08 still controls publication.
 
 ### Project trash and deletion
 
@@ -2202,26 +2536,79 @@ Long-term persistence must be able to represent at least:
 
 Legacy `InkTime` saves/artifacts are migration evidence rather than a shipped compatibility promise. Preserve representative fixtures or extract useful data where valuable, but do not make full Unity-save compatibility a blocker for the Unreal game without explicit need.
 
+## Structural design consolidation — organic progression and preproduction defaults (2026-11-17)
+
+### Accepted owner decision: organic progression (option A)
+
+Following the **already accepted sequential tutorial** (commissioned strip → player-original strip → more strip offers, small expansion and first manageable character conflict), T.O.O.N. opens into an **opportunity- and capacity-driven studio campaign**. The player chooses when to respond to offers, commission studio IP, invest in capacity and adopt historically plausible production capabilities. An era changes what is possible or commercially relevant; it does not require the player to finish a rigid mission ladder or reach a hidden prestige-level threshold before doing so.
+
+- **Opportunity:** external commissions emerge with relevance to existing media, reputation and historical context (G-15); original work remains player-initiated under established IP rules (G-13/G-14). Avoid guaranteed success or fixed contracts per chapter.
+- **Feasibility:** use **existing** historically appropriate media/capability availability plus available facilities, compatible professional capacity, budgets and workload. A player cannot instantly produce another medium without its genuine production requirements, but there is no extra universal unlock counter or mandatory achievement system.
+- **Agency:** the player can keep making older media. Media changes are options, not forced replacements. G-24's Production Assistant hiring still follows professionalization progression; G-26 Marketing stays **outside the strip-only phase**, even though this progression has no hard generic level system.
+- **Narrative:** the opening story teaches the job; thereafter use the documented character/event and historical context systems to provide motivations and consequences, without requiring a long mandatory quest chain. Specific historical introduction dates, minimum career milestones and offer weights are **content/balancing and testing**, not new owner-approved progression rules.
+
+**Status: Accepted direction / Documented, not implemented.**
+
+### Structural gaps: minimal cross-system baseline (recommended for preproduction validation, not new owner approvals)
+
+| Design block | Existing accepted principles | Smallest coherent default for the first playable and expansion proof | Evidence that would reopen design |
+| --- | --- | --- | --- |
+| **1 — Core player decisions** | G-03 bounded authoring, stage version choice, staffing/priorities, manual object transport and G-08 final release | Offer real choices **using those controls**: which work to take, whom to involve, whether to edit concept/script/art direction or use default output, whether one of up to three generated versions warrants its cost, and when to commit/deliver. Show why the choice matters; transporting a physical object alone is not the strategic payoff. **No new per-station minigame.** | Playtests show first two complete strips lack any comprehensible player agency despite using these controls |
+| **2 — Quality, reception and rewards** | Hybrid model: actual generated artifact evidence plus game-owned process/crew/brief, historical audience context; G-11/G-12 guaranteed contracted payment; G-14 original revenue; G-15 global+per-media reputation | Use a **small explainable set of contributors** (brief fit, artifact coherence/quality evidence, production execution/experience and audience/context). Local evaluation provides **structured uncertain observations**, never direct economic mutation; game-owned deterministic rules apply outcomes. Show the top reasons for resulting reputation/reception; **do not require a single universal taste score, rigid factor count or complete weight table**. | Evidence shows players cannot explain quality/reputation changes, or generated-art evaluation cannot be bounded/repeated reliably |
+| **3 — Studio growth / capacity** | Compatible workstations are role capacity; permanent staff; finite work time, budgets and contract deadlines; build mode pauses | Further strip offers visibly compete for limited stations/staff; a **small physical capacity addition and/or compatible permanent hire** lets the player accept/manage the demand. Reuse the same workstation/assignment rules; do not add a generic 'studio level' or second abstract staff cap. | The expansion has no visible benefit or fails to create a legible tradeoff even in a constrained prototype |
+| **4 — Relationships / first conflict** | Recurring cast, bounded relationship state, parameterized authored Decision Events, deterministic outcome authority | One **low-stakes professional disagreement only after the two strip tutorials**, with a few understandable player responses (two sufficient for the test), one visible **bounded and persistent** relationship/production/workflow effect, and a short explanation. AI may write flavour, not the rules. No new general-purpose social simulator needed. | The consequence is imperceptible or cannot be attached to a readable prior cause |
+| **5 — Clock / campaign pacing** | Continuous working-day clock, pause for important choices/build, manual time acceleration, automatic compression of idle time; roughly 1900–2030 and ~40h campaign target | Make each production/management decision interrupt the clock appropriately. Fast-forward uninteresting downtime to the next meaningful activity, but never skip player-authority decisions. Leave in-game years/hour, generation latency accommodations, exact work hours and per-era production density as **playtest variables**, not a new mechanical design vote. | Representative tests show unavoidable dead time, critical decisions skipped or no credible progression across eras |
+
+**Design-freeze boundary (candidate, not owner-ratified full game freeze):** no additional independent mechanics are necessary to specify the **initial external strip, the original second strip and one growth/conflict demonstration**. Keep the other three media in game-wide design scope, but require production/artifact benchmarks for them rather than guessing feasibility. Reopen a design question only where two existing rules conflict or a tested prototype cannot deliver a core player-facing experience. The economy, late media transitions, long campaign and full autonomous people simulation are **documented targets**, not validated implementations.
+
+**Next-phase gates without new owner design questions:** write the smallest first-contract playable fixture; implement/test a handoff and save/reopen loop; evaluate at least one local AI-generated strip separately; validate first two deliveries, owner-specific IP/payment and a short relationship Event; test whether choices feel consequential; then use measured timing and costs to balance. Art assets and narrative details come **after this design baseline** and remain independently reviewable creative work. Do not interpret design specification as compiled Unreal code.
+
+## First onboarding progression — external commission, player-original strip, then growth
+
+**Owner accepted sequence (2026-11-17):** the playable opening should teach **two complete strip-production cycles before introducing staff conflict**, then use subsequent strip demand to motivate studio growth. These are story-linked steps rather than a sequence of separate systems tutorials.
+
+1. **Guided external contract, beginning to delivery.** An outside client offers an initial 3–4-panel tirinha project whose **IP is client-owned (G-13)**. Guide the player from the brief/contract to staff/creative stages, manual physical movement between compatible stations, completion and explicit release/delivery at G-08. Under G-11/G-12, no contract money arrives on acceptance; the guaranteed contract payment is earned on delivery, with **no client rejection or approval afterward**. Quality and brief adherence may influence reputation and later contract offers, not guaranteed payment. This should be the smallest complete usable loop, without mandatory Marketing, studio expansion or personnel conflict.
+2. **Player-originated strip, same flow with creative ownership.** The next story beat invites the player to **idealize a fresh concept themselves** using only the already-approved G-03 editable concept/script/art-direction bounds; reuse the same workstations, physical route and release action, with progressively less tutorial guidance. Its IP belongs to the studio, **not the first client**. Release may yield G-14 original-work income/catalogue value but does not guarantee sales; do not reuse client IP or add a separate production system.
+3. **Incoming strip demand, small expansion, gentle first relationship conflict.** After both completed strips, new comic-strip commissions increase perceived workload and motivate a simple capacity/studio expansion. During this growth, introduce the first **low-stakes, easy-to-understand disagreement between recurring professionals**, so the player sees a relationship-management choice and a visible persistent consequence. The moment is **deliberately later** than the first two production lessons; no immediate forced G-57 conflict in the opening commission. It should exercise existing employee and Decision Event capabilities, not prompt a new general-purpose subsystem.
+
+**Narrative structure:** tie these episodes causally to the story (first work establishes the studio's reputation and operating flow, original work establishes creative autonomy, further demand gives reason to expand and introduces human dynamics). Exact characters, lines, initial finances, the reason for the first client commission, the expansion operation and the conflict resolution options are **not yet specified**. Do not fabricate them as accepted story canon.
+
+**Milestone gates for design and engineering validation:** (1) successful client-owned strip delivery + correct contract payment/ownership; (2) a new studio-owned strip produced from player concept + release and distinct income path; (3) at least one further strip demand + legible expansion/capacity action + one small people conflict with visible persistent consequence; (4) save/reopen preserves both completed works, ownership, payment/receipts and relationships. These are design acceptance scenarios, **not evidence of a compiled or playable Unreal implementation**. The 3–4-panel output remains a production target, not a hard validator.
+
+### First external tirinha — scoped tutorial specification (2026-11-17)
+
+**Guidance decision: owner chose B — contextual and progressive.** The story communicates *why* this first client requests a strip; the interface gently identifies the **next relevant game-world affordance only when useful**. The player still performs the normal physical actions and progressively learns by doing. Use no mandatory step-by-step modal tutorial or separate scripted production path. Later, the second player-original strip follows the same route with reduced contextual guidance.
+
+**Provisional production fixture (implementation/test specification, not approved character/story canon):** one **authored and reproducible external commission** for a 3–4-panel tirinha (target), with an outside client's IP and a short prefilled brief. The brief identifies the required outcome and contractual terms; the player can edit **only fields actually designated negotiable under G-03**, not client-owned mandatory content. Use the existing studio, existing staff, compatible workstations, one persistent physical production object and game-owned AI generation/fixture contracts. Do **not** add new stations, a new medium, marketing, expansion, conflict or a bespoke client-approval stage merely to support onboarding. Exact client, fictional IP, scene, timing, budget and writing are draftable later.
+
+| Checkpoint | Normal gameplay action | Contextual assistance | Observable success |
+| --- | --- | --- | --- |
+| 1. External offer | Inspect and **accept** an explicit contract/brief | Story explains why the work matters; draw attention to the available offer and mandatory vs editable fields | One active external job; **no advance money** (G-11); IP marked **client-owned** (G-13) |
+| 2. Begin production | Inspect prepared concept / edit only G-03-authorized fields, then send object to compatible first station | One short contextual prompt identifying the objective and matching station if player appears blocked | Valid first production stage starts; invalid placement never advances or commits state |
+| 3. Work through stages | Observe generated outcomes, choose/accept an allowed version if applicable, **pick up the same physical object** and carry it to the next compatible station | Emphasize finished-object pickup and destination only when relevant; clearly explain a blocked station | G-07 closed stages stay closed; G-03's **maximum three successful variants per stage** is respected; no auto-route |
+| 4. Inspect final strip | Review the completed, readable **3–4-panel target** (shorter valid output remains allowed) | Indicate that a completed work still needs explicit delivery; no Marketing prompts | One finalized basic strip presentation, with client attribution and no automatic publication |
+| 5. Deliver | Carry completed physical object to G-08 publishing/delivery desk and **personally authorize** its final release | Clear final-action cue and consequence before confirmation | **Irrevocable delivery**, guaranteed contract payment credited once (G-11/G-12), no client acceptance/rejection/rework gate; record appropriate reputation/evaluation |
+| 6. Confirm progress | View delivered work in permanent history and resume/save/reopen | Brief result explanation and transition story cue toward a player-originated strip | Paid delivery, owner, artifact, credits and financial/reputation evidence persist; no duplicate payout |
+
+**Guidance behavior (provisional UX constraints):** contextual markers are **state-derived** (available offer, unstarted stage, ready physical pickup, compatible destination, completed-but-unreleased production, final delivery); once an action is learned, reduce repetition. They must not replace player-controlled physical handoff, override invalid station rules, fabricate AI completion, rewrite contract terms or force a creative alternative. Present a recoverable hint when stalled rather than a hard-coded time gate; exact thresholds and controls are not decided. Check clarity by playtest, not by assuming the player understands tutorial labels.
+
+**Acceptance tests before calling the first commission playable:** contract acceptance does not pay; invalid handoff leaves the project unchanged; valid handoffs close their stages; the finalized strip must be physically delivered and explicitly authorized; delivery credits payment once without client review; client retains IP; persist and reload artifact, stage history, credits, payment and release state; bounded technical generation faults do not create extra successful creative versions; normal guidance does not require invented UI systems. An offline deterministic fixture proves the loop rules only, while **separate local-model runs** must validate actual generation latency/coherence/provider errors. No compile/runtime/test proof yet.
+
+**Scope boundary:** the second player-original strip and third-beat expansion/conflict are **separate later checkpoints**; the first contract should prove the full professional workflow before introducing those mechanics. The authoring and progression remain integrated with the unfolding story but exact characters, client briefing and dialogues are **unapproved draft content**.
+
 ## First validation slice
 
 The first slice should not attempt 130 years.
 
 It should prove the characteristic interaction among studio, people, production, and persistent consequence. **The first playable production is a complete 3–4-panel comic strip**, using a medium-neutral Production core and a narrow strip-specific output path. Completion, reception and save/reopen remain unvalidated until exercised.
 
-Minimum target:
+**Stage the proof instead of demanding every mechanic on the first strip:**
 
-1. one small studio;
-2. 3–4 recurring professionals with distinct traits;
-3. at least two meaningful relationships;
-4. one IP;
-5. one complete **3–4-panel comic strip production**;
-6. one assignment decision;
-7. one people/production conflict;
-8. one player response with tradeoffs;
-9. release;
-10. one persistent studio/professional/IP consequence;
-11. save/reopen;
-12. one visual signal of historical continuity.
+1. **Milestone 1 (minimum first playable):** one small studio, readable staff/workstations, one externally commissioned 3–4-panel strip, physical stage handoffs, player-authorized delivery, correct client IP ownership and G-11 contract settlement. Save/reopen the delivery and credits/state.
+2. **Milestone 2 (creator autonomy):** the same production loop with a **player-created concept** and studio-owned original IP, different ownership/revenue semantics and less guidance.
+3. **Milestone 3 (studio/people):** additional incoming strip demand, one simple capacity expansion and one accessible interpersonal conflict/Decision Event with a clear consequence that survives save/reopen.
+
+The continuing target is a memorable recurring cast, relationships, persistent consequences and historical identity; **they are introduced incrementally** rather than all blocking the first external commission. Local AI generation quality must be validated separately from deterministic fixtures.
 
 A second bounded prototype should later test one media/era transition.
 
