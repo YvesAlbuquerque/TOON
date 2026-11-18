@@ -48,6 +48,7 @@ Implement only the subset needed for the current proof.
 - Studio professionals are recurring characters, not interchangeable worker resources.
 - The cast may include humans, anthropomorphic animals, creatures, living objects and other original cartoon archetypes.
 - Appearance/species is separate from personality and from longevity/existence model.
+- **G-18 accepted 2026-11-18:** archetype-derived relationship impressions/interpretations are directional and dynamic; lived events, personality and memory can override/reverse them. No permanent species penalties, automatic hostility, or species-defined personalities. The initial roster and exact weights remain undecided; see `docs/design.md` Relationships.
 - Characters need readable silhouettes, profession, personality, history and relationship promise.
 - Avoid one-note stereotypes.
 - Prefer bold macro-shapes, strong line of action, readable posing, and animation-friendly design.
