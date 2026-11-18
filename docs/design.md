@@ -1167,6 +1167,21 @@ Blocked behaviour should be biased differently from ordinary idleness. A profess
 
 The distinction must be legible to the player: “nothing assigned” and “cannot do assigned work” are different management problems.
 
+## Cultural name combinations, historical pairings and achievements (owner direction, 2026-11-18)
+
+**Accepted direction / Documented:** a character's **given name** and **surname** are assembled from a **curated pool associated with notable artists, cartoonists/comics creators, directors and illustrators**. The generator usually produces a new fictional combination, but a rare **exact full-name match** may reproduce the name of a real historical creative professional by recombination. That fictional character earns a **bounded, legible bonus** as a cultural easter egg, without becoming the historical person, inheriting their biography or overriding their independently generated personality, appearance, career or relationships.
+
+**Historical creative pairings:** for a curated, historically sourced pair of real professionals with documented creative **collaboration/partnership** or **disagreement**, if the studio contemporaneously has **two different fictional characters whose complete names match both pair entries**, the pairing may yield an **additional bounded positive or negative gameplay effect** through existing collaboration, staff/relationship or event rules and award a relevant **player achievement**. The underlying fictional characters retain agency; the historical association is an easter egg/affinity, **not a forced friendship, mandatory feud or assertion that the fictional characters are those real people**. Avoid every arbitrary surname-only match activating pair logic; require validated full-name entity identifiers.
+
+**Implementation/content constraints:**
+- Maintain a **curated given-name and surname source list** and a separate **verified-match/pair catalogue**; use stable IDs for referenced historical individuals and their sourced pair associations. Normalize typography/accents consistently for matching while keeping displayed names natural; avoid assigning rewards through fuzzy surname-only equivalences.
+- Recognize a matching fictional full name as an **optional rare discovery**, not as a main path for career progression. A bonus should be meaningful but **small compared with actual skill, working conditions and relationships**, and transparent enough for the player to discover why it occurred. Apply match effects once or deterministically without stacking/duplication from repeatedly reloading, rehiring, transferring or saving.
+- A pairing should matter only under **well-defined shared-studio eligibility** and use **existing** people and collaboration state; if a negative historical association is used, it is a **small contextual pressure**, not guaranteed hostility, violence, discrimination or automatic firing. Its final expression should be moderated by fictional personality and current relationship history. Never use AI-generated historical claims as factual evidence.
+- Historical pairs (especially alleged feuds) require **credible, attributable sources and editorial/legal review** before inclusion. Distinguish documented creative disagreement from personal animosity; avoid living-person insinuations, gossip, or implied endorsement. Do not reproduce copyrighted character designs or specific protected artistic identities as part of the easter egg.
+- Achievements should be based on **game-owned, idempotent eligibility events**: first matching full-name character and qualifying documented pair in the studio. Exact titles, icons, conditions, rewards, full candidate pool, rarity and bonus strengths remain **content/balancing/implementation/validation** work, not separate structural design votes.
+
+**Scope:** This is a new **character-naming and historical easter-egg** layer atop the already approved staff, relationships, archive and simulation systems, **not a historical-person-character generator** or a separate relationship-simulation feature. No content catalogue, historical verification or Unreal implementation has yet been completed.
+
 ## Character ontology and lifespan
 
 T.O.O.N. intentionally allows different kinds of beings to coexist in one workplace.
