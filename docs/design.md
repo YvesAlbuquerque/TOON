@@ -933,6 +933,16 @@ A professional may include:
 
 Depth should come from readable behaviour and history, not hundreds of opaque attributes.
 
+### G-20 — Artist-name coincidences grant direct skill bonuses (accepted 2026-11-18)
+
+Professional character names may be formed by combining given names and surnames drawn from a curated set of notable **artists, comic creators, illustrators and directors**. An exact match of the resulting **complete first-and-last name** to a recognized person in that reference set is an intentional rare discovery. **Owner-selected option A:** this match grants a **direct, additional bonus to the professional's skill attributes**. It is a gameplay stat modifier, **not** merely narrative flavour, prestige, reputation, a contextual special talent or a guarantee of high overall competence.
+
+The name-match check and awarded effect must be **game-owned and deterministic**, never assigned ad hoc by character AI. The bonus applies to the character's explicit skill model and must be visible/explainable to the player as a distinct source of the resulting value, with stable persistence across save/reload. Avoid re-awarding it on repeated loading, renaming, recomputation or re-hiring; exact lifecycle and any name-editing policies remain to be specified. Keep the magnitude bounded so the name easter egg does not invalidate skills, personality, experience, recruiting choices or progression. **Which skill(s), the exact bonus amount, the approved reference/name corpus, the match-normalization policy, discovery visibility and name-generation mechanics remain unselected implementation/design details**, not permission to introduce a special contextual talent or substitute a reputation bonus.
+
+Using a public figure's name does not imply their endorsement, involvement, likeness, voice or copyrighted visual style. Commercial/IP review of the shipped reference corpus and presentation is an external legal/content validation task. No real-person likeness or personal data collection is required for the mechanic.
+
+**Status:** Accepted direction / Documented; not implemented or balanced. The first 3–4-professional vertical slice may use a deterministic fixture to prove ordinary and coincident-name cases; a complete reference library is not a prerequisite.
+
 ### Employment, workstations and studio capacity
 
 T.O.O.N. should use **permanent employees only** as the player-managed workforce. Do not add a parallel temporary-worker, contractor or freelancer staffing layer to the core management model.
