@@ -1577,6 +1577,16 @@ Relationships can influence:
 - romance;
 - long-term loyalty.
 
+### G-19 — Initial classic-animal archetype roster (accepted 2026-11-18)
+
+**Owner-selected option A:** begin with a small, recognizable cartoon-animal cast foundation of **eight initial archetypes**: **dog, cat, mouse, rabbit, fox, bear, duck and pig**. This is the initial content/taxonomy direction, not an exhaustive restriction on the eventual character ontology or a requirement to create eight finished characters for the first playable proof. Individual characters remain differentiated by silhouette, profession, personality, history, memories, skills and relationships; avoid assuming shared animal identity means shared behaviour.
+
+**Expansion direction, not initial scope:** introduce special character types later, including **anime-styled characters, living objects, monsters** and potentially further authored cartoon categories. “Anime” describes a stylistic family rather than a biological species: do not conflate art style, species and longevity/existence model, and do not assume a special type is required for the first strip proof. New types should be admitted by extending character content/taxonomy and relevant bounded social-context data, rather than rewriting the professional, relationship or lifespan core. Exact unlocks, pacing, roster size and special-type mechanics remain undecided and deferred.
+
+G-18's **dynamic, directional** relationship predispositions apply to these initial archetypes: the species label may inform context, but pairwise bias values, the presence or absence of bias for any given pair, and balancing require authored design and testing. Do not generate automatic universal hostilities, permanent relationship penalties or stereotypes. For the first playable proof, **3–4 recurring professionals** suffice; the full eight-archetype breadth and special types are not slice acceptance gates.
+
+This is **Accepted direction / Documented**, not proof of finished art, implementation, balance or validated Unreal systems.
+
 ### G-18 — Dynamic archetype predispositions (accepted 2026-11-18)
 
 **Owner-selected option C:** a professional's visual/species/cartoon archetype can inform **directional initial impressions**, socially learned expectations, and the **interpretation of later interactions**, but is neither a permanent relationship modifier nor a deterministic personality, competence, morality or compatibility rule. For any A -> B impression, B -> A may differ. Personality, salient personal memories, concrete behaviour, shared production outcomes and accumulated relationship history can strengthen, weaken or reverse archetype-derived expectations over time. Dramatic cartoon tension and humour remain possible without reducing characters to stereotypes.
