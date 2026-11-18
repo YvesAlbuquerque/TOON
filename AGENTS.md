@@ -93,6 +93,12 @@ Implement only the subset needed for the current proof.
 
 **Design boundaries:** a curated, licensable/appropriate onomastic content list, verified full-name-match and historically verified pair IDs, explicit bounded reward effects and one-time achievement eligibility. Preserve consistent Unicode/name normalization and persistent identity across save/reload without creating duplicate rewards. Exact names, source evidence, bonus magnitude, pair-event triggers, achievements, gameplay tuning and publicity/legal clearance are **content, implementation, legal review and validation**, not asserted complete. Do not imply real professionals appear as characters in-game. No Unreal implementation or tests performed.
 
+## Cartoon archetypes — initial small extensible set (owner proposal, 2026-11-18)
+
+**Owner direction:** start with approximately **eight classic cartoon archetypes** (including dog, cat, mouse), allowing **directional** initial social impressions and interaction tendencies based on the ordered pair of archetypes. Integrate into existing asymmetric bond/trust/relationship history and autonomous behaviour; individual personality, context and experience must moderate and may override cultural cartoon tropes. Archetype is independent of longevity, creative competence and full historical-name easter eggs. Do not force feuds or friendship and do not reproduce protected cartoon characters. Extend later through data, not a second independent relationship system.
+
+**Proposed eight animal candidates only — not yet owner-approved exact set:** dog, cat, mouse, rabbit, fox, duck, wolf, sheep. Other valid existing categories (humans, monsters, living objects) remain possible with neutral/default social archetype affinities until authored. Prefer **sparse directional interactions** with neutral fallback rather than hardcoding all 64 combinations or making every pairing special. Exact roster, coefficients, interaction motifs and first-playable cast remain Proposed/content/balancing/validation, not implemented Unreal behaviour.
+
 ## Studio/cast rules
 
 - Studio professionals are recurring characters, not interchangeable worker resources.
