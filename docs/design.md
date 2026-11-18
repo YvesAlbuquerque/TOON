@@ -1577,9 +1577,15 @@ Relationships can influence:
 - romance;
 - long-term loyalty.
 
-Species/archetype may create **initial tendencies or pressures**, but it does not determine personality.
+### G-18 — Dynamic archetype predispositions (accepted 2026-11-18)
 
-A cat and mouse may begin with a predatory/prey tension. They may later become the studio's greatest creative partnership.
+**Owner-selected option C:** a professional's visual/species/cartoon archetype can inform **directional initial impressions**, socially learned expectations, and the **interpretation of later interactions**, but is neither a permanent relationship modifier nor a deterministic personality, competence, morality or compatibility rule. For any A -> B impression, B -> A may differ. Personality, salient personal memories, concrete behaviour, shared production outcomes and accumulated relationship history can strengthen, weaken or reverse archetype-derived expectations over time. Dramatic cartoon tension and humour remain possible without reducing characters to stereotypes.
+
+Game-owned relationship state and event outcomes remain authoritative; local character AI may contextualize reactions but must not invent persistent relationship modifiers or bypass rule constraints. The player should be able to understand significant shifts through observable behaviour, dialogue and the existing causal relationship history. The simulation should avoid repeatedly reapplying a fixed species penalty after events have meaningfully changed a relationship.
+
+For the first proof, compare two directional impressions and show one shared event changing at least one of them (potentially overcoming an initial predisposition), with the outcome surviving save/reload. **The initial archetype roster (roughly eight proposed, not yet accepted), the pairwise predisposition table, numerical weights, and presentation details remain open/tuning work**; do not invent the roster or assume all pairings have an effect. This rule is **Accepted direction / Documented**, not implemented or validated Unreal behaviour.
+
+A cat and mouse may begin with asymmetric predator/prey tension and later become the studio's greatest creative partnership.
 
 A hunter may be extraordinarily talented while making multiple anthropomorphic employees uncomfortable or afraid.
 
