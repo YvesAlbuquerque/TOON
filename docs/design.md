@@ -930,6 +930,24 @@ A possible progression:
 
 Growth should follow needs created by people, media and production scale rather than existing only as a linear upgrade tree.
 
+## Human Resources Department — integrated people, culture and workplace interventions (owner chose C, 2026-11-18)
+
+**Accepted direction / Documented:** add an **integrated Human Resources (RH) Department** responsible for offering and organizing **professional development, people-management support, wellbeing, studio culture and workplace/environment initiatives**, including meaningful decorative options. This department's gameplay is about the player's **influence on an autonomous recurring cast**, not direct puppet control or a second character simulation.
+
+**Owner boundaries / reuse:**
+- **Employment and authority:** use existing hiring channels, permanent employee rules, compatible workstation staffing, dismissal, priorities, career expectations, conversations and parameterized Decision Events; RH can support or inform them, but should not invent a second hiring/dismissal or conflict-resolution subsystem. Player retains final management choices.
+- **Environment/decor:** use existing room-building, prop placement, environmental preference, culture/identity and character reactions. RH may make initiatives, recommendations and decor-related opportunities available; **the player still buys/places physical objects through construction**, and object art/asset generation is not automatically a human-resources operation. Decorative effects must be contextual and character-dependent rather than universal scalar bonuses.
+- **Programmes and consequences:** an RH initiative may affect development, morale/recovery, cultural norms, contact opportunities, expectations, perceived recognition or conflict pressure through **existing game-owned state**. Costs and opportunity costs matter. Different employees may respond differently; there are no guaranteed reconciliation or 'remove conflict' buttons. AI may flavor reactions but does not directly mutate authoritative state.
+- **Progression:** RH should enrich a growing studio without becoming mandatory to complete the external-client and player-original comic-strip tutorial cycles. The exact moment of department availability and whether any programme requires dedicated staff remain undecided rather than silently locked to a specific era/size.
+
+**Examples to evaluate, not separately approved mechanics:** mentoring that consumes mentor time; recognition that helps one person and irritates another; a quieter workplace area that helps concentration but reduces spontaneous social contact; facilitated mediation with uncertain outcomes; social events that cost work time but alter relationship opportunities. These are candidate interventions for authored content/validation, not promised features or new universal stats.
+
+**Two consequential structural gaps remaining:**
+1. **Operating model / finite resource ownership:** does RH programme execution require **existing staff temporarily assigned**, dedicated HR professionals/compatible stations, or merely an organizational policy and budget? This determines interaction with work schedules, employee-capacity constraints and physical department requirements. Do not copy the Research Department's shared-staff model without owner direction.
+2. **Availability and autonomy:** when/how is the department introduced, and which basic direct employee/build actions remain usable without it? Preserve baseline direct management and decoration from the start; avoid making all existing actions artificially locked behind HR. The later unlock/first meaningful RH benefit still needs a coherent design decision.
+
+After those two, candidate initiatives, equipment/decor content, historical thematic changes, detailed employee response rules, durations, costs, UX, animation and save/reopen tests belong to **content, balancing, implementation or validation**. No additional independent people-management layer is approved, and no Unreal implementation is evidenced.
+
 ## Studio professionals
 
 Studio professionals are recurring characters, not interchangeable worker resources.
