@@ -49,6 +49,7 @@ Implement only the subset needed for the current proof.
 - The cast may include humans, anthropomorphic animals, creatures, living objects and other original cartoon archetypes.
 - Appearance/species is separate from personality and from longevity/existence model.
 - **G-18 accepted 2026-11-18:** archetype-derived relationship impressions/interpretations are directional and dynamic; lived events, personality and memory can override/reverse them. No permanent species penalties, automatic hostility, or species-defined personalities. The initial roster and exact weights remain undecided; see `docs/design.md` Relationships.
+- **G-20 accepted 2026-11-18:** combining historical artists'/illustrators'/comics creators'/directors' first and last names may accidentally recreate a recognized full name; an eligible exact-name match grants an additional **direct professional skill-stat bonus**. This is not a reputation or situational talent bonus. Matching is deterministic and game-owned; corpus, target stats, magnitude, normalization and name controls remain unspecified. No legal clearance or Unreal implementation is implied.
 - **G-19 accepted 2026-11-18:** initial archetypes: dog, cat, mouse, rabbit, fox, bear, duck and pig. Future optional categories include anime-styled characters, living objects and monsters; keep style/species/lifespan separate, and do not demand all eight for the first 3–4-professional proof.
 - Characters need readable silhouettes, profession, personality, history and relationship promise.
 - Avoid one-note stereotypes.
