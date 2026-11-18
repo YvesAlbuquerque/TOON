@@ -170,6 +170,26 @@ Use the accepted small-scope roadmap as a concrete validation fixture:
 
 This scenario is a **test plan**, not an approval for exact character bios, script, art direction, cost coefficients, generation stack or release claims.
 
+## First-slice design closure gate — reviewed 2026-11-18
+
+**Design assessment: sufficient to proceed to first-slice implementation/prototyping; stop opening sequential design gaps by default.** This is a **Documented** readiness assessment for *scoping and executing the proof*, **not** `MVP-ready`, `Validated` or `Production-ready` game status. The owner accepted the complementary G-18–G-21 cast and hiring rules, and the existing canonical design already specifies the first strip, physical station handoffs, creative authoring/version/commit boundaries, professional agency, relationship-driven tradeoff, explicit release, reception, persistence, economy boundaries and local-AI separation. Nothing in this document review demonstrates a new unresolved **first-slice** owner choice that would block a bounded Unreal prototype.
+
+**Freeze design questions for the first playable unless testing reveals a contradiction or a genuinely consequential choice with no existing accepted rule.** Evaluate such discoveries against the current owning design before raising another numbered G-series question. Do not turn balance, UI details or implementation gaps into new votes.
+
+**Implementation / validation handoff (not additional design votes):**
+
+1. Bootstrap and compile the accepted Unreal target; retain Unity only as audited legacy migration evidence.
+2. Build one persistent studio with 3–4 recurring professionals, suitable workstations/capacity, two directional relationships and observable professional states.
+3. Exercise a bounded **G-21** candidate-choice fixture and **G-20** skill-bonus/nonmatch cases; prove G-18 directional predisposition can change after an event. The full eight G-19 archetypes are not required as finished assets.
+4. Run the medium-neutral production flow to one 3–4-panel strip: player-routed compatible physical stations, stage finality, optional bounded edits/versions, technical-failure recovery and explicit publishing-desk release.
+5. Prove one legible staffing/relationship conflict and management choice changes a persistent professional/production outcome; archive and save/reopen preserve consequences, credits and published result.
+6. Use deterministic fixtures for simulation proof, separately **profile actual on-device local generation** for coherence, latency, resources and failure behaviour; do not treat a fixture as AI quality evidence.
+7. Review visible art direction, recruitment comprehension, economics/pacing and legal/name/content risks as distinct validation tracks; no shipping claim until supported by appropriate evidence.
+
+**Explicitly deferred:** full 1900–2030 balancing, four-media runtime completion, all eight finished animal archetypes, special character types, artist name corpus and exact numerical modifiers, archetype pair weights, late-campaign recruitment depth, optional Production Assistant, broader cross-media continuity conflict policy, and other late-game systems. Revisit only if empirical first-slice evidence exposes a dependency.
+
+**Exit classification:** first-slice *design definition* is sufficiently **Documented** for prototype execution. Unreal playability, AI inference and first-slice quality remain **Planned / unvalidated**. Track implementation proof through the roadmap and [#16](https://github.com/YvesAlbuquerque/TOON/issues/16), with design-closure coordination in [#99](https://github.com/YvesAlbuquerque/TOON/issues/99).
+
 ## Question and completion discipline
 
 - **Do not ask again** about optional creative content editing restricted to concept/script/art direction, physical player-controlled station handoffs, concept source-specific editable field masks, three **total** generated versions per stage, **trash only before release with no refund**, **separate permanent non-deletable published catalogue**, chosen-version advancement/discarding others, player release authority, four production types, the initial **3–4-panel target (not a hard validity condition)**, bounded technical recovery vs creative imperfections, **player-only creative-regeneration cost recalculation**, local-only runtime AI, economy families, or the provisional campaign target unless new contradictory owner evidence emerges.
