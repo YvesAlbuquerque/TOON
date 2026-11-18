@@ -1182,6 +1182,16 @@ The distinction must be legible to the player: “nothing assigned” and “can
 
 **Scope:** This is a new **character-naming and historical easter-egg** layer atop the already approved staff, relationships, archive and simulation systems, **not a historical-person-character generator** or a separate relationship-simulation feature. No content catalogue, historical verification or Unreal implementation has yet been completed.
 
+## Cartoon archetypes — small starting palette and directional social relationships (owner proposal, 2026-11-18)
+
+**Owner direction:** create a **small, extensible starting palette of approximately eight classic cartoon archetypes**, with dog/cat/mouse as explicit examples. An archetype's interaction with another may influence **asymmetric first impressions and potential social/comedic behaviours**. Reuse the existing directional character relationship and autonomous action systems; do not implement a parallel affinity meter or deterministic pair stereotypes. A cat's curiosity/chase tendency toward a mouse and a mouse's caution or defiance toward a cat, for example, can differ and both be changed through experience, personality and management. Existing actual relations ultimately matter more than an archetypal first impression.
+
+**Eight candidates for owner review, not an approved roster:** dog, cat, mouse, rabbit, fox, duck, wolf, sheep. Directional example motifs for creative evaluation: dog-to-cat rivalry, cat-to-mouse chase/curiosity, mouse-to-cat caution, fox-to-rabbit trickery, rabbit-to-fox suspicion and wolf-to-sheep tension. These are fictional cartoon cultural motifs, **not real animal behaviour claims, mandatory personality templates or copied protected character interactions**. Human, creature and living-object appearances stay legal under the broader ontology, even without bespoke pair data in the first version.
+
+**Bounded reusable model (proposed):** stable archetype IDs plus **sparse directed pair definitions** with neutral default; optional eligible interaction motifs can inform the existing game-owned behaviour/event system. Existing personality, relationship history, immediate state, work context and character ontology modify outcomes; no universal forced dislike and no free professional skill boost. Data can add new archetypes and links later without changing all combinations. Keep historical exact-name pair achievements separate from archetype social bias.
+
+**Status:** approximate count and pair-interaction idea are **owner-proposed direction / Documented for evaluation**; candidate eight, affinity effects, tuning and playable content remain **Proposed** until explicit owner acceptance and testing. Do not require implementing all 64 ordered pairs to ship the initial comic-strip tutorial. No Unreal implementation or validation evidence.
+
 ## Character ontology and lifespan
 
 T.O.O.N. intentionally allows different kinds of beings to coexist in one workplace.
