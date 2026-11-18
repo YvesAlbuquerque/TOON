@@ -282,6 +282,14 @@ These are outstanding proofs attached to current roadmap/issues, not re-opened c
 
 The first-slice baseline can proceed to implementation tests because onboarding doesn't require R&D; future-media R&D integration remains to be built and validated, not a reason to reopen the initial strip design. No Unreal R&D runtime proof.
 
+## Small extensible cartoon archetypes — owner proposal (2026-11-18)
+
+Owner proposes **roughly eight** classic cartoon archetypes (including dog, cat and mouse) whose ordered pair affects **initial impressions and possible social/behavioural context**. This extends existing directional relationships, personality and autonomous character logic rather than replacing them with fixed stereotypes or creating a second relationship system. Individual history and choices can overcome initial biases. Separate independent lifespan, species appearance, full historical-name matching bonuses and supported humans/creatures/living objects.
+
+**Proposed candidate eight, not yet ratified:** dog, cat, mouse, rabbit, fox, duck, wolf, sheep. Prefer authored sparse directional pair affinities/interaction motifs with neutral fallback; do not require all 64 pair scripts or force cat/mouse hatred, dog/cat rivalry, or other deterministic outcomes.
+
+**Still open content approval:** actual first-eight list, including whether any non-animal archetypes should take a slot. **Implementation:** stable IDs, data-driven pair lookup, effects through existing relationship/event rules. **Balance/validation:** small priors relative to personality and accumulated relationships, asymmetry, neutral default, save/reopen and no guaranteed hostility. **Status: Proposed / Documented, not owner-approved exact roster or Unreal-validated.**
+
 ## Cultural character names and historically sourced pair easter eggs — owner direction (2026-11-18)
 
 **Owner adds a naming/easter-egg layer:** randomly/recombinantly generated **given names and surnames** come from curated names of noted artists, comics creators, directors and illustrators. When the **fictional character's exact full name** coincides with a verified real creative person, give that fictional character a bounded positive bonus; when **two such full-name matches** coexist as studio employees and their historical counterparts were a **verified partnership or documented conflict**, apply a further bounded beneficial or adverse gameplay effect and a discoverable **achievement**. The user wants positive/negative historically inspired relations to matter; exact values, situations and titles remain unapproved content/design tuning. This is **Accepted direction / Documented** only.
