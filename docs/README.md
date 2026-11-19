@@ -30,6 +30,7 @@ The **single owning design document** is [`docs/design.md`](design.md). Use thes
 
 ## Retrospective methodology adoption
 
+- [Retrospective Concept reconciliation — stages 00–10 and Gate A–D candidate package](concept-retrospective-reconciliation.md) — indexed concept/proposal, historical pivot, Soul/experience synthesis, proposed hypotheses, audience gaps and explicit owner review conditions; **not** a passed Gate D.
 - [YFramework stages 00–16 evidence/equivalence matrix](yframework-retrospective-adoption-00-16.md) — bounded retrospective adoption audit, Gate A–H status, missing proof and Unreal validation handoff (issue [#101](https://github.com/YvesAlbuquerque/TOON/issues/101)); **does not replace the canonical design** or assert gate passage.
 
 ## Agent task routing
