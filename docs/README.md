@@ -33,6 +33,8 @@ The **single owning design document** is [`docs/design.md`](design.md). Use thes
 - [Retrospective Concept reconciliation — stages 00–10 and Gate A–D candidate package](concept-retrospective-reconciliation.md) — indexed concept/proposal, historical pivot, Soul/experience synthesis, proposed hypotheses, audience gaps and explicit owner review conditions; **not** a passed Gate D.
 - [YFramework stages 00–16 evidence/equivalence matrix](yframework-retrospective-adoption-00-16.md) — bounded retrospective adoption audit, Gate A–H status, missing proof and Unreal validation handoff (issue [#101](https://github.com/YvesAlbuquerque/TOON/issues/101)); **does not replace the canonical design** or assert gate passage.
 
+- [Audience and market snapshot (November 2026)](audience-market-snapshot-2026-11.md) — sourced comparables, player segments, community concerns, AI/Steam caveats, positioning hypotheses and proposed primary validation. Secondary research only; **not** market validation or Gate D approval.
+
 ## Agent task routing
 
 **Read the smallest relevant slice**, not the entire ~120 KB design and ~50 KB roadmap on every turn. Start with this index, then the **owning design heading**, the **matching roadmap phase/issue**, and only the **implementation files/tests** relevant to a behaviour claim. The index routes to evidence; it does not supersede that evidence.
