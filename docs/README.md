@@ -28,6 +28,10 @@ The **single owning design document** is [`docs/design.md`](design.md). Use thes
 
 **Already accepted:** the first playable production is a **3–4-panel comic strip**. The full game design still supports **comic strip, comic, 2D animation and 3D animation**. This does not imply a compiled Unreal project or functioning local generator.
 
+## Retrospective methodology adoption
+
+- [YFramework stages 00–16 evidence/equivalence matrix](yframework-retrospective-adoption-00-16.md) — bounded retrospective adoption audit, Gate A–H status, missing proof and Unreal validation handoff (issue [#101](https://github.com/YvesAlbuquerque/TOON/issues/101)); **does not replace the canonical design** or assert gate passage.
+
 ## Agent task routing
 
 **Read the smallest relevant slice**, not the entire ~120 KB design and ~50 KB roadmap on every turn. Start with this index, then the **owning design heading**, the **matching roadmap phase/issue**, and only the **implementation files/tests** relevant to a behaviour claim. The index routes to evidence; it does not supersede that evidence.
