@@ -933,6 +933,26 @@ A professional may include:
 
 Depth should come from readable behaviour and history, not hundreds of opaque attributes.
 
+### G-20 — Artist-name coincidences grant direct skill bonuses (accepted 2026-11-18)
+
+Professional character names may be formed by combining given names and surnames drawn from a curated set of notable **artists, comic creators, illustrators and directors**. An exact match of the resulting **complete first-and-last name** to a recognized person in that reference set is an intentional rare discovery. **Owner-selected option A:** this match grants a **direct, additional bonus to the professional's skill attributes**. It is a gameplay stat modifier, **not** merely narrative flavour, prestige, reputation, a contextual special talent or a guarantee of high overall competence.
+
+The name-match check and awarded effect must be **game-owned and deterministic**, never assigned ad hoc by character AI. The bonus applies to the character's explicit skill model and must be visible/explainable to the player as a distinct source of the resulting value, with stable persistence across save/reload. Avoid re-awarding it on repeated loading, renaming, recomputation or re-hiring; exact lifecycle details and any post-hire display-name policies remain to be specified. Keep the magnitude bounded so the name easter egg does not invalidate skills, personality, experience, recruiting choices or progression. **Which skill(s), the exact bonus amount, the approved reference/name corpus, the match-normalization policy, discovery visibility and name-generation implementation details remain unselected (candidate-selection direction is settled by G-21)**, not permission to introduce a special contextual talent or substitute a reputation bonus.
+
+Using a public figure's name does not imply their endorsement, involvement, likeness, voice or copyrighted visual style. Commercial/IP review of the shipped reference corpus and presentation is an external legal/content validation task. No real-person likeness or personal data collection is required for the mechanic.
+
+**Status:** Accepted direction / Documented; not implemented or balanced. The first 3–4-professional vertical slice may use a deterministic fixture to prove ordinary and coincident-name cases; a complete reference library is not a prerequisite.
+
+### G-21 — Recruit from generated named candidates (accepted 2026-11-18)
+
+**Owner-selected option B:** professional candidates arrive through the **existing era-appropriate recruitment channels**, each with a **pre-generated complete name** and their own skills and other recruitment evidence. The player **compares and chooses whom to hire** from candidates actually available through those channels; the player does not construct first/surname combinations or freely reroll the candidate's name as a naming minigame. Availability stays era- and channel-dependent: scarce early walk-ins/referrals need not present multiple simultaneous offers; later advertisements and searchable professional networks can provide broader choice. Hiring still requires compatible physical studio capacity.
+
+The **G-20 full-name coincidence** and its direct skill bonus belong to the **generated candidate's game-owned attributes**, not a reward assigned when the player selects the candidate. Candidate stats and the bonus must remain stable while the applicant is available and after hiring, without duplicate application across persistence or recruitment transitions. The same hiring decision may involve salary, relevant skills, personality evidence, qualifications, role fit, social context and name bonus; name rarity must not guarantee an optimal employee. The interface may reveal the effect via reliable candidate evidence or subsequent inspection without exposing every hidden attribute.
+
+The name corpus, seed/draw policy, exact boost and relative frequency require later specification and balancing; do not add unlimited refreshes that trivially farm matches. **First-slice proof:** provide a small deterministic recruitment fixture with distinct named candidates (including one eligible G-20 match), compare their legitimate skill/cost tradeoffs, recruit one into compatible capacity and verify bonus attribution and persistence. Do not require a complete era-spanning recruitment service or large roster for this proof.
+
+**Status:** Accepted direction / Documented. No Unreal implementation, name-corpus clearance or gameplay balance is established.
+
 ### Employment, workstations and studio capacity
 
 T.O.O.N. should use **permanent employees only** as the player-managed workforce. Do not add a parallel temporary-worker, contractor or freelancer staffing layer to the core management model.
@@ -1577,9 +1597,25 @@ Relationships can influence:
 - romance;
 - long-term loyalty.
 
-Species/archetype may create **initial tendencies or pressures**, but it does not determine personality.
+### G-19 — Initial classic-animal archetype roster (accepted 2026-11-18)
 
-A cat and mouse may begin with a predatory/prey tension. They may later become the studio's greatest creative partnership.
+**Owner-selected option A:** begin with a small, recognizable cartoon-animal cast foundation of **eight initial archetypes**: **dog, cat, mouse, rabbit, fox, bear, duck and pig**. This is the initial content/taxonomy direction, not an exhaustive restriction on the eventual character ontology or a requirement to create eight finished characters for the first playable proof. Individual characters remain differentiated by silhouette, profession, personality, history, memories, skills and relationships; avoid assuming shared animal identity means shared behaviour.
+
+**Expansion direction, not initial scope:** introduce special character types later, including **anime-styled characters, living objects, monsters** and potentially further authored cartoon categories. “Anime” describes a stylistic family rather than a biological species: do not conflate art style, species and longevity/existence model, and do not assume a special type is required for the first strip proof. New types should be admitted by extending character content/taxonomy and relevant bounded social-context data, rather than rewriting the professional, relationship or lifespan core. Exact unlocks, pacing, roster size and special-type mechanics remain undecided and deferred.
+
+G-18's **dynamic, directional** relationship predispositions apply to these initial archetypes: the species label may inform context, but pairwise bias values, the presence or absence of bias for any given pair, and balancing require authored design and testing. Do not generate automatic universal hostilities, permanent relationship penalties or stereotypes. For the first playable proof, **3–4 recurring professionals** suffice; the full eight-archetype breadth and special types are not slice acceptance gates.
+
+This is **Accepted direction / Documented**, not proof of finished art, implementation, balance or validated Unreal systems.
+
+### G-18 — Dynamic archetype predispositions (accepted 2026-11-18)
+
+**Owner-selected option C:** a professional's visual/species/cartoon archetype can inform **directional initial impressions**, socially learned expectations, and the **interpretation of later interactions**, but is neither a permanent relationship modifier nor a deterministic personality, competence, morality or compatibility rule. For any A -> B impression, B -> A may differ. Personality, salient personal memories, concrete behaviour, shared production outcomes and accumulated relationship history can strengthen, weaken or reverse archetype-derived expectations over time. Dramatic cartoon tension and humour remain possible without reducing characters to stereotypes.
+
+Game-owned relationship state and event outcomes remain authoritative; local character AI may contextualize reactions but must not invent persistent relationship modifiers or bypass rule constraints. The player should be able to understand significant shifts through observable behaviour, dialogue and the existing causal relationship history. The simulation should avoid repeatedly reapplying a fixed species penalty after events have meaningfully changed a relationship.
+
+For the first proof, compare two directional impressions and show one shared event changing at least one of them (potentially overcoming an initial predisposition), with the outcome surviving save/reload. **The initial archetype roster (roughly eight proposed, not yet accepted), the pairwise predisposition table, numerical weights, and presentation details remain open/tuning work**; do not invent the roster or assume all pairings have an effect. This rule is **Accepted direction / Documented**, not implemented or validated Unreal behaviour.
+
+A cat and mouse may begin with asymmetric predator/prey tension and later become the studio's greatest creative partnership.
 
 A hunter may be extraordinarily talented while making multiple anthropomorphic employees uncomfortable or afraid.
 
