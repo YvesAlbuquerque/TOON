@@ -71,6 +71,8 @@ The **owner-selected game concept already exists**. The task is to reconcile its
 
 **First proof experience hypothesis:** a player can explain (without an investigator explaining the rules) how a relationship/crew problem affected a production and why their management choice left a persistent trace. This is proposed for validation, not observed behavior.
 
+**Research update (2026-11-19):** [Audience and market snapshot](audience-market-snapshot-2026-11.md) has completed a bounded *secondary* survey of contemporary creative-studio/management games, observed Steam review signals, player-community discussions, platform requirements and a proposed 12–15-player qualitative study. This upgrades Stage 01 and Stage 08 evidence from *no dedicated market snapshot* to **Partially evidenced**, **not validated**: no T.O.O.N. prospective-player interviews, measured demand, acceptable hardware baseline, conversion/wishlist evidence or owner-approved commercial terms. Keep the Gate D decision pending.
+
 ## Audience and commercial evidence gap (Stage 01 + 08)
 
 **Working hypothesis, explicitly unvalidated:** likely audiences include players who enjoy management simulation, creative-production games and emergent character stories. This is a *research targeting hypothesis*, not verified market sizing, willingness to pay or proven commercial fit.
