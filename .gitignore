@@ -107,3 +107,9 @@ ehthumbs.db
 **/Intermediate/
 **/Saved/
 **/DerivedDataCache/
+
+# Local synthetic-audience research artifacts
+research/synthetic-audience/config.ini
+research/synthetic-audience/.venv/
+research/synthetic-audience/*.log
+research/synthetic-audience/*output*.json
